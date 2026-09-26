@@ -1,0 +1,72 @@
+{
+  "collapse-filter": false,
+  "search": "-path:\"99 System\" -path:\"00 Start\" -file:Glossar -file:Fachenglisch",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": false,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:\"10 Lernmodule/1 Netzwerk\" OR file:\"Aufgaben Netzwerk\" OR file:\"Karten Netzwerk\"",
+      "color": {
+        "a": 1,
+        "rgb": 4886512
+      }
+    },
+    {
+      "query": "path:\"10 Lernmodule/2 Hardware\" OR file:\"Aufgaben Hardware\" OR file:\"Karten Hardware\"",
+      "color": {
+        "a": 1,
+        "rgb": 15630387
+      }
+    },
+    {
+      "query": "path:\"10 Lernmodule/3 Software\" OR file:\"Aufgaben Software\" OR file:\"Karten Software\"",
+      "color": {
+        "a": 1,
+        "rgb": 10190064
+      }
+    },
+    {
+      "query": "path:\"10 Lernmodule/4 IT-Sicherheit\" OR file:\"Aufgaben IT-Sicherheit\" OR file:\"Karten IT-Sicherheit\"",
+      "color": {
+        "a": 1,
+        "rgb": 15026253
+      }
+    },
+    {
+      "query": "path:\"10 Lernmodule/5 Wirtschaft\" OR file:\"Aufgaben Wirtschaft\" OR file:\"Karten Wirtschaft\"",
+      "color": {
+        "a": 1,
+        "rgb": 3125604
+      }
+    },
+    {
+      "query": "path:\"10 Lernmodule/6 Projekt und Service\" OR file:\"Aufgaben Projekt und Service\" OR file:\"Karten Projekt und Service\"",
+      "color": {
+        "a": 1,
+        "rgb": 2864051
+      }
+    },
+    {
+      "query": "path:\"20 Aufgaben/Probepr\u00fcfungen\"",
+      "color": {
+        "a": 1,
+        "rgb": 14725168
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": -1,
+  "nodeSizeMultiplier": 1.2,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": true,
+  "centerStrength": 0.45,
+  "repelStrength": 12,
+  "linkStrength": 0.8,
+  "linkDistance": 120,
+  "scale": 0.9999999999999977,
+  "close": false
+}

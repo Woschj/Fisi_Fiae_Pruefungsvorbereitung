@@ -1,0 +1,283 @@
+/* AP1-Lerntool – Stile für alle Widgets.
+   Wird von ap1-lib.js automatisch geladen (kein CSS-Snippet nötig).
+   Doppelte Klasse .ap1.ap1 erhöht die Spezifität, damit Theme-Regeln für button/input nicht gewinnen.
+   Eigene feste Palette (dunkel + .theme-light) → sieht in jedem Theme gleich aus. */
+
+.ap1.ap1 {
+  /* Eigene, feste Palette statt Theme-Variablen: Themes setzen Schrift (teils Monospace), Akzentfarbe und
+     Formularfarben sehr unterschiedlich – die Widgets sollen überall gleich aussehen. Dunkel ist Standard,
+     .theme-light (Obsidian-Klasse am body) schaltet auf die helle Palette. */
+  --ap1-bg: #1e1e1e;
+  --ap1-flaeche: #262626;
+  --ap1-rand: #3a3a3a;
+  --ap1-hover: #333333;
+  --ap1-knopf: #2f2f2f;
+  --ap1-code: #2a2a2a;
+  --ap1-text: #dcddde;
+  --ap1-text-leise: #999999;
+  --ap1-text-blass: #666666;
+  --ap1-akzent: #e5484d;
+  --ap1-akzent-text: #ff6b70;
+  --ap1-akzent-weich: rgba(229, 72, 77, 0.14);
+  --ap1-auf-akzent: #ffffff;
+  --ap1-ok: #16a34a;
+  --ap1-ok-rgb: 22, 163, 74;
+  --ap1-falsch: #dc2626;
+  --ap1-falsch-rgb: 220, 38, 38;
+  --ap1-mittel: #ea580c;
+  --ap1-mittel-rgb: 234, 88, 12;
+  --ap1-gelb: #ca8a04;
+  --ap1-feld: #1e1e1e;
+  --ap1-spur: rgba(220, 221, 222, 0.16);
+  --ap1-schrift: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --ap1-mono: ui-monospace, "Cascadia Mono", Consolas, "Liberation Mono", monospace;
+  --ap1-radius: 14px;
+  --ap1-radius-klein: 9px;
+  font-family: var(--ap1-schrift);
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--ap1-text);
+}
+.theme-light .ap1.ap1 {
+  --ap1-bg: #ffffff;
+  --ap1-flaeche: #f6f6f7;
+  --ap1-rand: #dcdcdf;
+  --ap1-hover: #ececef;
+  --ap1-knopf: #f0f0f2;
+  --ap1-code: #f3f3f4;
+  --ap1-text: #222222;
+  --ap1-text-leise: #666666;
+  --ap1-text-blass: #999999;
+  --ap1-akzent-text: #c9363b;
+  --ap1-feld: #ffffff;
+  --ap1-spur: rgba(34, 34, 34, 0.12);
+}
+
+/* ---------------------------------------------------------------- Grundelemente (gegen Theme-Vorgaben) */
+.ap1.ap1 button, .ap1.ap1 input, .ap1.ap1 select, .ap1.ap1 textarea { font-family: var(--ap1-schrift); font-size: 0.93em; }
+.ap1.ap1 button {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  height: auto; min-height: 32px; padding: 6px 14px; cursor: pointer;
+  background: var(--ap1-knopf); color: var(--ap1-text); border: 1px solid var(--ap1-rand);
+  border-radius: var(--ap1-radius-klein); box-shadow: none; font-weight: 500;
+}
+.ap1.ap1 button:hover:not(:disabled) { background: var(--ap1-hover); }
+.ap1.ap1 button.mod-cta { background: var(--ap1-akzent); color: var(--ap1-auf-akzent); border-color: var(--ap1-akzent); }
+.ap1.ap1 button.mod-cta:hover:not(:disabled) { background: var(--ap1-akzent); filter: brightness(1.08); }
+.ap1.ap1 button:disabled { opacity: 0.6; cursor: default; }
+.ap1.ap1 input, .ap1.ap1 select, .ap1.ap1 textarea {
+  background: var(--ap1-feld); color: var(--ap1-text); border: 1px solid var(--ap1-rand);
+  border-radius: 8px; box-shadow: none; height: 34px; padding: 0 10px;
+}
+.ap1.ap1 input:focus, .ap1.ap1 select:focus { border-color: var(--ap1-akzent); box-shadow: 0 0 0 3px var(--ap1-akzent-weich); outline: none; }
+.ap1.ap1 code { font-family: var(--ap1-mono); background: var(--ap1-code); color: var(--ap1-text); padding: 1px 5px; border-radius: 5px; font-size: 0.9em; }
+.ap1.ap1 a.internal-link { color: var(--ap1-akzent-text); }
+
+/* ---------------------------------------------------------------- Karten */
+.ap1.ap1 .ap1-karte {
+  background: var(--ap1-flaeche);
+  border: 1px solid var(--ap1-rand);
+  border-radius: var(--ap1-radius);
+  padding: 18px 20px;
+  margin: 14px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+.ap1.ap1 .ap1-karte-titel {
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  font-weight: 650; font-size: 1.08em; margin-bottom: 12px; color: var(--ap1-text);
+}
+.ap1.ap1 .ap1-karte-titel .ap1-icon { font-size: 1.15em; }
+.ap1.ap1 .ap1-badge {
+  font-size: 0.72em; font-weight: 650; letter-spacing: 0.02em;
+  padding: 2px 10px; border-radius: 999px;
+  background: var(--ap1-akzent-weich); color: var(--ap1-akzent-text);
+}
+.ap1.ap1 .ap1-badge.leise { background: var(--ap1-hover); color: var(--ap1-text-leise); }
+.ap1.ap1 .ap1-meta { color: var(--ap1-text-leise); font-size: 0.86em; margin-top: 8px; }
+.ap1.ap1 .ap1-text { margin: 4px 0 14px; }
+.ap1.ap1 .ap1-text ul { margin: 6px 0; padding-left: 1.3em; }
+.ap1.ap1 .ap1-frage { font-size: 1.06em; }
+.ap1.ap1 .ap1-code {
+  background: var(--ap1-code); border: 1px solid var(--ap1-rand);
+  padding: 12px 14px; border-radius: var(--ap1-radius-klein);
+  font-family: var(--ap1-mono); font-size: 0.9em; white-space: pre; overflow-x: auto; margin: 10px 0;
+}
+.ap1.ap1 .ap1-fehler {
+  color: var(--ap1-falsch); background: rgba(var(--ap1-falsch-rgb), 0.1);
+  padding: 10px 14px; border-radius: var(--ap1-radius-klein); margin: 8px 0;
+}
+
+/* ---------------------------------------------------------------- Kopf/Aktionen */
+.ap1.ap1 .ap1-kopf, .ap1.ap1 .ap1-filter, .ap1.ap1 .ap1-aktionen { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin: 10px 0; }
+.ap1.ap1 .ap1-kopf select { flex: 1; min-width: 220px; }
+.ap1.ap1 .ap1-aktionen { margin-top: 16px; }
+.ap1.ap1 .ap1-aktionen.rechts { justify-content: flex-end; margin: 8px 0 0; }
+.ap1.ap1 .ap1-aktionen button.mod-cta { padding-inline: 18px; }
+
+/* ---------------------------------------------------------------- Eingabefelder */
+.ap1.ap1 .ap1-felder { display: grid; gap: 10px; margin: 12px 0; }
+.ap1.ap1 .ap1-feld {
+  display: grid; grid-template-columns: minmax(170px, 40%) 1fr 1.6em; gap: 4px 12px; align-items: center;
+  padding: 8px 12px; border-radius: var(--ap1-radius-klein);
+  background: var(--ap1-bg); border: 1px solid var(--ap1-rand);
+  transition: border-color 0.15s, background 0.15s;
+}
+.ap1.ap1 .ap1-feld-label { font-size: 0.93em; color: var(--ap1-text); }
+.ap1.ap1 .ap1-feld input, .ap1.ap1 .ap1-feld select {
+  width: 100%; height: 34px; font-family: var(--ap1-mono); font-size: 0.95em;
+  background: var(--ap1-feld); border: 1px solid var(--ap1-rand); border-radius: 8px; padding: 0 10px;
+}
+.ap1.ap1 .ap1-feld input:focus, .ap1.ap1 .ap1-feld select:focus { border-color: var(--ap1-akzent); box-shadow: 0 0 0 3px var(--ap1-akzent-weich); outline: none; }
+.ap1.ap1 .ap1-feld-status { font-weight: 800; font-size: 1.15em; text-align: center; }
+.ap1.ap1 .ap1-feld-hinweis { grid-column: 2 / 4; font-size: 0.84em; color: var(--ap1-text-leise); }
+.ap1.ap1 .ap1-feld.ok { border-color: rgba(var(--ap1-ok-rgb), 0.7); background: rgba(var(--ap1-ok-rgb), 0.07); }
+.ap1.ap1 .ap1-feld.ok .ap1-feld-status { color: var(--ap1-ok); }
+.ap1.ap1 .ap1-feld.falsch { border-color: rgba(var(--ap1-falsch-rgb), 0.7); background: rgba(var(--ap1-falsch-rgb), 0.06); }
+.ap1.ap1 .ap1-feld.falsch .ap1-feld-status { color: var(--ap1-falsch); }
+.ap1.ap1 .ap1-feld.teilweise { border-color: rgba(var(--ap1-mittel-rgb), 0.7); background: rgba(var(--ap1-mittel-rgb), 0.07); }
+.ap1.ap1 .ap1-feld.teilweise .ap1-feld-status { color: var(--ap1-mittel); }
+
+/* ---------------------------------------------------------------- Rückmeldung, Lösungsweg, Nachlernen */
+.ap1.ap1 .ap1-rueckmeldung { margin: 14px 0 6px; padding: 10px 14px; border-radius: var(--ap1-radius-klein); font-weight: 650; }
+.ap1.ap1 .ap1-rueckmeldung.ok { background: rgba(var(--ap1-ok-rgb), 0.14); color: var(--ap1-ok); }
+.ap1.ap1 .ap1-rueckmeldung.falsch { background: rgba(var(--ap1-falsch-rgb), 0.12); color: var(--ap1-falsch); }
+.ap1.ap1 .ap1-weg {
+  margin-top: 12px; padding: 12px 16px; line-height: 1.65;
+  background: var(--ap1-bg); border: 1px solid var(--ap1-rand);
+  border-left: 4px solid var(--ap1-akzent); border-radius: var(--ap1-radius-klein);
+}
+.ap1.ap1 .ap1-weg-titel { font-weight: 650; margin-bottom: 4px; }
+.ap1.ap1 .ap1-nachlernen {
+  display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  margin-top: 12px; padding: 8px 12px; border-radius: var(--ap1-radius-klein);
+  background: var(--ap1-akzent-weich); font-size: 0.92em;
+}
+.ap1.ap1 .ap1-nachlernen a { font-weight: 600; }
+
+/* ---------------------------------------------------------------- Quiz */
+.ap1.ap1 .ap1-optionen { display: grid; gap: 8px; margin: 12px 0; }
+.ap1.ap1 .ap1-option {
+  display: flex; gap: 10px; align-items: center; justify-content: flex-start; text-align: left;
+  height: auto; min-height: 42px; padding: 10px 14px; white-space: normal; line-height: 1.4;
+  background: var(--ap1-bg); border: 1px solid var(--ap1-rand); box-shadow: none;
+}
+.ap1.ap1 .ap1-option:hover:not(:disabled) { border-color: var(--ap1-akzent); background: var(--ap1-akzent-weich); }
+.ap1.ap1 .ap1-option.gewaehlt { border-color: var(--ap1-akzent); background: var(--ap1-akzent-weich); }
+.ap1.ap1 .ap1-option.ok { border-color: var(--ap1-ok); background: rgba(var(--ap1-ok-rgb), 0.14); color: var(--ap1-text); }
+.ap1.ap1 .ap1-option.falsch { border-color: var(--ap1-falsch); background: rgba(var(--ap1-falsch-rgb), 0.12); }
+.ap1.ap1 .ap1-option.leise { opacity: 0.5; }
+.ap1.ap1 .ap1-option:disabled { cursor: default; }
+.ap1.ap1 .ap1-kaestchen { font-size: 1.15em; }
+
+/* ---------------------------------------------------------------- Balken */
+.ap1.ap1 .ap1-balken { width: 100%; height: 8px; background: var(--ap1-spur); border-radius: 999px; overflow: hidden; min-width: 60px; }
+.ap1.ap1 .ap1-balken.duenn { height: 5px; margin-bottom: 12px; }
+.ap1.ap1 .ap1-balken-fuell { height: 100%; background: var(--ap1-akzent); border-radius: 999px; transition: width 0.4s; }
+.ap1.ap1 .ap1-balken.gut .ap1-balken-fuell { background: var(--ap1-ok); }
+.ap1.ap1 .ap1-balken.mittel .ap1-balken-fuell { background: var(--ap1-mittel); }
+.ap1.ap1 .ap1-balken.schlecht .ap1-balken-fuell { background: var(--ap1-falsch); }
+.ap1.ap1 .ap1-gross { font-size: 2.2em; font-weight: 750; font-variant-numeric: tabular-nums; }
+.ap1.ap1 .ap1-liste { margin: 10px 0; padding-left: 0; list-style: none; }
+.ap1.ap1 .ap1-liste li { padding: 4px 0; border-bottom: 1px solid var(--ap1-rand); }
+.ap1.ap1 .ap1-liste li:last-child { border-bottom: none; }
+.ap1.ap1 .ap1-liste li.ok { color: var(--ap1-text-leise); }
+.ap1.ap1 .ap1-liste li.falsch { color: var(--ap1-text); }
+.ap1.ap1 .ap1-liste li.falsch::marker { color: var(--ap1-falsch); }
+
+/* ---------------------------------------------------------------- Tabellen */
+.ap1.ap1 .ap1-tabelle { display: block; max-width: 100%; overflow-x: auto; border-collapse: separate; border-spacing: 0; margin: 10px 0; width: fit-content; border: 1px solid var(--ap1-rand); border-radius: var(--ap1-radius-klein); }
+.ap1.ap1 .ap1-tabelle th, .ap1.ap1 .ap1-tabelle td { border-bottom: 1px solid var(--ap1-rand); padding: 6px 12px; text-align: left; }
+.ap1.ap1 .ap1-tabelle tr:last-child td { border-bottom: none; }
+.ap1.ap1 .ap1-tabelle th { background: var(--ap1-flaeche); font-weight: 650; font-size: 0.9em; }
+.ap1.ap1 .ap1-bereichsraster { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; }
+.ap1.ap1 .ap1-bereich { min-width: 0; padding: 10px 12px; border-radius: var(--ap1-radius-klein); background: var(--ap1-bg); border: 1px solid var(--ap1-rand); border-top: 3px solid var(--ap1-bereichsfarbe, var(--ap1-akzent)); }
+.ap1.ap1 .ap1-bereich-titel { font-weight: 700; margin-bottom: 6px; color: var(--ap1-bereichsfarbe, var(--ap1-text)); }
+.ap1.ap1 .ap1-bereich-zeile { display: grid; grid-template-columns: 7.2em minmax(30px, 1fr) 3.4em; gap: 8px; align-items: center; font-size: 0.84em; padding: 2px 0; }
+.ap1.ap1 .ap1-bereich-zeile .ap1-balken { min-width: 0; }
+.ap1.ap1 .ap1-bereich-label { color: var(--ap1-text-leise); white-space: nowrap; }
+.ap1.ap1 .ap1-bereich-wert { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+/* Bereichsfarben wie in Seitenleiste und Schaubildern (Reihenfolge wie lib.BEREICHE) */
+.ap1.ap1 .ap1-bereich.b0 { --ap1-bereichsfarbe: #4a8ff0; }
+.ap1.ap1 .ap1-bereich.b1 { --ap1-bereichsfarbe: #ee8033; }
+.ap1.ap1 .ap1-bereich.b2 { --ap1-bereichsfarbe: #9b7cf0; }
+.ap1.ap1 .ap1-bereich.b3 { --ap1-bereichsfarbe: #e5484d; }
+.ap1.ap1 .ap1-bereich.b4 { --ap1-bereichsfarbe: #2fb164; }
+.ap1.ap1 .ap1-bereich.b5 { --ap1-bereichsfarbe: #2bb3b3; }
+
+/* ---------------------------------------------------------------- Selbsteinschätzung */
+.ap1.ap1 .ap1-stufen { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; }
+.ap1.ap1 .ap1-stufe { display: flex; flex-direction: column; height: auto; padding: 10px 4px; gap: 2px; white-space: normal; font-size: 0.85em; background: var(--ap1-bg); border: 1px solid var(--ap1-rand); box-shadow: none; }
+.ap1.ap1 .ap1-stufe:hover { border-color: var(--ap1-akzent); }
+.ap1.ap1 .ap1-stufe-zahl { font-size: 1.5em; font-weight: 750; }
+.ap1.ap1 .ap1-stufe.aktiv { background: var(--ap1-akzent); color: var(--ap1-auf-akzent); border-color: var(--ap1-akzent); }
+
+/* ---------------------------------------------------------------- Dashboard */
+.ap1.ap1 .ap1-kacheln { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 12px 0; }
+.ap1.ap1 .ap1-kachel { background: var(--ap1-flaeche); border: 1px solid var(--ap1-rand); border-radius: var(--ap1-radius); padding: 14px 16px; }
+.ap1.ap1 .ap1-kachel-wert { font-size: 1.75em; font-weight: 750; font-variant-numeric: tabular-nums; }
+.ap1.ap1 .ap1-kachel-label { color: var(--ap1-text-leise); font-size: 0.86em; }
+.ap1.ap1 .ap1-heatmap { display: grid; grid-template-rows: repeat(7, 14px); grid-auto-flow: column; grid-auto-columns: 14px; gap: 3px; }
+.ap1.ap1 .ap1-hm { border-radius: 3px; background: var(--ap1-spur); }
+.ap1.ap1 .ap1-hm.s1 { background: rgba(var(--ap1-ok-rgb), 0.3); }
+.ap1.ap1 .ap1-hm.s2 { background: rgba(var(--ap1-ok-rgb), 0.5); }
+.ap1.ap1 .ap1-hm.s3 { background: rgba(var(--ap1-ok-rgb), 0.75); }
+.ap1.ap1 .ap1-hm.s4 { background: var(--ap1-ok); }
+.ap1.ap1 .ap1-todo { margin: 0; padding-left: 0; list-style: none; }
+.ap1.ap1 .ap1-todo li { padding: 6px 0; border-bottom: 1px solid var(--ap1-rand); }
+.ap1.ap1 .ap1-todo li:last-child { border-bottom: none; }
+.ap1.ap1 .ap1-modulraster { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 8px; }
+.ap1.ap1 .ap1-modul { display: flex; gap: 8px; align-items: center; padding: 8px 12px; border-radius: var(--ap1-radius-klein); background: var(--ap1-bg); border: 1px solid var(--ap1-rand); border-left-width: 4px; font-size: 0.9em; }
+.ap1.ap1 .ap1-modul-id { font-family: var(--ap1-mono); font-weight: 700; color: var(--ap1-text-leise); }
+.ap1.ap1 .ap1-modul.s1 { border-left-color: var(--ap1-falsch); }
+.ap1.ap1 .ap1-modul.s2 { border-left-color: var(--ap1-mittel); }
+.ap1.ap1 .ap1-modul.s3 { border-left-color: var(--ap1-gelb); }
+.ap1.ap1 .ap1-modul.s4 { border-left-color: rgba(var(--ap1-ok-rgb), 0.7); }
+.ap1.ap1 .ap1-modul.s5 { border-left-color: var(--ap1-ok); background: rgba(var(--ap1-ok-rgb), 0.07); }
+.ap1.ap1 .ap1-modul.faellig { border-style: dashed; border-left-style: solid; }
+
+/* ---------------------------------------------------------------- Probeprüfung */
+.ap1.ap1 .ap1-pruefung { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; margin: 14px 0; }
+.ap1.ap1 .ap1-pruefung .ap1-karte { margin: 0; display: flex; flex-direction: column; }
+.ap1.ap1 .ap1-timer-anzeige { text-align: center; margin: 6px 0 4px; }
+.ap1.ap1 .ap1-timer { font-family: var(--ap1-mono); font-size: 3.4em; font-weight: 750; letter-spacing: 2px; font-variant-numeric: tabular-nums; line-height: 1.1; }
+.ap1.ap1 .ap1-timer.knapp { color: var(--ap1-mittel); }
+.ap1.ap1 .ap1-timer.ende { color: var(--ap1-falsch); }
+.ap1.ap1 .ap1-timer-status { color: var(--ap1-text-leise); font-size: 0.85em; text-align: center; margin-bottom: 10px; }
+.ap1.ap1 .ap1-pruefung .ap1-aktionen { justify-content: center; margin-top: auto; padding-top: 12px; }
+/* Spaltenzahl = Anzahl Aufgaben (--ap1-n setzt die View), damit die Kacheln immer in einer Reihe stehen */
+.ap1.ap1 .ap1-punkte { display: grid; grid-template-columns: repeat(var(--ap1-n, 4), minmax(0, 1fr)); gap: 8px; }
+.ap1.ap1 .ap1-punkt { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 10px 6px; min-width: 0; border-radius: var(--ap1-radius-klein); background: var(--ap1-bg); border: 1px solid var(--ap1-rand); }
+.ap1.ap1 .ap1-punkt-label { font-size: 0.8em; white-space: nowrap; color: var(--ap1-text-leise); font-weight: 600; }
+.ap1.ap1 .ap1-punkt input { width: 100%; max-width: 64px; height: 36px; padding: 0 4px; color: var(--ap1-text); text-align: center; font-size: 1.1em; font-weight: 650; font-variant-numeric: tabular-nums; background: var(--ap1-feld); border: 1px solid var(--ap1-rand); border-radius: 8px; }
+.ap1.ap1 .ap1-punkt input:focus { border-color: var(--ap1-akzent); box-shadow: 0 0 0 3px var(--ap1-akzent-weich); outline: none; }
+.ap1.ap1 .ap1-punkt.ungueltig input { border-color: var(--ap1-falsch); }
+.ap1.ap1 .ap1-punkt-max { font-size: 0.78em; color: var(--ap1-text-blass); }
+.ap1.ap1 .ap1-summe { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 14px; padding: 10px 14px; border-radius: var(--ap1-radius-klein); background: var(--ap1-bg); border: 1px solid var(--ap1-rand); }
+.ap1.ap1 .ap1-summe { flex-wrap: wrap; }
+.ap1.ap1 .ap1-summe-wert { font-size: 1.5em; font-weight: 750; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.ap1.ap1 .ap1-note { font-weight: 750; padding: 4px 12px; border-radius: 999px; background: var(--ap1-hover); white-space: nowrap; }
+.ap1.ap1 .ap1-note.n1, .ap1.ap1 .ap1-note.n2 { background: rgba(var(--ap1-ok-rgb), 0.18); color: var(--ap1-ok); }
+.ap1.ap1 .ap1-note.n3, .ap1.ap1 .ap1-note.n4 { background: rgba(var(--ap1-mittel-rgb), 0.18); color: var(--ap1-mittel); }
+.ap1.ap1 .ap1-note.n5, .ap1.ap1 .ap1-note.n6 { background: rgba(var(--ap1-falsch-rgb), 0.15); color: var(--ap1-falsch); }
+
+/* ---------------------------------------------------------------- Karteikarten */
+.ap1.ap1 .ap1-lernkarte {
+  margin: 10px 0 4px; padding: 22px 20px; min-height: 120px;
+  display: flex; flex-direction: column; justify-content: center; gap: 14px; text-align: center;
+  background: var(--ap1-bg); border: 1px solid var(--ap1-rand); border-radius: var(--ap1-radius);
+}
+.ap1.ap1 .ap1-lernkarte-frage { font-size: 1.12em; font-weight: 600; }
+.ap1.ap1 .ap1-lernkarte-antwort { padding-top: 14px; border-top: 1px dashed var(--ap1-rand); color: var(--ap1-text); }
+.ap1.ap1 .ap1-lernkarte-antwort:has(ul), .ap1.ap1 .ap1-lernkarte-antwort:has(br) { text-align: left; }
+.ap1.ap1 .ap1-lernkarte.offen { border-color: var(--ap1-akzent); }
+.ap1.ap1 button.ap1-gewusst { background: rgba(var(--ap1-ok-rgb), 0.16); color: var(--ap1-ok); border: 1px solid rgba(var(--ap1-ok-rgb), 0.5); box-shadow: none; }
+.ap1.ap1 button.ap1-nicht-gewusst { background: rgba(var(--ap1-falsch-rgb), 0.14); color: var(--ap1-falsch); border: 1px solid rgba(var(--ap1-falsch-rgb), 0.5); box-shadow: none; }
+.ap1.ap1 button.ap1-leise { margin-left: auto; background: transparent; box-shadow: none; color: var(--ap1-text-leise); }
+
+/* ---------------------------------------------------------------- Schmal (Handy, Seitenleiste) */
+@media (max-width: 640px) {
+  .ap1.ap1 .ap1-feld { grid-template-columns: 1fr 1.6em; }
+  .ap1.ap1 .ap1-feld-label, .ap1.ap1 .ap1-feld-hinweis { grid-column: 1 / 3; }
+  .ap1.ap1 .ap1-stufen { grid-template-columns: repeat(3, 1fr); }
+  .ap1.ap1 .ap1-timer { font-size: 2.6em; }
+}

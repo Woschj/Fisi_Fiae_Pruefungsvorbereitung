@@ -1,0 +1,120 @@
+/* AP1 Lernvault – Obsidian-Theme passend zu den Lern-Widgets (99 System/styles/ap1.css).
+   Gleiche Palette wie die Widgets: dunkles Grau, roter Akzent, neutrale Systemschrift.
+   Gestrichelte Rahmen trennen jedes interaktive Widget (DataviewJS-Block) vom Lesetext. */
+
+/* ---------------------------------------------------------------- Schriften */
+body {
+  --font-text-theme: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-interface-theme: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-monospace-theme: ui-monospace, "Cascadia Mono", Consolas, "Liberation Mono", monospace;
+  --line-height-normal: 1.6;
+  --h1-size: 1.9em; --h2-size: 1.5em; --h3-size: 1.25em; --h4-size: 1.1em;
+  --h1-weight: 750; --h2-weight: 700; --h3-weight: 650; --h4-weight: 650;
+  --radius-s: 6px; --radius-m: 9px; --radius-l: 14px;
+  --callout-radius: 10px;
+  --table-border-width: 1px;
+  --ap1-rahmen-breite: 2px;
+}
+
+/* ---------------------------------------------------------------- Farben dunkel */
+.theme-dark {
+  --accent-h: 358; --accent-s: 75%; --accent-l: 59%;
+  --color-accent: #e5484d; --color-accent-1: #f0585d; --color-accent-2: #f5767a;
+  --background-primary: #1e1e1e;
+  --background-primary-alt: #262626;
+  --background-secondary: #191919;
+  --background-secondary-alt: #151515;
+  --background-modifier-border: #3a3a3a;
+  --background-modifier-border-hover: #4a4a4a;
+  --background-modifier-border-focus: #e5484d;
+  --background-modifier-hover: rgba(255, 255, 255, 0.06);
+  --background-modifier-active-hover: rgba(229, 72, 77, 0.15);
+  --background-modifier-form-field: #262626;
+  --text-normal: #dcddde;
+  --text-muted: #999999;
+  --text-faint: #666666;
+  --text-accent: #ff6b70;
+  --text-accent-hover: #ff8a8e;
+  --text-on-accent: #ffffff;
+  --text-selection: rgba(229, 72, 77, 0.3);
+  --interactive-normal: #2f2f2f;
+  --interactive-hover: #383838;
+  --interactive-accent: #e5484d;
+  --interactive-accent-hover: #f0585d;
+  --interactive-accent-hsl: 358, 75%, 59%;
+  --code-background: #2a2a2a;
+  --code-normal: #dcddde;
+  --blockquote-border-color: #e5484d;
+  --hr-color: #3a3a3a;
+  --ap1-rahmen-farbe: #8a8a8a;
+  --ap1-rahmen-label: #8a8a8a;
+}
+
+/* ---------------------------------------------------------------- Farben hell */
+.theme-light {
+  --accent-h: 358; --accent-s: 75%; --accent-l: 55%;
+  --color-accent: #d93a40; --color-accent-1: #e5484d; --color-accent-2: #ef6a6e;
+  --background-primary: #ffffff;
+  --background-primary-alt: #f6f6f7;
+  --background-secondary: #f2f2f4;
+  --background-secondary-alt: #ebebee;
+  --background-modifier-border: #dcdcdf;
+  --background-modifier-border-hover: #c8c8cc;
+  --background-modifier-border-focus: #d93a40;
+  --background-modifier-hover: rgba(0, 0, 0, 0.05);
+  --background-modifier-active-hover: rgba(229, 72, 77, 0.12);
+  --background-modifier-form-field: #ffffff;
+  --text-normal: #222222;
+  --text-muted: #666666;
+  --text-faint: #999999;
+  --text-accent: #c9363b;
+  --text-accent-hover: #a82a2f;
+  --text-on-accent: #ffffff;
+  --text-selection: rgba(229, 72, 77, 0.2);
+  --interactive-normal: #f0f0f2;
+  --interactive-hover: #e6e6e9;
+  --interactive-accent: #e5484d;
+  --interactive-accent-hover: #d93a40;
+  --interactive-accent-hsl: 358, 75%, 59%;
+  --code-background: #f3f3f4;
+  --code-normal: #222222;
+  --blockquote-border-color: #e5484d;
+  --hr-color: #dcdcdf;
+  --ap1-rahmen-farbe: #b5b5b5;
+  --ap1-rahmen-label: #888888;
+}
+
+/* ---------------------------------------------------------------- Gestrichelte Widget-Rahmen
+   Jeder DataviewJS-Block (Trainer, Quiz, Karteikarten, Prüfung, Dashboard …) bekommt einen Rahmen –
+   in der Lese-Ansicht und in der Live-Vorschau. */
+.markdown-rendered .block-language-dataviewjs,
+.markdown-source-view.mod-cm6 .cm-preview-code-block .block-language-dataviewjs {
+  border: var(--ap1-rahmen-breite) dashed var(--ap1-rahmen-farbe);
+  border-radius: 12px;
+  padding: 6px 14px;
+  margin: 20px 0;
+}
+/* Abstand der ersten Karte zum Rahmen */
+.markdown-rendered .block-language-dataviewjs > .ap1:first-child > .ap1-karte:first-child { margin-top: 10px; }
+
+/* ---------------------------------------------------------------- Lesetext */
+.markdown-rendered h1, .markdown-rendered h2, .markdown-rendered h3, .markdown-rendered h4,
+.HyperMD-header, .inline-title { font-family: var(--font-text); letter-spacing: -0.01em; }
+.markdown-rendered h2 { padding-bottom: 4px; border-bottom: 1px solid var(--background-modifier-border); }
+.markdown-rendered a.internal-link, .markdown-rendered a.external-link { text-decoration: none; }
+.markdown-rendered a.internal-link:hover, .markdown-rendered a.external-link:hover { text-decoration: underline; }
+.markdown-rendered code { border-radius: 5px; padding: 1px 5px; }
+.markdown-rendered strong { color: var(--text-normal); font-weight: 700; }
+
+/* Tabellen mit Rahmen und Kopfzeile wie in den Widgets */
+.markdown-rendered table { border-collapse: separate; border-spacing: 0; border: 1px solid var(--background-modifier-border); border-radius: 9px; overflow: hidden; }
+.markdown-rendered th { background: var(--background-primary-alt); font-weight: 650; }
+.markdown-rendered th, .markdown-rendered td { border: none; border-bottom: 1px solid var(--background-modifier-border); padding: 6px 12px; }
+.markdown-rendered tr:last-child td { border-bottom: none; }
+
+/* Callouts ruhiger: leichter Hintergrund, farbige Kante links */
+.callout { border: 1px solid var(--background-modifier-border); border-left: 4px solid rgb(var(--callout-color)); background: rgba(var(--callout-color), 0.07); }
+
+/* Buttons außerhalb der Widgets (Einstellungen, Dialoge) im selben Stil */
+button.mod-cta { background: var(--interactive-accent); color: var(--text-on-accent); }
+button.mod-cta:hover { background: var(--interactive-accent-hover); }

@@ -1,0 +1,9 @@
+# Persönlicher Lernstand und Sitzungsdaten – gehören nicht ins Repo
+99 System/daten/
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.trash/
+
+# Hilfsdateien des Schaubild-Generators
+99 System/bilder/quelle/galerie.html
+__pycache__/

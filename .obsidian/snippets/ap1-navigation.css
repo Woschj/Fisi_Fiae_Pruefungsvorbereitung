@@ -1,0 +1,63 @@
+/* AP1-Lernvault – farbige Navigation in der Seitenleiste.
+   Farben wie in den Schaubildern: Netzwerk blau, Hardware orange, Software lila, IT-Sicherheit rot,
+   Wirtschaft grün, Projekt und Service türkis. Funktioniert mit jedem Theme (CSS-Snippet). */
+
+/* Hauptordner: fett, mit Symbol */
+.nav-folder-title[data-path="00 Start"],
+.nav-folder-title[data-path="10 Lernmodule"],
+.nav-folder-title[data-path="20 Aufgaben"],
+.nav-folder-title[data-path="30 Trainer"],
+.nav-folder-title[data-path="40 Karteikarten"],
+.nav-folder-title[data-path="50 Nachschlagen"] { font-weight: 650; }
+.nav-folder-title[data-path="00 Start"] .nav-folder-title-content::before { content: "🏠 "; }
+.nav-folder-title[data-path="10 Lernmodule"] .nav-folder-title-content::before { content: "📘 "; }
+.nav-folder-title[data-path="20 Aufgaben"] .nav-folder-title-content::before { content: "📝 "; }
+.nav-folder-title[data-path="30 Trainer"] .nav-folder-title-content::before { content: "🧮 "; }
+.nav-folder-title[data-path="40 Karteikarten"] .nav-folder-title-content::before { content: "🃏 "; }
+.nav-folder-title[data-path="50 Nachschlagen"] .nav-folder-title-content::before { content: "🔎 "; }
+.nav-folder-title[data-path="00 Start"] { color: #e0b030; }
+
+/* Technik-Ordner zurücknehmen */
+.nav-folder-title[data-path="99 System"],
+.nav-folder-title[data-path^="99 System/"],
+.nav-file-title[data-path^="99 System/"] { opacity: 0.5; }
+.nav-folder-title[data-path="99 System"] .nav-folder-title-content::before { content: "⚙️ "; }
+
+/* Bereiche: farbiger Balken links und farbiger Text */
+
+/* Netzwerk */
+.nav-folder-title[data-path="10 Lernmodule/1 Netzwerk"] { color: #4a8ff0; font-weight: 650; box-shadow: inset 3px 0 0 #4a8ff0; }
+.nav-file-title[data-path^="10 Lernmodule/1 Netzwerk/"], .nav-file-title[data-path="20 Aufgaben/Aufgaben Netzwerk.md"], .nav-file-title[data-path="40 Karteikarten/Karten Netzwerk.md"] { box-shadow: inset 3px 0 0 #4a8ff0; }
+.nav-file-title[data-path^="10 Lernmodule/1 Netzwerk/"] .nav-file-title-content, .nav-file-title[data-path="20 Aufgaben/Aufgaben Netzwerk.md"] .nav-file-title-content, .nav-file-title[data-path="40 Karteikarten/Karten Netzwerk.md"] .nav-file-title-content { color: #4a8ff0; }
+
+/* Hardware */
+.nav-folder-title[data-path="10 Lernmodule/2 Hardware"] { color: #ee8033; font-weight: 650; box-shadow: inset 3px 0 0 #ee8033; }
+.nav-file-title[data-path^="10 Lernmodule/2 Hardware/"], .nav-file-title[data-path="20 Aufgaben/Aufgaben Hardware.md"], .nav-file-title[data-path="40 Karteikarten/Karten Hardware.md"] { box-shadow: inset 3px 0 0 #ee8033; }
+.nav-file-title[data-path^="10 Lernmodule/2 Hardware/"] .nav-file-title-content, .nav-file-title[data-path="20 Aufgaben/Aufgaben Hardware.md"] .nav-file-title-content, .nav-file-title[data-path="40 Karteikarten/Karten Hardware.md"] .nav-file-title-content { color: #ee8033; }
+
+/* Software */
+.nav-folder-title[data-path="10 Lernmodule/3 Software"] { color: #9b7cf0; font-weight: 650; box-shadow: inset 3px 0 0 #9b7cf0; }
+.nav-file-title[data-path^="10 Lernmodule/3 Software/"], .nav-file-title[data-path="20 Aufgaben/Aufgaben Software.md"], .nav-file-title[data-path="40 Karteikarten/Karten Software.md"] { box-shadow: inset 3px 0 0 #9b7cf0; }
+.nav-file-title[data-path^="10 Lernmodule/3 Software/"] .nav-file-title-content, .nav-file-title[data-path="20 Aufgaben/Aufgaben Software.md"] .nav-file-title-content, .nav-file-title[data-path="40 Karteikarten/Karten Software.md"] .nav-file-title-content { color: #9b7cf0; }
+
+/* IT-Sicherheit */
+.nav-folder-title[data-path="10 Lernmodule/4 IT-Sicherheit"] { color: #e5484d; font-weight: 650; box-shadow: inset 3px 0 0 #e5484d; }
+.nav-file-title[data-path^="10 Lernmodule/4 IT-Sicherheit/"], .nav-file-title[data-path="20 Aufgaben/Aufgaben IT-Sicherheit.md"], .nav-file-title[data-path="40 Karteikarten/Karten IT-Sicherheit.md"] { box-shadow: inset 3px 0 0 #e5484d; }
+.nav-file-title[data-path^="10 Lernmodule/4 IT-Sicherheit/"] .nav-file-title-content, .nav-file-title[data-path="20 Aufgaben/Aufgaben IT-Sicherheit.md"] .nav-file-title-content, .nav-file-title[data-path="40 Karteikarten/Karten IT-Sicherheit.md"] .nav-file-title-content { color: #e5484d; }
+
+/* Wirtschaft */
+.nav-folder-title[data-path="10 Lernmodule/5 Wirtschaft"] { color: #2fb164; font-weight: 650; box-shadow: inset 3px 0 0 #2fb164; }
+.nav-file-title[data-path^="10 Lernmodule/5 Wirtschaft/"], .nav-file-title[data-path="20 Aufgaben/Aufgaben Wirtschaft.md"], .nav-file-title[data-path="40 Karteikarten/Karten Wirtschaft.md"] { box-shadow: inset 3px 0 0 #2fb164; }
+.nav-file-title[data-path^="10 Lernmodule/5 Wirtschaft/"] .nav-file-title-content, .nav-file-title[data-path="20 Aufgaben/Aufgaben Wirtschaft.md"] .nav-file-title-content, .nav-file-title[data-path="40 Karteikarten/Karten Wirtschaft.md"] .nav-file-title-content { color: #2fb164; }
+
+/* Projekt und Service */
+.nav-folder-title[data-path="10 Lernmodule/6 Projekt und Service"] { color: #2bb3b3; font-weight: 650; box-shadow: inset 3px 0 0 #2bb3b3; }
+.nav-file-title[data-path^="10 Lernmodule/6 Projekt und Service/"], .nav-file-title[data-path="20 Aufgaben/Aufgaben Projekt und Service.md"], .nav-file-title[data-path="40 Karteikarten/Karten Projekt und Service.md"] { box-shadow: inset 3px 0 0 #2bb3b3; }
+.nav-file-title[data-path^="10 Lernmodule/6 Projekt und Service/"] .nav-file-title-content, .nav-file-title[data-path="20 Aufgaben/Aufgaben Projekt und Service.md"] .nav-file-title-content, .nav-file-title[data-path="40 Karteikarten/Karten Projekt und Service.md"] .nav-file-title-content { color: #2bb3b3; }
+
+/* Aktive Datei trotz Farbe gut erkennbar */
+.nav-file-title.is-active { background-color: var(--background-modifier-active-hover); }
+
+/* Bereichsübersichten hervorheben (Knotenpunkte mit Lernpfad) */
+.nav-file-title[data-path^="10 Lernmodule/"][data-path*="/Übersicht "] .nav-file-title-content { font-weight: 650; }
+.nav-file-title[data-path^="10 Lernmodule/"][data-path*="/Übersicht "] .nav-file-title-content::before { content: "🗺️ "; }

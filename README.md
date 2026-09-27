@@ -10,19 +10,19 @@ Ein Obsidian-Vault zur Vorbereitung auf AP1 und AP2 für Fachinformatiker:innen 
 
 ## Vault von GitHub klonen
 
-1. Auf GitHub die Vault-Seite öffnen und **Code → HTTPS** auswählen. Die Repository-Adresse sieht etwa so aus: `https://github.com/BENUTZERNAME/REPOSITORY.git`.
+1. Auf GitHub die Vault-Seite öffnen und **Code → HTTPS** auswählen. Die Repository-Adresse sieht etwa so aus: `https://github.com/Woschj/Ap1.git`.
 2. Ein Terminal öffnen und in den Ordner wechseln, in dem der Vault gespeichert werden soll.
 3. Klonen:
 
    ```powershell
-   git clone https://github.com/BENUTZERNAME/REPOSITORY.git
+   git clone https://github.com/Woschj/Ap1.git
    ```
 
-   Ersetze `BENUTZERNAME/REPOSITORY` durch die tatsächliche Adresse des GitHub-Repositories.
+   Der Vault liegt im Repository [Woschj/Ap1](https://github.com/Woschj/Ap1).
 4. In Obsidian **Vault öffnen → Als Vault in einem Ordner öffnen** wählen und den eben geklonten Repository-Ordner auswählen.
 5. Falls Obsidian den eingeschränkten Modus aktiviert hat, unter **Einstellungen → Community-Plugins** den Modus deaktivieren und Dataview aktivieren. DataviewJS muss in den Dataview-Einstellungen zugelassen sein, damit die interaktiven Module und Probeprüfungen laufen.
 
-> In dieser Arbeitskopie ist keine GitHub-Repository-Adresse konfiguriert. Die Klon-Adresse oben ist daher ein Muster und muss durch die Adresse ersetzt werden, die GitHub unter **Code → HTTPS** anzeigt.
+> Lernfortschritte und Prüfungsergebnisse werden lokal gespeichert und nicht mit GitHub synchronisiert.
 
 ## Vault von GitHub aktualisieren
 

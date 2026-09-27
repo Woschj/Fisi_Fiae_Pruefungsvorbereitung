@@ -1,7 +1,6 @@
 {
   "alwaysUpdateLinks": true,
-  "newFileLocation": "folder",
-  "newFileFolderPath": "00 Start",
+  "newFileLocation": "current",
   "readableLineLength": true,
   "showFrontmatter": false
 }

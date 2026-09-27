@@ -1,0 +1,22 @@
+---
+tags: [ap1/quiz]
+---
+# Quiz
+
+Alle Fragen aus allen Modulen. Das Quiz merkt sich, was du wie oft richtig hattest, und wiederholt nach dem **Leitner-Prinzip**:
+- falsch → die Frage ist **sofort** wieder fällig
+- richtig → der Abstand wächst: 1 → 3 → 7 → 14 → 30 → 60 Tage
+
+> [!info] Prüfungskatalog 2025
+> Der Fragenpool enthält auch ältere und AP2-Vertiefungsthemen, darunter RAID und SQL. Für die AP1 konzentriere dich auf den aktualisierten Katalog: RAID und SQL sind AP2-Stoff; Struktogramm und PAP wurden aus dem AP1-Katalog gestrichen. Siehe [[Prüfung AP1]].
+
+**Modus „Empfohlen“** stellt zuerst fällige Wiederholungen, dann neue Fragen. **„Nur Schwächen“** zeigt Fragen, die du zuletzt falsch hattest.
+
+```dataviewjs
+await dv.view("AP1/99 System/views/quiz", { auswahl: true, anzahl: 20 })
+```
+
+> [!tip] Täglich 10 Minuten
+> Ein kurzes Quiz jeden Tag bringt mehr als drei Stunden am Stück vor der Prüfung. Die Lernserie im [[Start|Dashboard]] zeigt dir, ob du dranbleibst.
+
+← [[Start]]

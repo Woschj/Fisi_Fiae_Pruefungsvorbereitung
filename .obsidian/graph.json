@@ -1,11 +1,11 @@
 {
-  "collapse-filter": false,
+  "collapse-filter": true,
   "search": "-path:\"99 System\" -path:\"00 Start\" -file:Glossar -file:Fachenglisch",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": false,
-  "collapse-color-groups": false,
+  "collapse-color-groups": true,
   "colorGroups": [
     {
       "query": "path:\"10 Lernmodule/1 Netzwerk\" OR file:\"Aufgaben Netzwerk\" OR file:\"Karten Netzwerk\"",
@@ -50,23 +50,72 @@
       }
     },
     {
-      "query": "path:\"20 Aufgaben/Probepr\u00fcfungen\"",
+      "query": "path:\"20 Aufgaben/Probeprüfungen\"",
+      "color": {
+        "a": 1,
+        "rgb": 14725168
+      }
+    },
+    {
+      "query": "path:\"AP2/FISI/10 Lernmodule/1 Konzeption\" OR file:\"Aufgaben Konzeption\" OR file:\"Karten Konzeption\"",
+      "color": {
+        "a": 1,
+        "rgb": 15630387
+      }
+    },
+    {
+      "query": "path:\"AP2/FISI/10 Lernmodule/2 Analyse\" OR file:\"Aufgaben Netzwerke\" OR file:\"Karten Netzwerke\"",
+      "color": {
+        "a": 1,
+        "rgb": 4886512
+      }
+    },
+    {
+      "query": "path:\"AP2/FIAE/10 Lernmodule/1 Planen\" OR file:\"Aufgaben Planen\" OR file:\"Karten Planen\"",
+      "color": {
+        "a": 1,
+        "rgb": 10190064
+      }
+    },
+    {
+      "query": "path:\"AP2/FIAE/10 Lernmodule/2 Entwicklung\" OR file:\"Aufgaben Algorithmen\" OR file:\"Karten Algorithmen\"",
+      "color": {
+        "a": 1,
+        "rgb": 14701212
+      }
+    },
+    {
+      "query": "path:\"1 Wirtschafts- und Sozialkunde\" OR file:\"Aufgaben WiSo\" OR file:\"Karten WiSo\" OR file:\"WiSo-Quiz\"",
+      "color": {
+        "a": 1,
+        "rgb": 3125604
+      }
+    },
+    {
+      "query": "path:\"2 Projektarbeit\" OR file:\"Aufgaben Projektarbeit\" OR file:\"Karten Projektarbeit\"",
+      "color": {
+        "a": 1,
+        "rgb": 2864051
+      }
+    },
+    {
+      "query": "path:\"20 Aufgaben/Pruefungen\"",
       "color": {
         "a": 1,
         "rgb": 14725168
       }
     }
   ],
-  "collapse-display": true,
+  "collapse-display": false,
   "showArrow": false,
   "textFadeMultiplier": -1,
   "nodeSizeMultiplier": 1.2,
   "lineSizeMultiplier": 1,
-  "collapse-forces": true,
+  "collapse-forces": false,
   "centerStrength": 0.45,
-  "repelStrength": 12,
-  "linkStrength": 0.8,
-  "linkDistance": 120,
-  "scale": 0.9999999999999977,
+  "repelStrength": 16.4738292011019,
+  "linkStrength": 0.893853658536585,
+  "linkDistance": 30,
+  "scale": 0.13168724279835323,
   "close": false
 }

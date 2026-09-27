@@ -1,0 +1,86 @@
+{
+  "name": "AP2",
+  "modulOrdner": ["AP2/FISI/10 Lernmodule", "AP2/FIAE/10 Lernmodule", "AP2/Gemeinsam/10 Lernmodule"],
+  "fragenOrdner": ["AP2/99 System/fragen/FISI", "AP2/99 System/fragen/FIAE", "AP2/99 System/fragen/Gemeinsam"],
+  "kartenOrdner": ["AP2/99 System/karten/FISI", "AP2/99 System/karten/FIAE", "AP2/99 System/karten/Gemeinsam"],
+  "bereiche": ["Konzeption und Administration", "Netzwerke", "Planen eines Softwareproduktes", "Algorithmen", "WiSo", "Projektarbeit"],
+  "seiten": { "quiz": "AP2/Gemeinsam/20 Aufgaben/WiSo-Quiz", "trainer": "AP2/Gemeinsam/20 Aufgaben/WiSo-Quiz", "karten": "AP2/Gemeinsam/20 Aufgaben/WiSo-Quiz" },
+  "trainerModul": {
+    "urlaub-jugend": "WISO-1", "sozialversicherung": "WISO-4", "gewinnverteilung": "WISO-5",
+    "netzplan": "PA-1", "nutzwert": "PA-1", "afa-amortisation": "PA-1"
+  },
+  "trainerAbschnitt": {
+    "urlaub-jugend": "Urlaub", "sozialversicherung": "Beiträge berechnen", "gewinnverteilung": "Gewinnverteilung",
+    "netzplan": "Zeitplanung", "nutzwert": "Entscheidungen begründen", "afa-amortisation": "Wirtschaftlichkeit"
+  },
+  "profile": [
+    {
+      "praefix": "AP2/FISI",
+      "name": "AP2 FISI",
+      "modulOrdner": ["AP2/FISI/10 Lernmodule", "AP2/Gemeinsam/10 Lernmodule"],
+      "fragenOrdner": ["AP2/99 System/fragen/FISI", "AP2/99 System/fragen/Gemeinsam"],
+      "kartenOrdner": ["AP2/99 System/karten/FISI", "AP2/99 System/karten/Gemeinsam"],
+      "bereiche": ["Konzeption und Administration", "Netzwerke", "WiSo", "Projektarbeit"],
+      "seiten": { "quiz": "AP2/FISI/30 Trainer/AP2 FISI Quiz", "trainer": "AP2/FISI/30 Trainer/AP2 FISI Trainer", "karten": "AP2/FISI/30 Trainer/AP2 FISI Karteikarten" },
+      "trainerModul": {
+        "netzteil": "FISI-1", "stromkosten": "FISI-1", "usv-dimension": "FISI-1", "usv-akku": "FISI-1",
+        "raid": "FISI-3", "raid-planung": "FISI-3", "speicherbedarf": "FISI-3", "einheiten": "FISI-3", "datenmenge": "FISI-3",
+        "backup": "FISI-4", "backup-plan": "FISI-4", "generationen": "FISI-4", "verfuegbarkeit": "FISI-4",
+        "passwort": "FISI-5",
+        "trace": "FISI-7", "ganzzahl-modulo": "FISI-7", "datentyp-bereich": "FISI-7",
+        "sql-ergebnis": "FISI-8",
+        "subnetz-analyse": "FISI-9", "subnetz-teilen": "FISI-9", "subnetz-hosts": "FISI-9", "subnetz-gleich": "FISI-9", "vlsm": "FISI-9", "maske-praefix": "FISI-9",
+        "ipv6-praefix": "FISI-10", "ipv6-subnetze": "FISI-10", "ipv6-kuerzen": "FISI-10", "ipv6-expandieren": "FISI-10",
+        "ports": "FISI-12",
+        "schluessel": "FISI-15",
+        "uebertragung": "FISI-16", "transferzeit": "FISI-16", "bandbreite": "FISI-16", "verfuegbarkeit-kombi": "FISI-16"
+      },
+      "trainerAbschnitt": {
+        "netzteil": "Netzteil dimensionieren", "stromkosten": "Energiekosten", "usv-dimension": "USV auswählen", "usv-akku": "USV auswählen",
+        "raid": "RAID-Level im Vergleich", "raid-planung": "Plattenanzahl planen", "speicherbedarf": "Speicherbedarf berechnen", "einheiten": "Binäre Einheiten", "datenmenge": "Speicherbedarf von Medien",
+        "backup": "Sicherungsarten", "backup-plan": "Rücksicherung", "generationen": "Generationenprinzip", "verfuegbarkeit": "RTO, RPO und Verfügbarkeit",
+        "passwort": "Passwortrichtlinien",
+        "trace": "Schreibtischtest", "ganzzahl-modulo": "Ganzzahldivision und Modulo", "datentyp-bereich": "Datentypen",
+        "sql-ergebnis": "SQL-Abfragen lesen",
+        "subnetz-analyse": "Adresse analysieren", "subnetz-teilen": "Subnetze bilden", "subnetz-hosts": "VLSM", "subnetz-gleich": "Adresse analysieren", "vlsm": "VLSM", "maske-praefix": "Adresse analysieren",
+        "ipv6-praefix": "/64-Netze bilden", "ipv6-subnetze": "/64-Netze bilden", "ipv6-kuerzen": "Schreibweise", "ipv6-expandieren": "Schreibweise",
+        "ports": "Firewallregeln",
+        "schluessel": "Verschlüsselungsverfahren",
+        "uebertragung": "Übertragungszeit", "transferzeit": "Übertragungszeit", "bandbreite": "Bandbreite berechnen", "verfuegbarkeit-kombi": "Verfügbarkeit von Verbindungen"
+      }
+    },
+    {
+      "praefix": "AP2/FIAE",
+      "name": "AP2 FIAE",
+      "modulOrdner": ["AP2/FIAE/10 Lernmodule", "AP2/Gemeinsam/10 Lernmodule"],
+      "fragenOrdner": ["AP2/99 System/fragen/FIAE", "AP2/99 System/fragen/Gemeinsam"],
+      "kartenOrdner": ["AP2/99 System/karten/FIAE", "AP2/99 System/karten/Gemeinsam"],
+      "bereiche": ["Planen eines Softwareproduktes", "Algorithmen", "WiSo", "Projektarbeit"],
+      "seiten": { "quiz": "AP2/FIAE/30 Trainer/AP2 FIAE Quiz", "trainer": "AP2/FIAE/30 Trainer/AP2 FIAE Trainer", "karten": "AP2/FIAE/30 Trainer/AP2 FIAE Karteikarten" },
+      "trainerModul": {
+        "netzplan": "FIAE-1", "nutzwert": "FIAE-1",
+        "speicherbedarf": "FIAE-5", "datenmenge": "FIAE-5", "einheiten": "FIAE-5",
+        "passwort": "FIAE-8", "schluessel": "FIAE-8",
+        "trace": "FIAE-9", "ganzzahl-modulo": "FIAE-9",
+        "datentyp-bereich": "FIAE-10", "zahlensysteme": "FIAE-10", "zweierkomplement": "FIAE-10",
+        "sql-ergebnis": "FIAE-12"
+      },
+      "trainerAbschnitt": {
+        "netzplan": "Netzplan", "nutzwert": "Entscheidungen im Projekt",
+        "speicherbedarf": "Speicherbedarf abschätzen", "datenmenge": "Speicherbedarf abschätzen", "einheiten": "Speicherbedarf abschätzen",
+        "passwort": "Passwörter sicher speichern", "schluessel": "Verschlüsselungsverfahren",
+        "trace": "Schreibtischtest", "ganzzahl-modulo": "Ganzzahldivision und Modulo",
+        "datentyp-bereich": "Datentypen", "zahlensysteme": "Datentypen", "zweierkomplement": "Datentypen",
+        "sql-ergebnis": "SELECT Schritt für Schritt"
+      }
+    },
+    {
+      "praefix": "AP2/Gemeinsam",
+      "name": "AP2 WiSo und Projektarbeit",
+      "modulOrdner": ["AP2/Gemeinsam/10 Lernmodule"],
+      "fragenOrdner": ["AP2/99 System/fragen/Gemeinsam"],
+      "kartenOrdner": ["AP2/99 System/karten/Gemeinsam"],
+      "bereiche": ["WiSo", "Projektarbeit"]
+    }
+  ]
+}

@@ -1,63 +1,110 @@
-/* AP1-Lernvault – farbige Navigation in der Seitenleiste.
-   Farben wie in den Schaubildern: Netzwerk blau, Hardware orange, Software lila, IT-Sicherheit rot,
-   Wirtschaft grün, Projekt und Service türkis. Funktioniert mit jedem Theme (CSS-Snippet). */
+/* Lernvault – farbige Navigation in der Seitenleiste (AP1 und AP2).
+   Eine Farbsprache für beide Prüfungsteile:
+   Netzwerk blau · Hardware/Konzeption orange · Software/Planen lila · IT-Sicherheit rot ·
+   Wirtschaft/WiSo grün · Projekt/Projektarbeit türkis · Algorithmen pink.
+   Funktioniert mit jedem Theme (CSS-Snippet). */
 
-/* Hauptordner: fett, mit Symbol */
-.nav-folder-title[data-path="00 Start"],
-.nav-folder-title[data-path="10 Lernmodule"],
-.nav-folder-title[data-path="20 Aufgaben"],
-.nav-folder-title[data-path="30 Trainer"],
-.nav-folder-title[data-path="40 Karteikarten"],
-.nav-folder-title[data-path="50 Nachschlagen"] { font-weight: 650; }
-.nav-folder-title[data-path="00 Start"] .nav-folder-title-content::before { content: "🏠 "; }
-.nav-folder-title[data-path="10 Lernmodule"] .nav-folder-title-content::before { content: "📘 "; }
-.nav-folder-title[data-path="20 Aufgaben"] .nav-folder-title-content::before { content: "📝 "; }
-.nav-folder-title[data-path="30 Trainer"] .nav-folder-title-content::before { content: "🧮 "; }
-.nav-folder-title[data-path="40 Karteikarten"] .nav-folder-title-content::before { content: "🃏 "; }
-.nav-folder-title[data-path="50 Nachschlagen"] .nav-folder-title-content::before { content: "🔎 "; }
-.nav-folder-title[data-path="00 Start"] { color: #e0b030; }
+/* ------------------------------------------------------------------ Prüfungsteile */
+.nav-folder-title[data-path="AP1"],
+.nav-folder-title[data-path="AP2"] { font-weight: 750; letter-spacing: 0.02em; }
+.nav-folder-title[data-path="AP1"] .nav-folder-title-content::before { content: "① "; color: #e0b030; }
+.nav-folder-title[data-path="AP2"] .nav-folder-title-content::before { content: "② "; color: #e0b030; }
+.nav-file-title[data-path="Ausbildungspruefungen.md"] { font-weight: 650; color: #e0b030; }
+.nav-file-title[data-path="Ausbildungspruefungen.md"] .nav-file-title-content::before { content: "🏠 "; }
+
+/* Fachrichtungen und gemeinsamer Teil in AP2 */
+.nav-folder-title[data-path="AP2/FISI"],
+.nav-folder-title[data-path="AP2/FIAE"],
+.nav-folder-title[data-path="AP2/Gemeinsam"] { font-weight: 700; }
+.nav-folder-title[data-path="AP2/FISI"] .nav-folder-title-content::before { content: "🖧 "; }
+.nav-folder-title[data-path="AP2/FIAE"] .nav-folder-title-content::before { content: "⌨️ "; }
+.nav-folder-title[data-path="AP2/Gemeinsam"] .nav-folder-title-content::before { content: "🤝 "; }
+.nav-folder-title[data-path="AP2/FISI"] { color: #ee8033; }
+.nav-folder-title[data-path="AP2/FIAE"] { color: #9b7cf0; }
+.nav-folder-title[data-path="AP2/Gemeinsam"] { color: #2fb164; }
+
+/* ------------------------------------------------------------------ Hauptordner (in allen Bereichen) */
+.nav-folder-title[data-path$="/00 Start"],
+.nav-folder-title[data-path$="/10 Lernmodule"],
+.nav-folder-title[data-path$="/20 Aufgaben"],
+.nav-folder-title[data-path$="/30 Trainer"],
+.nav-folder-title[data-path$="/40 Karteikarten"],
+.nav-folder-title[data-path$="/50 Nachschlagen"] { font-weight: 650; }
+.nav-folder-title[data-path$="/00 Start"] .nav-folder-title-content::before { content: "🏠 "; }
+.nav-folder-title[data-path$="/10 Lernmodule"] .nav-folder-title-content::before { content: "📘 "; }
+.nav-folder-title[data-path$="/20 Aufgaben"] .nav-folder-title-content::before { content: "📝 "; }
+.nav-folder-title[data-path$="/30 Trainer"] .nav-folder-title-content::before { content: "🧮 "; }
+.nav-folder-title[data-path$="/40 Karteikarten"] .nav-folder-title-content::before { content: "🃏 "; }
+.nav-folder-title[data-path$="/50 Nachschlagen"] .nav-folder-title-content::before { content: "🔎 "; }
+.nav-folder-title[data-path$="/00 Start"] { color: #e0b030; }
+.nav-folder-title[data-path$="/Pruefungen"] .nav-folder-title-content::before,
+.nav-folder-title[data-path$="/Probeprüfungen"] .nav-folder-title-content::before { content: "🗂️ "; }
 
 /* Technik-Ordner zurücknehmen */
-.nav-folder-title[data-path="99 System"],
-.nav-folder-title[data-path^="99 System/"],
-.nav-file-title[data-path^="99 System/"] { opacity: 0.5; }
-.nav-folder-title[data-path="99 System"] .nav-folder-title-content::before { content: "⚙️ "; }
+.nav-folder-title[data-path$="/99 System"],
+.nav-folder-title[data-path*="/99 System/"],
+.nav-file-title[data-path*="/99 System/"] { opacity: 0.5; }
+.nav-folder-title[data-path$="/99 System"] .nav-folder-title-content::before { content: "⚙️ "; }
 
-/* Bereiche: farbiger Balken links und farbiger Text */
+/* ------------------------------------------------------------------ Themenbereiche
+   Farbiger Balken links und farbiger Text: Modulordner, ihre Module sowie die passenden Aufgaben- und Kartenseiten. */
 
-/* Netzwerk */
-.nav-folder-title[data-path="10 Lernmodule/1 Netzwerk"] { color: #4a8ff0; font-weight: 650; box-shadow: inset 3px 0 0 #4a8ff0; }
-.nav-file-title[data-path^="10 Lernmodule/1 Netzwerk/"], .nav-file-title[data-path="20 Aufgaben/Aufgaben Netzwerk.md"], .nav-file-title[data-path="40 Karteikarten/Karten Netzwerk.md"] { box-shadow: inset 3px 0 0 #4a8ff0; }
-.nav-file-title[data-path^="10 Lernmodule/1 Netzwerk/"] .nav-file-title-content, .nav-file-title[data-path="20 Aufgaben/Aufgaben Netzwerk.md"] .nav-file-title-content, .nav-file-title[data-path="40 Karteikarten/Karten Netzwerk.md"] .nav-file-title-content { color: #4a8ff0; }
+/* Blau – AP1 Netzwerk · AP2 FISI Netzwerke */
+.nav-folder-title[data-path="AP1/10 Lernmodule/1 Netzwerk"],
+.nav-folder-title[data-path="AP2/FISI/10 Lernmodule/2 Analyse und Entwicklung von Netzwerken"] { color: #4a8ff0; font-weight: 650; box-shadow: inset 3px 0 0 #4a8ff0; }
+.nav-file-title[data-path^="AP1/10 Lernmodule/1 Netzwerk/"], .nav-file-title[data-path="AP1/20 Aufgaben/Aufgaben Netzwerk.md"], .nav-file-title[data-path="AP1/40 Karteikarten/Karten Netzwerk.md"],
+.nav-file-title[data-path^="AP2/FISI/10 Lernmodule/2 Analyse und Entwicklung von Netzwerken/"], .nav-file-title[data-path="AP2/FISI/20 Aufgaben/Aufgaben Netzwerke.md"], .nav-file-title[data-path="AP2/FISI/40 Karteikarten/Karten Netzwerke.md"] { box-shadow: inset 3px 0 0 #4a8ff0; }
+.nav-file-title[data-path^="AP1/10 Lernmodule/1 Netzwerk/"] .nav-file-title-content, .nav-file-title[data-path="AP1/20 Aufgaben/Aufgaben Netzwerk.md"] .nav-file-title-content, .nav-file-title[data-path="AP1/40 Karteikarten/Karten Netzwerk.md"] .nav-file-title-content,
+.nav-file-title[data-path^="AP2/FISI/10 Lernmodule/2 Analyse und Entwicklung von Netzwerken/"] .nav-file-title-content, .nav-file-title[data-path="AP2/FISI/20 Aufgaben/Aufgaben Netzwerke.md"] .nav-file-title-content, .nav-file-title[data-path="AP2/FISI/40 Karteikarten/Karten Netzwerke.md"] .nav-file-title-content { color: #4a8ff0; }
 
-/* Hardware */
-.nav-folder-title[data-path="10 Lernmodule/2 Hardware"] { color: #ee8033; font-weight: 650; box-shadow: inset 3px 0 0 #ee8033; }
-.nav-file-title[data-path^="10 Lernmodule/2 Hardware/"], .nav-file-title[data-path="20 Aufgaben/Aufgaben Hardware.md"], .nav-file-title[data-path="40 Karteikarten/Karten Hardware.md"] { box-shadow: inset 3px 0 0 #ee8033; }
-.nav-file-title[data-path^="10 Lernmodule/2 Hardware/"] .nav-file-title-content, .nav-file-title[data-path="20 Aufgaben/Aufgaben Hardware.md"] .nav-file-title-content, .nav-file-title[data-path="40 Karteikarten/Karten Hardware.md"] .nav-file-title-content { color: #ee8033; }
+/* Orange – AP1 Hardware · AP2 FISI Konzeption und Administration */
+.nav-folder-title[data-path="AP1/10 Lernmodule/2 Hardware"],
+.nav-folder-title[data-path="AP2/FISI/10 Lernmodule/1 Konzeption und Administration"] { color: #ee8033; font-weight: 650; box-shadow: inset 3px 0 0 #ee8033; }
+.nav-file-title[data-path^="AP1/10 Lernmodule/2 Hardware/"], .nav-file-title[data-path="AP1/20 Aufgaben/Aufgaben Hardware.md"], .nav-file-title[data-path="AP1/40 Karteikarten/Karten Hardware.md"],
+.nav-file-title[data-path^="AP2/FISI/10 Lernmodule/1 Konzeption und Administration/"], .nav-file-title[data-path="AP2/FISI/20 Aufgaben/Aufgaben Konzeption und Administration.md"], .nav-file-title[data-path="AP2/FISI/40 Karteikarten/Karten Konzeption und Administration.md"] { box-shadow: inset 3px 0 0 #ee8033; }
+.nav-file-title[data-path^="AP1/10 Lernmodule/2 Hardware/"] .nav-file-title-content, .nav-file-title[data-path="AP1/20 Aufgaben/Aufgaben Hardware.md"] .nav-file-title-content, .nav-file-title[data-path="AP1/40 Karteikarten/Karten Hardware.md"] .nav-file-title-content,
+.nav-file-title[data-path^="AP2/FISI/10 Lernmodule/1 Konzeption und Administration/"] .nav-file-title-content, .nav-file-title[data-path="AP2/FISI/20 Aufgaben/Aufgaben Konzeption und Administration.md"] .nav-file-title-content, .nav-file-title[data-path="AP2/FISI/40 Karteikarten/Karten Konzeption und Administration.md"] .nav-file-title-content { color: #ee8033; }
 
-/* Software */
-.nav-folder-title[data-path="10 Lernmodule/3 Software"] { color: #9b7cf0; font-weight: 650; box-shadow: inset 3px 0 0 #9b7cf0; }
-.nav-file-title[data-path^="10 Lernmodule/3 Software/"], .nav-file-title[data-path="20 Aufgaben/Aufgaben Software.md"], .nav-file-title[data-path="40 Karteikarten/Karten Software.md"] { box-shadow: inset 3px 0 0 #9b7cf0; }
-.nav-file-title[data-path^="10 Lernmodule/3 Software/"] .nav-file-title-content, .nav-file-title[data-path="20 Aufgaben/Aufgaben Software.md"] .nav-file-title-content, .nav-file-title[data-path="40 Karteikarten/Karten Software.md"] .nav-file-title-content { color: #9b7cf0; }
+/* Lila – AP1 Software · AP2 FIAE Planen eines Softwareproduktes */
+.nav-folder-title[data-path="AP1/10 Lernmodule/3 Software"],
+.nav-folder-title[data-path="AP2/FIAE/10 Lernmodule/1 Planen eines Softwareproduktes"] { color: #9b7cf0; font-weight: 650; box-shadow: inset 3px 0 0 #9b7cf0; }
+.nav-file-title[data-path^="AP1/10 Lernmodule/3 Software/"], .nav-file-title[data-path="AP1/20 Aufgaben/Aufgaben Software.md"], .nav-file-title[data-path="AP1/40 Karteikarten/Karten Software.md"],
+.nav-file-title[data-path^="AP2/FIAE/10 Lernmodule/1 Planen eines Softwareproduktes/"], .nav-file-title[data-path="AP2/FIAE/20 Aufgaben/Aufgaben Planen eines Softwareproduktes.md"], .nav-file-title[data-path="AP2/FIAE/40 Karteikarten/Karten Planen eines Softwareproduktes.md"] { box-shadow: inset 3px 0 0 #9b7cf0; }
+.nav-file-title[data-path^="AP1/10 Lernmodule/3 Software/"] .nav-file-title-content, .nav-file-title[data-path="AP1/20 Aufgaben/Aufgaben Software.md"] .nav-file-title-content, .nav-file-title[data-path="AP1/40 Karteikarten/Karten Software.md"] .nav-file-title-content,
+.nav-file-title[data-path^="AP2/FIAE/10 Lernmodule/1 Planen eines Softwareproduktes/"] .nav-file-title-content, .nav-file-title[data-path="AP2/FIAE/20 Aufgaben/Aufgaben Planen eines Softwareproduktes.md"] .nav-file-title-content, .nav-file-title[data-path="AP2/FIAE/40 Karteikarten/Karten Planen eines Softwareproduktes.md"] .nav-file-title-content { color: #9b7cf0; }
 
-/* IT-Sicherheit */
-.nav-folder-title[data-path="10 Lernmodule/4 IT-Sicherheit"] { color: #e5484d; font-weight: 650; box-shadow: inset 3px 0 0 #e5484d; }
-.nav-file-title[data-path^="10 Lernmodule/4 IT-Sicherheit/"], .nav-file-title[data-path="20 Aufgaben/Aufgaben IT-Sicherheit.md"], .nav-file-title[data-path="40 Karteikarten/Karten IT-Sicherheit.md"] { box-shadow: inset 3px 0 0 #e5484d; }
-.nav-file-title[data-path^="10 Lernmodule/4 IT-Sicherheit/"] .nav-file-title-content, .nav-file-title[data-path="20 Aufgaben/Aufgaben IT-Sicherheit.md"] .nav-file-title-content, .nav-file-title[data-path="40 Karteikarten/Karten IT-Sicherheit.md"] .nav-file-title-content { color: #e5484d; }
+/* Pink – AP2 FIAE Entwicklung und Umsetzung von Algorithmen */
+.nav-folder-title[data-path="AP2/FIAE/10 Lernmodule/2 Entwicklung und Umsetzung von Algorithmen"] { color: #e0609e; font-weight: 650; box-shadow: inset 3px 0 0 #e0609e; }
+.nav-file-title[data-path^="AP2/FIAE/10 Lernmodule/2 Entwicklung und Umsetzung von Algorithmen/"], .nav-file-title[data-path="AP2/FIAE/20 Aufgaben/Aufgaben Algorithmen.md"], .nav-file-title[data-path="AP2/FIAE/40 Karteikarten/Karten Algorithmen.md"] { box-shadow: inset 3px 0 0 #e0609e; }
+.nav-file-title[data-path^="AP2/FIAE/10 Lernmodule/2 Entwicklung und Umsetzung von Algorithmen/"] .nav-file-title-content, .nav-file-title[data-path="AP2/FIAE/20 Aufgaben/Aufgaben Algorithmen.md"] .nav-file-title-content, .nav-file-title[data-path="AP2/FIAE/40 Karteikarten/Karten Algorithmen.md"] .nav-file-title-content { color: #e0609e; }
 
-/* Wirtschaft */
-.nav-folder-title[data-path="10 Lernmodule/5 Wirtschaft"] { color: #2fb164; font-weight: 650; box-shadow: inset 3px 0 0 #2fb164; }
-.nav-file-title[data-path^="10 Lernmodule/5 Wirtschaft/"], .nav-file-title[data-path="20 Aufgaben/Aufgaben Wirtschaft.md"], .nav-file-title[data-path="40 Karteikarten/Karten Wirtschaft.md"] { box-shadow: inset 3px 0 0 #2fb164; }
-.nav-file-title[data-path^="10 Lernmodule/5 Wirtschaft/"] .nav-file-title-content, .nav-file-title[data-path="20 Aufgaben/Aufgaben Wirtschaft.md"] .nav-file-title-content, .nav-file-title[data-path="40 Karteikarten/Karten Wirtschaft.md"] .nav-file-title-content { color: #2fb164; }
+/* Rot – AP1 IT-Sicherheit */
+.nav-folder-title[data-path="AP1/10 Lernmodule/4 IT-Sicherheit"] { color: #e5484d; font-weight: 650; box-shadow: inset 3px 0 0 #e5484d; }
+.nav-file-title[data-path^="AP1/10 Lernmodule/4 IT-Sicherheit/"], .nav-file-title[data-path="AP1/20 Aufgaben/Aufgaben IT-Sicherheit.md"], .nav-file-title[data-path="AP1/40 Karteikarten/Karten IT-Sicherheit.md"] { box-shadow: inset 3px 0 0 #e5484d; }
+.nav-file-title[data-path^="AP1/10 Lernmodule/4 IT-Sicherheit/"] .nav-file-title-content, .nav-file-title[data-path="AP1/20 Aufgaben/Aufgaben IT-Sicherheit.md"] .nav-file-title-content, .nav-file-title[data-path="AP1/40 Karteikarten/Karten IT-Sicherheit.md"] .nav-file-title-content { color: #e5484d; }
 
-/* Projekt und Service */
-.nav-folder-title[data-path="10 Lernmodule/6 Projekt und Service"] { color: #2bb3b3; font-weight: 650; box-shadow: inset 3px 0 0 #2bb3b3; }
-.nav-file-title[data-path^="10 Lernmodule/6 Projekt und Service/"], .nav-file-title[data-path="20 Aufgaben/Aufgaben Projekt und Service.md"], .nav-file-title[data-path="40 Karteikarten/Karten Projekt und Service.md"] { box-shadow: inset 3px 0 0 #2bb3b3; }
-.nav-file-title[data-path^="10 Lernmodule/6 Projekt und Service/"] .nav-file-title-content, .nav-file-title[data-path="20 Aufgaben/Aufgaben Projekt und Service.md"] .nav-file-title-content, .nav-file-title[data-path="40 Karteikarten/Karten Projekt und Service.md"] .nav-file-title-content { color: #2bb3b3; }
+/* Grün – AP1 Wirtschaft · AP2 Wirtschafts- und Sozialkunde */
+.nav-folder-title[data-path="AP1/10 Lernmodule/5 Wirtschaft"],
+.nav-folder-title[data-path="AP2/Gemeinsam/10 Lernmodule/1 Wirtschafts- und Sozialkunde"] { color: #2fb164; font-weight: 650; box-shadow: inset 3px 0 0 #2fb164; }
+.nav-file-title[data-path^="AP1/10 Lernmodule/5 Wirtschaft/"], .nav-file-title[data-path="AP1/20 Aufgaben/Aufgaben Wirtschaft.md"], .nav-file-title[data-path="AP1/40 Karteikarten/Karten Wirtschaft.md"],
+.nav-file-title[data-path^="AP2/Gemeinsam/10 Lernmodule/1 Wirtschafts- und Sozialkunde/"], .nav-file-title[data-path="AP2/Gemeinsam/20 Aufgaben/Aufgaben WiSo.md"], .nav-file-title[data-path="AP2/Gemeinsam/20 Aufgaben/WiSo-Quiz.md"], .nav-file-title[data-path="AP2/Gemeinsam/40 Karteikarten/Karten WiSo.md"] { box-shadow: inset 3px 0 0 #2fb164; }
+.nav-file-title[data-path^="AP1/10 Lernmodule/5 Wirtschaft/"] .nav-file-title-content, .nav-file-title[data-path="AP1/20 Aufgaben/Aufgaben Wirtschaft.md"] .nav-file-title-content, .nav-file-title[data-path="AP1/40 Karteikarten/Karten Wirtschaft.md"] .nav-file-title-content,
+.nav-file-title[data-path^="AP2/Gemeinsam/10 Lernmodule/1 Wirtschafts- und Sozialkunde/"] .nav-file-title-content, .nav-file-title[data-path="AP2/Gemeinsam/20 Aufgaben/Aufgaben WiSo.md"] .nav-file-title-content, .nav-file-title[data-path="AP2/Gemeinsam/20 Aufgaben/WiSo-Quiz.md"] .nav-file-title-content, .nav-file-title[data-path="AP2/Gemeinsam/40 Karteikarten/Karten WiSo.md"] .nav-file-title-content { color: #2fb164; }
+
+/* Türkis – AP1 Projekt und Service · AP2 Projektarbeit */
+.nav-folder-title[data-path="AP1/10 Lernmodule/6 Projekt und Service"],
+.nav-folder-title[data-path="AP2/Gemeinsam/10 Lernmodule/2 Projektarbeit"] { color: #2bb3b3; font-weight: 650; box-shadow: inset 3px 0 0 #2bb3b3; }
+.nav-file-title[data-path^="AP1/10 Lernmodule/6 Projekt und Service/"], .nav-file-title[data-path="AP1/20 Aufgaben/Aufgaben Projekt und Service.md"], .nav-file-title[data-path="AP1/40 Karteikarten/Karten Projekt und Service.md"],
+.nav-file-title[data-path^="AP2/Gemeinsam/10 Lernmodule/2 Projektarbeit/"], .nav-file-title[data-path="AP2/Gemeinsam/20 Aufgaben/Aufgaben Projektarbeit.md"], .nav-file-title[data-path="AP2/Gemeinsam/40 Karteikarten/Karten Projektarbeit.md"] { box-shadow: inset 3px 0 0 #2bb3b3; }
+.nav-file-title[data-path^="AP1/10 Lernmodule/6 Projekt und Service/"] .nav-file-title-content, .nav-file-title[data-path="AP1/20 Aufgaben/Aufgaben Projekt und Service.md"] .nav-file-title-content, .nav-file-title[data-path="AP1/40 Karteikarten/Karten Projekt und Service.md"] .nav-file-title-content,
+.nav-file-title[data-path^="AP2/Gemeinsam/10 Lernmodule/2 Projektarbeit/"] .nav-file-title-content, .nav-file-title[data-path="AP2/Gemeinsam/20 Aufgaben/Aufgaben Projektarbeit.md"] .nav-file-title-content, .nav-file-title[data-path="AP2/Gemeinsam/40 Karteikarten/Karten Projektarbeit.md"] .nav-file-title-content { color: #2bb3b3; }
+
+/* Echte Prüfungssätze (AP2) – goldener Balken */
+.nav-file-title[data-path*="/20 Aufgaben/Pruefungen/"][data-path$=".md"] { box-shadow: inset 3px 0 0 #e0b030; }
 
 /* Aktive Datei trotz Farbe gut erkennbar */
 .nav-file-title.is-active { background-color: var(--background-modifier-active-hover); }
 
 /* Bereichsübersichten hervorheben (Knotenpunkte mit Lernpfad) */
-.nav-file-title[data-path^="10 Lernmodule/"][data-path*="/Übersicht "] .nav-file-title-content { font-weight: 650; }
-.nav-file-title[data-path^="10 Lernmodule/"][data-path*="/Übersicht "] .nav-file-title-content::before { content: "🗺️ "; }
+.nav-file-title[data-path*="/10 Lernmodule/"][data-path*="/Übersicht "] .nav-file-title-content { font-weight: 650; }
+.nav-file-title[data-path*="/10 Lernmodule/"][data-path*="/Übersicht "] .nav-file-title-content::before { content: "🗺️ "; }

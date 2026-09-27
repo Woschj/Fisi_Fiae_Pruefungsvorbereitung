@@ -1,0 +1,10 @@
+{
+  "name": "AP1",
+  "modulOrdner": ["AP1/10 Lernmodule"],
+  "fragenOrdner": ["AP1/99 System/fragen"],
+  "kartenOrdner": ["AP1/99 System/karten"],
+  "bereiche": ["Netzwerk", "Hardware", "Software", "IT-Sicherheit", "Wirtschaft", "Projekt"],
+  "seiten": { "quiz": "AP1/30 Trainer/Quiz", "trainer": "AP1/30 Trainer/Trainer", "karten": "AP1/30 Trainer/Karteikarten" },
+  "trainerModul": {},
+  "trainerAbschnitt": {}
+}

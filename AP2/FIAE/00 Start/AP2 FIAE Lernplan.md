@@ -56,6 +56,7 @@ Rund **6 Stunden pro Woche** plus täglich **10 Minuten** Quiz oder Karteikarten
 ## Woche 10 – Projekt abschließen
 - [ ] Projektdokumentation fertigstellen (Checkliste in [[PA-1 Projektantrag, Durchführung und Dokumentation]])
 - [ ] [[FIAE Probeprüfung 3]] – beide Fachteile und WiSo unter Zeit
+- [ ] [[FIAE Probeprüfung 4]] – Generalprobe in der letzten Woche
 
 ## Woche 11 – Generalprobe
 - [ ] Schwächste Probeprüfung erneut an einem Tag unter echten Bedingungen lösen

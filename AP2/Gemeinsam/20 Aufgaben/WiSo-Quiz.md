@@ -9,7 +9,7 @@ Die WiSo-Prüfung besteht aus **30 gebundenen Aufgaben in 60 Minuten** (ankreuze
 > - Erst alle Aufgaben lesen, die sicheren sofort lösen – **2 Minuten pro Aufgabe**.
 > - Bei Rechenaufgaben (Urlaub, Gewinnanteil, Beiträge) Rechenweg auf dem Konzeptpapier notieren.
 > - Aussagen wie „immer“, „nie“, „ausschließlich“ sind meistens falsch.
-> - Für vollständige Multiple-Choice-Simulationen mit anklickbaren Kästchen: [[WiSo Probeprüfung 1]] · [[WiSo Probeprüfung 2]] · [[WiSo Probeprüfung 3]].
+> - Für vollständige Multiple-Choice-Simulationen mit anklickbaren Kästchen: [[WiSo Probeprüfung 1]] · [[WiSo Probeprüfung 2]] · [[WiSo Probeprüfung 3]] · [[WiSo Probeprüfung 4]].
 
 ## Timer
 ```dataviewjs

@@ -58,6 +58,7 @@ Rund **6 Stunden pro Woche** plus täglich **10 Minuten** Quiz oder Karteikarten
 ## Woche 10 – Projekt abschließen
 - [ ] Projektdokumentation fertigstellen (Checkliste in [[PA-1 Projektantrag, Durchführung und Dokumentation]])
 - [ ] [[FISI Probeprüfung 3]] – beide Fachteile und WiSo unter Zeit
+- [ ] [[FISI Probeprüfung 4]] – Generalprobe in der letzten Woche
 - [ ] [[WiSo Probeprüfung 2]] wiederholen
 
 ## Woche 11 – Generalprobe

@@ -45,7 +45,7 @@ flowchart LR
 - **Aufgaben:** [[Aufgaben WiSo]] · [[Aufgaben Projektarbeit]]
 - **WiSo-Prüfungssimulation (30 Fragen, 60 min):** [[WiSo-Quiz]]
 - **Karteikarten:** [[Karten WiSo]] · [[Karten Projektarbeit]]
-- **WiSo-Probeprüfungen:** [[WiSo Probeprüfung 1]] · [[WiSo Probeprüfung 2]] · [[WiSo Probeprüfung 3]]
+- **WiSo-Probeprüfungen:** [[WiSo Probeprüfung 1]] · [[WiSo Probeprüfung 2]] · [[WiSo Probeprüfung 3]] · [[WiSo Probeprüfung 4]]
 
 ← [[AP2 Start]]
 

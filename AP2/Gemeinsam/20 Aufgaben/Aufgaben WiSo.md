@@ -5,7 +5,7 @@ tags: [ap2/aufgaben, ap2/wiso]
 # Aufgaben WiSo
 
 Die WiSo-Prüfung besteht aus **30 gebundenen Aufgaben in 60 Minuten** (Auswahl, Zuordnung, Reihenfolge, kurze Rechnungen). Die Aufgaben hier sind bewusst **offen** gestellt: Wer sie frei beantworten kann, erkennt die richtige Auswahlantwort sicher. Schwierigkeit: ★ Einstieg · ★★ Prüfungsniveau.
-**Arbeitsweise:** schriftlich antworten, Lösung aufklappen, selbst bewerten. Prüfungssimulation mit Auswahlaufgaben: [[WiSo-Quiz]] · vollständige Probeprüfungen im Prüfungsformat: [[WiSo Probeprüfung 1]] · [[WiSo Probeprüfung 2]] · [[WiSo Probeprüfung 3]]. Hilfsmittel in der Prüfung: nicht programmierbarer Taschenrechner.
+**Arbeitsweise:** schriftlich antworten, Lösung aufklappen, selbst bewerten. Prüfungssimulation mit Auswahlaufgaben: [[WiSo-Quiz]] · vollständige Probeprüfungen im Prüfungsformat: [[WiSo Probeprüfung 1]] · [[WiSo Probeprüfung 2]] · [[WiSo Probeprüfung 3]] · [[WiSo Probeprüfung 4]]. Hilfsmittel in der Prüfung: nicht programmierbarer Taschenrechner.
 
 > [!info] Ausgangssituation
 > **Jana Wolf** (geboren am 14.05.2008) beginnt am 01.08.2025 eine Ausbildung zur Fachinformatikerin bei der **NetPlan Systemhaus GmbH** (fiktiv, 45 Beschäftigte, Sitz in Köln). Der Betrieb ist tarifgebunden und hat einen Betriebsrat.

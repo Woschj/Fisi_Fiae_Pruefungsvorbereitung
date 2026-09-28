@@ -7,9 +7,9 @@ Interaktive Probeprüfungen mit Timer, Punktespeicherung und ausklappbaren Muste
 
 | Fachrichtung | Umfang | Übersicht |
 |---|---|---|
-| **FISI** | Drei vollständige Varianten mit beiden Fachbereichen und WiSo | [[AP2/FISI/20 Aufgaben/Pruefungen/Uebersicht FISI AP2|FISI-Probeprüfungen]] |
-| **FIAE** | Drei vollständige Varianten mit beiden Fachbereichen und WiSo | [[AP2/FIAE/20 Aufgaben/Pruefungen/Uebersicht FIAE AP2|FIAE-Probeprüfungen]] |
+| **FISI** | Vier vollständige Varianten mit beiden Fachbereichen und WiSo | [[AP2/FISI/20 Aufgaben/Pruefungen/Uebersicht FISI AP2|FISI-Probeprüfungen]] |
+| **FIAE** | Vier vollständige Varianten mit beiden Fachbereichen und WiSo | [[AP2/FIAE/20 Aufgaben/Pruefungen/Uebersicht FIAE AP2|FIAE-Probeprüfungen]] |
 
-WiSo ist für beide Fachrichtungen gleich. Zusätzlich gibt es drei eigenständige interaktive WiSo-Simulationen mit anklickbaren Multiple-Choice-Antworten: [[WiSo Probeprüfung 1]] · [[WiSo Probeprüfung 2]] · [[WiSo Probeprüfung 3]].
+WiSo ist für beide Fachrichtungen gleich. Zusätzlich gibt es vier eigenständige interaktive WiSo-Simulationen mit anklickbaren Multiple-Choice-Antworten: [[WiSo Probeprüfung 1]] · [[WiSo Probeprüfung 2]] · [[WiSo Probeprüfung 3]] · [[WiSo Probeprüfung 4]].
 
 ← [[AP2 Start]]

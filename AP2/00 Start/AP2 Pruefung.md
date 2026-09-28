@@ -23,13 +23,24 @@ tags: [ap2/pruefung, ap2/fisi, ap2/fiae]
 | Entwicklung und Umsetzung von Algorithmen | Schriftlich, 90 Minuten | 10 % |
 | Wirtschafts- und Sozialkunde | Schriftlich, 60 Minuten | 10 % |
 
-AP1 zählt mit 20 % zum Gesamtergebnis. Die genauen Anforderungen, Zeiten und Bestehensregeln richten sich nach der geltenden Ausbildungs- und Prüfungsordnung sowie den Hinweisen der zuständigen IHK.
+AP1 zählt mit 20 % zum Gesamtergebnis. Grundlage ist die Fachinformatiker-Ausbildungsverordnung (FIAusbV 2020); organisatorische Details (Fristen, Online-Portal, formale Vorgaben) regelt die IHK Köln.
 
 ## Bestehen und Bewertung
 
-Die Bestehensregeln hängen von den gewichteten Gesamtergebnissen und den Mindestleistungen in den Prüfungsbereichen ab. Prüfe die aktuelle Regelung für deinen Ausbildungsberuf und Prüfungsjahrgang bei deiner zuständigen IHK.
+Die Abschlussprüfung ist nach der FIAusbV bestanden, wenn
+1. das **Gesamtergebnis** aus Teil 1 und Teil 2 mindestens **ausreichend** (50 Punkte) ist – für AP1 gibt es keine Mindestpunktzahl,
+2. das Ergebnis von **Teil 2** mindestens **ausreichend** ist,
+3. der Prüfungsbereich **Projekt** (Projektarbeit, Präsentation, Fachgespräch) mindestens **ausreichend** ist,
+4. **mindestens zwei** der drei schriftlichen AP2-Bereiche mindestens **ausreichend** sind und
+5. **kein** Prüfungsbereich von Teil 2 **ungenügend** (unter 30 Punkte) ist.
 
-Eine mündliche Ergänzungsprüfung kann unter bestimmten Voraussetzungen beantragt werden. Ablauf und Zulassung legt die zuständige IHK fest. Hinweise zur Präsentation und zum Fachgespräch: [[PA-2 Präsentation und Fachgespräch]].
+**Innerhalb des Projekts** gewichtet die IHK Köln: Projektarbeit (Dokumentation) 50 %, Präsentation 25 %, Fachgespräch 25 %.
+
+**Mündliche Ergänzungsprüfung (MEP):** Auf Antrag in genau **einem schriftlichen** AP2-Prüfungsbereich, der schlechter als ausreichend bewertet wurde, wenn sie für das Bestehen den Ausschlag geben kann. Dauer etwa 15 Minuten; schriftliches und mündliches Ergebnis werden **2 : 1** gewichtet (Beispiel: 48 schriftlich, 67 mündlich → (2 × 48 + 67) / 3 = 54,3 Punkte).
+
+**Notenschlüssel (IHK):** 100–92 sehr gut · 91–81 gut · 80–67 befriedigend · 66–50 ausreichend · 49–30 mangelhaft · 29–0 ungenügend.
+
+Hinweise zur Präsentation und zum Fachgespräch: [[PA-2 Präsentation und Fachgespräch]].
 
 ## Lernmaterial und Übung
 
@@ -37,6 +48,6 @@ Die Lernmodule und selbst erstellten Probeprüfungen bereiten auf die AP2-Anford
 
 [[AP2 Pruefungen|Zu den Probeprüfungen]] · [[Übersicht WiSo und Projektarbeit]]
 
-Gemeinsame Unterlagen zur Projektarbeit: [[AP2/Gemeinsam/50 Nachschlagen/IHK-Handreichungen|IHK-Handreichungen]]. Prüfe ergänzend immer die aktuellen Vorgaben deiner zuständigen IHK.
+Offizielle Unterlagen der IHK Köln zur Projektarbeit (Handreichung, formale Vorgaben, Fristen): [[AP2/Gemeinsam/50 Nachschlagen/IHK Köln – offizielle Informationen|IHK Köln – offizielle Informationen]].
 
 ← [[AP2 Start]]

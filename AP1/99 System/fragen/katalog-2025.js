@@ -1,4 +1,4 @@
-// Fragenpool zu den Themen, die mit dem Prüfungskatalog 2025 (ZPA Nord-West, gilt u. a. für NRW) hinzugekommen sind
+// Fragenpool zu den Themen, die mit der zweiten Auflage des Prüfungskatalogs (ab Frühjahr 2025; Aufgabenerstellung ZPA Nord-West, bundeseinheitlich) hinzugekommen sind
 [
   // ---------------------------------------------------------------- N7
   { id: "N7-01", modul: "N7", typ: "mc", niveau: 1, frage: "Welcher Teil der URL `https://www.firma.de/kontakt.php?lang=de#formular` ist der **Query-String**?",

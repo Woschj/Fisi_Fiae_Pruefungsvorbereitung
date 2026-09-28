@@ -15,7 +15,7 @@ tags: [ap2/modul, ap2/projekt]
 > [!abstract] Überblick
 > **Bereich:** [[Übersicht WiSo und Projektarbeit]]
 > **Prüfung:** betriebliche Projektarbeit mit Dokumentation – zusammen mit Präsentation und Fachgespräch **50 % der Gesamtnote**
-> **Dauer:** ca. 120 min · **Quellen:** gemeinsame [[AP2/Gemeinsam/50 Nachschlagen/IHK-Handreichungen|IHK-Handreichungen]] und formale Vorgaben deiner zuständigen IHK
+> **Dauer:** ca. 120 min · **Quellen:** Handreichung, formale Vorgaben und FAQ der IHK Köln – aktuelle Fassungen über [[AP2/Gemeinsam/50 Nachschlagen/IHK Köln – offizielle Informationen|IHK Köln – offizielle Informationen]]
 > **Grundlagen aus AP1:** [[P1 Projektmanagement und Vorgehensmodelle]] · [[P2 Netzplan und Zeitplanung]] · [[W2 Nutzwertanalyse und Entscheidungen]] · [[W3 Investition und Finanzierung]]
 
 ## Lernziele
@@ -36,6 +36,8 @@ tags: [ap2/modul, ap2/projekt]
 | reiner Projektbericht | max. **15 Seiten** | max. **20 Seiten** |
 | gesamte Dokumentation inkl. Deckblatt, Verzeichnisse, Anlagen | max. **50 Seiten** | max. **60 Seiten** |
 | Präsentation + Fachgespräch | 15 + 15 Minuten | 15 + 15 Minuten |
+
+Seitenzahlen nach den formalen Vorgaben der IHK Köln. Die FIAE-Handreichung (3. Auflage, August 2024) nennt an einer Stelle noch 15 Seiten – im Zweifel die **aktuelle** Fassung der formalen Vorgaben prüfen: [[AP2/Gemeinsam/50 Nachschlagen/IHK Köln – offizielle Informationen|IHK Köln – offizielle Informationen]].
 
 **Ablauf:** Antrag im Online-Portal der IHK → Genehmigung (ggf. mit Auflagen oder Rückgabe zur Nachbesserung, meist 1 Woche Frist) → **erst dann** Projekt durchführen → Dokumentation fristgerecht als **eine PDF-Datei** (bei der IHK Köln max. 6 MB) hochladen → Präsentation und Fachgespräch.
 

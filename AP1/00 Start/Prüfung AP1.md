@@ -3,11 +3,11 @@ tags: [ap1/orga]
 ---
 # Prüfung AP1 – Rahmen und Taktik
 
-> [!warning] Verbindlich ist immer deine IHK
-> Termine, erlaubte Hilfsmittel und Details stehen in deiner Prüfungseinladung bzw. auf der Seite deiner IHK. Hier steht der allgemeine Rahmen.
+> [!warning] Bezugsrahmen: IHK Köln
+> Der Vault ist auf die Prüfungen im Bezirk der **IHK Köln** ausgerichtet. Termine, erlaubte Hilfsmittel und Details stehen verbindlich in deiner Prüfungseinladung bzw. auf der Seite der IHK Köln. Hilfsmittel in allen schriftlichen Teilen: nicht programmierbarer, netzunabhängiger Taschenrechner.
 
-## Gültigkeit: NRW und Prüfungskatalog 2025
-- Die AP1 wird für die IT-Berufe bundeseinheitlich erstellt; die IHK Nord Westfalen nennt ausdrücklich, dass alle IT-Berufe denselben Teil 1 ablegen. [IHK Nord Westfalen](https://www.ihk.de/nordwestfalen/system/veranstaltungssuche/vstdetail-tibros/5869968/78?terminId=18594). Maßgeblich sind die Prüfungseinladung und der aktuelle Katalog des eigenen Ausbildungsberufs.
+## Gültigkeit: IHK Köln und Prüfungskatalog 2025
+- Die Aufgabensätze für AP1 und AP2 der IT-Berufe werden bundeseinheitlich von der **ZPA Nord-West** (Zentralstelle für Prüfungsaufgaben, Sitz Köln) erstellt; die **AkA** (Nürnberg) veröffentlicht gemeinsam mit ihr Informationen und Prüfungskataloge. Die IHK Köln setzt diese Aufgabensätze ein. Die AP1 ist für alle IT-Berufe gleich; die IHK Nord Westfalen nennt ausdrücklich, dass alle IT-Berufe denselben Teil 1 ablegen. [IHK Nord Westfalen](https://www.ihk.de/nordwestfalen/system/veranstaltungssuche/vstdetail-tibros/5869968/78?terminId=18594). Maßgeblich sind die Prüfungseinladung und der aktuelle Katalog des eigenen Ausbildungsberufs.
 - Die zweite Katalogauflage gilt erstmals für AP1-Prüfungen ab Frühjahr 2025. Sie schärft die Trennung zwischen AP1 und AP2: **SQL und RAID sind laut AkA ausschließlich AP2-Themen**. Struktogramm und PAP wurden gestrichen; neuere Inhalte wie UML/BPMN und KI wurden aufgenommen. Die AkA weist darauf hin, dass spätere Fortschreibungen möglich sind. [AkA-Prüfungs-News 09/24](https://www.ihk-aka.de/aktuelles/pruefungsnews/detail/202409).
 - Der AP1-Prüfungsbereich heißt „Einrichten eines IT-gestützten Arbeitsplatzes“ und ist berufsfeldübergreifend. Prüfe Details und Hilfsmittel immer bei deiner IHK.
 

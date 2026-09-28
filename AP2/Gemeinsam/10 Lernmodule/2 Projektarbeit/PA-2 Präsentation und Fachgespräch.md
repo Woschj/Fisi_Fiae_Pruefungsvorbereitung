@@ -15,7 +15,7 @@ tags: [ap2/modul, ap2/projekt]
 > [!abstract] Überblick
 > **Bereich:** [[Übersicht WiSo und Projektarbeit]]
 > **Prüfung:** 15 Minuten Präsentation der Projektarbeit, direkt danach 15 Minuten Fachgespräch
-> **Dauer:** ca. 60 min · **Quelle:** FAQ und Handreichung der IHK Köln (NRW)
+> **Dauer:** ca. 60 min · **Quelle:** FAQ und Handreichung der IHK Köln – aktuelle Fassungen über [[AP2/Gemeinsam/50 Nachschlagen/IHK Köln – offizielle Informationen|IHK Köln – offizielle Informationen]]
 > **Grundlagen aus AP1:** [[P4 Kommunikation und Kundenberatung]] · [[P6 Teamarbeit, Verhandlung und Veränderung]]
 
 ## Lernziele

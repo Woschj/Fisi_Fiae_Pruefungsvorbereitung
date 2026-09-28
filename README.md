@@ -1,6 +1,6 @@
-# FISI/FIAE-Prüfungsvorbereitung (NRW)
+# FISI/FIAE-Prüfungsvorbereitung (IHK Köln)
 
-Ein Obsidian-Vault zur Vorbereitung auf AP1 und AP2 für Fachinformatiker:innen Systemintegration (FISI) und Anwendungsentwicklung (FIAE). Enthalten sind Lernmodule, Aufgaben, interaktive Trainer, Karteikarten und Probeprüfungen. Gemeinsame AP2-Materialien für beide Fachrichtungen liegen unter `AP2/Gemeinsam`.
+Ein Obsidian-Vault zur Vorbereitung auf AP1 und AP2 für Fachinformatiker:innen Systemintegration (FISI) und Anwendungsentwicklung (FIAE), ausgerichtet auf die Prüfungen im Bezirk der IHK Köln (Aufgabensätze bundeseinheitlich von der ZPA Nord-West, Prüfungskatalog ab 2025). Enthalten sind Lernmodule, Aufgaben, interaktive Trainer, Karteikarten und Probeprüfungen. Gemeinsame AP2-Materialien für beide Fachrichtungen liegen unter `AP2/Gemeinsam`.
 
 ## Voraussetzungen
 
@@ -40,7 +40,7 @@ Vorher eigene Änderungen speichern und mit `git status` prüfen, ob lokale Date
 - Unter AP2 sind FISI und FIAE getrennt organisiert; `AP2/Gemeinsam` enthält WiSo, Projektarbeit und gemeinsam nutzbare Inhalte.
 - Öffne in Obsidian die Startseite der gewünschten Prüfung und folge den internen Wiki-Verknüpfungen.
 - Die Probeprüfungen bieten Timer, interaktive Aufgaben, Musterlösungen und Punkteauswertung. Antworten und Fortschritt werden je nach Modul lokal in Obsidian gespeichert.
-- Die gemeinsamen IHK-Handreichungen zur Projektarbeit liegen unter `AP2/Gemeinsam/50 Nachschlagen/IHK-Handreichungen`. Prüfe ergänzend immer die aktuellen Vorgaben deiner zuständigen IHK.
+- Die Handreichungen und formalen Vorgaben der IHK Köln zur Projektarbeit sind nicht im Vault enthalten (Urheberrecht). Links zu den aktuellen Fassungen stehen in `AP2/Gemeinsam/50 Nachschlagen/IHK Köln – offizielle Informationen.md`.
 
 ## Offline-Nutzung
 

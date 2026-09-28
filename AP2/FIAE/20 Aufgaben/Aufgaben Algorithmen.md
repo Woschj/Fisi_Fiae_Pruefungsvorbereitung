@@ -63,7 +63,10 @@ Schreiben Sie `rueckgabenJeStation(ausleihen : Ausleihe[]) : Integer[]`. Das Erg
 > [!success]- Lösung
 > ```
 > methode rueckgabenJeStation(ausleihen : Ausleihe[]) : Integer[]
->     zaehler : Integer[] = new Integer[80]          // mit 0 initialisiert
+>     zaehler : Integer[] = new Integer[80]
+>     für s = 0 bis 79
+>         zaehler[s] = 0                              // explizit initialisieren
+>     ende für
 >     für i = 0 bis ausleihen.length − 1
 >         wenn ausleihen[i].getMinuten() >= 2 dann
 >             nr = ausleihen[i].getZielStationNr()

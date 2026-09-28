@@ -72,7 +72,7 @@ ende methode
 | **Bestes Element** | wie Maximum, aber mit selbst definierter Güte (kleinste Differenz zur gewünschten Größe) |
 | **Begrenzte Ergebnismenge** | Schleifenbedingung `i < n und zaehler < max` |
 
-> [!example] Häufigkeit je Kategorie (Muster , eigene Formulierung)
+> [!example] Häufigkeit je Kategorie
 > ```
 > methode zaehleVerspaetungen(fahrten : Fahrt[]) : Integer[]
 >     verspaetungen : Integer[] = new Integer[15]      // Haltestellen 1..15 → Index 0..14
@@ -89,7 +89,7 @@ ende methode
 > ende methode
 > ```
 
-> [!example] Filtern mit innerer Prüfung (Muster , eigene Formulierung)
+> [!example] Filtern mit innerer Prüfung
 > ```
 > methode freieTische(tische : List<Tisch>, res : List<Reservierung>, datum : Date, personen : Integer) : List<Tisch>
 >     ergebnis = new List<Tisch>()
@@ -144,7 +144,7 @@ ende methode
 
 Trace-Tabelle: **Spalte je Variable**, **Zeile je Schleifendurchlauf**, Werte **am Ende** des Durchlaufs eintragen. So findest du auch Fehler wie falsche Startwerte, falsche Grenzen oder vertauschte Variablen.
 
-> [!example] Fehler finden (Muster )
+> [!example] Fehler finden
 > Eine Passwortprüfung verlangt mindestens 10 Zeichen und eine Ziffer. Typische eingebaute Fehler: `länge > 10` statt `>= 10`, Schleife `i <= länge` statt `< länge`, im Nein-Zweig wird ein bereits gefundenes Ergebnis wieder auf `false` gesetzt, **Rückgabe fehlt**.
 
 ### Ganzzahldivision und Modulo

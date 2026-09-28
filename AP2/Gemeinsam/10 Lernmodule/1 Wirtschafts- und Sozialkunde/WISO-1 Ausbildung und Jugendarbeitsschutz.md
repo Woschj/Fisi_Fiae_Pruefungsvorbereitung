@@ -27,7 +27,7 @@ tags: [ap2/modul, ap2/wiso]
 ## So wird das geprüft
 > [!info] Typische AP2-Aufgabentypen
 > - **Urlaub nach JArbSchG** berechnen: Alter **zu Beginn des Kalenderjahres** → 30/27/25 Werktage.
-> - **Was muss nicht in den Ausbildungsvertrag?** (z. B. Gleitzeitregelung – )
+> - **Was muss nicht in den Ausbildungsvertrag?** (z. B. Gleitzeitregelung)
 > - **Probezeit** laut BBiG (1 bis 4 Monate) und **Kündigung in der Probezeit** (jederzeit, ohne Frist und Begründung, schriftlich).
 > - **Rechtsgrundlagen zuordnen:** Kündigung der Ausbildung → BBiG, Pausen Jugendlicher → JArbSchG, Aufgaben der JAV → BetrVG.
 
@@ -98,7 +98,7 @@ Maßgeblich ist das **Alter zu Beginn des Kalenderjahres** (1. Januar):
 
 Jugendlichen soll der Urlaub **in den Berufsschulferien** gewährt werden.
 
-> [!example] Beispiel (Muster )
+> [!example] Beispiel
 > Geboren am 02.03., 17 Jahre alt beim Ausbildungsbeginn im August 2024. Am **1.1.2025** ist er noch 17 → „noch nicht 18“ → **25 Werktage**. Vertrag: 30 Urlaubstage → **5 Werktage mehr**.
 
 ---

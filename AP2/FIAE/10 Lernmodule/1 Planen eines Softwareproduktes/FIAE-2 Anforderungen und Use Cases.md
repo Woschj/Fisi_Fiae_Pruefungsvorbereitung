@@ -29,9 +29,9 @@ tags: [ap2/modul, ap2/fiae]
 > [!info] Typische AP2-Aufgabentypen
 > - **Use-Case-Diagramm erstellen:** Punkte gibt es je Akteur, je Anwendungsfall, je include/extend-Beziehung, je Assoziation – bei  auch für die **Vererbung zwischen Akteuren**.
 > - **Funktionale und nichtfunktionale Anforderungen** an eine App.
-> - **Qualitätsmerkmale** (Effizienz, Änderbarkeit – ; Zuverlässigkeit + ein weiteres nach ISO 25010 – ).
+> - **Qualitätsmerkmale** (Effizienz, Änderbarkeit; Zuverlässigkeit + ein weiteres nach ISO 25010).
 > - **Sicherheitsanforderungen** an eine Anwendung, **Vorteile der Lösung** für den Kunden.
-> - **eRechnung:** Zweck, Anforderungen (digitaler Datensatz, maschinenlesbar) – .
+> - **eRechnung:** Zweck, Anforderungen (digitaler Datensatz, maschinenlesbar).
 
 ---
 

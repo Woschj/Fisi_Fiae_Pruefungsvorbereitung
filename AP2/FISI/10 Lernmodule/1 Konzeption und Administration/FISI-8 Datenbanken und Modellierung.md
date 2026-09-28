@@ -29,7 +29,7 @@ tags: [ap2/modul, ap2/fisi]
 
 ## So wird das geprüft
 > [!info] Typische AP2-Aufgabentypen
-> - **Datentypen zuordnen**`, `DATE`, `BOOLEAN`).
+> - **Datentypen zuordnen** (`INT`, `VARCHAR`, `CHAR`, `DECIMAL`, `DATE`, `BOOLEAN`).
 > - **`CREATE TABLE` mit PRIMARY KEY und FOREIGN KEY** ergänzen.
 > - **Abfragen:** `COUNT(*)` mit `WHERE`, **`INNER JOIN` mit `LIKE '8%'`** und Datumsvergleich, Top-3-Werte.
 > - **Kardinalitäten** (1:n) und **referenzielle Integrität** gegen Anomalien, **ER-Modell** mit Kardinalitäten und Primärschlüsseln.
@@ -79,7 +79,7 @@ CREATE TABLE Werbeaktion (
 |---|---|
 | Anzahl aktiver Kunden in Augsburg | `SELECT COUNT(*) FROM Kunde WHERE Ort = 'Augsburg' AND Kunde_Aktiv = TRUE;` |
 | Windräder eines Parks zählen | `SELECT COUNT(*) FROM Windrad WHERE IDWindpark = 102;` |
-| Kunden mit PLZ 8…, vor 2022 beworben | `SELECT COUNT(*) FROM Kunde INNER JOIN Werbeaktion ON Kunde.KundenNr = Werbeaktion.KundenNr WHERE Kunde.PLZ LIKE '8%' AND Werbung_verschickt < '2021-12-31';` |
+| Kunden mit PLZ 8…, vor 2022 beworben | `SELECT COUNT(*) FROM Kunde INNER JOIN Werbeaktion ON Kunde.KundenNr = Werbeaktion.KundenNr WHERE Kunde.PLZ LIKE '8%' AND Werbung_verschickt < '2022-01-01';` |
 | drei höchste Leistungswerte | `SELECT Leistung FROM Betriebsdaten ORDER BY Leistung DESC LIMIT 3;` (SQL Server: `SELECT TOP 3 …`) |
 | Anzahl je Ort | `SELECT Ort, COUNT(*) FROM Kunde GROUP BY Ort;` |
 | nur Orte mit mehr als 10 Kunden | `… GROUP BY Ort HAVING COUNT(*) > 10;` |

@@ -30,10 +30,10 @@ tags: [ap2/modul, ap2/fiae]
 > - **Stakeholder** nennen mit **Erwartung/Befürchtung und Maßnahme**.
 > - **Klassisch vs. agil** beschreiben, Modelle nennen (Wasserfall, Scrum), Vergleich nach Planung und Flexibilität.
 > - **Begriffe erläutern:** Change Request Management, Meilenstein, Stakeholder, Lessons Learned.
-> - **Umfeldanalyse** (technisch, rechtlich – ), **Machbarkeitskriterien**, **Risiken mit Gegenmaßnahme**.
-> - **Abschlussprotokoll vorbereiten** (Soll-Ist-Vergleich, Folgeaktivitäten – ), **Projekterfolg nach Projektende messen**.
+> - **Umfeldanalyse** (technisch, rechtlich), **Machbarkeitskriterien**, **Risiken mit Gegenmaßnahme**.
+> - **Abschlussprotokoll vorbereiten** (Soll-Ist-Vergleich, Folgeaktivitäten), **Projekterfolg nach Projektende messen**.
 > - **Netzplan zeichnen, kritischer Pfad, freier vs. Gesamtpuffer**.
-> - **Qualitätsmaßnahmen** in der Entwicklung (Vorgehensmodell, Werkzeuge, Testumgebungen, Code-Reviews – ), **Outsourcing** Vor-/Nachteile.
+> - **Qualitätsmaßnahmen** in der Entwicklung (Vorgehensmodell, Werkzeuge, Testumgebungen, Code-Reviews), **Outsourcing** Vor-/Nachteile.
 
 ---
 

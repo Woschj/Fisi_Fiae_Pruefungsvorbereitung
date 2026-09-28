@@ -69,7 +69,7 @@ Das **OSI-Referenzmodell** (Open Systems Interconnection) teilt Netzwerkkommunik
 | 5 | **Sitzung** (Session) | Sitzung auf-/abbauen, synchronisieren | Daten | RPC, NetBIOS | – |
 | 4 | **Transport** | Ende-zu-Ende-Verbindung, **Ports**, Segmentierung, ggf. Zuverlässigkeit | **Segment** (TCP) / Datagramm (UDP) | TCP, UDP | (Firewall) |
 | 3 | **Vermittlung** (Network) | **logische Adressierung (IP)**, **Routing** zwischen Netzen | **Paket** | IPv4, IPv6, ICMP | **Router**, Layer-3-Switch |
-| 2 | **Sicherung** (Data Link) | **physische Adressierung (MAC)**, Zugriff aufs Medium, Fehlererkennung (FCS) | **Frame** (Rahmen) | Ethernet (IEEE 802.3), WLAN (802.11), ARP** | **Switch**, Bridge, Access Point |
+| 2 | **Sicherung** (Data Link) | **physische Adressierung (MAC)**, Zugriff aufs Medium, Fehlererkennung (FCS) | **Frame** (Rahmen) | Ethernet (IEEE 802.3), WLAN (802.11), ARP | **Switch**, Bridge, Access Point |
 | 1 | **Bitübertragung** (Physical) | Bits als Signale übertragen (Spannung, Licht, Funk), Stecker, Kabel | **Bit** | Kabel, RJ45, Glasfaser, Funk | Hub, Repeater, Medienkonverter |
 
 \* TLS wird je nach Quelle Schicht 5 oder 6 zugeordnet. \*\* ARP arbeitet zwischen Schicht 2 und 3 (es verbindet IP- und MAC-Adresse).

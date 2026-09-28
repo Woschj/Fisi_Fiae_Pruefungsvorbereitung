@@ -26,8 +26,8 @@ tags: [ap2/modul, ap2/wiso]
 
 ## So wird das geprüft
 > [!info] Typische AP2-Aufgabentypen
-> - **Passives Wahlrecht** zum Betriebsrat (ab 18, 6 Monate im Betrieb – ).
-> - **Aussagen zu Gewerkschaften** bewerten (Rechtsbeistand für Mitglieder – ).
+> - **Passives Wahlrecht** zum Betriebsrat (ab 18, 6 Monate im Betrieb).
+> - **Aussagen zu Gewerkschaften** bewerten (Rechtsbeistand für Mitglieder).
 > - **Ablaufschema einer Tarifrunde**: vertauschte Schritte finden.
 > - **Abweichung vom Tarifvertrag** nur zugunsten der Arbeitnehmer (Günstigkeitsprinzip).
 > - **Betriebsvereinbarung** wird zwischen Geschäftsleitung und Betriebsrat geschlossen.

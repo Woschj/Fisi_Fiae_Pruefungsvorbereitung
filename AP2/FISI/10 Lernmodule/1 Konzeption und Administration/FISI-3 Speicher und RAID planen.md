@@ -65,16 +65,16 @@ Der Rechenweg ist in fast jeder Prüfung derselbe:
 3. **Summe** bilden
 4. **In TiB umrechnen** (÷ 1 024) und **aufrunden** – abrunden hieße, der Speicher reicht nicht
 
-> [!example] Durchgerechnet (Muster )
+> [!example] Durchgerechnet
 > Altsystem 12 TiB zu 90 % belegt: 12 × 0,9 × 1 024 = **11 059,2 GiB** · Zuwachs 650 GiB/Jahr × 3 Jahre = **1 950 GiB** · Summe **13 009,2 GiB** · ÷ 1 024 = 12,70 → **12,8 TiB**.
 
 **Umgekehrt – wie viele Jahre reicht das System?**
 (nutzbare Kapazität × maximaler Füllgrad − Altbestand) ÷ Zuwachs pro Jahr → **abrunden** auf volle Jahre.
 
-> [!example] Durchgerechnet (Muster )
+> [!example] Durchgerechnet
 > Alt-NAS 9 TiB zu 90 % belegt = 8 294,4 GiB. Neues SAN 20 TiB, höchstens 70 % belegen = 14 336 GiB. Reserve 6 041,6 GiB ÷ 750 GiB/Jahr = 8,06 → **8 Jahre**.
 
-**Archiv mit Kompression:** „60 % Kompressionsrate“ heißt in den Lösungshinweisen: Es bleiben **40 %** übrig (× 0,4). Lies genau, ob die Rate die Ersparnis oder das Ergebnis beschreibt, und schreibe deine Annahme dazu.
+**Archiv mit Kompression:** „60 % Kompressionsrate“ ist in Prüfungsaufgaben meist so gemeint: Es bleiben **40 %** übrig (× 0,4). Lies genau, ob die Rate die Ersparnis oder das Ergebnis beschreibt, und schreibe deine Annahme dazu.
 
 ---
 
@@ -90,7 +90,7 @@ Der Rechenweg ist in fast jeder Prüfung derselbe:
 
 **Warum RAID 6 bei großen Platten?** Der **Rebuild** einer großen Platte dauert viele Stunden, in denen die übrigen Platten stark belastet sind. Fällt dabei bei RAID 5 eine zweite Platte aus oder tritt ein Lesefehler auf, sind alle Daten verloren. RAID 6 verkraftet in dieser Phase noch einen weiteren Ausfall.
 
-**Hardware- oder Software-RAID?** Hardware-RAID-Controller (eigener Prozessor, Cache mit Batteriepufferung/BBU, Schnittstelle z. B. PCIe, Anzahl Anschlüsse, unterstützte Level als Auswahlkriterien – ) entlasten die CPU; Software-RAID (mdadm, Storage Spaces, ZFS) ist günstig und hardwareunabhängig.
+**Hardware- oder Software-RAID?** Hardware-RAID-Controller (eigener Prozessor, Cache mit Batteriepufferung/BBU, Schnittstelle z. B. PCIe, Anzahl Anschlüsse, unterstützte Level als Auswahlkriterien) entlasten die CPU; Software-RAID (mdadm, Storage Spaces, ZFS) ist günstig und hardwareunabhängig.
 
 > [!danger] RAID ist kein Backup
 > RAID schützt nur gegen den Ausfall von Platten. Versehentliches Löschen, Ransomware, Brand oder Diebstahl treffen alle Platten gleichzeitig.
@@ -103,13 +103,13 @@ Der Rechenweg ist in fast jeder Prüfung derselbe:
 2. **Redundanz** hinzufügen: RAID 5 **+1**, RAID 6 **+2**, RAID 10 **× 2**
 3. **Hot Spare** hinzufügen (zählt nicht zur Kapazität)
 
-> [!example] Durchgerechnet (Muster )
+> [!example] Durchgerechnet
 > Bedarf 5 + 3 + 5 = 13 TiB, Platten à 2 TiB → 13 ÷ 2 = 6,5 → **7** Datenplatten · + 2 für RAID 6 · + 1 Hot Spare = **10 Platten**.
 
-> [!example] Vergleich (Muster : 20 TiB mit 4-TiB-Platten)
+> [!example] Vergleich (20 TiB mit 4-TiB-Platten)
 > 20 ÷ 4 = 5 Datenplatten → RAID 10: 5 × 2 = **10** · RAID 5: 5 + 1 = **6** · RAID 6: 5 + 2 = **7**. Die wenigsten Platten braucht RAID 5.
 
-> [!example] Erweiterung (Muster )
+> [!example] Erweiterung
 > Vorhanden: RAID 6 aus 12 Platten à 8 TiB (80 TiB netto = 10 Daten + 2 Parität). Künftig 160 TiB nötig → 20 Datenplatten + 2 Parität = 22 Platten → **10 zusätzliche** Platten. Als RAID 10 ergäben dieselben 22 Platten nur 11 × 8 = 88 TiB.
 
 ### Hot Spare, Mix and Match

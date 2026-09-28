@@ -63,7 +63,7 @@ Provider vergeben meist ein **/48** (65 536 × /64) oder **/56** (256 × /64). I
 
 **Rechnung:** Subnetzbits = 64 − Präfixlänge → Anzahl = 2^(64 − Präfix). Die Subnetzbits liegen im **4. Block**.
 
-> [!example] Durchgerechnet (Muster : 2001:db8:9876::/56)
+> [!example] Durchgerechnet (2001:db8:9876::/56)
 > 64 − 56 = 8 Bit → **256 Subnetze**. Die 8 Bit sind die letzten beiden Hex-Ziffern des 4. Blocks:
 > 1. Subnetz `2001:db8:9876::/64` (4. Block 0000)
 > 2. Subnetz `2001:db8:9876:1::/64`

@@ -106,7 +106,7 @@ Die USV wird nach **Wirkleistung (W) und Scheinleistung (VA)** gewählt; beide W
 - **Snapshot:** eingefrorener Zustand einer VM – Rückfallpunkt vor Updates, **kein Backup** (liegt auf demselben Speicher).
 - **Template/Klon:** Vorlage für schnelle Bereitstellung.
 - **Thin Provisioning:** virtuelle Platte belegt nur den tatsächlich genutzten Platz – spart Speicher, Gefahr der Überbuchung.
-- **Live-Migration:** laufende VM wandert ohne Unterbrechung auf einen anderen Host (braucht gemeinsamen Speicher, z. B. SAN).
+- **Live-Migration:** laufende VM wandert ohne Unterbrechung auf einen anderen Host (in der Regel mit gemeinsamem Speicher, z. B. SAN; ohne ihn wird zusätzlich die virtuelle Festplatte übertragen).
 - **P2V:** physischen Server in eine VM überführen.
 - **vSwitch:** virtueller Switch im Host; verbindet VMs untereinander und über die physischen NICs mit dem LAN, kann VLANs taggen.
 

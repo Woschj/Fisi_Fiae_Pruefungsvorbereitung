@@ -64,7 +64,7 @@ Zwischen Switches (und zum Router) laufen **mehrere VLANs über eine Leitung** (
 | **untagged / Access** | gehört zu **einem** VLAN, Frames ohne Tag | Endgeräte (PC, Drucker, Kamera) |
 | **tagged / Trunk** | transportiert **mehrere** VLANs mit Tag | Uplinks zwischen Switches, zum Router/Firewall, zum Virtualisierungshost, zum Accesspoint mit mehreren SSIDs |
 
-> [!example] Switchport-Tabelle (Muster )
+> [!example] Switchport-Tabelle
 >
 > | Interface | VLAN | Modus |
 > |---|---|---|
@@ -82,10 +82,10 @@ Zwischen Switches (und zum Router) laufen **mehrere VLANs über eine Leitung** (
 ## 2. Inter-VLAN-Routing
 
 VLANs sind getrennte Netze – Kommunikation zwischen ihnen braucht **Routing** (Layer 3).
-- **Layer-3-Switch:** hat je VLAN ein virtuelles Interface (SVI) mit Gateway-IP und routet intern. Nur Verkehr ins Internet geht an den Router (Default-Route) – .
+- **Layer-3-Switch:** hat je VLAN ein virtuelles Interface (SVI) mit Gateway-IP und routet intern. Nur Verkehr ins Internet geht an den Router (Default-Route).
 - **Router-on-a-Stick:** Ein Router mit **einer** physischen Schnittstelle zum Switch (Trunk); darauf je VLAN ein **Subinterface** (z. B. `Gi0/0.231`) mit **802.1Q-Kapselung** und der Gateway-IP des VLANs.
 
-> [!example] Fehler im Subinterface (Muster )
+> [!example] Fehler im Subinterface
 > VLAN 231 hat das Netz 192.168.23.0/29 (Hosts .1–.6). Am Subinterface ist .61 eingetragen – liegt **nicht im Netz**. Korrektur: Adresse aus .1–.6 mit Maske 255.255.255.248.
 
 ### DHCP über VLAN-Grenzen
@@ -121,7 +121,7 @@ Zwischen zwei Gebäuden (> 100 m) ist **Glasfaser (LWL)** Pflicht bzw. klar bess
 
 ### PoE-Switch auswählen
 Prüfe **drei** Dinge: genug **Ports** (Endgeräte **plus Uplink**), **PoE-Standard** je Port (802.3af 15,4 W, 802.3at/PoE+ 30 W, 802.3bt bis 60/90 W) und das **Gesamt-PoE-Budget** des Switches.
-> 8 Accesspoints à 17,9 W brauchen PoE+ und ein Budget von mindestens 8 × 17,9 = **143,2 W** sowie 9 Ports (8 + Uplink). Alternativ PoE-Injektoren (Muster ).
+> 8 Accesspoints à 17,9 W brauchen PoE+ und ein Budget von mindestens 8 × 17,9 = **143,2 W** sowie 9 Ports (8 + Uplink). Alternativ PoE-Injektoren.
 
 **Voice-VLAN:** Telefone in eigenem VLAN → QoS-Priorisierung, Trennung vom Datennetz, Schutz vor Angriffen, einfachere Fehlersuche; oft hängt der PC am Telefon (Telefon-Port tagged für Voice, untagged für Daten).
 

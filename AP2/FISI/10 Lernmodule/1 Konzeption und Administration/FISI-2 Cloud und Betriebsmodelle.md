@@ -15,7 +15,7 @@ tags: [ap2/modul, ap2/fisi]
 > [!abstract] Überblick
 > **Bereich:** [[Übersicht FISI Konzeption und Administration]]
 > **Prüfung:** „Konzeption und Administration von IT-Systemen“
-> **Dauer:** ca. 90 min · **Prüfungsrelevanz:** ★★★ – Cloud war in **jeder** Prüfung von  bis  dabei, meist als Aufgabe 1
+> **Dauer:** ca. 90 min · **Prüfungsrelevanz:** ★★★ – Cloud ist ein Dauerthema der AP2, häufig als Einstiegsaufgabe
 > **Grundlagen aus AP1:** [[S5 Virtualisierung und Cloud]] · [[I2 Datenschutz]]
 
 ## Lernziele
@@ -54,7 +54,7 @@ tags: [ap2/modul, ap2/fisi]
 | **PaaS** – Platform as a Service | Der Kunde bekommt eine fertige **Entwicklungs- und Laufzeitumgebung** und kümmert sich nur um Anwendung und Daten. | Azure App Service, Google App Engine, verwaltete Datenbank (Azure SQL Database), Heroku |
 | **SaaS** – Software as a Service | Der Kunde nutzt eine **fertige Anwendung** über das Internet, meist im Browser; Wartung und Updates übernimmt der Anbieter. | Microsoft 365, Gmail, Salesforce (CRM), Webshop-Baukasten, Cloud-Telefonanlage |
 
-Weitere „as a Service“-Begriffe: **BaaS** (Backup as a Service – Datensicherung wird an einen Cloud-Anbieter ausgelagert, hochverfügbar und skalierbar; ), **DaaS** (Desktop as a Service, virtuelle Arbeitsplätze), **FaaS/Serverless** (einzelne Funktionen werden bei Bedarf ausgeführt).
+Weitere „as a Service“-Begriffe: **BaaS** (Backup as a Service – Datensicherung wird an einen Cloud-Anbieter ausgelagert, hochverfügbar und skalierbar), **DaaS** (Desktop as a Service, virtuelle Arbeitsplätze), **FaaS/Serverless** (einzelne Funktionen werden bei Bedarf ausgeführt).
 
 ---
 
@@ -71,7 +71,7 @@ Weitere „as a Service“-Begriffe: **BaaS** (Backup as a Service – Datensich
 **Argumente Public Cloud:** schnelle Einführung, Know-how des Anbieters, Betrieb und Wartung ausgelagert, große Auswahl, keine Investition.
 **Argumente Private Cloud:** Sicherheitsregeln und Datenschutz selbst gestalten und kontrollieren, keine Abhängigkeit vom Anbieter, Vertrauen von Geschäftspartnern.
 
-> [!example] Hybrid Cloud begründen (Muster)
+> [!example] Hybrid Cloud begründen
 > **Empfehlung:** Hybrid Cloud. **Vorteil:** Kundendaten und Warenwirtschaft mit hohen Compliance-Anforderungen bleiben in der Private Cloud, der Webshop mit stark schwankender Last skaliert in der Public Cloud. **Nachteil:** Betrieb und Integration zweier Umgebungen sind komplexer und brauchen Know-how und Schnittstellen.
 
 ---
@@ -87,10 +87,10 @@ Weitere „as a Service“-Begriffe: **BaaS** (Backup as a Service – Datensich
 | Skalierung nur durch Kauf neuer Hardware | **Abhängigkeit** von Anbieter (Lock-in) und Leitung, Datenschutz prüfen |
 
 > [!tip] „Billiger“ reicht nicht
-> Die Lösungshinweise geben für „die Cloud ist billiger“ ohne Begründung keine volle Punktzahl. Formuliere z. B.: „Es fallen keine Anschaffungskosten für Server an; bezahlt wird nur die tatsächlich genutzte Leistung.“
+> Für „die Cloud ist billiger“ ohne Begründung gibt es keine volle Punktzahl. Formuliere z. B.: „Es fallen keine Anschaffungskosten für Server an; bezahlt wird nur die tatsächlich genutzte Leistung.“
 
 ### Latenz
-**Latenz** ist die **Verzögerung zwischen Senden und Empfangen** eines Signals (Laufzeit). Ursachen: lange Leitungswege, viele aktive Komponenten, überlastete Geräte, Warteschlangen. Sie stört besonders bei **vielen kleinen Anfragen** (z. B. serielle SQL-Abfragen, viele kleine Dateien), weil jede Anfrage die volle Laufzeit abwartet. **Wichtig:** Die Übertragungs*geschwindigkeit* ändert sich durch Latenz nicht – es kommt nur weniger Nutzdaten pro Zeit an.
+**Latenz** ist die **Verzögerung zwischen Senden und Empfangen** eines Signals (Laufzeit). Ursachen: lange Leitungswege, viele aktive Komponenten, überlastete Geräte, Warteschlangen. Sie stört besonders bei **vielen kleinen Anfragen** (z. B. serielle SQL-Abfragen, viele kleine Dateien), weil jede Anfrage die volle Laufzeit abwartet. **Wichtig:** Die **Bandbreite** der Leitung ändert sich durch Latenz nicht; der **effektive Durchsatz** sinkt aber, weil zwischen Anfrage und Antwort gewartet wird.
 
 ---
 

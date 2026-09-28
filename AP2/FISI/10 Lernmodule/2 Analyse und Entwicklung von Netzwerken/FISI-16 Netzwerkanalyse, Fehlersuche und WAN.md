@@ -104,7 +104,7 @@ tags: [ap2/modul, ap2/fisi]
 - Datenrate **dezimal**: 250 Mbit/s = 250 000 000 bit/s.
 - **Overhead** (Header, Protokolle) als Aufschlag, z. B. × 1,1.
 
-> [!example] Durchgerechnet (Muster )
+> [!example] Durchgerechnet
 > 15 GiB = 15 × 1 073 741 824 Byte = 16 106 127 360 Byte × 8 = 128 849 018 880 bit · × 1,1 = 141 733 920 768 bit · ÷ 250 000 000 bit/s = **566,94 s ≈ 9 min 27 s**.
 
 ---
@@ -117,10 +117,10 @@ tags: [ap2/modul, ap2/fisi]
 | **Videokonferenz** | Teilnehmer × Upload bzw. Download je Person – **Upload** asymmetrischer Anschlüsse reicht oft nicht |
 | **IoT/MQTT** | Geräte × Byte je Nachricht × 8 ÷ Intervall in s |
 
-> [!example] VoIP (Muster )
+> [!example] VoIP
 > 15 externe Gespräche × 64 kbit/s = 960 kbit/s, dazu interne Gespräche über dieselbe Leitung; + 10 % Overhead. Die Software priorisiert bei Engpass **Audio vor Video**.
 
-> [!example] MQTT (Muster )
+> [!example] MQTT
 > 500 Geräte × 66 Byte pro Minute = 33 000 Byte/min ÷ 60 = 550 Byte/s × 8 = **4 400 bit/s = 4,4 kbit/s** → eine 10-kbit/s-Funkstrecke reicht.
 
 **QoS (Quality of Service):** priorisiert **Echtzeitverkehr** (Sprache, Video) vor Datenverkehr (Markierung per DSCP bzw. 802.1p, Warteschlangen) → weniger Aussetzer, geringere Latenz und Jitter. **Fax über VoIP** scheitert oft, weil Sprachcodecs verlustbehaftet sind und Paketverluste verschleiern – bei Sprache unhörbar, bei Fax Abbruch.
@@ -144,7 +144,7 @@ tags: [ap2/modul, ap2/fisi]
 - **Reihe** (alle Komponenten nötig): V = V₁ × V₂
 - **Parallel** (eine Leitung genügt): V = 1 − (1 − V₁) × (1 − V₂)
 
-> [!example] Zwei Leitungen à 99 % (Muster )
+> [!example] Zwei Leitungen à 99 %
 > 1 − 0,01 × 0,01 = **0,9999 = 99,99 %**. Eine allein: 1 % von 8 760 h = 87,6 h Ausfall pro Jahr.
 
 **Zwei unterschiedliche Anbindungen** (z. B. Glasfaser und LTE bei verschiedenen Providern): Ausfall eines Providers oder Baggerschaden trifft nicht beide. Umschaltung per Routing oder **FHRP** (→ [[FISI-9 IPv4-Subnetting und Routing]]).

@@ -30,7 +30,7 @@ tags: [ap2/modul, ap2/fiae]
 > [!info] Typische AP2-Aufgabentypen
 > - **Auswertung je Gruppe:** Min/Max/Durchschnitt/Anzahl je Börse mit JOIN und GROUP BY, Anzahl Bestellungen je Kunde mit **HAVING ≥ 3**, Verkaufszahl je Kategorie absteigend, Anzahl je Hersteller mit HAVING > 50.
 > - **Archivieren:** Datensätze per `INSERT INTO … SELECT` in eine Archivtabelle kopieren und danach `DELETE`, Auswertung über Aktiv- und Archivtabelle mit **UNION ALL**.
-> - **DML:** INSERT eines neuen Datensatzes, UPDATE mit Unterabfrage (+5 % – ), fehlende Werte ergänzen und Spalte zum Pflichtfeld machen.
+> - **DML:** INSERT eines neuen Datensatzes, UPDATE mit Unterabfrage (+5 %), fehlende Werte ergänzen und Spalte zum Pflichtfeld machen.
 > - **DDL:** CREATE TABLE mit PRIMARY KEY, Spalten hinzufügen, Werte aufteilen, Spalte löschen.
 > - **DCL:** `GRANT INSERT, UPDATE` und `REVOKE`.
 > - **JOIN über mehrere Tabellen** mit Sortierung und **DATEDIFF** für Verspätungen, **CRUD ↔ SQL**, Stored Procedure, Trigger, Index.
@@ -71,7 +71,7 @@ ORDER BY KursDurchschnitt DESC;
 | RIGHT JOIN | alle Zeilen der rechten Tabelle |
 | über mehrere Tabellen | Kette: `FROM A JOIN B ON … JOIN C ON …` – jede Verknüpfung über **Fremdschlüssel = Primärschlüssel** |
 
-> [!example] Drei Tabellen (Muster )
+> [!example] Drei Tabellen
 > ```sql
 > SELECT   gk.Name AS Kategorie, SUM(bd.Menge) AS Verkaufsanzahl
 > FROM     Bestelldetails AS bd

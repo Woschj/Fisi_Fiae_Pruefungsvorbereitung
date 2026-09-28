@@ -54,7 +54,7 @@ tags: [ap2/modul, ap2/fisi]
 | **6 GHz** (Wi-Fi 6E/7) | sehr viele breite Kanäle, kaum Störungen; noch geringere Reichweite |
 
 **WLAN-Scan lesen:** **SSID** (Name des Netzes) · **BSSID** (MAC-Adresse des Accesspoints/Funkmoduls – eindeutig) · **Channel** (Kanal) · **Bandbreite** (20/40/80/160 MHz Kanalbreite) · **Security** (WPA2/WPA3, Personal/Enterprise) · **Signal** (Empfangsstärke, z. B. in dBm oder %). Zwei Netze auf **demselben Kanal** stören sich. „**hidden**“ = SSID-Broadcast deaktiviert (kein echter Schutz).
-**Neue APs, altes Gerät verbindet sich nicht mehr:** AP sendet nur 5 GHz, das Gerät kann nur 2,4 GHz; falsche Kanalwahl; schwächeres Signal (interne statt externe Antennen) – .
+**Neue APs, altes Gerät verbindet sich nicht mehr:** AP sendet nur 5 GHz, das Gerät kann nur 2,4 GHz; falsche Kanalwahl; schwächeres Signal (interne statt externe Antennen).
 
 ---
 
@@ -98,7 +98,7 @@ Ablauf 802.1X: **Supplicant** (Client) → **Authenticator** (AP bzw. Switch) �
 - **Maximum:** Anzahl erlaubter MACs pro Port
 - **Violation Mode:** Reaktion auf eine fremde MAC – **protect** (Pakete verwerfen), **restrict** (verwerfen + melden), **shutdown** (Port wird **err-disabled** und bleibt aus, bis ein Admin ihn wieder aktiviert oder ein Timer ihn zurücksetzt)
 
-Port Security verhindert fremde Geräte, aber **nicht** ARP-Spoofing eines **zugelassenen** Geräts (dafür: Dynamic ARP Inspection, DHCP-Snooping) – . MAC-Adressen lassen sich fälschen, daher ist **802.1X** (Anmeldung mit Benutzer/Zertifikat über RADIUS, auch MAC-Authentication-Bypass für Drucker) die stärkere Lösung.
+Port Security verhindert fremde Geräte, aber **nicht** ARP-Spoofing eines **zugelassenen** Geräts (dafür: Dynamic ARP Inspection, DHCP-Snooping). MAC-Adressen lassen sich fälschen, daher ist **802.1X** (Anmeldung mit Benutzer/Zertifikat über RADIUS, auch MAC-Authentication-Bypass für Drucker) die stärkere Lösung.
 
 ---
 

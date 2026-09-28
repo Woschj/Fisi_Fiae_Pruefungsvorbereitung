@@ -78,7 +78,7 @@ authorization: Bearer eyJhbGciOi...             Cookies
 | **4xx** | **Fehler des Clients** | **400** Bad Request, **401** Unauthorized (nicht angemeldet), **403** Forbidden (keine Berechtigung), **404** Not Found, 409 Conflict |
 | **5xx** | **Fehler des Servers** | **500** Internal Server Error, 502 Bad Gateway, 503 Service Unavailable |
 
-**Antwort bauen** (Muster ):
+**Antwort bauen**:
 ```
 response ← new HttpResponse(statusCode)
 response.addHeader("Content-Type", "text/plain")

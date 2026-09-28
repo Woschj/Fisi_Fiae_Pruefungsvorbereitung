@@ -26,7 +26,7 @@ tags: [ap2/modul, ap2/wiso]
 
 ## So wird das geprüft
 > [!info] Typische AP2-Aufgabentypen
-> - **Marktform bestimmen und begründen** (wenige Anbieter – viele Nachfrager = Angebotsoligopol; viele – viele = Polypol) und **Unterschied zum vollkommenen Markt** (Homogenität fehlt) – .
+> - **Marktform bestimmen und begründen** (wenige Anbieter – viele Nachfrager = Angebotsoligopol; viele – viele = Polypol) und **Unterschied zum vollkommenen Markt** (Homogenität fehlt).
 > - **Konjunkturphase** aus einer Tabelle mit BIP, Arbeitslosenquote und Wachstum bestimmen.
 > - **Ökologisches Ziel** erkennen, **Emissionen** (auch Lärm), **Blauer Engel**, CO₂-Senkung durch Photovoltaik.
 

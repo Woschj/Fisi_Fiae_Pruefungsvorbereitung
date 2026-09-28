@@ -27,9 +27,9 @@ tags: [ap2/modul, ap2/wiso]
 
 ## So wird das geprüft
 > [!info] Typische AP2-Aufgabentypen
-> - **GmbH gründen:** welche Aussage stimmt (Handelsregister Pflicht, Firma darf nicht verwechselbar sein, Geschäftsführer darf auch Gesellschafter sein, Gesellschaftsvertrag notariell, Mindestkapital 25 000 €) und **wie haftet die GmbH** (mit dem gesamten Gesellschaftsvermögen) – .
+> - **GmbH gründen:** welche Aussage stimmt (Handelsregister Pflicht, Firma darf nicht verwechselbar sein, Geschäftsführer darf auch Gesellschafter sein, Gesellschaftsvertrag notariell, Mindestkapital 25 000 €) und **wie haftet die GmbH** (mit dem gesamten Gesellschaftsvermögen).
 > - **Gewinnanteil eines Gesellschafters** berechnen.
-> - **Organigramm deuten:** Stabliniensystem, Aussagen zu Stabsstellen (beraten, nicht weisungsbefugt) – .
+> - **Organigramm deuten:** Stabliniensystem, Aussagen zu Stabsstellen (beraten, nicht weisungsbefugt).
 > - **Zielbeziehungen** zuordnen und **soziale/ökologische Ziele** erkennen.
 
 ---

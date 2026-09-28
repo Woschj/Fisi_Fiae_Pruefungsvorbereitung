@@ -68,7 +68,7 @@ Die DSGVO (Art. 32) verlangt „geeignete technische und organisatorische Maßna
 | **Trennungskontrolle** | Daten für verschiedene Zwecke getrennt | Mandantentrennung, Test- und Produktivsystem trennen |
 
 > [!tip] Zutritt – Zugang – Zugriff
-> **Zutritt** = Raum (Füße) · **Zugang** = System (Anmeldung) · **Zugriff** = Daten (Rechte). Die Verschlüsselung von Datenträgern ordnen die Lösungshinweise der **Zugriffskontrolle** zu; Benutzerprofile passen zu Zugang **und** Zugriff.
+> **Zutritt** = Raum (Füße) · **Zugang** = System (Anmeldung) · **Zugriff** = Daten (Rechte). Die Verschlüsselung gespeicherter Daten wird meist der **Zugriffskontrolle** zugeordnet (beim Transport: Weitergabekontrolle); Benutzerprofile passen zu Zugang **und** Zugriff.
 
 ---
 
@@ -100,7 +100,7 @@ Löschen oder Formatieren reicht **nicht** – meist wird nur der Index entfernt
 - **Zertifizierter Dienstleister** nach **DIN 66399** (Sicherheitsstufen 1–7), mit **Vernichtungsnachweis**; auf Wunsch Anwesenheit bei der Vernichtung.
 
 ### Kontrolle von Mitarbeiter-E-Mails
-Ist **private Nutzung erlaubt**, gilt der Arbeitgeber rechtlich als Anbieter von Telekommunikation → Einsicht nur sehr eingeschränkt. Lösung: private Nutzung **verbieten** oder klar regeln und Mitarbeitende **nachweislich informieren**; Betriebsrat einbeziehen (Mitbestimmung bei technischer Überwachung, § 87 BetrVG).
+Ist **private Nutzung erlaubt**, darf der Arbeitgeber private Mails grundsätzlich nicht einsehen (Persönlichkeitsrecht, Beschäftigtendatenschutz; ob zusätzlich das Fernmeldegeheimnis gilt, ist rechtlich umstritten) → Einsicht nur sehr eingeschränkt. Lösung: private Nutzung **verbieten** oder klar regeln und Mitarbeitende **nachweislich informieren**; Betriebsrat einbeziehen (Mitbestimmung bei technischer Überwachung, § 87 BetrVG).
 
 ---
 

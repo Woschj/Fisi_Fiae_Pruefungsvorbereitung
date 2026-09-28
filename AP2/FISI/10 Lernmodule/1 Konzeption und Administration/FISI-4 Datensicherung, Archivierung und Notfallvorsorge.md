@@ -59,10 +59,10 @@ tags: [ap2/modul, ap2/fisi]
 - **jede inkrementelle** Sicherung bis zum Ausfall, in zeitlicher Reihenfolge,
 - plus die **letzte differenzielle** Sicherung nach dem letzten Zurücksetzen des Archivbits.
 
-> [!example] Klassisch (Muster )
+> [!example] Klassisch
 > Sonntag Voll (V5), werktags differenziell. Ausfall nach der zweiten Differenziellen → **V5, dann 5D2**. Die erste Differenzielle wird nicht gebraucht, die zweite enthält alles seit V5.
 
-> [!example] Fehler im Plan (Muster )
+> [!example] Fehler im Plan
 > Mo Voll · Di diff · **Mi versehentlich inkrementell** · Do diff · Fr Ausfall.
 > Die inkrementelle Sicherung am Mittwoch hat das Archivbit zurückgesetzt. Die differenzielle Sicherung am Donnerstag enthält daher nur die Änderungen **seit Mittwoch**. Benötigt: **Mo (Voll) + Mi (inkr.) + Do (diff.)**. Die Differenzielle vom Dienstag ist überflüssig – ihr Inhalt steckt in der Mittwochs-Sicherung.
 
@@ -103,7 +103,7 @@ Vorteile: sehr **geringe Kosten pro TB** und niedrige TCO, hohe Kapazität, **La
 
 **Verfügbarkeit** = (Gesamtzeit − Ausfallzeit) ÷ Gesamtzeit.
 
-> [!example] Umsatzverlust (Muster )
+> [!example] Umsatzverlust
 > 99,9 % Verfügbarkeit, 24/7: 8 760 h × 0,001 = **8,76 h** Ausfall pro Jahr. Bei 500 € Umsatz pro Stunde: 8,76 × 500 = **4 380 €** maximal tolerierter Verlust.
 
 | Verfügbarkeit | Ausfall pro Jahr (24/7) |
@@ -127,7 +127,7 @@ Vorteile: sehr **geringe Kosten pro TB** und niedrige TCO, hohe Kapazität, **La
 
 **Notstromaggregat:** Die USV überbrückt nur die Zeit, bis der Generator läuft. Rechne die **Startzeit** des Aggregats als Anteil der Akkulaufzeit mit ein.
 
-> [!example] Startzeitpunkt (Muster )
+> [!example] Startzeitpunkt
 > Akku reicht 60 min (100 %), 1 % ≙ 0,6 min. Das Aggregat braucht 3 min zum Starten = **5 %**. Soll bei 30 % Restladung übernommen werden → **Start bei 35 %**.
 
 ---

@@ -43,7 +43,7 @@ tags: [ap2/modul, ap2/fisi]
 
 **Warum neue Quellports?** Zwei interne PCs könnten zufällig denselben Quellport verwenden. Nur mit eindeutigen Ports kann der Router Antworten dem richtigen PC zuordnen.
 
-> [!example] PAT-Tabelle (Muster )
+> [!example] PAT-Tabelle
 > Zwei PCs (10.0.0.1 und 10.0.0.2, jeweils Quellport 45123) rufen denselben Webserver 12.7.51.9:443 auf. Öffentliche IP des Routers: 31.101.17.41.
 >
 > | Abschnitt | Quelle | Ziel |
@@ -91,7 +91,7 @@ Mobilfunk- und manche Glasfaser-/Kabelprovider geben Kunden nur **private IPv4-A
 **Aufbau einer Regel:** Aktion (allow/permit, deny/drop, reject) · Protokoll · Quell-IP · Ziel-IP · Quellport · Zielport · Richtung bzw. Interface.
 **Regeln werden von oben nach unten** abgearbeitet – **die erste passende Regel gilt**. Am Ende steht immer eine **Default-Deny-Regel** (whitelist-Prinzip).
 
-> [!example] Regelwerk (Muster : Webserver 203.0.113.10, Mailserver 203.0.113.11)
+> [!example] Regelwerk (Webserver 203.0.113.10, Mailserver 203.0.113.11)
 >
 > | Richtung | Quell-IP | Ziel-IP | Quellport | Zielport | Protokoll | Aktion |
 > |---|---|---|---|---|---|---|

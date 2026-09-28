@@ -75,7 +75,7 @@
     erklaerung: "48 000 × 24 × 1 × 60 ÷ 8 = 8 640 000 Byte = **8,64 MB**." },
   { id: "H3-17", modul: "H3", typ: "mc", niveau: 1, frage: "Warum zeigt Windows bei einer neuen 2-TB-Festplatte nur etwa 1,81 „TB“ an?",
     optionen: ["Ein Teil der Platte ist defekt", "Hersteller dezimal, Windows binär", "Das Dateisystem belegt rund 10 %", "Die Wiederherstellungspartition belegt Platz"], richtig: 1, abschnitt: "Dezimale und binäre",
-    erklaerung: "2 · 10¹² ÷ 2⁴⁰ ≈ **1,82 TiB** – gleiche Datenmenge, andere Einheit." },
+    erklaerung: "2 · 10¹² ÷ 2⁴⁰ = **1,819 TiB** – Windows schneidet auf 1,81 ab und schreibt „TB“. Gleiche Datenmenge, andere Einheit." },
   { id: "H3-18", modul: "H3", typ: "zahl", niveau: 2, frage: "20 Mitarbeitende brauchen je **15 GB** auf dem Fileserver, geplant werden **30 %** Zuwachs. Wie viele **GB** planen Sie?", richtig: 390, toleranz: 0, einheit: "GB", abschnitt: "Speicherbedarf planen",
     erklaerung: "20 × 15 = 300 GB × 1,3 = **390 GB**." },
   { id: "H3-19", modul: "H3", typ: "zahl", niveau: 2, frage: "Wie viele **Byte** sind **2 KiB**?", richtig: 2048, toleranz: 0, einheit: "Byte", abschnitt: "Dezimale und binäre",

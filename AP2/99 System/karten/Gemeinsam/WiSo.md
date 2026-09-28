@@ -23,7 +23,7 @@ Höchstarbeitszeit für Jugendliche?::8 Stunden täglich, 40 Stunden wöchentlic
 Pausen für Jugendliche?::30 min bei mehr als 4,5 bis 6 Stunden, 60 min bei mehr als 6 Stunden
 Nachtruhe für Jugendliche?::Keine Beschäftigung von 20 bis 6 Uhr (mit Ausnahmen)
 Mindestfreizeit zwischen zwei Arbeitstagen für Jugendliche?::12 Stunden
-Wie wird ein Berufsschultag mit mehr als 5 Stunden angerechnet?::Einmal pro Woche mit 8 Stunden – danach keine Beschäftigung
+Wie wird ein Berufsschultag mit mehr als 5 Unterrichtsstunden angerechnet?::Einmal pro Woche als voller Tag – Jugendliche mit 8 Stunden (JArbSchG), Volljährige mit der durchschnittlichen täglichen Ausbildungszeit (§ 15 BBiG); danach keine Beschäftigung
 Urlaub nach JArbSchG?::Noch nicht 16: 30 · noch nicht 17: 27 · noch nicht 18: 25 Werktage – Alter zu Beginn des Kalenderjahres
 Gesetzlicher Mindesturlaub für Erwachsene?::24 Werktage (Mo–Sa) = 20 Arbeitstage bei 5-Tage-Woche (BUrlG)
 Was muss der Betrieb dem Azubi kostenlos stellen?::Ausbildungsmittel (Werkzeuge, Software, Fachliteratur für den Betrieb)

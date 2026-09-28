@@ -27,7 +27,7 @@ Ein Scanner im Lager hat die Adresse **172.20.37.130/26**. Bestimmen Sie Netzadr
 ### N9.2 ★★★ – VLSM planen (10 Punkte)
 📘 **Nachlernen:** [[FISI-9 IPv4-Subnetting und Routing#VLSM|FISI-9 › VLSM]]
 
-Für die Zentrale steht **10.40.8.0/22** zur Verfügung. Benötigt werden: Lager 400 Hosts, Verwaltung 200 Hosts, Server 50 Hosts, Management 20 Hosts und zwei Transfernetze mit je 2 Hosts. Vergib die Netze lückenlos, beginnend mit dem größten, und geben Sie jeweils Netzadresse/Präfix und Broadcast an.
+Für die Zentrale steht **10.40.8.0/22** zur Verfügung. Benötigt werden: Lager 400 Hosts, Verwaltung 200 Hosts, Server 50 Hosts, Management 20 Hosts und zwei Transfernetze mit je 2 Hosts. Vergeben Sie die Netze lückenlos, beginnend mit dem größten, und geben Sie jeweils Netzadresse/Präfix und Broadcast an.
 
 > [!success]- Lösung
 > | Netz | Bedarf | Präfix | Netzadresse | Broadcast |

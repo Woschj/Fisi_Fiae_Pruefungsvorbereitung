@@ -253,7 +253,7 @@ Ergebnis: ______ €
 > | 25 | 2 | § 22 SGB VII. |
 > | 26 | 1, 2 | § 17 Abs. 2 BBiG; Tarifverträge gehen vor (§ 17 Abs. 3). |
 > | 27 | 1 | § 8 Abs. 1 BBiG; die Entscheidung trifft die IHK. |
-> | 28 | 2 | Art. 88 DSGVO i. V. m. § 26 BDSG. Bewerbungsunterlagen werden in der Regel nach etwa sechs Monaten gelöscht (AGG-Klagefrist). |
+> | 28 | 2 | Rechtsgrundlage ist die Erforderlichkeit für das Beschäftigungsverhältnis (Art. 6 Abs. 1 lit. b DSGVO; § 26 BDSG ist seit dem EuGH-Urteil von 2023 nur noch eingeschränkt anwendbar). Bewerbungsunterlagen werden in der Regel nach etwa sechs Monaten gelöscht (AGG-Klagefrist). |
 > | 29 | **3.120,00 €** | 4.160 € / 40 × 30. |
 > | 30 | 1 | § 8 TzBfG. |
 >

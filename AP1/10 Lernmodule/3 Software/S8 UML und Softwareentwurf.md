@@ -102,7 +102,7 @@ sequenceDiagram
 
 <!-- erg:Katalog Vererbung -->
 > [!note] Prüfungskatalog ab 2025
-> Im AP1-Katalog ab 2025 ist **Vererbung** gestrichen; **Sichtbarkeiten (private/public), Klassen, Objekte, Attribute und Methoden** sind weiterhin enthalten.
+> Im AP1-Katalog ab 2025 ist **Vererbung als Programmierkonzept** gestrichen; **Klassen, Objekte, Attribute, Methoden, Sichtbarkeiten** und das **Lesen von Klassendiagrammen** mit ihren Beziehungen bleiben Prüfungsstoff. Das Vererbungssymbol solltest du im Diagramm deshalb erkennen – Vererbung programmieren musst du in der AP1 nicht.
 
 ## 5. Klassendiagramm
 <!-- abb:uml-klassendiagramm -->
@@ -138,7 +138,7 @@ Schreibweise: `- inventarNr : String` (Sichtbarkeit Name : Typ) und `+ getAlter(
 | `1..*` | mindestens eins |
 | `2..5` | zwei bis fünf |
 
-**Objektorientierung kurz:** **Klasse** = Bauplan · **Objekt** = konkrete Instanz („Notebook mit Inventarnummer 4711“) · **Attribut** = Eigenschaft · **Methode** = Fähigkeit/Funktion. Vorteile gegenüber rein prozeduraler Programmierung: Wiederverwendbarkeit (Vererbung), Kapselung (weniger Fehler), bessere Wartbarkeit und näher an der realen Welt.
+**Objektorientierung kurz:** **Klasse** = Bauplan · **Objekt** = konkrete Instanz („Notebook mit Inventarnummer 4711“) · **Attribut** = Eigenschaft · **Methode** = Fähigkeit/Funktion. Vorteile gegenüber rein prozeduraler Programmierung: Wiederverwendbarkeit, Kapselung (weniger Fehler), bessere Wartbarkeit und näher an der realen Welt.
 
 ## 6. Vom Quelltext zum Programm – Werkzeuge
 | Begriff | Erklärung |

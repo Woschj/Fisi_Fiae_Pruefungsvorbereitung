@@ -184,7 +184,7 @@ a) Ist der Kunde in Verzug? b) Welche Rechte hat Nordlicht? c) Beschreiben Sie d
 ### W4.4 ★ – Gewährleistung, Garantie, Kulanz (6 Punkte)
 📘 **Nachlernen:** [[W4 Verträge und Kaufvertragsstörungen#5. Gewährleistung, Garantie, Kulanz, Widerruf, Umtausch|W4 › Gewährleistung, Garantie, Kulanz, Widerruf, Umtausch]]
 
-Ein Notebook fällt nach 26 Monaten aus. Der Hersteller gewährt 3 Jahre Garantie. Erklären Sie, welche Ansprüche bestehen, und grenze Gewährleistung, Garantie und Kulanz ab.
+Ein Notebook fällt nach 26 Monaten aus. Der Hersteller gewährt 3 Jahre Garantie. Erklären Sie, welche Ansprüche bestehen, und grenzen Sie Gewährleistung, Garantie und Kulanz voneinander ab.
 
 > [!success]- Lösung
 > **Gewährleistung** (gesetzlich, 2 Jahre, gegenüber dem Händler) ist abgelaufen. Es besteht aber ein Anspruch aus der **Garantie** (freiwillige Herstellerzusage, 3 Jahre) nach deren Bedingungen. **Kulanz** wäre ein freiwilliges Entgegenkommen ohne Rechtsanspruch, z. B. wenn auch die Garantie abgelaufen ist. (je 2 P)

@@ -229,7 +229,7 @@ Für die AP1 genügen die Begriffe:
 - **Klasse** = Bauplan (z. B. `Kunde` mit Attributen `name`, `kundennr` und Methode `rabattBerechnen()`)
 - **Objekt** = konkrete Instanz (`kunde1 = Kunde("Meier", 4711)`)
 - **Attribut** = Eigenschaft · **Methode** = Funktion einer Klasse
-- **Kapselung** (Attribute privat, Zugriff über Methoden), **Vererbung** (`Geschäftskunde` erbt von `Kunde`)
+- **Kapselung** (Attribute privat, Zugriff über Methoden)
 - Darstellung im **UML-Klassendiagramm** (Name, Attribute, Methoden; `+` public, `−` private)
 
 ---

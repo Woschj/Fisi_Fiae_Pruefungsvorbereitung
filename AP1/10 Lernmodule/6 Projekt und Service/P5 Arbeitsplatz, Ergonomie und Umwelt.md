@@ -58,7 +58,7 @@ Eine Mitarbeiterin klagt nach dem Umzug über Nackenschmerzen und brennende Auge
 > Monitor absenken (Oberkante auf Augenhöhe), vom Fenster wegdrehen (seitlich zum Fenster), entspiegeltes Display bzw. Jalousie, Sehabstand prüfen, Schriftgröße/Skalierung anpassen, regelmäßige Pausen, Augenuntersuchung anbieten.
 
 ## 3. Software-Ergonomie (DIN EN ISO 9241-110)
-Grundsätze der Dialoggestaltung nach der aktuellen Fassung von 2020. Ältere Prüfungen nennen noch „Fehlertoleranz“, „Lernförderlichkeit“ und „Individualisierbarkeit“ – beide Begriffe werden anerkannt.
+Grundsätze der Dialoggestaltung nach der aktuellen Fassung von 2020. Ältere Unterlagen nennen noch die Begriffe von 2006: „Fehlertoleranz“ (heute Robustheit gegen Benutzungsfehler), „Lernförderlichkeit“ (heute Erlernbarkeit) und „Individualisierbarkeit“ (entfallen) – die alten Bezeichnungen werden in der Regel ebenfalls anerkannt.
 
 | Grundsatz | Beispiel |
 |---|---|
@@ -80,7 +80,7 @@ Menschen mit Einschränkungen (Sehen, Hören, Motorik, Kognition) sollen IT unei
   - **U**nderstandable – verständlich (klare Sprache, vorhersehbares Verhalten, hilfreiche Fehlermeldungen)
   - **R**obust – kompatibel mit Hilfstechnologien (Screenreader), valides HTML
 
-**Hilfsmittel am Arbeitsplatz:** Screenreader, Bildschirmlupe, **Braillezeile**, Spracheingabe/-ausgabe, Großschrifttastatur, Trackball, Fußmaus, unterfahrbarer höhenverstellbarer Tisch, Kontrasteinstellungen, Untertitel in Videokonferenzen. Förderung über das **Integrationsamt**/Arbeitsagentur möglich.
+**Hilfsmittel am Arbeitsplatz:** Screenreader, Bildschirmlupe, **Braillezeile**, Spracheingabe/-ausgabe, Großschrifttastatur, Trackball, Fußmaus, unterfahrbarer höhenverstellbarer Tisch, Kontrasteinstellungen, Untertitel in Videokonferenzen. Förderung über das **Inklusionsamt** (früher Integrationsamt; in NRW bei LVR/LWL) bzw. die Arbeitsagentur möglich.
 
 ## 5. Arbeitssicherheit bei IT-Arbeiten
 - **Elektrische Sicherheit:** ortsveränderliche elektrische Geräte werden regelmäßig geprüft (**DGUV Vorschrift 3**, Prüfplakette); defekte Kabel/Geräte sofort außer Betrieb nehmen; keine Mehrfachsteckdosen hintereinander stecken (Überlastung)

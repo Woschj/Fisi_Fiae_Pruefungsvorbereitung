@@ -46,7 +46,7 @@ Nennen Sie drei Risiken des Umzugs, bewerten Sie sie grob und nennen Sie je eine
 ### P1.4 ★★ – Vorgehensmodell (6 Punkte)
 📘 **Nachlernen:** [[P1 Projektmanagement und Vorgehensmodelle#Agile Vorgehensweisen – Scrum|P1 › Agile Vorgehensweisen – Scrum]]
 
-Parallel soll eine Web-App für Bürgeranfragen entwickelt werden, deren Funktionen noch nicht genau feststehen. Empfehlen Sie ein Vorgehensmodell und begründen Sie; nenne die drei Scrum-Rollen.
+Parallel soll eine Web-App für Bürgeranfragen entwickelt werden, deren Funktionen noch nicht genau feststehen. Empfehlen Sie ein Vorgehensmodell, begründen Sie Ihre Wahl und nennen Sie die drei Scrum-Rollen.
 
 > [!success]- Lösung
 > **Scrum/agil**: Anforderungen unklar und veränderlich → kurze Sprints, nach jedem Sprint nutzbares Inkrement, frühes Feedback der Archivmitarbeitenden, Nachsteuern möglich. (3 P)

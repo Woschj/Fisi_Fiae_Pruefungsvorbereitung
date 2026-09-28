@@ -113,7 +113,7 @@ Ein Dienstleister muss mit seinen **verrechenbaren (produktiven) Stunden** alle 
 
 > [!example] Beispiel
 > Eigener Backup-Server: 6 000 € Fixkosten/Jahr + 3 € je Kunde und Monat · Cloud-Plattform: 12 € je Kunde und Monat.
-> 6 000 + 36x = 144x (jährlich je Kunde: 3 × 12 = 36 € bzw. 12 × 12 = 144 €) → 6 000 = 108x → **x ≈ 56 Kunden**. Unter 56 Kunden ist der Einkauf günstiger, darüber die Eigenlösung – sofern Personal und Know-how vorhanden sind.
+> 6 000 + 36x = 144x (jährlich je Kunde: 3 × 12 = 36 € bzw. 12 × 12 = 144 €) → 6 000 = 108x → x ≈ 55,6 → bis **55 Kunden** ist der Einkauf günstiger, ab **56 Kunden** die Eigenlösung (56: 8 016 € vs. 8 064 €) – sofern Personal und Know-how vorhanden sind.
 
 **Ausschreibung:** Der Auftraggeber beschreibt seinen Bedarf in einem **Leistungsverzeichnis** (Positionen mit Menge, Einheit, genauer technischer Beschreibung) und fordert mehrere Anbieter zur Angebotsabgabe auf. Vorteile: **vergleichbare** Angebote, Wettbewerb, Transparenz (öffentliche Auftraggeber sind dazu verpflichtet). Danach: Angebote prüfen, quantitativ und qualitativ vergleichen ([[W2 Nutzwertanalyse und Entscheidungen]]), Zuschlag erteilen.
 

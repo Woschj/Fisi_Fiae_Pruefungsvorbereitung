@@ -57,7 +57,7 @@ Wie lange gilt die gesetzliche Gewährleistung bei neuen Sachen?::2 Jahre
 Wie lange gilt die Beweislastumkehr beim Verbrauchsgüterkauf (B2C)?::12 Monate – so lange wird vermutet, dass der Mangel schon bei Übergabe bestand
 Was verlangt die Rügepflicht nach § 377 HGB?::Beim beidseitigen Handelskauf muss die Ware unverzüglich geprüft und ein Mangel sofort gerügt werden
 Welche Voraussetzungen hat ein Lieferungsverzug?::Fälligkeit, Mahnung (entfällt bei kalendermäßig bestimmtem Termin) und – für Schadensersatz – Verschulden
-Wann kommt ein Schuldner spätestens in Zahlungsverzug?::30 Tage nach Fälligkeit und Zugang der Rechnung
+Wann kommt ein Schuldner spätestens in Zahlungsverzug?::30 Tage nach Fälligkeit und Zugang der Rechnung – bei Verbrauchern nur, wenn die Rechnung darauf hinweist
 Was ist Annahmeverzug?::Der Käufer nimmt ordnungsgemäß gelieferte Ware nicht an – ein Verschulden ist nicht nötig
 Was unterscheidet Garantie, Gewährleistung und Kulanz?::Garantie: freiwillig, meist vom Hersteller · Gewährleistung: gesetzlich, vom Verkäufer · Kulanz: Entgegenkommen ohne Anspruch
 Wann hat ein Verbraucher ein Widerrufsrecht und wie lange?::14 Tage – bei Fernabsatz (z. B. Onlinekauf) und Verträgen außerhalb von Geschäftsräumen

@@ -43,7 +43,7 @@ Erstellen Sie eine grobe Zeitplanung für ein **FISI-Projekt mit 40 Stunden** in
 ### Q1.3 ★★ – Nutzwertanalyse (8 Punkte)
 📘 **Nachlernen:** [[PA-1 Projektantrag, Durchführung und Dokumentation#Entscheidungen begründen|PA-1 › Entscheidungen begründen]]
 
-Zwei Backuplösungen werden bewertet (Punkte 1–10): Kosten (Gewicht 40 %): A 6, B 9 · Funktionsumfang (35 %): A 8, B 6 · Support (25 %): A 7, B 6. Berechnen Sie die Nutzwerte und triff eine Entscheidung. Nennen Sie einen Kritikpunkt an der Methode.
+Zwei Backuplösungen werden bewertet (Punkte 1–10): Kosten (Gewicht 40 %): A 6, B 9 · Funktionsumfang (35 %): A 8, B 6 · Support (25 %): A 7, B 6. Berechnen Sie die Nutzwerte und treffen Sie eine Entscheidung. Nennen Sie einen Kritikpunkt an der Methode.
 
 > [!success]- Lösung
 > - A: 0,4 · 6 + 0,35 · 8 + 0,25 · 7 = 2,4 + 2,8 + 1,75 = **6,95** (3 P)

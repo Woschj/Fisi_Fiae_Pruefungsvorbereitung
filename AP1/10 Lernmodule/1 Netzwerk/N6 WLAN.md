@@ -56,7 +56,7 @@ Im Besprechungsraum bricht das WLAN ständig ab, im Lager ist gar kein Empfang, 
 | Störungen | hoch (Nachbar-WLANs, Bluetooth, Mikrowelle) | geringer; teils **DFS** (Radar-Rücksicht) nötig | kaum (neu, wenig genutzt) |
 | Geräteunterstützung | alle | ab Wi-Fi 4/5 | nur Wi-Fi 6E/7 |
 
-**Kanalplanung:** Benachbarte Access Points auf **überlappungsfreie** Kanäle legen (2,4 GHz: 1 – 6 – 11 im Wechsel). **Kanalbreite:** breitere Kanäle (40/80/160 MHz) bringen mehr Tempo, aber weniger freie Kanäle – in dichten Umgebungen lieber schmal.
+**Kanalplanung:** Benachbarte Access Points auf **überlappungsfreie** Kanäle legen (2,4 GHz: 1 – 6 – 11 im Wechsel; in Europa mit 13 Kanälen bei 20 MHz Breite auch 1 – 5 – 9 – 13). **Kanalbreite:** breitere Kanäle (40/80/160 MHz) bringen mehr Tempo, aber weniger freie Kanäle – in dichten Umgebungen lieber schmal.
 
 ---
 

@@ -5,7 +5,7 @@ tags: [ap2/aufgaben, ap2/wiso]
 # Aufgaben WiSo
 
 Die WiSo-Prüfung besteht aus **30 gebundenen Aufgaben in 60 Minuten** (Auswahl, Zuordnung, Reihenfolge, kurze Rechnungen). Die Aufgaben hier sind bewusst **offen** gestellt: Wer sie frei beantworten kann, erkennt die richtige Auswahlantwort sicher. Schwierigkeit: ★ Einstieg · ★★ Prüfungsniveau.
-**So arbeitest du:** schriftlich antworten, Lösung aufklappen, selbst bewerten. Prüfungssimulation mit Auswahlaufgaben: [[WiSo-Quiz]] · echte WiSo-Sätze in den [[AP2/FISI/20 Aufgaben/Pruefungen/Uebersicht FISI AP2|FISI-Terminordnern]].
+**So arbeitest du:** schriftlich antworten, Lösung aufklappen, selbst bewerten. Prüfungssimulation mit Auswahlaufgaben: [[WiSo-Quiz]] · vollständige Probeprüfungen im Prüfungsformat: [[WiSo Probeprüfung 1]] · [[WiSo Probeprüfung 2]] · [[WiSo Probeprüfung 3]]. Hilfsmittel in der Prüfung: nicht programmierbarer Taschenrechner.
 
 > [!info] Ausgangssituation
 > **Jana Wolf** (geboren am 14.05.2008) beginnt am 01.08.2025 eine Ausbildung zur Fachinformatikerin bei der **NetPlan Systemhaus GmbH** (fiktiv, 45 Beschäftigte, Sitz in Bochum). Der Betrieb ist tarifgebunden und hat einen Betriebsrat.
@@ -126,7 +126,7 @@ a) Ab wie vielen Beschäftigten kann ein Betriebsrat gewählt werden, und wie la
 
 > [!success]- Lösung
 > a) ab **5** ständigen wahlberechtigten Arbeitnehmern (davon 3 wählbar), Amtszeit **4 Jahre** (2 P)
-> b) Beschäftigte **unter 18** sowie Auszubildende **unter 25**; Amtszeit **2 Jahre** (2 P)
+> b) Beschäftigte **unter 18** sowie **alle Auszubildenden** (die Altersgrenze 25 für Azubis ist seit 2021 entfallen); Amtszeit **2 Jahre** (2 P)
 
 ### W3.3 ★★ – Tarifverträge (6 Punkte)
 📘 **Nachlernen:** [[WISO-3 Mitbestimmung und Tarifrecht#3. Tarifrecht|WISO-3 › Tarifrecht]]

@@ -5,14 +5,14 @@ fachrichtung: FIAE
 # FIAE · AP2-Probeprüfung 1
 
 > [!info] Durchführung
-> Bearbeiten Sie die drei Prüfungsteile jeweils innerhalb der angegebenen Zeit. Öffnen Sie die Lösungshinweise erst nach Abschluss des jeweiligen Prüfungsteils und tragen Sie Ihre erreichten Punkte anschließend im Dashboard ein. Szenarien und Datensätze sind eigens für diese Probeprüfung erstellt.
+> Bearbeiten Sie die drei Prüfungsteile jeweils innerhalb der angegebenen Zeit. Öffnen Sie die Lösungshinweise erst nach Abschluss des jeweiligen Prüfungsteils, bewerten Sie sich anhand der **Bewertungshinweise** und tragen Sie Ihre erreichten Punkte anschließend im Dashboard ein. Szenarien und Datensätze sind eigens für diese Probeprüfung erstellt.
 
 ## Teil 1 – Planen eines Softwareproduktes
 
 > [!abstract] Ausgangssituation
 > Die **Radwerk Service GmbH** möchte eine Webanwendung zur Annahme und Verwaltung von Reparaturaufträgen. Kundinnen und Kunden sollen Reparaturen beauftragen und den Bearbeitungsstatus verfolgen können. Werkstattmitarbeitende erfassen Ersatzteile und Arbeitszeiten. Die Anwendung soll barrierearm sein und personenbezogene Daten schützen.
 
-**90 Minuten · 4 Aufgaben à 25 Punkte · Hilfsmittel: Taschenrechner**
+**90 Minuten · 4 Aufgaben à 25 Punkte · Hilfsmittel: nicht programmierbarer Taschenrechner**
 
 ```dataviewjs
 await dv.view("AP2/99 System/views/pruefung", { name: "FIAE Probeprüfung 1 – Planen eines Softwareproduktes", aufgaben: [25, 25, 25, 25], minuten: 90 })
@@ -47,9 +47,11 @@ Das Projekt startet am Tag 0. Vorgänge:
 > | E | 6 | 8 |
 > | F | 10 | 12 |
 >
-> Kritischer Pfad **A–B–D–F**, Dauer **12 Arbeitstage**. Der Pfad A–C–E–F dauert 10 Tage und hat zwei Tage Puffer. Eine Verzögerung von C um einen Tag verschiebt den Endtermin allein nicht.
+> Kritischer Pfad **A–B–D–F**, Dauer **12 Arbeitstage**. Der Pfad A–C–E–F dauert 10 Tage; C und E haben je **2 Tage Gesamtpuffer** (SAZ C = 4, SEZ C = 8). Eine Verzögerung von C um einen Tag verschiebt den Endtermin daher **nicht**; der Puffer sinkt auf 1 Tag.
 >
-> Risiken: unklare Anforderungen → priorisierte Workshops und Abnahme von Akzeptanzkriterien; fehlende Bildrechte → klare Uploadregeln, Rechtehinweise und Löschprozess; zu wenig Testzeit → Testdaten und Testfenster früh planen.
+> Risiken: unklare Anforderungen → Workshops und abgenommene Akzeptanzkriterien · Ausfall des einzigen Backend-Entwicklers (kritischer Pfad!) → Wissensteilung, Code-Reviews, Vertretung · verspätetes Feedback aus dem Usability-Test → Testtermine und Teilnehmende früh fest einplanen.
+>
+> **Bewertungshinweise:** a) FAZ/FEZ je Vorgang 1 P, kritischer Pfad 3 P, Dauer 3 P · b) Puffer 4 P, Beurteilung 3 P · c) je Risiko mit Maßnahme 3 P.
 
 ### Aufgabe 2 – Anforderungen und Use Cases (25 Punkte)
 
@@ -64,7 +66,9 @@ Das Projekt startet am Tag 0. Vorgänge:
 >
 > **b)** Akteur: Kunde. Vorbedingung: Kunde ist angemeldet und hat die erforderlichen Auftragsdaten angegeben. Ablauf: Reparaturdaten und gegebenenfalls ein Foto eingeben → Auftrag absenden → Portal speichert den Auftrag und zeigt die Auftragsnummer an. Alternativ: Pflichtangaben fehlen oder die Datei ist unzulässig; das Portal weist auf den Fehler hin und speichert den Auftrag nicht.
 >
-> **c)** Ein Akzeptanzkriterium ist eine überprüfbare Bedingung für die Abnahme. Beispiel: Nach dem Absenden gültiger Auftragsdaten wird eine Auftragsnummer angezeigt und der Auftrag mit dem Status „eingegangen“ gespeichert.
+> **c)** Ein Akzeptanzkriterium ist eine überprüfbare Bedingung, die erfüllt sein muss, damit der Auftraggeber eine Anforderung abnimmt – es schafft ein gemeinsames Verständnis von „fertig“ und ist Grundlage für Abnahmetests. Beispiel: „Gegeben ein angemeldeter Kunde, wenn er alle Pflichtfelder ausfüllt und absendet, dann wird innerhalb von 2 Sekunden eine Auftragsnummer angezeigt und der Auftrag mit dem Status ‚eingegangen‘ gespeichert.“
+>
+> **Bewertungshinweise:** a) je eindeutige, prüfbare Anforderung 2,5 P (nicht prüfbare Formulierungen wie „schnell“ oder „benutzerfreundlich“ 0 P) · b) Akteur 1 P, Vorbedingung 2 P, Ablauf 3 P, Alternativfall 2 P · c) Zweck 3 P, messbares Kriterium 4 P.
 
 ### Aufgabe 3 – Datenmodell und Schnittstelle (25 Punkte)
 
@@ -81,7 +85,13 @@ Es gibt Kundinnen und Kunden, Reparaturaufträge und Arbeitspositionen. Ein Kund
 >
 > **b)** Kunde 1:n Auftrag: ein Kunde kann mehrere Aufträge erteilen. Auftrag 1:n Position: ein Auftrag kann mehrere Positionen enthalten; jede Position gehört zu genau einem Auftrag.
 >
-> **c)** Zum Beispiel `GET /api/auftraege/4711/status`; bei Erfolg `200 OK` mit einer JSON-Antwort, die Status und Zeitstempel enthält. Für einen unbekannten Auftrag antwortet der Dienst mit **404 Not Found**; eine fehlende Anmeldung kann mit **401 Unauthorized** beantwortet werden.
+> **c)** Zum Beispiel `GET /api/auftraege/4711/status`; bei Erfolg `200 OK` mit einer JSON-Antwort, die Status und Zeitstempel enthält:
+> ```json
+> { "auftragId": 4711, "status": "in Bearbeitung", "geaendertAm": "2026-03-12T14:05:00Z" }
+> ```
+> Für einen unbekannten Auftrag antwortet der Dienst mit **404 Not Found**; eine fehlende Anmeldung kann mit **401 Unauthorized** beantwortet werden.
+>
+> **Bewertungshinweise:** a) je Entität mit Attributen 2 P, Schlüssel korrekt 4 P · b) je Beziehung mit Kardinalität 3,5 P · c) Methode 1 P, Pfad 2 P, Beispielantwort 3 P, Statuscode 2 P.
 
 ### Aufgabe 4 – Qualität, Datenschutz und Sicherheit (25 Punkte)
 
@@ -92,11 +102,13 @@ Es gibt Kundinnen und Kunden, Reparaturaufträge und Arbeitspositionen. Ein Kund
 **c) (8 P)** Nennen Sie zwei Maßnahmen zur barrierearmen Gestaltung des Portals und beschreiben Sie für jede Maßnahme einen geeigneten Test.
 
 > [!success]- Lösung Aufgabe 4
-> **a)** Funktionale Eignung → Anforderungen/Abnahmetests; Zuverlässigkeit → Fehlerbehandlung und Monitoring; Benutzbarkeit → Usability-Test; Wartbarkeit → klare Module und Code-Reviews; Sicherheit → Rechteprüfung und sichere Speicherung. Vier begründete Beispiele.
+> **a)** (ISO/IEC 25010) Funktionale Eignung → Abnahmetests gegen Akzeptanzkriterien · Zuverlässigkeit → Fehlerbehandlung, Monitoring, Lasttests · Benutzbarkeit → Usability-Test mit Kundinnen und Kunden · Wartbarkeit → Modularisierung, Code-Reviews, statische Codeanalyse · Sicherheit → Penetrationstest, Rechteprüfung · Leistungseffizienz → Antwortzeiten messen.
 >
-> **b)** Rollenrechte nach Minimalprinzip (Vertraulichkeit); TLS und sichere Passwort-Hashes (Vertraulichkeit); Uploads nach Typ/Größe prüfen und außerhalb des Webroots speichern (Sicherheit/Verfügbarkeit); Löschfristen festlegen. Drei begründete Maßnahmen.
+> **b)** Rollenrechte nach Minimalprinzip – Kunden sehen nur eigene Aufträge (**Vertraulichkeit**) · TLS für alle Verbindungen und Passwort-Hashes mit bcrypt/Argon2 (**Vertraulichkeit**, TLS auch **Integrität**) · Uploads nach Dateityp und Größe prüfen, außerhalb des Webroots speichern und auf Schadcode scannen (**Integrität**/**Verfügbarkeit**) · Datensicherung der Datenbank (**Verfügbarkeit**) · Löschfristen für Fotos nach Abschluss (Datenminimierung, Art. 5 DSGVO).
 >
-> **c)** Tastaturbedienung mit sichtbarem Fokus testen; aussagekräftige Labels und Alternativtexte mit Screenreader testen; Kontraste automatisiert und manuell prüfen.
+> **c)** Vollständige Tastaturbedienung mit sichtbarem Fokus → Test: Formular nur mit Tab/Enter ausfüllen · Formularfelder mit Labels und Bilder mit Alternativtexten → Test mit Screenreader (NVDA, VoiceOver) · Kontrast mindestens 4,5 : 1 (WCAG 2.1 AA) → Messung mit Kontrastprüfer.
+>
+> **Bewertungshinweise:** a) je Merkmal mit Maßnahme 2 P · b) je Maßnahme mit Schutzziel 3 P · c) je Maßnahme 2 P, je Test 2 P.
 
 ---
 
@@ -105,7 +117,7 @@ Es gibt Kundinnen und Kunden, Reparaturaufträge und Arbeitspositionen. Ein Kund
 > [!abstract] Ausgangssituation
 > Die Werkstattanwendung der **Radwerk Service GmbH** speichert Reparaturaufträge samt Arbeitspositionen und wertet die erfassten Kosten aus.
 
-**90 Minuten · 4 Aufgaben à 25 Punkte · Hilfsmittel: Taschenrechner**
+**90 Minuten · 4 Aufgaben à 25 Punkte · Hilfsmittel: nicht programmierbarer Taschenrechner**
 
 ```dataviewjs
 await dv.view("AP2/99 System/views/pruefung", { name: "FIAE Probeprüfung 1 – Algorithmen", aufgaben: [25, 25, 25, 25], minuten: 90 })
@@ -113,29 +125,44 @@ await dv.view("AP2/99 System/views/pruefung", { name: "FIAE Probeprüfung 1 – 
 
 ### Aufgabe 1 – Algorithmus und Test (25 Punkte)
 
-Die Werkstattleitung möchte Aufträge mit kurzer Bearbeitungszeit auswerten. Eine Liste enthält die Bearbeitungszeiten in Minuten. Für die Auswertung zählen nur Zeiten bis einschließlich 120 Minuten.
+Die Werkstattleitung möchte die **mittlere Bearbeitungszeit** unabhängig von Ausreißern auswerten und verwendet dafür den **Median**. Die Bearbeitungszeiten (in Minuten) liegen unsortiert in einem Array `zeiten` vor. Der Median ist bei ungerader Anzahl der mittlere Wert der sortierten Liste, bei gerader Anzahl der Mittelwert der beiden mittleren Werte.
 
-**a) (10 P)** Entwickeln Sie Pseudocode, der die Summe und die Anzahl der zu berücksichtigenden Bearbeitungszeiten ermittelt.
+**a) (12 P)** Entwickeln Sie eine Funktion `median(zeiten)` in Pseudocode. Sortieren Sie das Array zunächst mit einem selbst implementierten Sortierverfahren (keine Bibliotheksfunktion) und ermitteln Sie anschließend den Median. Ein leeres Array soll den Wert −1 liefern.
 
-**b) (8 P)** Führen Sie den Algorithmus mit den Bearbeitungszeiten [45, 135, 90, 120, 30] aus. Geben Sie die resultierende Summe und Anzahl an.
+**b) (6 P)** Geben Sie das sortierte Array und den Median für die Eingaben `[45, 135, 90, 120, 30]` und `[45, 135, 90, 120]` an.
 
-**c) (7 P)** Nennen Sie drei Grenz- oder Sonderfälle, die Sie für den Algorithmus testen würden.
+**c) (7 P)** Nennen Sie das von Ihnen verwendete Sortierverfahren, seine Laufzeitkomplexität im ungünstigsten Fall und zwei weitere Testfälle mit erwartetem Ergebnis.
 
 > [!success]- Lösung Aufgabe 1
+> **a)** (z. B. Insertion Sort)
 > <pre>
-> summe ← 0
-> anzahl ← 0
-> FÜR i ← 0 BIS länge(zeiten) - 1
->     WENN zeiten[i] <= 120 DANN
->         summe ← summe + zeiten[i]
->         anzahl ← anzahl + 1
+> FUNKTION median(zeiten): Gleitkommazahl
+>     n ← länge(zeiten)
+>     WENN n = 0 DANN
+>         RÜCKGABE -1
 >     ENDE WENN
-> ENDE FÜR
+>     FÜR i ← 1 BIS n - 1
+>         wert ← zeiten[i]
+>         j ← i - 1
+>         SOLANGE j >= 0 UND zeiten[j] > wert
+>             zeiten[j + 1] ← zeiten[j]
+>             j ← j - 1
+>         ENDE SOLANGE
+>         zeiten[j + 1] ← wert
+>     ENDE FÜR
+>     WENN n MOD 2 = 1 DANN
+>         RÜCKGABE zeiten[n DIV 2]
+>     SONST
+>         RÜCKGABE (zeiten[n DIV 2 - 1] + zeiten[n DIV 2]) / 2
+>     ENDE WENN
+> ENDE FUNKTION
 > </pre>
 >
-> Berücksichtigt werden 45, 90, 120 und 30: Summe **285**, Anzahl **4**.
+> **b)** `[30, 45, 90, 120, 135]` → Median **90** · `[45, 90, 120, 135]` → (90 + 120) / 2 = **105**
 >
-> Geeignete Tests: leere Liste; genau 120 (eingeschlossen); nur Werte über 120; ungültige oder negative Eingabe.
+> **c)** Insertion Sort: **O(n²)** im ungünstigsten Fall (absteigend sortierte Eingabe). Testfälle: leeres Array → −1 · ein Element `[50]` → 50 · bereits sortiertes Array `[10, 20, 30]` → 20 · gleiche Werte `[60, 60]` → 60.
+>
+> **Bewertungshinweise:** a) Sortierverfahren korrekt 6 P, Median ungerade/gerade 4 P, leeres Array 2 P · b) je Eingabe 3 P · c) Verfahren und Komplexität 3 P, je Testfall 2 P.
 
 ### Aufgabe 2 – Objektorientierung (25 Punkte)
 
@@ -148,11 +175,13 @@ Ein Reparaturauftrag besitzt eine Auftragsnummer, ein Eingangsdatum und einen St
 **c) (8 P)** Beschreiben Sie, wie der Preis für eine Ersatzteilposition, eine Arbeitsposition und anschließend für den gesamten Auftrag berechnet wird.
 
 > [!success]- Lösung Aufgabe 2
-> **a)** Auftrag(auftragsNr, eingang, status, positionen: Liste); abstrakte Position(menge); ErsatzteilPosition(artikel, einzelpreis); ArbeitsPosition(stunden, stundensatz). Ein Auftrag umfasst viele Positionen.
+> **a)** `Auftrag(- auftragsNr, - eingang, - status, - positionen: Liste<Position>)` · abstrakte Klasse `Position(- bezeichnung, + berechnePreis())` · `ErsatzteilPosition(- menge, - einzelpreis)` und `ArbeitsPosition(- stunden, - stundensatz)` erben von Position. Auftrag 1 ◆— 1..* Position (Komposition).
 >
 > **b)** Vererbung bündelt gemeinsame Felder in Position. Kapselung schützt Zustände und ermöglicht kontrollierte Änderung über Methoden. Polymorphie erlaubt, unterschiedliche Positionsobjekte über dieselbe Methode berechnePreis() zu behandeln.
 >
-> **c)** Ersatzteil: Menge × Einzelpreis. Arbeitsposition: Stunden × Stundensatz. Gesamtpreis = Summe der Positionspreise. Negative Mengen, Zeiten und Preise werden validiert.
+> **c)** Ersatzteil: Menge × Einzelpreis. Arbeitsposition: Stunden × Stundensatz. Der Auftrag durchläuft seine Positionsliste und summiert `berechnePreis()` jeder Position – welche Berechnung ausgeführt wird, entscheidet die dynamische Bindung. Negative Mengen, Zeiten und Preise werden bei der Erfassung abgewiesen.
+>
+> **Bewertungshinweise:** a) Klassen mit Attributen 5 P, Beziehungen (Aggregation/Komposition, Vererbung) 3 P · b) je Begriff am Modell 3 P · c) je Berechnung 2 P, Gesamtpreis 4 P.
 
 ### Aufgabe 3 – Relationale Datenbank und SQL (25 Punkte)
 
@@ -176,7 +205,13 @@ Die Datenbank enthält `Auftrag(auftrag_id, eingang, status, kunde_id)` und `Pos
 > HAVING SUM(p.menge * p.einzelpreis) > 200;
 > </pre>
 >
-> **c)** UPDATE Auftrag SET status = 'abgeschlossen' WHERE auftrag_id = 4711; Vorher Zeile mit demselben Filter prüfen und innerhalb einer Transaktion arbeiten; WHERE-Klausel kontrollieren.
+> **c)**
+> <pre>
+> UPDATE Auftrag SET status = 'abgeschlossen' WHERE auftrag_id = 4711;
+> </pre>
+> Maßnahmen: vorher mit `SELECT … WHERE auftrag_id = 4711` prüfen, welche Zeilen betroffen sind · in einer Transaktion ausführen und erst nach Kontrolle `COMMIT` · Anwendungskonto nur mit notwendigen Rechten.
+>
+> **Bewertungshinweise:** a) Schlüssel 4 P, Beziehung 4 P · b) SUM 2 P, JOIN 2 P, GROUP BY 2 P, HAVING 3 P · c) Anweisung 5 P, Maßnahme 3 P.
 
 ### Aufgabe 4 – Testen und Laufzeit (25 Punkte)
 
@@ -184,19 +219,21 @@ Die Datenbank enthält `Auftrag(auftrag_id, eingang, status, kunde_id)` und `Pos
 
 **b) (9 P)** Erläutern Sie jeweils einen Unit-Test, Integrationstest und Abnahmetest für die Auftragsverwaltung.
 
-**c) (8 P)** Ein Algorithmus vergleicht jeden von n Aufträgen mit jedem anderen Auftrag. Bestimmen Sie die asymptotische Laufzeit in der O-Notation und begründen Sie Ihre Angabe.
+**c) (8 P)** Die Werkstatt speichert 100.000 Aufträge in einem nach Auftragsnummer **sortierten** Array. Bestimmen Sie die maximale Anzahl an Vergleichen für eine lineare und für eine binäre Suche und geben Sie jeweils die Laufzeitklasse in O-Notation an.
 
 > [!success]- Lösung Aufgabe 4
 > **a)** Gültig: 0 bis 30. Ungültig: kleiner 0 und größer 30; ggf. zusätzlich falsches Format. Grenzwerte: −1, 0, 1, 29, 30, 31.
 >
 > **b)** Unit-Test prüft isoliert die Preisberechnung einer Position. Integrationstest prüft Zusammenspiel von Auftrag, Positionen und Datenbank. Abnahmetest prüft mit Werkstattmitarbeitenden vereinbarte Abläufe anhand der Akzeptanzkriterien.
 >
-> **c)** Im ungünstigsten Fall n × n Vergleiche, also **O(n²)**. Verdopplung von n führt ungefähr zu viermal so vielen Vergleichen.
+> **c)** Lineare Suche: im ungünstigsten Fall **100.000** Vergleiche → **O(n)**. Binäre Suche: Suchbereich wird je Schritt halbiert; 2¹⁶ = 65.536 < 100.000 ≤ 2¹⁷ = 131.072 → höchstens **17** Vergleiche → **O(log n)**. Voraussetzung der binären Suche ist die Sortierung.
+>
+> **Bewertungshinweise:** a) Klassen 4 P, Grenzwerte 4 P · b) je Teststufe 3 P · c) je Suchverfahren Anzahl 2 P und O-Notation 2 P.
 
 ---
 
 ## Teil 3 – Wirtschafts- und Sozialkunde
 
-**60 Minuten · 20 Fragen à 5 Punkte.** [[WiSo Probeprüfung 1|WiSo-Teil öffnen und Antworten anklicken]]
+**60 Minuten · 30 Aufgaben · Hilfsmittel: nicht programmierbarer Taschenrechner.** [[WiSo Probeprüfung 1|WiSo-Teil öffnen]]
 
 Nachbereitung: [[AP2 FIAE Fehlerlog]] · Prüfungsübersicht: [[Uebersicht FIAE AP2]] · ← [[AP2 FIAE Start]]

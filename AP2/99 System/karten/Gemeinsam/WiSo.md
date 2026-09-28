@@ -48,7 +48,7 @@ Was regelt das Arbeitszeitgesetz für Erwachsene?::Max. 8 h täglich, verlänger
 
 Ab wie vielen Beschäftigten kann ein Betriebsrat gewählt werden?::Ab 5 ständigen wahlberechtigten Arbeitnehmern, von denen 3 wählbar sind
 Amtszeit des Betriebsrats?::4 Jahre
-Wer wählt die JAV?::Beschäftigte unter 18 und Auszubildende unter 25
+Wer wählt die JAV?::Beschäftigte unter 18 und alle Auszubildenden (Altersgrenze 25 für Azubis seit 2021 entfallen)
 Amtszeit der JAV?::2 Jahre
 Nenne drei Bereiche echter Mitbestimmung.::Arbeitszeitbeginn/-ende, Urlaubsgrundsätze, technische Überwachung, Betriebsordnung, Entlohnungsgrundsätze
 Was passiert bei einer Kündigung ohne Anhörung des Betriebsrats?::Sie ist unwirksam

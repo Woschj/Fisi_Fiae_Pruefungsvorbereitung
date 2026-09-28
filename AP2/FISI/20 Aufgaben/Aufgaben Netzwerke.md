@@ -177,7 +177,7 @@ Zwei Switches werden mit zwei Kabeln verbunden. Erkläre, was STP und was Link A
 ### N12.1 ★★ – PAT nachvollziehen (6 Punkte)
 📘 **Nachlernen:** [[FISI-12 NAT, Firewall, DMZ und Proxy#1. NAT und PAT|FISI-12 › NAT und PAT]]
 
-Der PC 192.168.10.23 ruft mit Quellport 51000 einen Webserver 93.184.216.34 auf. Der Router hat die öffentliche Adresse 198.51.100.7 und wählt den Port 40001. Gib Quell- und Ziel-Socket an a) vor dem Router, b) nach dem Router, c) für die Antwort im Internet, d) für die Antwort im LAN.
+Der PC 192.168.10.23 ruft mit Quellport 51000 eine Website per HTTPS auf dem Webserver 93.184.216.34 (Port 443) auf. Der Router hat die öffentliche Adresse 198.51.100.7 und wählt den Port 40001. Gib Quell- und Ziel-Socket an a) vor dem Router, b) nach dem Router, c) für die Antwort im Internet, d) für die Antwort im LAN.
 
 > [!success]- Lösung
 > | | Quelle | Ziel |

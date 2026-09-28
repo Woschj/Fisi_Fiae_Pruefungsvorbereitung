@@ -31,7 +31,7 @@ tags: [ap2/modul, ap2/fisi]
 > - **Vor- und Nachteile der Virtualisierung** nennen und **Containerisierung** gegen VMs abgrenzen.
 > - **Voraussetzungen für ein Cluster**: identische bzw. zertifizierte Hardware, gleicher Firmwarestand, gemeinsamer Speicher, identische Konfiguration.
 > - **Server aus Angeboten auswählen**: Kerne, RAM, Speicher und 10-GbE-Schnittstellen der Aufgabe zuordnen und begründen.
-> - **Rechnen:** Netzteil mit Reserve und Wirkungsgrad, Stromkosten alt/neu und Einsparung.
+> - **Rechnen:** Netzteil mit Reserve dimensionieren, Netzaufnahme über den Wirkungsgrad, Stromkosten alt/neu und Einsparung.
 > - **Skalierung** horizontal/vertikal und **Blue-Green-Deployment**, **Load Balancing** mit Round Robin, Least Connections und IP-Hash.
 
 ---
@@ -56,11 +56,14 @@ Ein Server wird nicht nach „mehr ist besser“ gekauft, sondern nach der **Rol
 Rechenweg wie in der Prüfung:
 1. Leistungsaufnahme aller Komponenten addieren.
 2. **Reserve** aufschlagen (z. B. 20 %): Summe × 1,2.
-3. **Wirkungsgrad** berücksichtigen: Ergebnis ÷ η (z. B. 0,9).
-4. Auf die **nächste marktübliche Größe aufrunden** (z. B. 450 W).
+3. Auf die **nächste marktübliche Größe aufrunden** (z. B. 400 W).
+4. Nur wenn nach der **Aufnahme aus dem Stromnetz** (Stromkosten, USV, Wärme) gefragt ist: **Wirkungsgrad** berücksichtigen – P_zu = P_ab ÷ η.
+
+> [!important] Nennleistung = Ausgangsleistung
+> Die auf dem Netzteil angegebene Leistung (z. B. 400 W) ist die Leistung, die es an die Komponenten **abgeben** kann. Der Wirkungsgrad beeinflusst daher nicht die Größenwahl, sondern nur, wie viel das Netzteil aus der Steckdose **aufnimmt**.
 
 > [!example] Beispiel
-> CPU 180 W, Mainboard 40 W, RAM 32 W, SSDs 40 W, Lüfter 12 W → 304 W · × 1,2 = 364,8 W · ÷ 0,9 = **405,3 W** → Netzteil mit **450 W**.
+> CPU 180 W, Mainboard 40 W, RAM 32 W, SSDs 40 W, Lüfter 12 W → 304 W · × 1,2 = 364,8 W → Netzteil mit **400 W**. Bei η = 0,9 nimmt der Server unter Volllast 304 W ÷ 0,9 = **337,8 W** aus dem Netz auf.
 
 ### Energiekosten
 **Arbeit (kWh) = Leistung (kW) × Zeit (h)** · 24/7-Betrieb = **8 760 h** pro Jahr · Kosten = kWh × Preis.
@@ -163,7 +166,7 @@ Zwei identische Umgebungen: **eine ist live (z. B. Green)**, auf der anderen (Bl
 > [!warning] Typische Fehler in Prüfungen
 > - Typ 1 und Typ 2 vertauschen – **Typ 1 = Bare Metal = Rechenzentrum**.
 > - Docker als Hypervisor nennen.
-> - Beim Netzteil den Wirkungsgrad **multiplizieren** statt dividieren, oder nicht auf eine marktübliche Größe aufrunden.
+> - Den Wirkungsgrad in die **Netzteilgröße** einrechnen (die Nennleistung ist die Ausgangsleistung), bei der Netzaufnahme mit η **multiplizieren** statt dividieren oder nicht auf eine marktübliche Größe aufrunden.
 > - Snapshots als Backup verkaufen.
 > - Vorteile nennen, ohne sie zu **begründen** („billiger“ allein bringt nur halbe Punkte – *warum* billiger?).
 
@@ -175,7 +178,7 @@ Zwei identische Umgebungen: **eine ist live (z. B. Green)**, auf der anderen (Bl
 
 ## Zusammenfassung
 - Serverauswahl immer an der **Rolle** begründen (DB: RAM/NVMe, Virtualisierung: Kerne/RAM, File: Kapazität/10 GbE).
-- Netzteil: Summe × (1 + Reserve) ÷ Wirkungsgrad → aufrunden. Energie: kW × 8 760 h × €/kWh.
+- Netzteil: Summe × (1 + Reserve) → auf marktübliche Größe aufrunden; Netzaufnahme = Last ÷ η. Energie: kW × 8 760 h × €/kWh.
 - **Typ 1** = Bare Metal (ESXi, Hyper-V, KVM) · **Typ 2** = gehostet (VirtualBox, Workstation).
 - Container teilen den Kernel: klein, schnell, portabel – schwächere Isolation.
 - Cluster: gleiche Hardware/Firmware, Shared Storage. Scale up vs. scale out. Load Balancing: Round Robin, Least Connections, IP-Hash. Blue-Green: umschalten ohne Ausfall.

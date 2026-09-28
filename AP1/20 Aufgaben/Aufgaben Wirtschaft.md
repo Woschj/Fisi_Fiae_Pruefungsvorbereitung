@@ -95,7 +95,7 @@ a) Berechne die Nutzwerte. b) Welcher Beamer wird empfohlen? c) Nenne zwei Kriti
 
 > [!success]- Lösung
 > a) X: 2,40 + 1,50 + 1,05 + 1,80 + 0,50 = **7,25** · Y: 1,80 + 2,25 + 1,20 + 1,20 + 0,70 = **7,15** · Z: 2,70 + 1,25 + 0,75 + 1,60 + 0,90 = **7,20** (je 1,5 P)
-> b) **X** mit knappem Vorsprung (1 P)
+> b) **X** mit knappem Vorsprung (1,5 P)
 > c) Subjektive Gewichtung/Punktvergabe · Scheingenauigkeit bei so knappen Ergebnissen (7,25 / 7,20 / 7,15) → Sensitivitätsanalyse, ggf. Teststellung (je 1 P)
 
 ### W2.2 ★★ – Quantitativ + qualitativ (6 Punkte)

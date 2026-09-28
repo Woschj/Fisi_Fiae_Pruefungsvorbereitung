@@ -68,9 +68,9 @@ Schriftlicher Vertrag zwischen **Arbeitgeber (Geschäftsleitung) und Betriebsrat
 
 | Regel | Inhalt |
 |---|---|
-| **Voraussetzung** | mindestens **5** Arbeitnehmer **unter 18** oder **Azubis unter 25** – **und ein bestehender Betriebsrat** |
-| aktives Wahlrecht | Arbeitnehmer **unter 18** und **Auszubildende unter 25** |
-| passives Wahlrecht | Arbeitnehmer, die das **25. Lebensjahr noch nicht vollendet** haben; **nicht** gleichzeitig Mitglied des Betriebsrats |
+| **Voraussetzung** | in der Regel mindestens **5** Arbeitnehmer **unter 18** oder **Auszubildende (ohne Altersgrenze)** – **und ein bestehender Betriebsrat** (§ 60 BetrVG) |
+| aktives Wahlrecht | Arbeitnehmer **unter 18** und **alle Auszubildenden** – die frühere Altersgrenze 25 für Azubis ist seit dem Betriebsrätemodernisierungsgesetz 2021 entfallen |
+| passives Wahlrecht | Arbeitnehmer **unter 25** sowie **alle Auszubildenden**; **nicht** gleichzeitig Mitglied des Betriebsrats (§ 61 Abs. 2 BetrVG) |
 | Amtszeit | **2 Jahre** (wer währenddessen 25 wird, bleibt bis zum Ende im Amt) |
 | Aufgaben | Interessen der Jugendlichen und Azubis vertreten, Anregungen an den Betriebsrat, Einhaltung von JArbSchG/BBiG/Tarifverträgen überwachen, Übernahme nach der Ausbildung fördern |
 | Rechte | nimmt an Betriebsratssitzungen teil, Stimmrecht bei Beschlüssen, die überwiegend Jugendliche/Azubis betreffen; eigene Jugend- und Auszubildendenversammlung |
@@ -132,7 +132,7 @@ flowchart TD
 - Betriebsrat ab 5 Wahlberechtigten, aktiv ab 16, passiv ab 18 + 6 Monate, Amtszeit 4 Jahre.
 - Rechte: Information < Anhörung (Kündigung) < Beratung < Mitwirkung (Einstellung) < Mitbestimmung (§ 87, z. B. Überwachungstechnik).
 - Betriebsvereinbarung = Arbeitgeber + Betriebsrat.
-- JAV: ≥ 5 Jugendliche/Azubis < 25 + Betriebsrat; wählbar < 25, nicht BR-Mitglied; Amtszeit 2 Jahre.
+- JAV: ≥ 5 Jugendliche unter 18 oder Azubis (jedes Alters) + Betriebsrat; wählbar < 25 oder Azubi, nicht BR-Mitglied; Amtszeit 2 Jahre.
 - Tarifautonomie, Manteltarif vs. Entgelttarif, Günstigkeitsprinzip, Friedenspflicht. Tarifrunde: Kündigung → Verhandlung → Schlichtung → Urabstimmung 75 % → Streik → Verhandlung → Urabstimmung 25 % → neuer Vertrag.
 
 ## Selbstcheck

@@ -75,7 +75,7 @@
     richtig: 240, einheit: "Mbit/s", erklaerung: "18 · 10⁹ · 8 = 144 · 10⁹ Bit / 600 s = **240 Mbit/s**." },
   { id: "H3-09", modul: "H3", typ: "zahl", niveau: 2, frage: "Eine Audioaufnahme: 44 100 Hz, 16 Bit, Stereo, **10 Minuten**. Wie groß ist die unkomprimierte Datei in **MB**? (1 Nachkommastelle)",
     richtig: 105.8, toleranz: 0.1, einheit: "MB", erklaerung: "44 100 × 16 × 2 × 600 = 846 720 000 Bit / 8 = 105 840 000 B ≈ **105,8 MB**." },
-  { id: "H3-10", modul: "H3", typ: "zahl", niveau: 3, frage: "Eine Kamera zeichnet mit **6 Mbit/s** rund um die Uhr auf. Wie viel Speicher (in **GB**, ganze Zahl) braucht sie für **7 Tage**?",
+  { id: "H3-10", modul: "H3", typ: "zahl", niveau: 3, frage: "Eine Kamera zeichnet mit **6 Mbit/s** rund um die Uhr auf. Wie viel Speicher (in **GB**, dezimal) braucht sie für **7 Tage**?",
     richtig: 453.6, toleranz: 1, einheit: "GB", erklaerung: "6 · 10⁶ × 86 400 × 7 = 3,6288 · 10¹² Bit / 8 = 453,6 · 10⁹ B = **≈ 454 GB**." },
 
   // ---------------------------------------------------------------- H4

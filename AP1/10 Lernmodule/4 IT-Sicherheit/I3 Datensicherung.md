@@ -86,7 +86,7 @@ gantt
 | **Spiegelung/Replikation** | Daten werden (nahezu) in Echtzeit auf ein zweites System kopiert | hohe Verfügbarkeit – **aber** Löschungen und Verschlüsselung werden mitkopiert → **kein** Backup-Ersatz |
 | **Snapshot** | Momentaufnahme auf demselben Speicher | schnelles Zurückrollen, **kein** Backup-Ersatz (gleicher Datenträger) |
 | **Versionierung** | mehrere Stände einer Datei behalten | Schutz vor versehentlichem Überschreiben |
-| **Archivierung** | Daten werden **langfristig und unveränderbar** aufbewahrt und oft vom Produktivsystem entfernt | Zweck: rechtliche Aufbewahrung (z. B. Buchhaltungsunterlagen 8–10 Jahre, E-Mails nach GoBD) – nicht Wiederherstellung |
+| **Archivierung** | Daten werden **langfristig und unveränderbar** aufbewahrt und oft vom Produktivsystem entfernt | Zweck: rechtliche Aufbewahrung (z. B. Buchungsbelege 8 Jahre, Bücher und Jahresabschlüsse 10 Jahre, Geschäftsbriefe und geschäftliche E-Mails 6 Jahre) – nicht Wiederherstellung |
 | **Deduplizierung** | identische Blöcke werden nur einmal gespeichert | spart Backupspeicher |
 
 ---

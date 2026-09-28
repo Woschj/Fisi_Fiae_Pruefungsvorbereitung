@@ -177,7 +177,7 @@ Die Buchhaltung meint: „Wir haben doch Backups, eine Archivierung brauchen wir
 
 > [!success]- Lösung
 > - **Zweck:** Backup = Wiederherstellung nach Datenverlust (Kopie, wird überschrieben); Archiv = langfristige, unveränderbare Aufbewahrung, Original wird oft aus dem Produktivsystem entfernt. (1,5 P)
-> - **Dauer:** Backup Tage/Wochen (Generationen), Archiv Jahre (z. B. 10 Jahre für Buchungsbelege). (1,5 P)
+> - **Dauer:** Backup Tage/Wochen (Generationen), Archiv Jahre (z. B. 8 Jahre für Buchungsbelege, 10 Jahre für Bücher und Jahresabschlüsse). (1,5 P)
 > - **Anforderung:** revisionssicher nach **GoBD** (unveränderbar, vollständig, auffindbar, z. B. WORM-Medien). (1 P)
 
 ### K4.4 ★★ – USV auswählen (5 Punkte)

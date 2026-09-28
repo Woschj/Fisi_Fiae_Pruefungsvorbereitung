@@ -315,26 +315,26 @@ In einem Besprechungsraum zeigt das Notebook volle Signalstärke, die Übertragu
 
 ## N7 Internet und Webanwendungen
 
-### N7.1 ★★ – Website der Kanzlei (10 Punkte)
+### N7.1 ★★ – Website der Lindner Haustechnik (10 Punkte)
 📘 **Nachlernen:** [[N7 Internet und Webanwendungen#3. Statische und dynamische Websites|N7 › Statische und dynamische Websites]] · [[N7 Internet und Webanwendungen#5. Webserver, Hosting und CMS|N7 › Webserver, Hosting und CMS]] · [[N7 Internet und Webanwendungen#6. Anforderungen an eine Firmenwebsite|N7 › Anforderungen an eine Firmenwebsite]]
 
-Die Kanzlei Berger & Partner hat eine statische Website aus sechs HTML-Seiten. Künftig sollen die Mitarbeitenden Öffnungszeiten und Neuigkeiten selbst pflegen, und Mandanten sollen online Termine anfragen können.
+Die Lindner Haustechnik GmbH hat eine statische Website aus sechs HTML-Seiten. Künftig sollen die Mitarbeitenden Öffnungszeiten und Neuigkeiten selbst pflegen, und Kundinnen und Kunden sollen online Wartungstermine anfragen können.
 a) Erkläre den Unterschied zwischen einer statischen und einer dynamischen Website. b) Nenne drei Sprachen, mit denen die dynamische Terminanfrage serverseitig umgesetzt werden kann. c) Empfiehl eine Lösung für die Pflege der Inhalte und nenne einen Vor- und einen Nachteil. d) Nenne zwei rechtliche Pflichtangaben bzw. Anforderungen an die Website.
 
 > [!success]- Lösung
 > a) **Statisch:** fertige HTML-Dateien, für alle gleich, Änderung nur durch Bearbeiten der Dateien. **Dynamisch:** Inhalte werden bei jedem Aufruf **auf dem Server erzeugt**, meist aus einer Datenbank; Formulare und Logins möglich. (3 P)
 > b) z. B. **PHP, Python, Java**, C#, JavaScript mit Node.js (je 1 P, max. 3 P)
 > c) **CMS** wie WordPress oder TYPO3: Vorteil – Pflege über die Weboberfläche ohne HTML-Kenntnisse; Nachteil – regelmäßige Updates von Kern und Plugins nötig, sonst Sicherheitslücken. (2 P)
-> d) z. B. **Impressum** (Name, Anschrift, E-Mail/Telefon, Kammer, Registerangaben) · **Datenschutzerklärung** (Terminformular, Server-Logs, Cookies) · Einwilligung für nicht notwendige Cookies · HTTPS · Barrierefreiheit (je 1 P, max. 2 P)
+> d) z. B. **Impressum** (Name, Anschrift, E-Mail/Telefon, Handelsregister, USt-IdNr.) · **Datenschutzerklärung** (Terminformular, Server-Logs, Cookies) · Einwilligung für nicht notwendige Cookies · HTTPS · Barrierefreiheit (je 1 P, max. 2 P)
 
 ### N7.2 ★ – URL und Seitenaufruf (6 Punkte)
 📘 **Nachlernen:** [[N7 Internet und Webanwendungen#1. Aufbau einer URL|N7 › Aufbau einer URL]] · [[N7 Internet und Webanwendungen#2. Was passiert beim Aufruf einer Website|N7 › Was passiert beim Aufruf einer Website]]
 
-Eine Mandantin ruft `https://www.berger-partner.de/termine/anfrage.php?anwalt=2#formular` auf.
+Eine Kundin ruft `https://www.lindner-haustechnik.de/service/anfrage.php?techniker=2#formular` auf.
 a) Benenne die Bestandteile der URL. b) Beschreibe in vier Schritten, was vom Eingeben der Adresse bis zur Anzeige passiert.
 
 > [!success]- Lösung
-> a) `https` Protokoll · `www.berger-partner.de` Host (Subdomain, Domain, TLD) · `/termine/anfrage.php` Pfad · `?anwalt=2` Query-String/Parameter · `#formular` Fragment/Sprungmarke (3 P)
+> a) `https` Protokoll · `www.lindner-haustechnik.de` Host (Subdomain, Domain, TLD) · `/service/anfrage.php` Pfad · `?techniker=2` Query-String/Parameter · `#formular` Fragment/Sprungmarke (3 P)
 > b) 1. **DNS** löst den Namen in eine IP-Adresse auf · 2. **TCP-Verbindung** zu Port 443 und **TLS-Handshake** · 3. Browser sendet eine **HTTP-GET-Anfrage**, der Server führt das PHP-Skript aus und antwortet mit HTML (Status 200) · 4. Browser lädt CSS, Bilder, Skripte nach und **stellt die Seite dar** (3 P)
 
 

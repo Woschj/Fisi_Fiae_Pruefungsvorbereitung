@@ -58,7 +58,7 @@ Eine Mitarbeiterin klagt nach dem Umzug über Nackenschmerzen und brennende Auge
 > Monitor absenken (Oberkante auf Augenhöhe), vom Fenster wegdrehen (seitlich zum Fenster), entspiegeltes Display bzw. Jalousie, Sehabstand prüfen, Schriftgröße/Skalierung anpassen, regelmäßige Pausen, Augenuntersuchung anbieten.
 
 ## 3. Software-Ergonomie (DIN EN ISO 9241-110)
-Grundsätze der Dialoggestaltung – Software soll sein:
+Grundsätze der Dialoggestaltung nach der aktuellen Fassung von 2020. Ältere Prüfungen nennen noch „Fehlertoleranz“, „Lernförderlichkeit“ und „Individualisierbarkeit“ – beide Begriffe werden anerkannt.
 
 | Grundsatz | Beispiel |
 |---|---|
@@ -118,7 +118,7 @@ Menschen mit Einschränkungen (Sehen, Hören, Motorik, Kognition) sollen IT unei
 ## Zusammenfassung
 - Grundlage: ArbSchG, ArbStättV Anhang 6, Gefährdungsbeurteilung, Pausen/Tätigkeitswechsel.
 - Monitor: Oberkante auf Augenhöhe, 50–80 cm, seitlich zum Fenster, entspiegelt; ≥ 500 Lux; verstellbarer Stuhl/Tisch; separate Tastatur.
-- Software-Ergonomie ISO 9241-110: aufgabenangemessen, selbstbeschreibend, erwartungskonform, erlernbar, steuerbar, fehlertolerant.
+- Software-Ergonomie ISO 9241-110 (2020): aufgabenangemessen, selbstbeschreibend, erwartungskonform, erlernbar, steuerbar, robust gegen Benutzungsfehler, benutzerbindend.
 - Barrierefreiheit: WCAG (POUR), BFSG seit 28.06.2025, BITV 2.0, Hilfsmittel.
 - Arbeitssicherheit: DGUV V3, Netzstecker ziehen, ESD.
 - Green IT über den Lebenszyklus; ElektroG/WEEE; Datenträger vorher sicher löschen (DIN 66399).

@@ -1285,15 +1285,17 @@ G["netzteil"] = {
   erzeuge() {
     const teile = stichprobe([["CPU", rnd(6, 25) * 5], ["Mainboard", rnd(6, 12) * 5], ["Arbeitsspeicher", rnd(2, 8) * 4], ["SSDs", rnd(2, 8) * 4], ["RAID-Controller", rnd(3, 6) * 5], ["Netzwerkkarte", rnd(2, 5) * 4], ["Lüfter", rnd(2, 6) * 3], ["Grafikkarte", rnd(6, 30) * 10]], rnd(4, 6));
     const puffer = wahl([0.2, 0.25, 0.3]), eta = wahl([0.85, 0.88, 0.9, 0.92]);
-    const summe = teile.reduce((s, t) => s + t[1], 0), mitP = summe * (1 + puffer), noetig = mitP / eta;
-    const passend = NETZTEILE.find(n => n >= noetig - 1e-9);
+    const summe = teile.reduce((s, t) => s + t[1], 0), mitP = summe * (1 + puffer), netz = summe / eta;
+    const passend = NETZTEILE.find(n => n >= mitP - 1e-9);
     return {
       titel: this.titel,
-      text: `Ein Server enthält: ${teile.map(t => `${t[0]} **${t[1]} W**`).join(", ")}. Geplant wird mit **${de(puffer * 100, 0)} %** Leistungsreserve; der Wirkungsgrad des Netzteils beträgt **${de(eta * 100, 0)} %**. Lieferbar: ${NETZTEILE.join(" · ")} W.`,
-      felder: [z("Summe der Leistungsaufnahme in W", summe, { toleranz: 0 }), z("Mindestleistung des Netzteils in W", runde(noetig, 2), { toleranz: 0.5 }),
-        f("Kleinstes passendes Netzteil", "wahl", `${passend} W`, { optionen: NETZTEILE.map(n => `${n} W`) })],
-      weg: [`Summe: ${teile.map(t => t[1]).join(" + ")} = **${summe} W**`, `+ Reserve: ${summe} × ${de(1 + puffer)} = ${de(mitP, 2)} W`,
-        `Wirkungsgrad berücksichtigen: ${de(mitP, 2)} / ${de(eta)} = **${de(noetig, 2)} W**`, `Nächste marktübliche Größe: **${passend} W**`],
+      text: `Ein Server enthält: ${teile.map(t => `${t[0]} **${t[1]} W**`).join(", ")}. Geplant wird mit **${de(puffer * 100, 0)} %** Leistungsreserve; der Wirkungsgrad des Netzteils beträgt **${de(eta * 100, 0)} %**. Lieferbar (Nennleistung = Ausgangsleistung): ${NETZTEILE.join(" · ")} W.`,
+      felder: [z("Summe der Leistungsaufnahme der Komponenten in W", summe, { toleranz: 0 }), z("Erforderliche Ausgangsleistung des Netzteils inkl. Reserve in W", runde(mitP, 2), { toleranz: 0.5 }),
+        f("Kleinstes passendes Netzteil", "wahl", `${passend} W`, { optionen: NETZTEILE.map(n => `${n} W`) }),
+        z("Leistungsaufnahme aus dem Stromnetz bei Volllast der Komponenten (ohne Reserve) in W", runde(netz, 2), { toleranz: 0.5 })],
+      weg: [`Summe: ${teile.map(t => t[1]).join(" + ")} = **${summe} W**`, `+ Reserve: ${summe} × ${de(1 + puffer)} = **${de(mitP, 2)} W**`,
+        `Die Nennleistung eines Netzteils ist seine **Ausgangsleistung** – der Wirkungsgrad spielt für die Größenwahl keine Rolle. Nächste lieferbare Größe: **${passend} W**`,
+        `Netzaufnahme: P_zu = P_ab / η = ${summe} / ${de(eta)} = **${de(netz, 2)} W** (Differenz ${de(netz - summe, 2)} W wird als Wärme abgegeben)`],
     };
   },
 };

@@ -82,9 +82,9 @@
     erklaerung: "Nachvollziehbarkeit ohne unnötige personenbezogene Daten." },
 
   // ---------------------------------------------------------------- P4
-  { id: "P4-11", modul: "P4", typ: "mc", niveau: 1, frage: "„Können Sie mir kurz sagen, wie viele Mitarbeitende gleichzeitig drucken?“ – welche Frageart?",
+  { id: "P4-11", modul: "P4", typ: "mc", niveau: 1, frage: "„Wie viele Mitarbeitende drucken bei Ihnen gleichzeitig?“ – welche Frageart liegt vor?",
     optionen: ["Suggestivfrage", "offene Frage", "Alternativfrage", "rhetorische Frage"], richtig: 1, abschnitt: "Fragetechniken",
-    erklaerung: "Die Frage lässt eine **freie Antwort** zu (W-Frage im Kern: wie viele)." },
+    erklaerung: "W-Fragen (wie viele, welche, warum …) lassen eine **freie Antwort** zu. Achtung: „Können Sie mir sagen, …?“ wäre formal eine geschlossene Ja/Nein-Frage." },
   { id: "P4-12", modul: "P4", typ: "mc", niveau: 2, frage: "„Möchten Sie das Gerät lieber am Montag oder am Dienstag geliefert bekommen?“ – welche Frageart?",
     optionen: ["offene Frage", "Alternativfrage", "Kontrollfrage", "Suggestivfrage"], richtig: 1, abschnitt: "Fragetechniken",
     erklaerung: "**Alternativfrage** – lenkt auf eine Auswahl, gut zum Abschluss." },
@@ -121,8 +121,8 @@
     optionen: ["weil der Akku geschont wird", "weil Bildschirm und Tastatur nicht getrennt einstellbar sind und das Notebook allein eine schlechte Haltung erzwingt", "wegen der Lizenz", "wegen WLAN"], richtig: 1, abschnitt: "Der ergonomische Bildschirmarbeitsplatz",
     erklaerung: "Nur getrennt lassen sich **Sehhöhe und Handposition** ergonomisch einstellen." },
   { id: "P5-13", modul: "P5", typ: "mc", niveau: 2, frage: "Eine Software meldet nur „Fehler 0x80004005“. Welcher Grundsatz der Dialoggestaltung ist verletzt?",
-    optionen: ["Steuerbarkeit", "Selbstbeschreibungsfähigkeit / Fehlertoleranz – die Meldung sagt nicht, was zu tun ist", "Individualisierbarkeit", "Lernförderlichkeit"], richtig: 1, abschnitt: "Software-Ergonomie",
-    erklaerung: "Gute Meldungen erklären **Ursache und Lösung** verständlich." },
+    optionen: ["Steuerbarkeit", "Robustheit gegen Benutzungsfehler", "Benutzerbindung", "Aufgabenangemessenheit"], richtig: 1, abschnitt: "Software-Ergonomie",
+    erklaerung: "Nach ISO 9241-110 (Robustheit gegen Benutzungsfehler, früher „Fehlertoleranz“) müssen Fehlermeldungen **verständlich** sein und zeigen, **wie der Fehler behoben** werden kann. Ein reiner Fehlercode leistet das nicht." },
   { id: "P5-14", modul: "P5", typ: "mc", niveau: 2, frage: "Welche Maßnahme unterstützt Nutzer mit Sehbehinderung auf einer Webseite?",
     optionen: ["Informationen nur über Farbe vermitteln", "Alternativtexte für Bilder und ausreichender Kontrast", "sehr kleine Schrift", "Captchas ohne Alternative"], richtig: 1, abschnitt: "Barrierefreiheit",
     erklaerung: "**Alternativtexte** (für Screenreader) und **Kontrast** – Grundprinzip „wahrnehmbar“." },

@@ -69,7 +69,7 @@ Wie hoch sollte die Oberkante eines Monitors stehen?::Auf oder leicht unter Auge
 Welcher Sehabstand zum Monitor wird empfohlen?::Etwa 50 bis 80 cm
 Wie hell muss ein Büroarbeitsplatz mindestens beleuchtet sein?::Mindestens 500 Lux
 Welche Rechtsgrundlage regelt die Bildschirmarbeit?::Die Arbeitsstättenverordnung (ArbStättV, Anhang 6) zusammen mit der Gefährdungsbeurteilung
-Welche Grundsätze der Software-Ergonomie nennt die ISO 9241-110?::Aufgabenangemessen, selbstbeschreibend, erwartungskonform, erlernbar, steuerbar, fehlertolerant, benutzerbindend
+Welche Grundsätze der Software-Ergonomie nennt die ISO 9241-110?::Aufgabenangemessenheit, Selbstbeschreibungsfähigkeit, Erwartungskonformität, Erlernbarkeit, Steuerbarkeit, Robustheit gegen Benutzungsfehler (früher: Fehlertoleranz), Benutzerbindung (Fassung 2020)
 Welche vier Prinzipien der Barrierefreiheit nennt die WCAG?::Wahrnehmbar, bedienbar, verständlich, robust (POUR)
 Seit wann gilt das Barrierefreiheitsstärkungsgesetz (BFSG)?::Seit dem 28.06.2025
 Was schreibt die DGUV Vorschrift 3 vor?::Die regelmäßige Prüfung elektrischer Anlagen und Geräte

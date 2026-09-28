@@ -7,7 +7,7 @@ tags: [ap1/aufgaben, ap1/hardware]
 ★ Einstieg · ★★ Prüfungsniveau · ★★★ anspruchsvoll · ≈ 1 Minute pro Punkt. Unbegrenzte Rechenaufgaben: [[Trainer#Hardware]].
 
 > [!info] Ausgangssituation
-> Das Steuerbüro **Kranz & Partner** (fiktiv, 18 Mitarbeitende) erneuert seine IT: neue Arbeitsplätze, ein neuer Server mit NAS und eine USV. Du berätst die Kanzlei.
+> Das Steuerbüro **Kranz & Partner** (fiktiv, 18 Mitarbeitende) erneuert seine IT: neue Arbeitsplätze, ein neuer Server mit NAS und eine USV. Sie beraten das Steuerbüro.
 
 ---
 
@@ -83,12 +83,12 @@ Die neuen Notebooks haben drei USB-C-Buchsen. Erkläre, warum man vor dem Anschl
 ### H3.1 ★★ – Scan-Archiv (8 Punkte)
 📘 **Nachlernen:** [[H3 Datenmengen und Übertragung#5. Speicherbedarf planen|H3 › Speicherbedarf planen]] · [[H3 Datenmengen und Übertragung#2. Dezimale und binäre Präfixe|H3 › Dezimale und binäre Präfixe]]
 
-Die Kanzlei scannt Belege: 300 Seiten pro Tag, 220 Arbeitstage, je Seite als PDF ca. 350 KiB. Aufbewahrung 10 Jahre (steuerrechtlich).
-a) Speicherbedarf pro Jahr in GiB. b) Bedarf für 10 Jahre in TiB bei zusätzlich 20 % Reserve.
+Das Steuerbüro scannt Belege: 300 Seiten pro Tag, 220 Arbeitstage, je Seite als PDF ca. 350 KiB. Buchungsbelege sind nach § 147 AO **8 Jahre** aufzubewahren (seit 01.01.2025).
+a) Berechnen Sie den Speicherbedarf pro Jahr in GiB. b) Berechnen Sie den Bedarf für die gesamte Aufbewahrungsfrist in TiB bei zusätzlich 20 % Reserve.
 
 > [!success]- Lösung
 > a) 300 × 220 × 350 KiB = 23 100 000 KiB = 23 100 000 / 1 024² GiB = **22,03 GiB** (4 P)
-> b) × 10 Jahre = 220,3 GiB × 1,2 = 264,4 GiB = 264,4 / 1 024 = **0,258 TiB** – Speicherplatz ist hier nicht das Problem, wohl aber Backup und revisionssichere Archivierung. (4 P)
+> b) 22,03 GiB × 8 Jahre = 176,24 GiB × 1,2 = 211,49 GiB = 211,49 / 1 024 = **0,207 TiB** – Speicherplatz ist hier nicht das Problem, wohl aber Backup und revisionssichere Archivierung. (4 P)
 
 ### H3.2 ★★ – Nächtliche Sicherung (6 Punkte)
 📘 **Nachlernen:** [[H3 Datenmengen und Übertragung#3. Übertragungsdauer|H3 › Übertragungsdauer]]
@@ -154,7 +154,7 @@ Nenne drei Ausstattungsmerkmale, die einen Server von einem Arbeitsplatz-PC unte
 ### H4.4 ★★ – NAS oder SAN? (4 Punkte)
 📘 **Nachlernen:** [[H4 Server, NAS und RAID#2. DAS, NAS, SAN|H4 › DAS, NAS, SAN]]
 
-Die Kanzlei will zentrale Dateiablage und ein Backup-Ziel. Begründe, warum ein NAS statt eines SAN genügt.
+Das Steuerbüro will eine zentrale Dateiablage und ein Backup-Ziel. Begründe, warum ein NAS statt eines SAN genügt.
 
 > [!success]- Lösung
 > Ein **NAS** stellt Dateifreigaben (SMB) direkt im vorhandenen LAN bereit, ist günstig und einfach zu verwalten. Ein **SAN** liefert Blockspeicher über ein eigenes Speichernetz – sinnvoll für große Virtualisierungscluster, für 18 Arbeitsplätze zu teuer und zu komplex. (4 P)
@@ -178,10 +178,10 @@ a) Berechne Wirk- und Scheinleistung inkl. Reserve. b) Wähle ein Modell. c) Wel
 ### H5.2 ★★ – Überbrückungszeit (5 Punkte)
 📘 **Nachlernen:** [[H5 Elektrotechnik, USV und Energie#Überbrückungszeit aus Akkudaten|H5 › Überbrückungszeit aus Akkudaten]]
 
-Die USV hat zwei Akkus à 12 V / 9 Ah in Reihe (24 V), Wirkungsgrad 85 %. Wie lange hält sie bei 650 W? Reicht das für ein geordnetes Herunterfahren (ca. 5 min)?
+Die USV hat zwei Akkus à 12 V / 9 Ah in Reihe (24 V), Wirkungsgrad 85 %. Berechnen Sie die Überbrückungszeit bei der tatsächlichen Last von 520 W (ohne Reserve). Beurteilen Sie, ob sie für ein geordnetes Herunterfahren (ca. 5 min) ausreicht.
 
 > [!success]- Lösung
-> t = 9 Ah × 24 V × 0,85 / 650 W = 183,6 / 650 = 0,2825 h = **16,9 min** (4 P) → **reicht**; Shutdown-Software per USB/Netzwerk einrichten, damit das Herunterfahren automatisch startet. (1 P)
+> t = 9 Ah × 24 V × 0,85 / 520 W = 183,6 Wh / 520 W = 0,3531 h = **21,2 min** (4 P) – gerechnet wird mit der tatsächlichen Last; die Reserve dient nur der Geräteauswahl → **reicht**; Shutdown-Software per USB/Netzwerk einrichten, damit das Herunterfahren automatisch startet. (1 P)
 
 ### H5.3 ★★ – Stromkosten und Einsparung (8 Punkte)
 📘 **Nachlernen:** [[H5 Elektrotechnik, USV und Energie#5. Energiekosten|H5 › Energiekosten]] · [[W3 Investition und Finanzierung#5. Amortisation und Wirtschaftlichkeit|W3 › Amortisation und Wirtschaftlichkeit]]

@@ -88,7 +88,7 @@ Vorteile: sehr **geringe Kosten pro TB** und niedrige TCO, hohe Kapazität, **La
 |---|---|---|
 | Zweck | **Wiederherstellung** nach Datenverlust | **langfristige, unveränderbare Aufbewahrung** |
 | Daten | aktuelle Produktivdaten (Kopie) | Daten, die nicht mehr täglich gebraucht werden – oft vom Produktivsystem **entfernt** |
-| Aufbewahrung | Tage bis Monate, rotierend | Jahre (z. B. 6 bzw. 8–10 Jahre nach HGB/AO/GoBD) |
+| Aufbewahrung | Tage bis Monate, rotierend | Jahre (§ 147 AO / § 257 HGB: Geschäftsbriefe 6 Jahre, Buchungsbelege 8 Jahre, Bücher und Jahresabschlüsse 10 Jahre) |
 | Anforderung | schnell, vollständig | **revisionssicher**: vollständig, unveränderbar, nachvollziehbar, auffindbar, geschützt |
 
 **Revisionssichere Archivierung** erfüllt rechtliche Anforderungen an Ordnungsmäßigkeit, Vollständigkeit, Sicherheit, Verfügbarkeit, Nachvollziehbarkeit, **Unveränderlichkeit** und Zugriffsschutz – technisch z. B. mit **WORM** (Write Once Read Many).

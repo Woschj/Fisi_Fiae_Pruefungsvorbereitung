@@ -330,7 +330,7 @@ Die IT möchte ein Open-Source-Ticketsystem (GPL) einsetzen und selbst erweitern
 ### S7.1 ★★ – ER-Modell für die Geräteausleihe (10 Punkte)
 📘 **Nachlernen:** [[S7 Datenbanken#2. Das ER-Modell (Entity-Relationship)|S7 › Das ER-Modell]] · [[S7 Datenbanken#Kardinalitäten|S7 › Kardinalitäten]]
 
-Ein Ausbildungsbetrieb verleiht Geräte (Inventarnummer, Bezeichnung, Kaufdatum) an Mitarbeitende (Personalnummer, Name, Abteilung). Eine Person kann mehrere Geräte ausleihen und ein Gerät im Lauf der Zeit von verschiedenen Personen. Zu jeder Ausleihe werden Ausgabe- und Rückgabedatum gespeichert.
+Die Weber OHG verleiht Geräte (Inventarnummer, Bezeichnung, Kaufdatum) an Mitarbeitende (Personalnummer, Name, Abteilung). Eine Person kann mehrere Geräte ausleihen und ein Gerät im Lauf der Zeit von verschiedenen Personen. Zu jeder Ausleihe werden Ausgabe- und Rückgabedatum gespeichert.
 a) Erstelle ein ER-Modell in Chen-Notation mit Kardinalität. b) Begründe die Kardinalität mit zwei Sätzen. c) Wo gehören Ausgabe- und Rückgabedatum hin?
 
 > [!success]- Lösung
@@ -412,17 +412,17 @@ a) Erkläre, ob Python kompiliert oder interpretiert wird, und nenne einen Vor- 
 
 ## S9 KI und Unternehmenssoftware
 
-### S9.1 ★★ – KI in der Kanzlei (12 Punkte)
+### S9.1 ★★ – KI in der Weber OHG (12 Punkte)
 📘 **Nachlernen:** [[S9 KI und Unternehmenssoftware#2. Einsatzszenarien im Betrieb|S9 › Einsatzszenarien im Betrieb]] · [[S9 KI und Unternehmenssoftware#3. Chatbots – Vor- und Nachteile|S9 › Chatbots – Vor- und Nachteile]] · [[S9 KI und Unternehmenssoftware#4. Risiken und rechtlicher Rahmen|S9 › Risiken und rechtlicher Rahmen]]
 
-Die Kanzlei Berger & Partner (25 Mitarbeitende) möchte künstliche Intelligenz einsetzen.
-a) Nenne drei konkrete Einsatzszenarien für die Kanzlei. b) Die Kanzlei erwägt einen Chatbot auf der Website. Erläutere je zwei Vor- und Nachteile. c) Einige Mitarbeitende haben Bedenken. Nenne zwei mögliche Bedenken und zwei Maßnahmen. d) Nenne zwei datenschutzrechtliche Anforderungen an den KI-Dienst.
+Die Weber OHG möchte künstliche Intelligenz einsetzen.
+a) Nenne zwei konkrete Einsatzszenarien für die Weber OHG. b) Die Geschäftsleitung erwägt einen Chatbot im Onlineshop. Erläutere je zwei Vor- und Nachteile. c) Einige Mitarbeitende haben Bedenken. Nenne zwei mögliche Bedenken und zwei Maßnahmen. d) Nenne zwei datenschutzrechtliche Anforderungen an den KI-Dienst.
 
 > [!success]- Lösung
-> a) je 1 P: Chatbot nimmt außerhalb der Öffnungszeiten Erstanfragen und Terminwünsche auf · lange Schriftsätze oder Urteile **zusammenfassen** · Entwürfe für Standardschreiben erstellen · eingehende Post/E-Mails klassifizieren und dem zuständigen Anwalt zuordnen · Spracherkennung für Diktate
-> b) Vorteile (je 1 P): 24/7 erreichbar · entlastet das Sekretariat bei Routinefragen · Anfragen strukturiert erfasst. Nachteile (je 1 P): **Fehlauskünfte (Halluzinationen)** bei Rechtsfragen · unpersönlich, Mandanten fühlen sich abgewimmelt · personenbezogene Daten in den Eingaben
+> a) je 1 P, max. 2 P: Chatbot nimmt außerhalb der Öffnungszeiten Anfragen und Werkstatttermine auf · Produktbeschreibungen für den Onlineshop entwerfen · eingehende E-Mails klassifizieren und an Werkstatt, Verkauf oder Buchhaltung weiterleiten · **Absatzprognose** für die Materialbeschaffung · Bilderkennung zur Qualitätskontrolle von Rahmen und Schweißnähten
+> b) Vorteile (je 1 P): 24/7 erreichbar · entlastet den Verkauf bei Routinefragen (Lieferstatus, Öffnungszeiten) · Anfragen werden strukturiert erfasst. Nachteile (je 1 P): **Fehlauskünfte (Halluzinationen)**, z. B. zu Preisen oder Garantie · unpersönlich, Kundinnen und Kunden fühlen sich abgewimmelt · personenbezogene Daten in den Eingaben
 > c) Bedenken (je 1 P): Arbeitsplatzverlust · Überwachung · Überforderung · Haftung bei Fehlern. Maßnahmen (je 1 P): früh und offen informieren · Betriebsrat einbinden · Schulungen · KI-Richtlinie · Pilotphase mit Freiwilligen
-> d) je 1 P: Anbieter mit **Serverstandort EU** · **Auftragsverarbeitungsvertrag** · Eingaben werden **nicht zum Training** genutzt · keine Mandantendaten in öffentliche Dienste · Transparenzhinweis für Nutzer (EU AI Act)
+> d) je 1 P: Anbieter mit **Serverstandort EU** · **Auftragsverarbeitungsvertrag** · Eingaben werden **nicht zum Training** genutzt · keine Kundendaten in öffentliche Dienste · Transparenzhinweis für Nutzer (EU AI Act)
 
 ### S9.2 ★★ – Kosten und Nutzen (8 Punkte)
 📘 **Nachlernen:** [[S9 KI und Unternehmenssoftware#5. Kosten eines KI-Dienstes berechnen|S9 › Kosten eines KI-Dienstes berechnen]]

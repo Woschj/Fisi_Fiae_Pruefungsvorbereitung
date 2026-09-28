@@ -210,7 +210,7 @@ Beim Umzug werden 30 alte PCs ausgemustert. Beschreibe das Vorgehen unter Umwelt
 ### P6.1 ★★ – Einführung der digitalen Akte (10 Punkte)
 📘 **Nachlernen:** [[P6 Teamarbeit, Verhandlung und Veränderung#2. Kick-off-Meeting|P6 › Kick-off-Meeting]] · [[P6 Teamarbeit, Verhandlung und Veränderung#1. Teamentwicklung nach Tuckman|P6 › Teamentwicklung nach Tuckman]] · [[P6 Teamarbeit, Verhandlung und Veränderung#Widerstände verstehen|P6 › Widerstände verstehen]]
 
-In der Kanzlei soll das Papierarchiv durch ein Dokumentenmanagementsystem ersetzt werden. Das Projektteam besteht aus Mitarbeitenden dreier Abteilungen, die sich kaum kennen.
+Im Stadtarchiv soll die papierbasierte Aktenverwaltung durch ein Dokumentenmanagementsystem ersetzt werden. Das Projektteam besteht aus Mitarbeitenden dreier Abteilungen, die sich kaum kennen.
 a) Nenne vier Inhalte des Kick-off-Meetings. b) Nach zwei Wochen gibt es Streit über Zuständigkeiten. Ordne die Situation einer Teamphase nach Tuckman zu und nenne eine Maßnahme. c) Einige langjährige Mitarbeitende lehnen die Umstellung ab. Nenne zwei mögliche Ursachen und je eine passende Maßnahme.
 
 > [!success]- Lösung
@@ -221,11 +221,11 @@ a) Nenne vier Inhalte des Kick-off-Meetings. b) Nach zwei Wochen gibt es Streit 
 ### P6.2 ★ – Verhandlung mit dem Anbieter (6 Punkte)
 📘 **Nachlernen:** [[P6 Teamarbeit, Verhandlung und Veränderung#3. Sachbezogen verhandeln – das Harvard-Konzept|P6 › Sachbezogen verhandeln – das Harvard-Konzept]]
 
-Der DMS-Anbieter besteht auf einem Preis von 14 000 €, die Kanzlei hat 11 000 € eingeplant.
-a) Erkläre zwei Prinzipien des Harvard-Konzepts an diesem Beispiel. b) Was ist die BATNA der Kanzlei?
+Der DMS-Anbieter besteht auf einem Preis von 14 000 €, das Stadtarchiv hat 11 000 € eingeplant.
+a) Erkläre zwei Prinzipien des Harvard-Konzepts an diesem Beispiel. b) Was ist die BATNA des Stadtarchivs?
 
 > [!success]- Lösung
-> a) je 2 P: **Interessen statt Positionen** – z. B. klären, dass die Kanzlei Planungssicherheit braucht und der Anbieter eine Referenz sucht → Ratenzahlung oder Referenzrabatt · **Optionen zum beiderseitigen Vorteil** – kleinerer Startumfang, Erweiterung später · **Objektive Kriterien** – Marktpreise vergleichbarer Systeme, Anzahl Lizenzen
+> a) je 2 P: **Interessen statt Positionen** – z. B. klären, dass das Stadtarchiv Planungssicherheit braucht und der Anbieter eine Referenz sucht → Ratenzahlung oder Referenzrabatt · **Optionen zum beiderseitigen Vorteil** – kleinerer Startumfang, Erweiterung später · **Objektive Kriterien** – Marktpreise vergleichbarer Systeme, Anzahl Lizenzen
 > b) Die beste Alternative ohne Einigung, z. B. das vorliegende Angebot eines **anderen DMS-Anbieters** zu 11 500 € oder die Verschiebung des Projekts. (2 P)
 
 

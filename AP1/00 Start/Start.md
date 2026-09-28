@@ -22,7 +22,7 @@ await dv.view("AP1/99 System/views/dashboard")
 | [[N1 Netzwerkgrundlagen und OSI-Modell\|N1 OSI-Modell]] | [[H1 PC-Komponenten und Arbeitsplatzgeräte\|H1 PC-Komponenten]] | [[S1 Zahlensysteme und Codierung\|S1 Zahlensysteme]] |
 | [[N2 IPv4 und Subnetting\|N2 IPv4 & Subnetting]] | [[H2 Massenspeicher und Schnittstellen\|H2 Speicher & Schnittstellen]] | [[S2 Programmierung – Grundlagen\|S2 Programmierung]] |
 | [[N3 IPv6\|N3 IPv6]] | [[H3 Datenmengen und Übertragung\|H3 Datenmengen]] | [[S3 Algorithmen, Darstellung und Testen\|S3 Algorithmen & Testen]] |
-| [[N4 Netzwerkdienste und Protokolle\|N4 Dienste & Ports]] | [[H4 Server, NAS und RAID\|H4 Server & RAID]] | [[S4 Betriebssysteme, Dateisysteme und Rechte\|S4 Betriebssysteme]] |
+| [[N4 Netzwerkdienste und Protokolle\|N4 Dienste & Ports]] | [[H4 Server und Netzwerkspeicher\|H4 Server & NAS]] | [[S4 Betriebssysteme, Dateisysteme und Rechte\|S4 Betriebssysteme]] |
 | [[N5 Verkabelung und Netzwerkkomponenten\|N5 Verkabelung & Komponenten]] | [[H5 Elektrotechnik, USV und Energie\|H5 Strom & USV]] | [[S5 Virtualisierung und Cloud\|S5 Virtualisierung & Cloud]] |
 | [[N6 WLAN\|N6 WLAN]] | [[H6 Drucker, Peripherie und Mobilgeräte\|H6 Drucker & Mobilgeräte]] | [[S6 Software beschaffen und lizenzieren\|S6 Lizenzen]] |
 | [[N7 Internet und Webanwendungen\|N7 Internet & Web]] | | [[S7 Datenbanken\|S7 Datenbanken]] |

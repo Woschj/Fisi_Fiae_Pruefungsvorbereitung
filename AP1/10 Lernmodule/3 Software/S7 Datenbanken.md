@@ -12,8 +12,8 @@ tags: [ap1/modul, ap1/software]
 ---
 # S7 · Datenbanken
 
-> [!warning] AP1-Hinweis (Prüfungskatalog 2025)
-> ER-Modell, Kardinalitäten, Tabellen und Redundanz/Anomalien gehören zur AP1-Vorbereitung. Die AkA ordnet **SQL ausschließlich der AP2** zu. SQL-Grundlagen unten sind optionale Vertiefung, keine AP1-Pflicht. [[Prüfung AP1]]
+> [!note] Prüfungskatalog ab 2025
+> ER-Modell, Kardinalitäten, Tabellen und Redundanz/Anomalien gehören zur AP1. **SQL** ist seit der zweiten Katalogauflage ausschließlich AP2-Stoff und wird dort behandelt: [[FISI-8 Datenbanken und Modellierung]] · [[FIAE-12 SQL für Entwickler]]. [[Prüfung AP1]]
 
 > [!abstract] Überblick
 > **Bereich:** [[Übersicht Software]]
@@ -27,7 +27,6 @@ tags: [ap1/modul, ap1/software]
 - [ ] Ich kann Kardinalitäten (1:1, 1:n, n:m) sicher bestimmen.
 - [ ] Ich kann ein ER-Modell in Tabellen mit Primär- und Fremdschlüsseln überführen.
 - [ ] Ich kann Redundanz und Anomalien erklären und begründen, warum man Tabellen aufteilt.
-- [ ] Ich kann einfache SQL-Abfragen lesen und schreiben.
 
 ## Worum geht es?
 Ein Handwerksbetrieb verwaltet Kunden, Aufträge und Material in einer riesigen Excel-Liste. Jede Zeile enthält Kundenname, Adresse und Auftrag – ändert ein Kunde seine Adresse, müssen zwanzig Zeilen angepasst werden, und irgendwann stimmen die Daten nicht mehr. Eine **relationale Datenbank** löst das: Jede Information steht nur **einmal** da und wird über **Schlüssel** verknüpft.
@@ -45,7 +44,7 @@ Ein Handwerksbetrieb verwaltet Kunden, Aufträge und Material in einer riesigen 
 | **Mehrbenutzerbetrieb** | viele greifen gleichzeitig zu, ohne sich gegenseitig Daten zu überschreiben (Sperren, **Transaktionen**) |
 | **Zugriffsschutz** | Benutzer und Rechte (wer darf lesen, ändern, löschen?) |
 | **Datensicherheit** | Protokoll (Log), Backup und Wiederherstellung nach Absturz |
-| **Abfragesprache** | Daten mit **SQL** suchen, einfügen, ändern, löschen |
+| **Abfragesprache** | Daten suchen, einfügen, ändern, löschen (SQL – Stoff der AP2) |
 | **Datenunabhängigkeit** | Programme müssen nicht wissen, wie die Daten auf der Platte liegen |
 
 **Transaktion:** eine Folge von Änderungen, die **ganz oder gar nicht** ausgeführt wird (Beispiel Überweisung: Abbuchung und Gutschrift gehören zusammen). Eigenschaften: **ACID** – Atomarität, Konsistenz, Isolation, Dauerhaftigkeit.
@@ -131,42 +130,7 @@ In einer relationalen Datenbank liegen die Daten in **Tabellen** (Relationen): S
 > [!tip] Faustregel für die Prüfung
 > „Jede Information gehört in genau **eine** Tabelle, und zwar in die, deren Schlüssel sie beschreibt.“ Wiederholen sich in einer Tabelle Werte wie Kundenname oder Artikelbezeichnung, fehlt eine eigene Tabelle.
 
-<!-- erg:Katalog SQL -->
-> [!note] Prüfungskatalog ab 2025
-> **SQL-Abfragen** sind laut AkA in der zweiten Katalogauflage AP2-Thema. **ER-Modell, Kardinalitäten, Tabellen und Redundanz/Anomalien** bilden hier die AP1-nahe Vertiefung; für den genauen Umfang den aktuellen Katalog des eigenen Ausbildungsberufs prüfen. [[Prüfung AP1]]
-
-## 5. SQL-Grundlagen
-**SQL** (Structured Query Language) ist die Standardsprache relationaler Datenbanken.
-
-| Bereich | Befehle |
-|---|---|
-| Abfragen (DQL) | `SELECT` |
-| Daten ändern (DML) | `INSERT`, `UPDATE`, `DELETE` |
-| Struktur (DDL) | `CREATE TABLE`, `ALTER TABLE`, `DROP TABLE` |
-| Rechte (DCL) | `GRANT`, `REVOKE` |
-
-```sql
--- Alle Kunden aus Dresden, alphabetisch
-SELECT name, ort FROM kunde WHERE ort = 'Dresden' ORDER BY name;
-
--- Anzahl Aufträge je Kunde (nur Kunden mit mehr als 2 Aufträgen)
-SELECT k.name, COUNT(*) AS anzahl
-FROM kunde k JOIN auftrag a ON a.kunden_nr = k.kunden_nr
-GROUP BY k.name
-HAVING COUNT(*) > 2;
-
--- Neuen Artikel anlegen, Preis ändern, Artikel löschen
-INSERT INTO artikel (art_nr, bezeichnung, preis) VALUES (4711, 'Dockingstation', 189.00);
-UPDATE artikel SET preis = 179.00 WHERE art_nr = 4711;
-DELETE FROM artikel WHERE art_nr = 4711;
-```
-
-- **WHERE** filtert Zeilen, **ORDER BY** sortiert (ASC/DESC), **JOIN … ON** verknüpft Tabellen über PK = FK.
-- **Aggregatfunktionen:** `COUNT`, `SUM`, `AVG`, `MIN`, `MAX` – mit **GROUP BY** je Gruppe, **HAVING** filtert Gruppen.
-- `UPDATE`/`DELETE` **ohne WHERE** betreffen **alle** Zeilen – typischer, teurer Fehler.
-- Eingaben aus Formularen nie direkt in SQL einsetzen → **SQL-Injection**, Schutz durch **Prepared Statements** ([[I5 Bedrohungen und Schutzmaßnahmen]]).
-
-## 6. ER-Modell, Tabellenmodell, Klassendiagramm – was ist was?
+## 5. ER-Modell, Tabellenmodell, Klassendiagramm – was ist was?
 | Modell | Zweck | Wann |
 |---|---|---|
 | **ER-Modell** | fachliche Datenwelt verstehen: Entitäten, Beziehungen, Kardinalitäten | Analyse, mit dem Fachbereich |
@@ -181,20 +145,19 @@ DELETE FROM artikel WHERE art_nr = 4711;
 > - Bei 1:n den Fremdschlüssel auf die 1-Seite setzen (richtig: auf die **n-Seite**).
 > - Beziehungsattribute (Menge, Datum der Teilnahme) einer Entität zuordnen.
 > - Verben/Tätigkeiten als Entitätstyp modellieren („Bestellen“ ist eine Beziehung, kein Entitätstyp).
-> - `UPDATE` oder `DELETE` ohne `WHERE`.
 
 ## Verwandte Themen
 - [[S8 UML und Softwareentwurf]] – Klassendiagramm statt ER-Modell
 - [[I5 Bedrohungen und Schutzmaßnahmen]] – SQL-Injection verhindern
+- AP2: [[FIAE-12 SQL für Entwickler]] · [[FISI-8 Datenbanken und Modellierung]] – SQL-Abfragen
 - [[I2 Datenschutz]] – personenbezogene Daten speichern
 
 ## Zusammenfassung
-- DBMS: Integrität, Mehrbenutzerbetrieb (Transaktionen, ACID), Zugriffsschutz, Sicherung, SQL.
+- DBMS: Integrität, Mehrbenutzerbetrieb (Transaktionen, ACID), Zugriffsschutz, Sicherung, Abfragesprache.
 - ER-Modell (Chen): Rechteck = Entitätstyp, Ellipse = Attribut (Schlüssel unterstrichen), Raute = Beziehung, Kardinalität 1/n/m.
 - Kardinalität: beide Richtungen als Satz lesen.
 - 1:n → FK auf die n-Seite · n:m → Zwischentabelle mit beiden FKs (+ Beziehungsattribute).
 - Redundanz führt zu Änderungs-, Einfüge- und Löschanomalien → Normalisierung (1. bis 3. NF).
-- SQL: SELECT … FROM … WHERE … ORDER BY, JOIN über PK = FK, GROUP BY/HAVING, INSERT/UPDATE/DELETE.
 
 ## Selbstcheck
 ```dataviewjs

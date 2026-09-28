@@ -50,10 +50,6 @@
     erklaerung: "Die **Klasse** ist der Bauplan, das **Objekt** eine konkrete Ausprägung davon." },
 
   // ---------------------------------------------------------------- S3
-  { id: "S3-01", nurAP2: true, modul: "S3", typ: "mc", niveau: 1, frage: "Welches Symbol steht im **Programmablaufplan** für eine Verzweigung?", optionen: ["Rechteck", "Raute", "Parallelogramm", "Oval"], richtig: 1,
-    erklaerung: "Raute = Verzweigung · Rechteck = Verarbeitung · Parallelogramm = Ein-/Ausgabe · Oval = Start/Ende." },
-  { id: "S3-02", nurAP2: true, modul: "S3", typ: "mc", niveau: 2, frage: "Was ist ein Merkmal eines **Struktogramms**?", optionen: ["Pfeile zeigen die Ablaufrichtung", "Beliebige Sprünge sind erlaubt", "Verschachtelte Blöcke ohne Sprünge", "Klassen mit Attributen und Methoden"], richtig: 2,
-    erklaerung: "Nassi-Shneiderman-Diagramme erzwingen strukturierte Programmierung – keine Pfeile, kein GOTO." },
   { id: "S3-03", modul: "S3", typ: "mc", niveau: 1, frage: "Ein Programm läuft ohne Absturz, berechnet aber falsche Ergebnisse. Welche Fehlerart liegt vor?", optionen: ["Syntaxfehler", "Laufzeitfehler", "Logikfehler", "Compilerfehler"], richtig: 2,
     erklaerung: "**Logikfehler** – am schwersten zu finden, weil keine Fehlermeldung erscheint." },
   { id: "S3-04", modul: "S3", typ: "multi", niveau: 2, frage: "Rabatt gilt **ab 100 €**. Welche Testwerte sind für eine **Grenzwertanalyse** besonders wichtig?", optionen: ["99,99 €", "100,00 €", "50,00 €", "100,01 €", "1 000 000 €"], richtig: [0, 1, 3],
@@ -160,11 +156,6 @@
   { id: "S7-07", modul: "S7", typ: "mc", niveau: 2, frage: "Wohin gehört das Attribut **Menge** bei der n:m-Beziehung Auftrag – Artikel?",
     optionen: ["zum Auftrag", "zum Artikel", "in die Zwischentabelle", "in eine eigene Tabelle Menge"], richtig: 2, abschnitt: "Kardinalitäten",
     erklaerung: "Die Menge beschreibt „dieser Artikel in diesem Auftrag“ – ein **Beziehungsattribut**." },
-  { id: "S7-08", nurAP2: true, modul: "S7", typ: "mc", niveau: 2, frage: "Was bewirkt `DELETE FROM kunde;` ohne WHERE?",
-    optionen: ["Fehlermeldung", "löscht die Tabellenstruktur", "löscht alle Zeilen der Tabelle", "löscht nur die erste Zeile"], richtig: 2, abschnitt: "SQL-Grundlagen",
-    erklaerung: "Ohne WHERE betrifft DELETE **alle Zeilen**. Die Tabelle selbst bleibt (dafür wäre DROP TABLE nötig)." },
-  { id: "S7-09", nurAP2: true, modul: "S7", typ: "text", niveau: 2, frage: "Mit welchem SQL-Schlüsselwort filtern Sie Gruppen nach einer Aggregatfunktion (z. B. COUNT(*) > 2)?", richtig: ["HAVING"], abschnitt: "SQL-Grundlagen",
-    erklaerung: "**HAVING** filtert Gruppen nach GROUP BY, WHERE filtert einzelne Zeilen davor." },
   { id: "S7-10", modul: "S7", typ: "multi", niveau: 2, frage: "Welche Aufgaben übernimmt ein **DBMS**? (mehrere richtig)",
     optionen: ["Mehrbenutzerbetrieb mit Transaktionen", "Zugriffsrechte verwalten", "Datenintegrität sichern", "das Betriebssystem booten"], richtig: [0, 1, 2], abschnitt: "Datenbank und DBMS",
     erklaerung: "DBMS: Integrität, Mehrbenutzerbetrieb, Zugriffsschutz, Sicherung, Abfragesprache – nicht das Booten." },
@@ -206,4 +197,12 @@
   { id: "S8-11", modul: "S8", typ: "mc", niveau: 2, frage: "Warum werden Attribute einer Klasse meist **private** deklariert?",
     optionen: ["damit das Programm schneller läuft", "Kapselung: Zugriff nur über Methoden", "weil public-Attribute nicht erlaubt sind", "damit Unterklassen sie nicht erben"], richtig: 1, abschnitt: "Klassendiagramm",
     erklaerung: "**Kapselung** schützt die Daten – ungültige Werte werden von Setter-Methoden abgewiesen." },
+  // Ergänzungen S3 und S7 nach Streichung von PAP/Struktogramm und SQL aus dem AP1-Katalog
+  { id: "S3-23", modul: "S3", typ: "mc", niveau: 1, abschnitt: "UML-Aktivitätsdiagramm", frage: "Was bedeutet ein **Gabelungsbalken** (Fork) im UML-Aktivitätsdiagramm?", optionen: ["Ab hier laufen mehrere Aktionen parallel", "Hier wird eine Bedingung geprüft", "Hier endet die gesamte Aktivität", "Hier wird eine Schleife wiederholt"], richtig: 0, erklaerung: "Ein zweiter Balken (Join) führt die parallelen Abläufe wieder zusammen; Bedingungen stehen an Rauten." },
+  { id: "S3-24", modul: "S3", typ: "zahl", niveau: 2, abschnitt: "Bubble Sort", frage: "Wie viele **Vertauschungen** finden im **ersten Durchlauf** von Bubble Sort auf der Liste [5, 1, 4, 2] statt (aufsteigend sortieren)?", richtig: 3, toleranz: 0, erklaerung: "5 und 1 tauschen → [1, 5, 4, 2] · 5 und 4 tauschen → [1, 4, 5, 2] · 5 und 2 tauschen → [1, 4, 2, 5]: drei Vertauschungen." },
+  { id: "S7-21", modul: "S7", typ: "mc", niveau: 1, abschnitt: "Das ER-Modell", frage: "Wie wird ein **Attribut** im ER-Modell in Chen-Notation dargestellt?", optionen: ["als Ellipse", "als Rechteck", "als Raute", "als Pfeil"], richtig: 0, erklaerung: "Rechteck = Entitätstyp, Raute = Beziehungstyp; Schlüsselattribute werden unterstrichen." },
+  { id: "S7-22", modul: "S7", typ: "mc", niveau: 1, abschnitt: "Das ER-Modell", frage: "Woran erkennen Sie im ER-Modell ein **Schlüsselattribut**?", optionen: ["Der Attributname ist unterstrichen", "Es steht in einer Raute", "Es ist kursiv gesetzt", "Es steht außerhalb des Modells"], richtig: 0, erklaerung: "Im Tabellenmodell wird der Primärschlüssel ebenfalls unterstrichen." },
+  { id: "S7-23", modul: "S7", typ: "mc", niveau: 2, abschnitt: "Vom ER-Modell zu Tabellen", frage: "Welchen Primärschlüssel erhält die Zwischentabelle `Position(AuftragNr, ArtNr, Menge)` einer n:m-Beziehung typischerweise?", optionen: ["die Kombination aus AuftragNr und ArtNr", "nur die Spalte Menge", "nur die Spalte AuftragNr", "gar keinen Primärschlüssel"], richtig: 0, erklaerung: "Zusammengesetzter Schlüssel aus beiden Fremdschlüsseln; alternativ eine eigene laufende Nummer." },
+  { id: "S7-24", modul: "S7", typ: "mc", niveau: 3, abschnitt: "Redundanz, Anomalien und Normalisierung", frage: "In `Kunde(KundenNr, Name, PLZ, Ort)` hängt der Ort von der PLZ ab. Gegen welche Normalform wird verstoßen?", optionen: ["3. Normalform (transitive Abhängigkeit)", "1. Normalform", "2. Normalform", "gegen keine Normalform"], richtig: 0, erklaerung: "Ein Nicht-Schlüsselattribut (Ort) hängt von einem anderen Nicht-Schlüsselattribut (PLZ) ab; in der Praxis wird das oft bewusst toleriert." },
+  { id: "S7-25", modul: "S7", typ: "mc", niveau: 2, abschnitt: "Redundanz, Anomalien und Normalisierung", frage: "In einer Tabelle „Auftrag mit Kundendaten“ wird der einzige Auftrag eines Kunden gelöscht – damit sind auch Name und Adresse des Kunden weg. Wie heißt das?", optionen: ["Löschanomalie", "Einfügeanomalie", "Änderungsanomalie", "referenzielle Integrität"], richtig: 0, erklaerung: "Abhilfe: Kunden in einer eigenen Tabelle speichern (Normalisierung)." },
 ]

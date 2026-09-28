@@ -113,46 +113,33 @@ a) Berechnen Sie den Speicherbedarf in TB. b) Empfehlen Sie eine nutzbare Speich
 
 ---
 
-## H4 Server, NAS und RAID
+## H4 Server und Netzwerkspeicher
 
-> [!warning] AP1-Priorität
-> RAID ist laut AkA-Katalog 2025 ausschließlich AP2-Stoff. Die folgenden Aufgaben sind deshalb **optionale AP2-Vertiefung**, nicht AP1-Prüfungssimulation. Für AP1 haben Hardwareauswahl, Arbeitsplatz, Speichergrößen und Datensicherung Vorrang. [[Prüfung AP1]]
+### H4.1 ★★ – Redundanz ist kein Backup (6 Punkte)
+📘 **Nachlernen:** [[H4 Server und Netzwerkspeicher#2. DAS, NAS, SAN|H4 › DAS, NAS, SAN]] · [[I3 Datensicherung#1. Sicherungsarten|I3 › Sicherungsarten]]
 
-### H4.1 ★★ – RAID planen (8 Punkte)
-📘 **Nachlernen:** [[H4 Server, NAS und RAID#Die RAID-Level|H4 › Die RAID-Level]] · [[H4 Server, NAS und RAID#Welches RAID wofür|H4 › Welches RAID wofür]]
-
-Für den Fileserver stehen 6 Platten à 8 TB zur Verfügung. Die Geschäftsführung will „möglichst viel Platz und trotzdem sicher“.
-a) Berechnen Sie die Nutzkapazität für RAID 5, RAID 6 und RAID 10. b) Empfehlen Sie ein Level und begründen Sie.
-
-> [!success]- Lösung
-> a) RAID 5: 5 × 8 = **40 TB** · RAID 6: 4 × 8 = **32 TB** · RAID 10: 3 × 8 = **24 TB** (je 2 P)
-> b) **RAID 6**: bei großen Platten dauert der Rebuild lange; RAID 6 verkraftet auch einen zweiten Ausfall während des Rebuilds und bietet trotzdem 67 % Kapazität. (2 P)
-
-### H4.2 ★★ – RAID ist kein Backup (6 Punkte)
-📘 **Nachlernen:** [[H4 Server, NAS und RAID#3. RAID|H4 › RAID]] · [[I3 Datensicherung#1. Sicherungsarten|I3 › Sicherungsarten]]
-
-Der Chef meint: „Wir haben RAID 6, ein Backup brauchen wir nicht.“ Widerlege diese Aussage mit drei Beispielen.
+Das NAS des Steuerbüros speichert alle Daten gespiegelt auf zwei Festplatten. Der Chef meint: „Damit sind unsere Daten doppelt vorhanden, ein Backup brauchen wir nicht.“ Widerlegen Sie diese Aussage mit drei Beispielen.
 
 > [!success]- Lösung (je 2 P)
-> - **Versehentliches Löschen/Überschreiben** wird sofort auf alle Platten übernommen.
-> - **Ransomware** verschlüsselt die Daten auf dem RAID genauso.
-> - **Brand, Wasser, Diebstahl, Überspannung oder Controllerdefekt** zerstören das gesamte System.
-> RAID erhöht nur die **Verfügbarkeit** bei Plattenausfall – für Wiederherstellung braucht man Backups (3-2-1).
+> - **Versehentliches Löschen oder Überschreiben** wird sofort auf beide Festplatten übernommen.
+> - **Ransomware** verschlüsselt die Daten auf beiden Festplatten genauso.
+> - **Brand, Wasser, Diebstahl oder Überspannung** zerstören das gesamte Gerät.
+> Die Spiegelung erhöht nur die **Verfügbarkeit** bei einem Plattendefekt – für die Wiederherstellung braucht man Backups nach der 3-2-1-Regel.
 
-### H4.3 ★★ – Serveranforderungen (6 Punkte)
-📘 **Nachlernen:** [[H4 Server, NAS und RAID#Besondere Anforderungen an Serverhardware|H4 › Besondere Anforderungen an Serverhardware]]
+### H4.2 ★★ – Serveranforderungen (6 Punkte)
+📘 **Nachlernen:** [[H4 Server und Netzwerkspeicher#Besondere Anforderungen an Serverhardware|H4 › Besondere Anforderungen an Serverhardware]]
 
 Nennen Sie drei Ausstattungsmerkmale, die einen Server von einem Arbeitsplatz-PC unterscheiden, und erläutern Sie ihren Nutzen.
 
 > [!success]- Lösung (je 2 P, drei davon)
 > - **Redundante Hot-Plug-Netzteile** – Ausfall eines Netzteils ohne Unterbrechung, Tausch im Betrieb.
 > - **ECC-RAM** – korrigiert Speicherfehler, verhindert Abstürze und Datenkorruption.
-> - **Hardware-RAID mit Hot-Swap-Einschüben** – Plattentausch im laufenden Betrieb.
+> - **Redundante Laufwerke in Hot-Swap-Einschüben** – Plattentausch im laufenden Betrieb.
 > - **Fernwartung (iDRAC/iLO/IPMI)** – Zugriff auch bei abgestürztem OS.
 > - **Vor-Ort-Service** mit definierter Reaktionszeit.
 
-### H4.4 ★★ – NAS oder SAN? (4 Punkte)
-📘 **Nachlernen:** [[H4 Server, NAS und RAID#2. DAS, NAS, SAN|H4 › DAS, NAS, SAN]]
+### H4.3 ★★ – NAS oder SAN? (4 Punkte)
+📘 **Nachlernen:** [[H4 Server und Netzwerkspeicher#2. DAS, NAS, SAN|H4 › DAS, NAS, SAN]]
 
 Das Steuerbüro will eine zentrale Dateiablage und ein Backup-Ziel. Begründen Sie, warum ein NAS statt eines SAN genügt.
 

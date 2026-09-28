@@ -6,7 +6,7 @@ tags: [ap1/orga]
 Rund **5 Stunden pro Woche** (z. B. 4 × 60 min + 1 × 60 min Wiederholung). Jeden Tag zusätzlich **10 Minuten Quiz „Empfohlen“** oder Karteikarten. Häkchen setzen – das Dashboard zeigt parallel den echten Stand über die Selbsteinschätzungen.
 
 > [!tip] Reihenfolge
-> Die Reihenfolge baut Grundlagen auf. Für die AP1 nach Katalog 2025 haben neue Inhalte und ausdrücklich AP1-relevante Aufgaben Vorrang. SQL und RAID sind laut AkA AP2-Themen; Struktogramm und PAP wurden aus dem AP1-Katalog gestrichen. Sie sind im Vault als Ergänzung vorhanden, aber keine Pflicht für diesen AP1-Lernplan. [[Prüfung AP1]]
+> Die Reihenfolge baut Grundlagen auf. Für die AP1 nach Katalog 2025 haben neue Inhalte und ausdrücklich AP1-relevante Aufgaben Vorrang. SQL und RAID sind laut AkA AP2-Themen und werden im AP2-Bereich behandelt; Struktogramm und PAP wurden gestrichen. [[Prüfung AP1]]
 
 ## Woche 1 – Rechengrundlagen
 - [ ] [[S1 Zahlensysteme und Codierung]]
@@ -29,7 +29,7 @@ Rund **5 Stunden pro Woche** (z. B. 4 × 60 min + 1 × 60 min Wiederholung). Jed
 - [ ] [[H6 Drucker, Peripherie und Mobilgeräte]]
 
 ## Woche 4 – Server, Systeme, Sicherheit I
-- [ ] [[H4 Server, NAS und RAID]] – **optional/AP2-Vertiefung**; Servergrundlagen bei Bedarf wiederholen, RAID-Rechnen zurückstellen
+- [ ] [[H4 Server und Netzwerkspeicher]] – Serverhardware und NAS
 - [ ] [[S4 Betriebssysteme, Dateisysteme und Rechte]]
 - [ ] [[S5 Virtualisierung und Cloud]]
 - [ ] [[I1 Informationssicherheit und IT-Grundschutz]]
@@ -54,7 +54,7 @@ Rund **5 Stunden pro Woche** (z. B. 4 × 60 min + 1 × 60 min Wiederholung). Jed
 - [ ] [[S2 Programmierung – Grundlagen]]
 - [ ] [[S3 Algorithmen, Darstellung und Testen]]
 - [ ] [[S8 UML und Softwareentwurf]]
-- [ ] [[S7 Datenbanken]] – ER-Modell, Kardinalitäten und Anomalien lernen; **SQL nur optional/AP2-Vertiefung**
+- [ ] [[S7 Datenbanken]] – ER-Modell, Kardinalitäten und Anomalien
 - [ ] [[S9 KI und Unternehmenssoftware]]
 - [ ] [[P1 Projektmanagement und Vorgehensmodelle]]
 - [ ] [[P2 Netzplan und Zeitplanung]]

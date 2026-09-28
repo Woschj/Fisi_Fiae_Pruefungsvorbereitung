@@ -46,7 +46,7 @@ Kurzdefinitionen mit Link zum ausführlichen Modul. Tipp: `Strg+F` zum Suchen.
 | **GPT**                    | Partitionstabelle für UEFI, > 2 TiB                                                                        | [[S4 Betriebssysteme, Dateisysteme und Rechte\|S4]]  |
 | **GWG**                    | geringwertiges Wirtschaftsgut bis 800 € netto                                                              | [[W3 Investition und Finanzierung\|W3]]              |
 | **Hash**                   | Einweg-Prüfwert fester Länge (SHA-256)                                                                     | [[I4 Kryptografie\|I4]]                              |
-| **Hot Spare / Hot Swap**   | Reserveplatte / Tausch im Betrieb                                                                          | [[H4 Server, NAS und RAID\|H4]]                      |
+| **Hot Swap**              | Tausch von Komponenten im laufenden Betrieb                                                                    | [[H4 Server und Netzwerkspeicher\|H4]]                      |
 | **Hypervisor**             | verteilt Hardware auf VMs (Typ 1/Typ 2)                                                                    | [[S5 Virtualisierung und Cloud\|S5]]                 |
 | **Incident**               | ungeplante Störung                                                                                         | [[P3 IT-Service, Support und Qualität\|P3]]          |
 | **Integrität**             | Daten korrekt und unverändert                                                                              | [[I1 Informationssicherheit und IT-Grundschutz\|I1]] |
@@ -60,7 +60,7 @@ Kurzdefinitionen mit Link zum ausführlichen Modul. Tipp: `Strg+F` zum Suchen.
 | **M.2**                    | Formfaktor für SSDs (SATA oder NVMe)                                                                       | [[H2 Massenspeicher und Schnittstellen\|H2]]         |
 | **MAC-Adresse**            | 48-Bit-Hardwareadresse der Netzwerkkarte                                                                   | [[N1 Netzwerkgrundlagen und OSI-Modell\|N1]]         |
 | **MFA**                    | Mehr-Faktor-Authentifizierung                                                                              | [[I5 Bedrohungen und Schutzmaßnahmen\|I5]]           |
-| **NAS / SAN**              | Netzwerkspeicher dateibasiert / Speichernetz blockbasiert                                                  | [[H4 Server, NAS und RAID\|H4]]                      |
+| **NAS / SAN**              | Netzwerkspeicher dateibasiert / Speichernetz blockbasiert                                                  | [[H4 Server und Netzwerkspeicher\|H4]]                      |
 | **NAT/PAT**                | Übersetzung privater in öffentliche Adresse (mit Ports)                                                    | [[N4 Netzwerkdienste und Protokolle\|N4]]            |
 | **Nutzwertanalyse**        | gewichteter Vergleich auch qualitativer Kriterien                                                          | [[W2 Nutzwertanalyse und Entscheidungen\|W2]]        |
 | **NVMe**                   | SSD-Protokoll über PCIe                                                                                    | [[H2 Massenspeicher und Schnittstellen\|H2]]         |
@@ -73,7 +73,6 @@ Kurzdefinitionen mit Link zum ausführlichen Modul. Tipp: `Strg+F` zum Suchen.
 | **Problem**                | Ursache hinter Incidents                                                                                   | [[P3 IT-Service, Support und Qualität\|P3]]          |
 | **Pseudonymisierung**      | Personenbezug nur mit Zusatzwissen herstellbar                                                             | [[I2 Datenschutz\|I2]]                               |
 | **RADIUS**                 | Authentifizierungsserver (z. B. WPA-Enterprise)                                                            | [[N6 WLAN\|N6]]                                      |
-| **RAID**                   | Plattenverbund für Redundanz/Tempo                                                                         | [[H4 Server, NAS und RAID\|H4]]                      |
 | **Ransomware**             | verschlüsselt Daten und erpresst Lösegeld                                                                  | [[I5 Bedrohungen und Schutzmaßnahmen\|I5]]           |
 | **RPO / RTO**              | max. Datenverlust / max. Ausfallzeit                                                                       | [[I3 Datensicherung\|I3]]                            |
 | **Scrum**                  | agiles Vorgehen mit Sprints                                                                                | [[P1 Projektmanagement und Vorgehensmodelle\|P1]]    |
@@ -83,7 +82,6 @@ Kurzdefinitionen mit Link zum ausführlichen Modul. Tipp: `Strg+F` zum Suchen.
 | **SLA**                    | Service Level Agreement                                                                                    | [[P3 IT-Service, Support und Qualität\|P3]]          |
 | **SLAAC**                  | IPv6-Autokonfiguration über Router Advertisement                                                           | [[N3 IPv6\|N3]]                                      |
 | **SMART**                  | Zielformulierung: spezifisch, messbar, attraktiv, realistisch, terminiert                                  | [[P1 Projektmanagement und Vorgehensmodelle\|P1]]    |
-| **Struktogramm**           | Nassi-Shneiderman-Diagramm                                                                                 | [[S3 Algorithmen, Darstellung und Testen\|S3]]       |
 | **Subnetting**             | Aufteilung eines Netzes in Teilnetze                                                                       | [[N2 IPv4 und Subnetting\|N2]]                       |
 | **Switch**                 | leitet Frames anhand von MAC-Adressen weiter                                                               | [[N5 Verkabelung und Netzwerkkomponenten\|N5]]       |
 | **TCP / UDP**              | verbindungsorientiert zuverlässig / verbindungslos schnell                                                 | [[N1 Netzwerkgrundlagen und OSI-Modell\|N1]]         |

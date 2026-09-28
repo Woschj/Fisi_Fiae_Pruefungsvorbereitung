@@ -5,7 +5,7 @@ tags: [ap1/kartenquelle]
 # Kartenquelle Hardware
 
 > [!info] AP1-Priorität
-> RAID-Karten sind AP2-Vertiefung (Prüfungskatalog 2025). Für die AP1 überspringen oder nur Servergrundlagen daraus wiederholen. [[Prüfung AP1]]
+> Karten nach dem AP1-Katalog 2025. RAID steht im AP2-Bereich ([[FISI-3 Speicher und RAID planen]]). [[Prüfung AP1]]
 
 > [!warning] Hier stehen die Antworten
 > Zum Lernen [[Karten Hardware]] öffnen. Diese Datei ist nur zum Bearbeiten und Ergänzen da – Format: `Frage::Antwort`, eine Karte pro Zeile.
@@ -51,16 +51,10 @@ Wie berechnest du den Speicherbedarf eines unkomprimierten Videos?::Breite × H�
 Wie viele Farben lassen sich mit n Bit Farbtiefe darstellen?::2ⁿ Farben
 Wie viele Byte pro Pixel braucht True Color mit 24 Bit?::3 Byte
 
-(AP2-Vertiefung) Was bedeuten Striping, Mirroring und Parität bei RAID?::Striping: Daten verteilen · Mirroring: Daten spiegeln · Parität: Prüfinformation (XOR), aus der sich eine ausgefallene Platte rekonstruieren lässt
-(AP2-Vertiefung) Wie funktioniert RAID 0 und wie sicher ist es?::Striping, Kapazität n × C, keine Redundanz – eine defekte Platte = alle Daten weg; mindestens 2 Platten
-(AP2-Vertiefung) Wie funktioniert RAID 1?::Spiegelung, Kapazität C (einer Platte), verkraftet 1 Ausfall; mindestens 2 Platten
-(AP2-Vertiefung) Welche Kapazität und Ausfallsicherheit hat RAID 5?::(n − 1) × C, verkraftet 1 Ausfall; mindestens 3 Platten
-(AP2-Vertiefung) Welche Kapazität und Ausfallsicherheit hat RAID 6?::(n − 2) × C, verkraftet 2 Ausfälle; mindestens 4 Platten
-(AP2-Vertiefung) Welche Kapazität und Ausfallsicherheit hat RAID 10?::n ÷ 2 × C, garantiert 1 Ausfall (einer je Spiegelpaar); mindestens 4 Platten
 Was ist der Unterschied zwischen Hot Spare und Hot Swap?::Hot Spare: Reserveplatte springt automatisch ein · Hot Swap: Platte im laufenden Betrieb tauschen
-Ersetzt ein RAID die Datensicherung?::Nein – RAID schützt nicht vor Löschen, Ransomware, Brand oder Controllerdefekt
+Ersetzen redundante Laufwerke oder ein NAS die Datensicherung?::Nein – Redundanz schützt nicht vor Löschen, Ransomware, Brand oder Diebstahl; nötig ist ein Backup nach der 3-2-1-Regel
 Wie unterscheiden sich NAS und SAN?::NAS: dateibasiert über das LAN (SMB/NFS) · SAN: blockbasiert über ein eigenes Speichernetz (Fibre Channel, iSCSI)
-Welche Merkmale unterscheiden Serverhardware von Client-PCs?::Redundante Netzteile, ECC-RAM, RAID mit Hot-Swap, Fernwartung (iDRAC/iLO/IPMI), Rack-Bauform
+Welche Merkmale unterscheiden Serverhardware von Client-PCs?::Redundante Netzteile, ECC-RAM, redundante Hot-Swap-Laufwerke, Fernwartung (iDRAC/iLO/IPMI), Rack-Bauform
 
 Wie lautet das ohmsche Gesetz?::U = R · I
 Wie berechnest du die elektrische Leistung?::P = U · I

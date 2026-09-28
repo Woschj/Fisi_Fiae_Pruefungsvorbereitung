@@ -16,7 +16,7 @@ tags: [ap2/modul, ap2/fisi]
 > **Bereich:** [[Übersicht FISI Konzeption und Administration]]
 > **Prüfung:** „Konzeption und Administration von IT-Systemen“
 > **Dauer:** ca. 150 min · **Prüfungsrelevanz:** ★★★ – Speicherbedarf und Plattenanzahl berechnen sowie RAID-Level und Ausfallsicherheit vergleichen.
-> **Grundlagen aus AP1:** [[H4 Server, NAS und RAID]] · [[H3 Datenmengen und Übertragung]] · [[H2 Massenspeicher und Schnittstellen]]
+> **Grundlagen aus AP1:** [[H4 Server und Netzwerkspeicher]] · [[H3 Datenmengen und Übertragung]] · [[H2 Massenspeicher und Schnittstellen]]
 
 ## Lernziele
 - [ ] Ich rechne sicher mit KiB, MiB, GiB und TiB und weiß, wann dezimal und wann binär gerechnet wird.
@@ -173,7 +173,7 @@ Ausfallrate
 ## Verwandte Themen
 - [[FISI-4 Datensicherung, Archivierung und Notfallvorsorge]] – RAID ist kein Backup, Archiv
 - [[FISI-1 Server, Virtualisierung und Container]] – Shared Storage für Cluster
-- [[H4 Server, NAS und RAID]] – Grundlagen aus AP1
+- [[H4 Server und Netzwerkspeicher]] – Grundlagen aus AP1
 - [[H3 Datenmengen und Übertragung]] – Einheiten, Mediendaten
 
 ## Zusammenfassung

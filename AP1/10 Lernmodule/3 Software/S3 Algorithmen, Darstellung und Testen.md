@@ -14,12 +14,12 @@ tags: [ap1/modul, ap1/software]
 
 > [!abstract] Überblick
 > **Bereich:** [[Übersicht Software]]
-> **Dauer:** ca. 2,5 h · **Prüfungsrelevanz:** ★★★ – UML-Aktivitätsdiagramm, Schreibtischtest, Pseudocode und Testfälle; Struktogramm/PAP nur optionale Wiederholung
+> **Dauer:** ca. 2,5 h · **Prüfungsrelevanz:** ★★★ – UML-Aktivitätsdiagramm, Schreibtischtest, Pseudocode und Testfälle
 > **Voraussetzungen:** [[S2 Programmierung – Grundlagen]]
 > **Berufsschule:** SuD LF5 LS5.2–5.4 (Testfallkatalog, UML-Aktivitätsdiagramm, pytest)
 
 ## Lernziele
-- [ ] Ich kann UML-Aktivitätsdiagramme lesen und ergänzen; Struktogramme und PAP kenne ich als optionale Wiederholung.
+- [ ] Ich kann UML-Aktivitätsdiagramme lesen und ergänzen.
 - [ ] Ich kann einen Schreibtischtest (Trace-Tabelle) durchführen.
 - [ ] Ich kann Standardalgorithmen (lineare/binäre Suche, Bubble Sort, Tausch) erklären und anwenden.
 - [ ] Ich kann Syntax-, Laufzeit- und Logikfehler unterscheiden und typische Fehler in Pseudocode finden.
@@ -32,32 +32,11 @@ Ein Algorithmus ist eine **eindeutige, endliche Folge von Schritten**, die ein P
 
 ## 1. Darstellungsformen
 
-<!-- erg:Katalog Struktogramm -->
 > [!note] Prüfungskatalog ab 2025
-> **Struktogramm und Programmablaufplan (PAP)** wurden aus dem AP1-Katalog gestrichen. Für die AP1 haben **UML-Aktivitätsdiagramm**, **Schreibtischtest** und Fehlersuche in Pseudocode Vorrang. Die älteren Darstellungsformen sind unten als optionale Wiederholung aufgeführt. [[Prüfung AP1]]
-
-### Struktogramm (Nassi-Shneiderman, DIN 66261)
-Rechteckige Blöcke, die ineinander verschachtelt werden – **ohne Pfeile und ohne Sprünge** (erzwingt strukturierte Programmierung).
-
-<!-- abb:struktogramm -->
-![[struktogramm.svg]]
-*Abb.: Struktogramm mit Anweisung, Zählschleife und Verzweigung*
-
-- **Fußgesteuerte Schleife:** Rumpf oben eingerückt, Bedingung **unten** („BIS …“)
-- **Fallauswahl:** mehrere Spalten unter einem Dreieck
-
-### Programmablaufplan (PAP, DIN 66001)
-| Symbol | Bedeutung |
-|---|---|
-| Oval (abgerundet) | Start / Ende |
-| Rechteck | Verarbeitung (Anweisung) |
-| Raute | Verzweigung (ja/nein) |
-| Parallelogramm | Ein-/Ausgabe |
-| Rechteck mit doppelten Seitenlinien | Unterprogramm |
-| Pfeile | Ablaufrichtung |
+> **Struktogramm und Programmablaufplan (PAP)** sind aus dem Prüfungskatalog gestrichen. Algorithmen werden als **UML-Aktivitätsdiagramm** oder **Pseudocode** dargestellt; Geschäftsprozesse zusätzlich mit **BPMN** ([[S8 UML und Softwareentwurf]]). [[Prüfung AP1]]
 
 ### UML-Aktivitätsdiagramm
-Heute in der Softwareentwicklung verbreitet: **Startknoten** (gefüllter Kreis), **Aktionen** (abgerundete Rechtecke), **Entscheidung/Zusammenführung** (Raute, Bedingungen in [eckigen Klammern] an den Kanten), **Gabelung/Vereinigung** (Balken, für parallele Abläufe), **Endknoten** (Kreis mit Punkt).
+Standard für Abläufe in der Softwareentwicklung: **Startknoten** (gefüllter Kreis), **Aktionen** (abgerundete Rechtecke), **Entscheidung/Zusammenführung** (Raute, Bedingungen in [eckigen Klammern] an den Kanten), **Gabelung/Vereinigung** (Balken, für parallele Abläufe), **Endknoten** (Kreis mit Punkt).
 
 ```mermaid
 flowchart TD
@@ -208,8 +187,7 @@ pytest-Ergebnisse: **PASSED** (bestanden) · **FAILED** (Soll ≠ Ist) · **ERRO
 ---
 
 > [!warning] Typische Fehler in Prüfungen
-> - Im Struktogramm Pfeile oder Sprünge einzeichnen.
-> - Verzweigung im PAP ohne Beschriftung ja/nein.
+> - Kanten nach einer Entscheidung im Aktivitätsdiagramm ohne [Bedingung] beschriften.
 > - Beim Schreibtischtest Zwischenschritte auslassen – dann sieht man den Fehler nicht.
 > - Testfälle nur mit „normalen“ Werten – Grenzwerte fehlen.
 > - Binäre Suche auf unsortierte Daten anwenden.
@@ -220,7 +198,7 @@ pytest-Ergebnisse: **PASSED** (bestanden) · **FAILED** (Soll ≠ Ist) · **ERRO
 - [[P1 Projektmanagement und Vorgehensmodelle]] – Tests im V-Modell und die Abnahme
 
 ## Zusammenfassung
-- Struktogramm (Blöcke, keine Sprünge), PAP (Symbole DIN 66001), UML-Aktivitätsdiagramm (Aktionen, Rauten mit [Bedingungen]).
+- UML-Aktivitätsdiagramm: Start-/Endknoten, Aktionen, Rauten mit [Bedingungen], Balken für Parallelität.
 - Schreibtischtest: Spalte je Variable, Zeile je Durchlauf.
 - Tausch mit Hilfsvariable; lineare Suche n, binäre Suche log₂ n (nur sortiert); Bubble Sort n².
 - Syntax- / Laufzeit- / Logikfehler.

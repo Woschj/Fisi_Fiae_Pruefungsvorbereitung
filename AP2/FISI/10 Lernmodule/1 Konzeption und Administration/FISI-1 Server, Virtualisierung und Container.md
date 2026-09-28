@@ -16,7 +16,7 @@ tags: [ap2/modul, ap2/fisi]
 > **Bereich:** [[Übersicht FISI Konzeption und Administration]]
 > **Prüfung:** „Konzeption und Administration von IT-Systemen“ (90 min, 4 Aufgaben)
 > **Dauer:** ca. 120 min · **Prüfungsrelevanz:** ★★★ – Hypervisoren Typ 1/2, Serverauswahl, Netzteile und Energiekosten verstehen und berechnen.
-> **Grundlagen aus AP1:** [[S5 Virtualisierung und Cloud]] · [[H4 Server, NAS und RAID]] · [[H5 Elektrotechnik, USV und Energie]]
+> **Grundlagen aus AP1:** [[S5 Virtualisierung und Cloud]] · [[H4 Server und Netzwerkspeicher]] · [[H5 Elektrotechnik, USV und Energie]]
 
 ## Lernziele
 - [ ] Ich kann Servermodelle anhand einer Anforderung auswählen und die Wahl begründen.

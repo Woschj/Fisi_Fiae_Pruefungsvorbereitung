@@ -15,7 +15,7 @@ tags: [ap1/modul, ap1/sicherheit]
 > [!abstract] Überblick
 > **Bereich:** [[Übersicht IT-Sicherheit]]
 > **Dauer:** ca. 90 min · **Prüfungsrelevanz:** ★★★ – Sicherungsarten, Speicherbedarf und Wiederherstellung sind klassische Rechen- und Erklärungsaufgaben
-> **Voraussetzungen:** [[H4 Server, NAS und RAID]]
+> **Voraussetzungen:** [[H4 Server und Netzwerkspeicher]]
 > **Berufsschule:** Evp-CPS LF3 LS3.5 (Backupstrategien)
 
 ## Lernziele
@@ -146,7 +146,7 @@ Was wird gesichert (Datenbanken, Fileserver, VMs, Postfächer, Konfigurationen)?
 > - Backup auf dem **gleichen** System/Standort speichern und das als ausreichend bewerten.
 
 ## Verwandte Themen
-- [[H4 Server, NAS und RAID]] – RAID ist kein Backup
+- [[H4 Server und Netzwerkspeicher]] – RAID ist kein Backup
 - [[I5 Bedrohungen und Schutzmaßnahmen]] – Schutz vor Ransomware
 - [[P3 IT-Service, Support und Qualität]] – RTO und RPO im Service
 

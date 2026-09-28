@@ -15,7 +15,7 @@ tags: [ap1/modul, ap1/hardware]
 > [!abstract] Überblick
 > **Bereich:** [[Übersicht Hardware]]
 > **Dauer:** ca. 2 h (plus Training) · **Prüfungsrelevanz:** ★★★ – fast jede AP1 enthält eine Rechnung mit Datenmengen oder Übertragungszeiten
-> **Voraussetzungen:** Potenzrechnung · **Danach:** [[H4 Server, NAS und RAID]]
+> **Voraussetzungen:** Potenzrechnung · **Danach:** [[H4 Server und Netzwerkspeicher]]
 > **Berufsschule:** Evp-CPS LF3 LS3.1 (Übertragungsdauer im WLAN), LS3.5 (Speicherbedarf für Videos)
 
 ## Lernziele
@@ -115,7 +115,7 @@ Vorgehen:
 
 > [!example] Videoüberwachung komprimiert
 > 8 Kameras, je 4 Mbit/s, 24/7, 30 Tage Aufbewahrung:
-> 8 × 4 · 10⁶ Bit/s × 86 400 s × 30 / 8 = **10,37 TB** → mit Reserve z. B. NAS mit 4 × 6 TB in RAID 5 (18 TB nutzbar) – siehe [[H4 Server, NAS und RAID]]
+> 8 × 4 · 10⁶ Bit/s × 86 400 s × 30 / 8 = **10,37 TB** → mit 20 % Reserve rund **12,5 TB** Speicherplatz, z. B. auf einem NAS ([[H4 Server und Netzwerkspeicher]])
 
 ---
 
@@ -125,7 +125,7 @@ Typische Aufgaben: Datensätze, Mailpostfächer, Wachstum, Backup-Generationen.
 > [!example] Kundendatenbank mit Wachstum
 > 120 000 Kunden × 4 KiB je Datensatz = 491 520 000 B ≈ **468,75 MiB**. Wachstum 15 % pro Jahr über 3 Jahre: × 1,15³ = × 1,5209 → ≈ **713 MiB**. Dazu Indizes, Logs, Backups → Reserve einplanen.
 
-**Planungsregeln:** Wachstum (Prozent pro Jahr, Zinseszins-Effekt), Reserve (20–30 %), Backups/Versionen (Faktor!), RAID-Verlust ([[H4 Server, NAS und RAID]]), Füllgrad (Dateisysteme nicht über ~80 % füllen).
+**Planungsregeln:** Wachstum (Prozent pro Jahr, Zinseszins-Effekt), Reserve (20–30 %), Backups/Versionen (Faktor!), Füllgrad (Dateisysteme nicht über ~80 % füllen).
 
 <!-- erg:Multimedia -->
 ## 6. Multimedia – Grafik, Kompression und Codes
@@ -186,7 +186,7 @@ Weitere Beispiele: ISBN, IBAN (Prüfsumme modulo 97), Luhn-Verfahren bei Kreditk
 - kB/MB/GB = 10³/10⁶/10⁹ · KiB/MiB/GiB = 2¹⁰/2²⁰/2³⁰; immer über Byte umrechnen.
 - t = Bit / (Bit/s); ggf. × Effizienz.
 - Bild = B × H × Farbtiefe · Audio = Rate × Bit × Kanäle × s · Video = Bild × fps × s bzw. Bitrate × s.
-- Planung: Wachstum, Reserve, Backups, RAID.
+- Planung: Wachstum, Reserve, Backups, Füllgrad.
 
 ## Direkt üben
 ```dataviewjs
@@ -206,4 +206,4 @@ await dv.view("AP1/99 System/views/selbstcheck")
 ```
 
 ---
-← [[H2 Massenspeicher und Schnittstellen]] · Weiter: [[H4 Server, NAS und RAID]] →
+← [[H2 Massenspeicher und Schnittstellen]] · Weiter: [[H4 Server und Netzwerkspeicher]] →

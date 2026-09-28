@@ -12,7 +12,7 @@ flowchart LR
   H1["H1 PC-Komponenten und Arbeitsplatzgeräte"]
   H2["H2 Massenspeicher und Schnittstellen"]
   H3["H3 Datenmengen und Übertragung"]
-  H4["H4 Server, NAS und RAID"]
+  H4["H4 Server und Netzwerkspeicher"]
   H5["H5 Elektrotechnik, USV und Energie"]
   H6["H6 Drucker, Peripherie und Mobilgeräte"]
   H1 --> H2
@@ -31,7 +31,7 @@ flowchart LR
 | [[H1 PC-Komponenten und Arbeitsplatzgeräte\|H1]] | PC-Komponenten und Arbeitsplatzgeräte | CPU, RAM, Mainboard, Monitor, Geräteklassen |
 | [[H2 Massenspeicher und Schnittstellen\|H2]] | Massenspeicher und Schnittstellen | SSD/HDD, USB, Thunderbolt, Bildschirmanschlüsse |
 | [[H3 Datenmengen und Übertragung\|H3]] | Datenmengen und Übertragung | Bit/Byte, Präfixe, Übertragungsdauer, Medien |
-| [[H4 Server, NAS und RAID\|H4]] | Server, NAS und RAID | Server, NAS/SAN, RAID-Level |
+| [[H4 Server und Netzwerkspeicher\|H4]] | Server und Netzwerkspeicher | Serverhardware, DAS/NAS/SAN |
 | [[H5 Elektrotechnik, USV und Energie\|H5]] | Elektrotechnik, USV und Energie | Ohm, Leistung, USV, Energiekosten |
 | [[H6 Drucker, Peripherie und Mobilgeräte\|H6]] | Drucker, Peripherie und Mobilgeräte | Druckkosten, Scanner, Notebook/Tablet, MDM |
 

@@ -140,7 +140,7 @@ Falsche Codierung → „Mojibake“: `Ã¤` statt `ä` (UTF-8-Text als Latin-1 
 | 1 | 1 | 1 | 1 | 0 | 0 | 0 |
 NOT kehrt um (0 → 1).
 
-**Anwendungen:** Netzadresse = IP **AND** Maske ([[N2 IPv4 und Subnetting]]) · RAID-Parität = **XOR** ([[H4 Server, NAS und RAID]]) · Bitmasken für Rechte und Flags · Bedingungen in Programmen (`and`, `or`, `not`).
+**Anwendungen:** Netzadresse = IP **AND** Maske ([[N2 IPv4 und Subnetting]]) · Bitmasken für Rechte und Flags · Bedingungen in Programmen (`and`, `or`, `not`).
 
 ---
 

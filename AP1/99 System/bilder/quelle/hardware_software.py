@@ -15,32 +15,6 @@ def platte(s, x, y, w, name, bloecke, f):
         s.box(x + 8, y + 24 + i * 30, w - 16, 24, b, farbe, farbe, 12, 600, op=0.4 if par else 0.25, rx=5, mono=True)
 
 
-def raid():
-    s = Svg(1010, 330, "RAID 0, 1, 5, 6 und 10: Blockverteilung, Kapazität und Ausfallsicherheit")
-    gruppen = [
-        ("RAID 0 · Striping", 20, [["A1", "A3", "A5"], ["A2", "A4", "A6"]], "n × C · 0 Ausfälle", BLAU),
-        ("RAID 1 · Mirroring", 175, [["A1", "A2", "A3"], ["A1", "A2", "A3"]], "C · 1 Ausfall", GRUEN),
-        ("RAID 5 · verteilte Parität", 330, [["A1", "B1", "Pc"], ["A2", "Pb", "C1"], ["Pa", "B2", "C2"]], "(n−1) × C · 1 Ausfall", LILA),
-        ("RAID 6 · doppelte Parität", 540, [["A1", "Pb", "Qc"], ["A2", "Qb", "C1"], ["Pa", "B1", "C2"], ["Qa", "B2", "Pc"]], "(n−2) × C · 2 Ausfälle", ROT),
-        ("RAID 10 · Spiegel + Striping", 800, [["A1", "A3", "A5"], ["A1", "A3", "A5"], ["A2", "A4", "A6"], ["A2", "A4", "A6"]], "n/2 × C · 1 garantiert", TUERKIS),
-    ]
-    for titel, x0, platten, formel, f in gruppen:
-        schritt = 48 if len(platten) == 4 and x0 == 800 else 62
-        pw = 42 if schritt == 48 else 54
-        breite = len(platten) * schritt - (schritt - pw)
-        s.text(x0 + breite / 2, 26, titel, 13, TXT, 700)
-        for i, b in enumerate(platten):
-            platte(s, x0 + i * schritt, 44, pw, f"P{i + 1}" if schritt == 48 else f"Platte {i + 1}", b, f)
-        s.text(x0 + breite / 2, 216, formel, 12.5, f, 700)
-        if x0 == 800:
-            s.path(f"M{x0} 184 v6 H{x0 + 90} v-6", TUERKIS, sw=1.4); s.path(f"M{x0 + 96} 184 v6 H{x0 + 186} v-6", TUERKIS, sw=1.4)
-    s.line(20, 240, 990, 240, RAND, 1)
-    s.text(505, 262, "A1, A2 … = Datenblöcke · Pa, Qa = Paritätsblöcke (per XOR) · C = Kapazität einer Platte, n = Anzahl Platten", 12.5, LEISE)
-    s.text(505, 286, "Mindestanzahl: RAID 0 → 2 · RAID 1 → 2 · RAID 5 → 3 · RAID 6 → 4 · RAID 10 → 4", 12.5, TXT, 600)
-    s.text(505, 310, "RAID erhöht die Verfügbarkeit – es ersetzt kein Backup (Löschen, Ransomware, Brand betreffen alle Platten).", 12.5, ROT, 600)
-    return s
-
-
 def anschluesse():
     s = Svg(880, 320, "Schnittstellen im Vergleich: USB-A, USB-C, HDMI, DisplayPort, RJ45")
     def karte(x, titel, daten):
@@ -116,26 +90,6 @@ def leistungsdreieck():
     return s
 
 
-def struktogramm():
-    s = Svg(700, 330, "Struktogramm: Summe aller positiven Werte einer Liste")
-    x, w = 40, 620
-    s.box(x, 20, w, 38, "summe ← 0", BOX, RAND, 14, 500, rx=0, mono=True)
-    s.rect(x, 58, w, 196, BOX, RAND, 0)
-    s.text(x + 14, 76, "FÜR i ← 0 BIS n − 1", 14, TXT, 500, "start", mono=True)
-    ix = x + 36
-    # Verzweigung
-    s.rect(ix, 94, w - 36, 60, BOX2, RAND, 0)
-    mx = ix + (w - 36) / 2
-    s.path(f"M{ix} 94 L{mx} 154 L{ix + w - 36} 94", LEISE, sw=1.2)
-    s.text(mx, 110, "werte[i] > 0 ?", 14, TXT, 600, mono=True)
-    s.text(ix + 30, 142, "ja", 12.5, GRUEN, 700); s.text(ix + w - 66, 142, "nein", 12.5, ROT, 700)
-    s.box(ix, 154, mx - ix, 100, "summe ← summe + werte[i]", BOX, RAND, 13.5, 500, rx=0, mono=True)
-    s.box(mx, 154, ix + w - 36 - mx, 100, "∅", BOX, RAND, 18, 500, rx=0, fg=LEISE)
-    s.box(x, 254, w, 38, "ausgabe(summe)", BOX, RAND, 14, 500, rx=0, mono=True)
-    s.text(350, 312, "Blöcke statt Pfeile · Schleifenrumpf eingerückt · Verzweigung als Dreieck · ∅ = leerer Zweig", 12, LEISE)
-    return s
-
-
 def testpyramide():
     s = Svg(760, 320, "Testpyramide und Teststufen")
     stufen = [("Abnahmetest", "Kunde prüft gegen die Anforderungen (Pflichtenheft)", ROT),
@@ -173,5 +127,5 @@ def cloud_modelle():
     return s
 
 
-BILDER.update({"raid-level": raid, "anschluesse": anschluesse, "mainboard": mainboard, "leistungsdreieck": leistungsdreieck,
-               "struktogramm": struktogramm, "testpyramide": testpyramide, "cloud-modelle": cloud_modelle})
+BILDER.update({"anschluesse": anschluesse, "mainboard": mainboard, "leistungsdreieck": leistungsdreieck,
+               "testpyramide": testpyramide, "cloud-modelle": cloud_modelle})

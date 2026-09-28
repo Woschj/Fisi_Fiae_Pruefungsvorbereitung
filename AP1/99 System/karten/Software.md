@@ -5,7 +5,7 @@ tags: [ap1/kartenquelle]
 # Kartenquelle Software
 
 > [!info] AP1-Priorität
-> UML-Aktivitätsdiagramme, Pseudocode und Schreibtischtests haben Vorrang. SQL-Karten sowie Struktogramm/PAP sind optionale Vertiefung außerhalb des AP1-Katalogs 2025. [[Prüfung AP1]]
+> Karten nach dem AP1-Katalog 2025. SQL steht im AP2-Bereich, Struktogramm und PAP sind gestrichen. [[Prüfung AP1]]
 
 > [!warning] Hier stehen die Antworten
 > Zum Lernen [[Karten Software]] öffnen. Diese Datei ist nur zum Bearbeiten und Ergänzen da – Format: `Frage::Antwort`, eine Karte pro Zeile.
@@ -39,8 +39,6 @@ Was ist der Unterschied zwischen Parameter und Argument?::Parameter stehen in de
 Was bedeutet „Early Return“?::Die Funktion wird verlassen, sobald das Ergebnis feststeht
 Was ist der Unterschied zwischen Klasse und Objekt?::Die Klasse ist der Bauplan, das Objekt eine konkrete Instanz davon
 
-(nicht mehr im AP1-Katalog) Woran erkennst du ein Struktogramm?::Verschachtelte Blöcke ohne Pfeile oder Sprünge (Nassi-Shneiderman, DIN 66261)
-(nicht mehr im AP1-Katalog) Welche Symbole verwendet ein Programmablaufplan (PAP)?::Oval: Start/Ende · Rechteck: Verarbeitung · Raute: Verzweigung · Parallelogramm: Ein-/Ausgabe
 Wie wird eine Bedingung im UML-Aktivitätsdiagramm notiert?::In eckigen Klammern an der Kante, z. B. [x > 0]
 Wie führst du einen Schreibtischtest durch?::Den Algorithmus von Hand ausführen – eine Spalte je Variable, eine Zeile je Schritt
 Wie tauschst du die Werte zweier Variablen a und b?::Mit einer Hilfsvariablen: tmp ← a; a ← b; b ← tmp
@@ -92,8 +90,6 @@ Was ist der Unterschied zwischen Primär- und Fremdschlüssel?::Primärschlüsse
 Welche Anomalien entstehen durch Redundanz?::Änderungs-, Einfüge- und Löschanomalie
 Was verlangt die 1. Normalform?::Jede Zelle enthält nur einen atomaren Wert, keine Wiederholungsgruppen
 Welche Aufgaben hat ein Datenbankmanagementsystem?::Datenintegrität, Mehrbenutzerbetrieb mit Transaktionen, Zugriffsschutz, Sicherung und Wiederherstellung, Abfragesprache SQL
-(AP2-Vertiefung) Wie lautet der Grundaufbau einer SQL-Abfrage?::SELECT Spalten FROM Tabelle WHERE Bedingung ORDER BY Spalte
-(AP2-Vertiefung) Was unterscheidet WHERE und HAVING in SQL?::WHERE filtert einzelne Zeilen vor dem Gruppieren · HAVING filtert Gruppen nach GROUP BY
 Was zeigt ein UML-Anwendungsfalldiagramm – und was nicht?::Wer (Akteur) welche Funktionen des Systems nutzt – keine Reihenfolge und keine Technik
 Was ist der Unterschied zwischen «include» und «extend»?::«include»: immer mit ausgeführt, Pfeil zum eingebundenen Fall · «extend»: optional, Pfeil zum Basisfall
 Wie stellst du im Aktivitätsdiagramm Entscheidung und Parallelität dar?::Entscheidung: Raute mit [Bedingungen] an den Kanten · Parallelität: Gabelungs- und Vereinigungsbalken

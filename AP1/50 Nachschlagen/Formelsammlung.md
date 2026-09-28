@@ -44,15 +44,7 @@ GB → GiB ≈ × 0,9313 · TB → TiB ≈ × 0,9095
 
 Maskenwerte: 128 · 192 · 224 · 240 · 248 · 252 · 254 · 255
 
-## Hardware und Strom → [[H4 Server, NAS und RAID]] · [[H5 Elektrotechnik, USV und Energie]]
-| RAID | Nutzkapazität | min. Platten | verkraftet |
-|---|---|---|---|
-| 0 | n × C | 2 | 0 |
-| 1 | C | 2 | n − 1 |
-| 5 | (n − 1) × C | 3 | 1 |
-| 6 | (n − 2) × C | 4 | 2 |
-| 10 | n/2 × C | 4 | 1 (garantiert) |
-
+## Hardware und Strom → [[H4 Server und Netzwerkspeicher]] · [[H5 Elektrotechnik, USV und Energie]]
 | Größe | Formel |
 |---|---|
 | Ohmsches Gesetz | U = R · I |

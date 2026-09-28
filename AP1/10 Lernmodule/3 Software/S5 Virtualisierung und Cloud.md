@@ -15,7 +15,7 @@ tags: [ap1/modul, ap1/software]
 > [!abstract] Überblick
 > **Bereich:** [[Übersicht Software]]
 > **Dauer:** ca. 90 min · **Prüfungsrelevanz:** ★★★ – Hypervisor-Typen, IaaS/PaaS/SaaS und Cloud-Vor-/Nachteile werden regelmäßig gefragt
-> **Voraussetzungen:** [[S4 Betriebssysteme, Dateisysteme und Rechte]], [[H4 Server, NAS und RAID]]
+> **Voraussetzungen:** [[S4 Betriebssysteme, Dateisysteme und Rechte]], [[H4 Server und Netzwerkspeicher]]
 
 ## Lernziele
 - [ ] Ich kann Virtualisierung erklären und Typ-1- und Typ-2-Hypervisoren unterscheiden.
@@ -150,7 +150,7 @@ Zugriff per **Thin Client**, Notebook oder Browser. Vorteile: zentrale Verwaltun
 > - Snapshots als Backup-Strategie nennen.
 
 ## Verwandte Themen
-- [[H4 Server, NAS und RAID]] – Serverhardware für Hosts
+- [[H4 Server und Netzwerkspeicher]] – Serverhardware für Hosts
 - [[I2 Datenschutz]] – Cloud und Auftragsverarbeitung
 - [[W3 Investition und Finanzierung]] – Kaufen oder mieten
 

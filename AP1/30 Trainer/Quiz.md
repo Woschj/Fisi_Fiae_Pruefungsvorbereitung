@@ -8,7 +8,7 @@ Alle Fragen aus allen Modulen. Das Quiz merkt sich, was du wie oft richtig hatte
 - richtig → der Abstand wächst: 1 → 3 → 7 → 14 → 30 → 60 Tage
 
 > [!info] Prüfungskatalog 2025
-> Der Fragenpool enthält auch ältere und AP2-Vertiefungsthemen, darunter RAID und SQL. Für die AP1 konzentriere dich auf den aktualisierten Katalog: RAID und SQL sind AP2-Stoff; Struktogramm und PAP wurden aus dem AP1-Katalog gestrichen. Siehe [[Prüfung AP1]].
+> Der Fragenpool folgt dem AP1-Katalog 2025. RAID und SQL sind AP2-Stoff und stehen im AP2-Bereich; Struktogramm und PAP wurden gestrichen. Siehe [[Prüfung AP1]].
 
 **Modus „Empfohlen“** stellt zuerst fällige Wiederholungen, dann neue Fragen. **„Nur Schwächen“** zeigt Fragen, die du zuletzt falsch hattest.
 

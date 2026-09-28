@@ -5,9 +5,6 @@ tags: [ap1/trainer]
 
 Unbegrenzt neue Rechenaufgaben mit sofortiger Kontrolle und Lösungsweg. Jede Aufgabe wird in deiner Statistik gezählt (Dashboard → „Trainer-Quote“).
 
-> [!info] AP1-Priorität
-> Der Trainerpool enthält auch RAID-Rechnen als AP2-Vertiefung. Für die AP1 kannst du diesen Aufgabentyp überspringen; die übrigen Aufgaben sind Übungsthemen, keine amtliche Gewichtung. [[Prüfung AP1]]
-
 > [!tip] So trainierst du effektiv
 > - Erst den Lösungsweg im Modul verstehen, dann hier **ohne** Hilfe rechnen.
 > - Ziel: **5 richtige in Folge** pro Aufgabentyp – dann sitzt es.
@@ -20,14 +17,8 @@ await dv.view("AP1/99 System/views/trainer", { typen: ["subnetz-analyse", "subne
 ```
 
 ## Hardware
-> RAID-Rechnen ist AP2-Vertiefung; für AP1 überspringen.
 ```dataviewjs
 await dv.view("AP1/99 System/views/trainer", { typen: ["einheiten", "uebertragung", "datenmenge", "usv-dimension", "usv-akku", "strom", "ppi", "druckkosten", "pruefziffer"] })
-```
-
-### Optionale AP2-Vertiefung
-```dataviewjs
-await dv.view("AP1/99 System/views/trainer", { typen: ["raid"] })
 ```
 
 ## Software

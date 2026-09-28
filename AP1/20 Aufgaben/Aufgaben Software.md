@@ -141,9 +141,6 @@ Die Anzahl bestellter Fahrräder soll so lange abgefragt werden, bis ein Wert zw
 
 ## S3 Algorithmen, Darstellung und Testen
 
-> [!info] AP1-Priorität
-> Aufgaben zu UML-Aktivitätsdiagrammen, Pseudocode und Schreibtischtests sind AP1-nah. Struktogramm- und PAP-Aufgaben darunter sind optionale Wiederholung älterer Darstellungen (seit Katalog 2025 aus AP1 gestrichen). [[Prüfung AP1]]
-
 ### S3.1 ★★ – Schreibtischtest (6 Punkte)
 📘 **Nachlernen:** [[S3 Algorithmen, Darstellung und Testen#2. Schreibtischtest (Trace-Tabelle)|S3 › Schreibtischtest]] · [[S3 Algorithmen, Darstellung und Testen#Bubble Sort|S3 › Bubble Sort]]
 
@@ -198,16 +195,6 @@ Die Versandkosten: bis 50 € Bestellwert 4,90 €, ab 50 € versandkostenfrei;
 > | 5 | 0,00 € | Randfall | 4,90 € (oder Hinweis „leerer Warenkorb“) |
 > | 6 | −5,00 € | ungültig | Fehlermeldung |
 > Grenzwerte (2 P), Äquivalenzklassen (2 P), Negativtest (1 P), Tabellenform mit Soll (1 P).
-
-### S3.4 ★★ – Darstellung (6 Punkte)
-📘 **Nachlernen:** [[S3 Algorithmen, Darstellung und Testen#Struktogramm (Nassi-Shneiderman, DIN 66261)|S3 › Struktogramm]] · [[S3 Algorithmen, Darstellung und Testen#Programmablaufplan (PAP, DIN 66001)|S3 › Programmablaufplan]]
-
-Stellen Sie den Algorithmus aus S2.4 (Eingabeprüfung) als Struktogramm **oder** PAP dar (Skizze beschreiben genügt) und nennen Sie je einen Vorteil beider Darstellungen.
-
-> [!success]- Lösung
-> **Struktogramm:** fußgesteuerte Schleife – Rumpf (Eingabe, Verzweigung „ungültig?“ ja: Meldung / nein: ∅) eingerückt, Bedingung „bis 1 ≤ anzahl ≤ 10“ **unten**. (3 P)
-> **PAP:** Start → Parallelogramm „Eingabe anzahl“ → Raute „1 ≤ anzahl ≤ 10?“ → nein: Parallelogramm „Meldung“, Pfeil zurück zur Eingabe · ja: Ende.
-> Vorteile: Struktogramm erzwingt strukturierte Programmierung ohne Sprünge; PAP ist intuitiv lesbar, zeigt den Ablauf mit Pfeilen. (3 P)
 
 ---
 
@@ -324,9 +311,6 @@ Die IT möchte ein Open-Source-Ticketsystem (GPL) einsetzen und selbst erweitern
 
 ## S7 Datenbanken
 
-> [!info] AP1-Priorität
-> ER-Modell und Datenanomalien sind AP1-nah. SQL-Aufgaben sind optionale AP2-Vertiefung, da SQL laut AkA ausschließlich AP2 zugeordnet ist. [[Prüfung AP1]]
-
 ### S7.1 ★★ – ER-Modell für die Geräteausleihe (10 Punkte)
 📘 **Nachlernen:** [[S7 Datenbanken#2. Das ER-Modell (Entity-Relationship)|S7 › Das ER-Modell]] · [[S7 Datenbanken#Kardinalitäten|S7 › Kardinalitäten]]
 
@@ -350,23 +334,15 @@ a) Erstellen Sie ein ER-Modell in Chen-Notation mit Kardinalität. b) Begründen
 >
 > Eine **n:m**-Beziehung lässt sich nicht mit einem einzelnen Fremdschlüssel abbilden: Ein Feld „PersNr“ in Geraet könnte nur **eine** Person speichern. Die Zwischentabelle nimmt beide Fremdschlüssel und die Beziehungsattribute auf. Weil dasselbe Gerät mehrfach von derselben Person geliehen werden kann, ist eine eigene AusleihNr als Primärschlüssel sinnvoll (2 P).
 
-### S7.3 – AP2-Vertiefung: Redundanz erkennen und SQL (8 Punkte)
-📘 **Nachlernen:** [[S7 Datenbanken#4. Redundanz, Anomalien und Normalisierung|S7 › Redundanz, Anomalien und Normalisierung]] · [[S7 Datenbanken#5. SQL-Grundlagen|S7 › SQL-Grundlagen]]
+### S7.3 ★★ – Redundanz und Anomalien erkennen (6 Punkte)
+📘 **Nachlernen:** [[S7 Datenbanken#4. Redundanz, Anomalien und Normalisierung|S7 › Redundanz, Anomalien und Normalisierung]]
 
 Die bisherige Excel-Liste hat die Spalten *InvNr, Bezeichnung, PersNr, Name, Abteilung, Ausgabe*.
-a) Erklären Sie an diesem Beispiel zwei Anomalien. b) Schreiben Sie eine SQL-Abfrage, die alle Geräte ausgibt, die noch nicht zurückgegeben wurden (Rückgabe leer), mit Name der Person, sortiert nach Ausgabedatum.
+a) Erklären Sie an diesem Beispiel zwei Anomalien. b) Wie wird die Redundanz beseitigt?
 
 > [!success]- Lösung
 > a) je 2 P: **Änderungsanomalie** – wechselt eine Person die Abteilung, muss das in allen ihren Zeilen geändert werden, sonst widersprüchliche Daten · **Löschanomalie** – löscht man die einzige Ausleihe eines Geräts, sind auch Bezeichnung und Inventardaten weg · **Einfügeanomalie** – ein neues Gerät kann erst gespeichert werden, wenn es jemand ausleiht
-> b) (4 P)
-> ```sql
-> SELECT g.InvNr, g.Bezeichnung, m.Name, a.Ausgabe
-> FROM Ausleihe a
-> JOIN Geraet g ON g.InvNr = a.InvNr
-> JOIN Mitarbeiter m ON m.PersNr = a.PersNr
-> WHERE a.Rueckgabe IS NULL
-> ORDER BY a.Ausgabe;
-> ```
+> b) Aufteilen in die Tabellen *Mitarbeiter*, *Geraet* und *Ausleihe* (wie in S7.2), sodass jede Information nur einmal gespeichert ist und über Schlüssel verknüpft wird (Normalisierung). (2 P)
 
 ---
 

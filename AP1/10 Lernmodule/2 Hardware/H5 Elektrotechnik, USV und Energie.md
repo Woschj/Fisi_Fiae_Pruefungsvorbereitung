@@ -163,7 +163,7 @@ Vorgehen: Betriebsstunden pro Jahr bestimmen → pro Betriebszustand (Betrieb, L
 > - Offline-USV für einen Server empfehlen, der Netzstörungen nicht verträgt.
 
 ## Verwandte Themen
-- [[H4 Server, NAS und RAID]] – Server absichern
+- [[H4 Server und Netzwerkspeicher]] – Server absichern
 - [[P5 Arbeitsplatz, Ergonomie und Umwelt]] – Green IT
 - [[W3 Investition und Finanzierung]] – Amortisation sparsamer Geräte
 
@@ -193,4 +193,4 @@ await dv.view("AP1/99 System/views/selbstcheck")
 ```
 
 ---
-← [[H4 Server, NAS und RAID]] · Weiter: [[H6 Drucker, Peripherie und Mobilgeräte]] →
+← [[H4 Server und Netzwerkspeicher]] · Weiter: [[H6 Drucker, Peripherie und Mobilgeräte]] →

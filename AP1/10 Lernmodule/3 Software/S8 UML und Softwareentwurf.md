@@ -60,7 +60,7 @@ UML ist genormt (ISO/IEC 19505) und kennt **Strukturdiagramme** (was gibt es?) u
 > Nicht: „Datenbank speichern“ (Technik), „Rechnung“ (nur Substantiv), „Button klicken“ (Bedienschritt). Das Use-Case-Diagramm zeigt **keine Reihenfolge** und **keine Technik**.
 
 ## 3. Aktivitätsdiagramm
-Zeigt einen **Ablauf** – ähnlich einem Programmablaufplan, aber mit Parallelität und Zuständigkeiten.
+Zeigt einen **Ablauf** mit Verzweigungen, Parallelität und Zuständigkeiten (Swimlanes).
 
 <!-- abb:uml-aktivitaet -->
 ![[uml-aktivitaet.svg]]
@@ -217,7 +217,7 @@ flowchart LR
 
 ## Verwandte Themen
 - [[S7 Datenbanken]] – Datenmodell der Anwendung
-- [[S3 Algorithmen, Darstellung und Testen]] – Struktogramm und PAP
+- [[S3 Algorithmen, Darstellung und Testen]] – Pseudocode, Schreibtischtest und Testen
 - [[P1 Projektmanagement und Vorgehensmodelle]] – Anforderungen aus dem Lastenheft
 
 ## Zusammenfassung

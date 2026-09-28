@@ -24,8 +24,8 @@ tags: [ap1/orga]
 
 | AP1-Priorität ab Katalog 2025                                                       | Einordnung im Vault                                                                                                                                                                                       |
 | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **AP2 statt AP1:** SQL-Abfragen und RAID                                            | [[S7 Datenbanken]] vermittelt ER-Modell und Normalisierung als AP1-Schwerpunkt; SQL ist Ergänzung für AP2. [[H4 Server, NAS und RAID]] bleibt als Hintergrundwissen nützlich; RAID-Rechnen ist AP2-Stoff. |
-| **Aus dem AP1-Katalog gestrichen:** Struktogramm und PAP                            | In [[S3 Algorithmen, Darstellung und Testen]] sind UML-Aktivitätsdiagramm, Pseudocode und Schreibtischtest prüfungsnah; Struktogramm/PAP dienen nur als bekannte Darstellungen.                           |
+| **AP2 statt AP1:** SQL-Abfragen und RAID                                            | [[S7 Datenbanken]] vermittelt ER-Modell und Normalisierung; SQL und RAID stehen nur im AP2-Bereich ([[FISI-3 Speicher und RAID planen\|FISI-3]], [[FIAE-12 SQL für Entwickler\|FIAE-12]]). |
+| **Aus dem AP1-Katalog gestrichen:** Struktogramm und PAP                            | [[S3 Algorithmen, Darstellung und Testen]] behandelt UML-Aktivitätsdiagramm, Pseudocode und Schreibtischtest; Struktogramm und PAP sind nicht mehr im Vault.                           |
 | Weitere Themen aus älteren Katalogen können je nach Auflage anders eingeordnet sein | Bei Zweifeln den aktuellen Katalog für den eigenen Beruf heranziehen; der Vault ist eine Lernhilfe, keine amtliche Themenliste.                                                                           |
 
 Einzelne Prüfungstermine setzen unterschiedliche Schwerpunkte. Beispiele aus Erfahrungsberichten sind keine Vorhersage für den nächsten Termin. Übe den gesamten aktuellen Katalog. Achte besonders darauf, die Arbeitsplatzlösung an Anforderungen auszurichten und zu begründen. Die verbindliche Themenbasis ist der Prüfungskatalog für den eigenen Beruf.
@@ -45,7 +45,7 @@ Einzelne Prüfungstermine setzen unterschiedliche Schwerpunkte. Beispiele aus Er
 | Prüfungsinhalt (sinngemäß) | Module |
 |---|---|
 | Kundenanforderungen ermitteln, beraten, Angebote vergleichen | [[P4 Kommunikation und Kundenberatung\|P4]], [[W1 Beschaffung und Kalkulation\|W1]], [[W2 Nutzwertanalyse und Entscheidungen\|W2]], [[W3 Investition und Finanzierung\|W3]] |
-| Hardware und Software auswählen, Arbeitsplatz einrichten | [[H1 PC-Komponenten und Arbeitsplatzgeräte\|H1]]–[[H3 Datenmengen und Übertragung\|H3]], [[H4 Server, NAS und RAID\|H4 Servergrundlagen; RAID AP2]], [[H5 Elektrotechnik, USV und Energie\|H5]], [[H6 Drucker, Peripherie und Mobilgeräte\|H6]], [[S4 Betriebssysteme, Dateisysteme und Rechte\|S4]]–[[S6 Software beschaffen und lizenzieren\|S6]], [[P5 Arbeitsplatz, Ergonomie und Umwelt\|P5]] |
+| Hardware und Software auswählen, Arbeitsplatz einrichten | [[H1 PC-Komponenten und Arbeitsplatzgeräte\|H1]]–[[H3 Datenmengen und Übertragung\|H3]], [[H4 Server und Netzwerkspeicher\|H4 Servergrundlagen; RAID AP2]], [[H5 Elektrotechnik, USV und Energie\|H5]], [[H6 Drucker, Peripherie und Mobilgeräte\|H6]], [[S4 Betriebssysteme, Dateisysteme und Rechte\|S4]]–[[S6 Software beschaffen und lizenzieren\|S6]], [[P5 Arbeitsplatz, Ergonomie und Umwelt\|P5]] |
 | Netzwerk anbinden und konfigurieren | [[N1 Netzwerkgrundlagen und OSI-Modell\|N1]]–[[N6 WLAN\|N6]] |
 | IT-Sicherheit und Datenschutz umsetzen | [[I1 Informationssicherheit und IT-Grundschutz\|I1]]–[[I5 Bedrohungen und Schutzmaßnahmen\|I5]] |
 | Programmlogik (Pseudocode, Darstellungen, Tests) | [[S1 Zahlensysteme und Codierung\|S1]]–[[S3 Algorithmen, Darstellung und Testen\|S3]] |
@@ -68,7 +68,7 @@ Einzelne Prüfungstermine setzen unterschiedliche Schwerpunkte. Beispiele aus Er
 - **Szenario zuerst lesen** (2–3 min): Wer ist der Kunde, was ist das Ziel, welche Zahlen sind gegeben?
 - **Zeitbudget:** ca. **0,9 Minuten pro Punkt** → 25-Punkte-Aufgabe ≈ 20 min; 10 min Puffer.
 - **Punkte zeigen den Umfang:** „Erläutern Sie zwei Vorteile (4 P)“ = 2 × (Vorteil + Begründung).
-- **Bezug zum Szenario:** nicht „RAID 5 ist gut“, sondern „RAID 5 ermöglicht dem Architekturbüro, bei Ausfall einer Platte weiterzuarbeiten …“.
+- **Bezug zum Szenario:** nicht „eine USV ist gut“, sondern „die USV ermöglicht dem Architekturbüro, bei einem Stromausfall offene Pläne zu speichern und den Server geordnet herunterzufahren …“.
 - **Rechenweg immer aufschreiben** – Folgefehler geben Teilpunkte, nackte Ergebnisse nicht.
 - **Einheiten** (Bit/Byte, MB/MiB, W/VA, €) an jedes Zwischenergebnis.
 - **Nicht festbeißen:** Teilaufgabe markieren, weitermachen, am Ende zurückkommen.

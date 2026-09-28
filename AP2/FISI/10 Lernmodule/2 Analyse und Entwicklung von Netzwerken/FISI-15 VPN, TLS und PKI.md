@@ -142,6 +142,8 @@ Ein **VPN** (Virtual Private Network) baut einen **verschlüsselten Tunnel** üb
 | Passwort + **Authenticator-App** (TOTP) | Wissen + Besitz | keine Anschaffungskosten, jeder installiert selbst |
 | Passwort + SMS-Code | Wissen + Besitz | besser als nichts, aber SIM-Swapping möglich |
 
+**Kerberos** (Active Directory): Anmeldung über ein **Key Distribution Center**, das zeitlich begrenzte **Tickets** ausstellt – Single Sign-on ohne erneute Passwortübertragung; Voraussetzung ist eine synchrone Uhrzeit (NTP, Abweichung standardmäßig höchstens 5 Minuten).
+
 **Hardware-Token/Zertifikat vs. Passwort:** kann nicht ausgespäht oder erraten werden, Social Engineering greift nicht, an Gerät oder Person gebunden, deutlich längere Schlüssel.
 
 ---

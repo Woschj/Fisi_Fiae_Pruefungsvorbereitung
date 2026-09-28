@@ -120,6 +120,9 @@ Was ist CI/CD?::Continuous Integration (automatisch bauen/testen bei jedem Commi
 Wozu dient Versionsverwaltung wie Git?::Änderungen nachvollziehen, parallel arbeiten (Branches), zusammenführen, frühere Stände wiederherstellen
 Unterschied Compiler und Interpreter?::Compiler übersetzt vorab das ganze Programm in Maschinencode · Interpreter führt den Quelltext zur Laufzeit Anweisung für Anweisung aus
 Was ist LPWAN?::Low Power Wide Area Network (z. B. LoRaWAN) – große Reichweite, wenig Energie, geringe Datenrate für IoT-Sensoren
+Was ist ein cyber-physisches System?::Verbund aus Sensoren, Steuerung mit eingebetteter Software und Aktoren, der vernetzt auf die physische Welt einwirkt (z. B. automatische Bewässerung)
+Unterschied Sensor und Aktor?::Sensor misst eine physikalische Größe · Aktor setzt ein Steuersignal in eine Wirkung um (Ventil, Motor)
+Unterschied Incident- und Problem-Management?::Incident: Betrieb schnell wiederherstellen (Workaround) · Problem: Ursache wiederkehrender Störungen dauerhaft beseitigen
 
 ## FIAE-8 Sicherheit in der Softwareentwicklung
 
@@ -136,3 +139,5 @@ Was bedeutet Privacy by Default?::Datenschutzfreundliche Voreinstellungen – nu
 Was bedeutet Datenminimierung?::Nur die für den Zweck nötigen personenbezogenen Daten erheben und speichern
 Welche Anforderungen gelten für eine wirksame Einwilligung?::Freiwillig, informiert, für einen bestimmten Zweck, eindeutig (aktive Handlung), jederzeit widerrufbar
 Was ist Code-Signing?::Signieren von Software, damit Nutzer Herkunft und Unverändertheit prüfen können
+Wie funktioniert Kerberos?::Key Distribution Center stellt zeitlich begrenzte Tickets aus (Ticket Granting Ticket, Servicetickets) – Single Sign-on ohne erneute Passwortübertragung; Uhren müssen synchron sein
+

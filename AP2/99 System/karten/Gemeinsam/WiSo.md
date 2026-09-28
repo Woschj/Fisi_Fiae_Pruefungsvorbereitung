@@ -112,3 +112,7 @@ Drei Säulen der Nachhaltigkeit?::Ökologisch, ökonomisch, sozial
 Was regelt das ElektroG?::Rücknahme und umweltgerechte Entsorgung von Elektro- und Elektronikgeräten
 Was kennzeichnet der Blaue Engel?::Umweltfreundliche Produkte (z. B. energiesparende, langlebige IT-Geräte)
 Was ist Green IT?::Umwelt- und ressourcenschonender Einsatz von IT über den gesamten Lebenszyklus
+Was bedeutet Compliance?::Einhaltung von Gesetzen, Verträgen und internen Regeln – z. B. durch Verhaltenskodex, Schulungen und Kontrollen
+Was regelt das Hinweisgeberschutzgesetz?::Unternehmen ab 50 Beschäftigten brauchen eine interne Meldestelle; Hinweisgebende sind vor Benachteiligung geschützt
+Welche Merkmale schützt das AGG?::Ethnische Herkunft, Geschlecht, Religion oder Weltanschauung, Behinderung, Alter, sexuelle Identität
+

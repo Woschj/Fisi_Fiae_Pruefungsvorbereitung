@@ -19,6 +19,8 @@ tags: [ap2/modul, ap2/fiae]
 > **Grundlagen aus AP1:** [[N7 Internet und Webanwendungen]] · [[N1 Netzwerkgrundlagen und OSI-Modell]] · [[S2 Programmierung – Grundlagen]]
 
 ## Lernziele
+- [ ] Ich kann cyber-physische Systeme mit Sensoren und Aktoren beschreiben und Anforderungen an sie nennen.
+- [ ] Ich kann Monitoring, Ticketsystem und Incident-Management im Betrieb einer Anwendung erklären.
 - [ ] Ich kann das Konzept einer REST-API erklären, CRUD den HTTP-Methoden zuordnen und einen Request zerlegen.
 - [ ] Ich kenne die HTTP-Statuscode-Klassen und kann eine HTTP-Antwort aufbauen.
 - [ ] Ich kann JSON und XML lesen und Schemavalidierung (XSD) einordnen.
@@ -146,6 +148,33 @@ return response
 
 ---
 
+## 5. Cyber-physische Systeme
+
+Ein **cyber-physisches System (CPS)** verbindet Software mit der physischen Welt: **Sensoren** erfassen Messwerte (Temperatur, Bodenfeuchte, Position), eine **Steuerung** mit eingebetteter Software wertet sie aus, **Aktoren** greifen ein (Ventil öffnen, Motor starten, Schloss entriegeln). Die Komponenten sind vernetzt und oft mit einem Backend in der Cloud verbunden (**IoT**).
+
+| Baustein | Aufgabe | Beispiel |
+|---|---|---|
+| **Sensor** | wandelt eine physikalische Größe in ein Signal bzw. einen Messwert | Feuchtesensor im Feld |
+| **Steuerung** | verarbeitet Messwerte nach Regeln, sendet Befehle | Mikrocontroller, Gateway |
+| **Aktor** | setzt ein Steuersignal in eine physische Wirkung um | Magnetventil der Bewässerung |
+| **Kommunikation** | überträgt Messwerte und Befehle | LoRaWAN, MQTT, REST |
+
+**Besondere Anforderungen:** Echtzeitfähigkeit, geringer Energiebedarf, Ausfallsicherheit (sicherer Zustand bei Verbindungsverlust, z. B. Ventil schließt), Schutz vor Manipulation (Authentizität und Integrität der Befehle), Updates aus der Ferne.
+
+---
+
+## 6. Betrieb: Monitoring, Ticketsystem und Incident-Management
+
+Nach dem Rollout muss eine Anwendung **überwacht und betreut** werden.
+
+- **Monitoring:** Verfügbarkeit, Antwortzeiten, Fehlerraten, Auslastung (CPU, Speicher, Datenbank) und Logdateien laufend messen; bei Grenzwertüberschreitung **automatisch alarmieren**. Werkzeuge z. B. Prometheus/Grafana, Zabbix, zentrales Logging.
+- **Ticketsystem:** Jede Störung und jede Anfrage wird als **Ticket** erfasst – mit Priorität, Zuständigkeit, Status und Verlauf. Vorteile: nichts geht verloren, Bearbeitungszeiten sind messbar, Wissen wird dokumentiert.
+- **Incident-Management** (nach ITIL): Ziel ist, den **Normalbetrieb so schnell wie möglich wiederherzustellen** – erfassen → klassifizieren und priorisieren (Auswirkung × Dringlichkeit) → erste Lösung/Workaround → eskalieren (1st → 2nd → 3rd Level) → lösen → dokumentieren und schließen.
+- **Problem-Management:** sucht die **Ursache** wiederkehrender Incidents und beseitigt sie dauerhaft.
+- **SLA:** vereinbarte Reaktions- und Lösungszeiten je Priorität.
+
+---
+
 > [!warning] Typische Fehler in Prüfungen
 > - POST und PUT gleichsetzen – POST legt neu an (nicht idempotent), PUT ersetzt an einer bekannten URL.
 > - 401 und 403 verwechseln: 401 = **nicht authentifiziert**, 403 = **authentifiziert, aber nicht berechtigt**.
@@ -160,6 +189,8 @@ return response
 - [[N7 Internet und Webanwendungen]] – HTTP-Grundlagen (AP1)
 
 ## Zusammenfassung
+- CPS: Sensor misst → Steuerung entscheidet → Aktor wirkt; vernetzt, energiesparend, manipulationssicher.
+- Betrieb: Monitoring mit Alarmierung, Ticketsystem, Incident-Management stellt den Betrieb schnell wieder her, Problem-Management beseitigt Ursachen.
 - REST: Ressourcen per URL, HTTP-Methoden, zustandslos, JSON. CRUD = POST, GET, PUT/PATCH, DELETE.
 - Request: Methode + URL (+ Query-Parameter), Header (Content-Type, Authorization), Body.
 - Status: 2xx Erfolg, 3xx Umleitung, 4xx Client (401/403/404), 5xx Server.

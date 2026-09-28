@@ -76,6 +76,8 @@ tags: [ap2/modul, ap2/fiae]
 
 **Zwei-Faktor-Authentifizierung:** Wissen + Besitz (App/Token) oder Inhärenz (Biometrie). Passkeys (FIDO2) ersetzen Passwörter durch Schlüsselpaare.
 
+**Kerberos:** Anmeldeverfahren mit **Tickets**, z. B. im Active Directory. Der Client meldet sich einmal am **Key Distribution Center** an und erhält ein **Ticket Granting Ticket**; damit bekommt er für jeden Dienst ein Serviceticket, ohne das Passwort erneut zu übertragen (**Single Sign-on**). Tickets sind zeitlich begrenzt – deshalb müssen die Uhren synchron sein (NTP).
+
 ---
 
 ## 4. Sichere Programmierung

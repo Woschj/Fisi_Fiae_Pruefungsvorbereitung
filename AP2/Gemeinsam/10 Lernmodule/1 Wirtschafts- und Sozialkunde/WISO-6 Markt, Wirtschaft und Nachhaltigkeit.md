@@ -100,6 +100,12 @@ Indikatoren: **Frühindikatoren** (Auftragseingänge, Geschäftsklimaindex), Pr�
 
 **Green IT im Unternehmen:** energieeffiziente Geräte, Virtualisierung und Serverkonsolidierung, Abwärmenutzung, lange Nutzungsdauer, Refurbished-Geräte, Ökostrom, Photovoltaik.
 
+### Ethik, Compliance und Diversität
+- **Compliance:** Einhaltung von Gesetzen, Verträgen und internen Regeln (Datenschutz, Lizenzen, Arbeitsschutz, Korruptionsverbot). Umsetzung durch einen **Verhaltenskodex** (Code of Conduct), Schulungen und Kontrollen.
+- **Hinweisgeberschutzgesetz (HinSchG):** Unternehmen ab **50 Beschäftigten** müssen eine interne Meldestelle einrichten; Hinweisgebende sind vor Benachteiligung geschützt.
+- **Diversität und Gleichbehandlung:** Das **AGG** verbietet Benachteiligung wegen ethnischer Herkunft, Geschlecht, Religion oder Weltanschauung, Behinderung, Alter oder sexueller Identität – z. B. bei Stellenanzeigen (geschlechtsneutral, „m/w/d“) und Beförderungen.
+- **Gesellschaftliche Auswirkungen von IT:** Chancen (Barrierefreiheit, Teilhabe, Effizienz) und Risiken (Überwachung, Datenmissbrauch, Diskriminierung durch KI-Entscheidungen, Wegfall von Tätigkeiten). Verantwortliches Handeln heißt: Datenschutz, Transparenz und Nachvollziehbarkeit von Entscheidungen, menschliche Kontrolle.
+
 ---
 
 > [!warning] Typische Fehler in Prüfungen
@@ -114,6 +120,7 @@ Indikatoren: **Frühindikatoren** (Auftragseingänge, Geschäftsklimaindex), Pr�
 - [[P5 Arbeitsplatz, Ergonomie und Umwelt]] – Green IT und Entsorgung (AP1)
 
 ## Zusammenfassung
+- Compliance = Regeln einhalten (Verhaltenskodex); HinSchG: interne Meldestelle ab 50 Beschäftigten; AGG verbietet Benachteiligung.
 - Gleichgewichtspreis: Angebot = Nachfrage. Käufermarkt (Überangebot) vs. Verkäufermarkt.
 - Polypol (viele–viele), Oligopol (wenige Anbieter), Monopol (ein Anbieter).
 - Vollkommener Markt: homogen, transparent, keine Präferenzen, schnelle Reaktion, Punktmarkt.

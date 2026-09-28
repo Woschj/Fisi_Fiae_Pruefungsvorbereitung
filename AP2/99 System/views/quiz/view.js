@@ -25,8 +25,11 @@ let statistik = await lib.ladeStatistik();
 const S = lib.sitzung(`quiz:${dv.current().file.path}:${JSON.stringify(opt)}`);
 S.filter = S.filter || { modul: opt.modul || "", bereich: opt.bereich || "", modus: opt.modus, anzahl: opt.anzahl };
 
+// Fragen mit nurAP2 (z. B. RAID, SQL, PAP/Struktogramm – laut Prüfungskatalog 2025 kein AP1-Stoff)
+// erscheinen nur im Quiz des jeweiligen Moduls, nicht in bereichs- oder modulübergreifenden Quizzen.
 function kandidaten(filter) {
-  return pool.filter(q => (!filter.modul || q.modul === filter.modul) && (!filter.bereich || q.bereich === filter.bereich));
+  return pool.filter(q => (!filter.modul || q.modul === filter.modul) && (!filter.bereich || q.bereich === filter.bereich)
+    && (!q.nurAP2 || filter.modul === q.modul));
 }
 function waehle(filter) {
   const alle = kandidaten(filter);
@@ -114,7 +117,8 @@ function renderFrage() {
   const a = S.antworten[q.id];
   const karte = h("div", { class: "ap1-karte" });
   karte.appendChild(h("div", { class: "ap1-karte-titel" }, `Frage ${S.pos + 1} von ${S.ids.length}`,
-    h("span", { class: "ap1-badge" }, q.modul), q.niveau ? h("span", { class: "ap1-badge leise" }, "★".repeat(q.niveau)) : null));
+    h("span", { class: "ap1-badge" }, q.modul), q.niveau ? h("span", { class: "ap1-badge leise" }, "★".repeat(q.niveau)) : null,
+    q.nurAP2 ? h("span", { class: "ap1-badge leise", title: "Laut Prüfungskatalog 2025 kein AP1-Thema (RAID und SQL: AP2-Stoff; PAP und Struktogramm: gestrichen)" }, "nicht AP1-Katalog") : null));
   karte.appendChild(lib.balken(S.pos / S.ids.length, "duenn"));
   karte.appendChild(h("div", { class: "ap1-text ap1-frage", html: fmt(q.frage) }));
   if (q.code) karte.appendChild(h("pre", { class: "ap1-code" }, q.code));

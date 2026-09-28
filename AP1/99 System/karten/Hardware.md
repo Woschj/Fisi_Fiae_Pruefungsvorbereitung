@@ -51,12 +51,12 @@ Wie berechnest du den Speicherbedarf eines unkomprimierten Videos?::Breite × H�
 Wie viele Farben lassen sich mit n Bit Farbtiefe darstellen?::2ⁿ Farben
 Wie viele Byte pro Pixel braucht True Color mit 24 Bit?::3 Byte
 
-Was bedeuten Striping, Mirroring und Parität bei RAID?::Striping: Daten verteilen · Mirroring: Daten spiegeln · Parität: Prüfinformation (XOR), aus der sich eine ausgefallene Platte rekonstruieren lässt
-Wie funktioniert RAID 0 und wie sicher ist es?::Striping, Kapazität n × C, keine Redundanz – eine defekte Platte = alle Daten weg; mindestens 2 Platten
-Wie funktioniert RAID 1?::Spiegelung, Kapazität C (einer Platte), verkraftet 1 Ausfall; mindestens 2 Platten
-Welche Kapazität und Ausfallsicherheit hat RAID 5?::(n − 1) × C, verkraftet 1 Ausfall; mindestens 3 Platten
-Welche Kapazität und Ausfallsicherheit hat RAID 6?::(n − 2) × C, verkraftet 2 Ausfälle; mindestens 4 Platten
-Welche Kapazität und Ausfallsicherheit hat RAID 10?::n ÷ 2 × C, garantiert 1 Ausfall (einer je Spiegelpaar); mindestens 4 Platten
+(AP2-Vertiefung) Was bedeuten Striping, Mirroring und Parität bei RAID?::Striping: Daten verteilen · Mirroring: Daten spiegeln · Parität: Prüfinformation (XOR), aus der sich eine ausgefallene Platte rekonstruieren lässt
+(AP2-Vertiefung) Wie funktioniert RAID 0 und wie sicher ist es?::Striping, Kapazität n × C, keine Redundanz – eine defekte Platte = alle Daten weg; mindestens 2 Platten
+(AP2-Vertiefung) Wie funktioniert RAID 1?::Spiegelung, Kapazität C (einer Platte), verkraftet 1 Ausfall; mindestens 2 Platten
+(AP2-Vertiefung) Welche Kapazität und Ausfallsicherheit hat RAID 5?::(n − 1) × C, verkraftet 1 Ausfall; mindestens 3 Platten
+(AP2-Vertiefung) Welche Kapazität und Ausfallsicherheit hat RAID 6?::(n − 2) × C, verkraftet 2 Ausfälle; mindestens 4 Platten
+(AP2-Vertiefung) Welche Kapazität und Ausfallsicherheit hat RAID 10?::n ÷ 2 × C, garantiert 1 Ausfall (einer je Spiegelpaar); mindestens 4 Platten
 Was ist der Unterschied zwischen Hot Spare und Hot Swap?::Hot Spare: Reserveplatte springt automatisch ein · Hot Swap: Platte im laufenden Betrieb tauschen
 Ersetzt ein RAID die Datensicherung?::Nein – RAID schützt nicht vor Löschen, Ransomware, Brand oder Controllerdefekt
 Wie unterscheiden sich NAS und SAN?::NAS: dateibasiert über das LAN (SMB/NFS) · SAN: blockbasiert über ein eigenes Speichernetz (Fibre Channel, iSCSI)

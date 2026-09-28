@@ -189,12 +189,12 @@ Ergebnis: ______ %
 
 **27. (4 P)** Ordnen Sie die Beschreibungen den Sicherheitszeichen zu.
 
-| Beschreibung | Zeichen |
-|---|---|
-| a) rund, blau, weißes Symbol | ______ |
-| b) quadratisch/rechteckig, grün, weißes Symbol | ______ |
-| c) dreieckig, gelb, schwarzer Rand | ______ |
-| d) rund, weiß mit rotem Rand und rotem Querbalken | ______ |
+| Beschreibung                                      | Zeichen |
+| ------------------------------------------------- | ------- |
+| a) rund, blau, weißes Symbol                      | ______  |
+| b) quadratisch/rechteckig, grün, weißes Symbol    | ______  |
+| c) dreieckig, gelb, schwarzer Rand                | ______  |
+| d) rund, weiß mit rotem Rand und rotem Querbalken | ______  |
 
 Zeichen: **1** Warnzeichen · **2** Gebotszeichen · **3** Verbotszeichen · **4** Rettungszeichen
 

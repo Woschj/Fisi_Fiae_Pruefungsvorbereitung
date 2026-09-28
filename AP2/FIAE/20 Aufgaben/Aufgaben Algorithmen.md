@@ -89,7 +89,7 @@ Sortieren Sie `[5, 2, 8, 1]` aufsteigend mit Bubblesort. Geben Sie das Array nac
 ### A9.4 ★★ – Binäre Suche (4 Punkte)
 📘 **Nachlernen:** [[FIAE-9 Algorithmen in Pseudocode#3. Sortieren und Suchen|FIAE-9 › Sortieren und Suchen]]
 
-Im sortierten Array `[3, 8, 12, 17, 21, 30, 44]` wird die 30 gesucht. a) Geben Sie die geprüften Indizes bei binärer Suche an (Mitte = (links + rechts) div 2). b) Wie viele Vergleichen Sie bräuchte die lineare Suche? c) Welche Voraussetzung gilt?
+Im sortierten Array `[3, 8, 12, 17, 21, 30, 44]` wird die 30 gesucht. a) Geben Sie die geprüften Indizes bei binärer Suche an (Mitte = (links + rechts) div 2). b) Wie viele Vergleiche bräuchte die lineare Suche? c) Welche Voraussetzung gilt?
 
 > [!success]- Lösung
 > a) links 0, rechts 6 → Mitte **3** (17 < 30) → links 4 → Mitte (4+6) div 2 = **5** → 30 gefunden (2 P)

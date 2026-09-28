@@ -62,7 +62,7 @@
     erklaerung: "Der alte Wert von a ist nach der ersten Zuweisung verloren → Hilfsvariable: `tmp ← a; a ← b; b ← tmp`." },
   { id: "S3-06", modul: "S3", typ: "mc", niveau: 2, frage: "Welche Voraussetzung hat die **binäre Suche**?", optionen: ["Die Daten müssen sortiert sein", "Die Liste muss eine Zweierpotenz lang sein", "Nur ganze Zahlen", "Keine"], richtig: 0,
     erklaerung: "Nur bei **sortierten** Daten kann man entscheiden, in welcher Hälfte weitergesucht wird." },
-  { id: "S3-07", modul: "S3", typ: "zahl", niveau: 2, frage: "Wie viele Vergleichen Sie braucht die binäre Suche höchstens (ungefähr) bei **1 024** sortierten Elementen?", richtig: 10, toleranz: 1,
+  { id: "S3-07", modul: "S3", typ: "zahl", niveau: 2, frage: "Wie viele Vergleiche braucht die binäre Suche höchstens (ungefähr) bei **1 024** sortierten Elementen?", richtig: 10, toleranz: 1,
     erklaerung: "log₂(1 024) = **10** (+1 je nach Zählweise)." },
   { id: "S3-08", modul: "S3", typ: "mc", niveau: 1, frage: "Welche Teststufe prüft **einzelne Funktionen** isoliert?", optionen: ["Abnahmetest", "Systemtest", "Unit-Test", "Integrationstest"], richtig: 2,
     erklaerung: "**Unit-Tests** (Modultests) bilden die breite Basis der Testpyramide." },

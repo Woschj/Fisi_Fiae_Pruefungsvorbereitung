@@ -83,7 +83,7 @@ Die neuen Notebooks haben drei USB-C-Buchsen. Erklären Sie, warum man vor dem A
 ### H3.1 ★★ – Scan-Archiv (8 Punkte)
 📘 **Nachlernen:** [[H3 Datenmengen und Übertragung#5. Speicherbedarf planen|H3 › Speicherbedarf planen]] · [[H3 Datenmengen und Übertragung#2. Dezimale und binäre Präfixe|H3 › Dezimale und binäre Präfixe]]
 
-Das Steuerbüro scannt Belegen Sie: 300 Seiten pro Tag, 220 Arbeitstage, je Seite als PDF ca. 350 KiB. Buchungsbelege sind nach § 147 AO **8 Jahre** aufzubewahren (seit 01.01.2025).
+Das Steuerbüro scannt Belege: 300 Seiten pro Tag, 220 Arbeitstage, je Seite als PDF ca. 350 KiB. Buchungsbelege sind nach § 147 AO **8 Jahre** aufzubewahren (seit 01.01.2025).
 a) Berechnen Sie den Speicherbedarf pro Jahr in GiB. b) Berechnen Sie den Bedarf für die gesamte Aufbewahrungsfrist in TiB bei zusätzlich 20 % Reserve.
 
 > [!success]- Lösung

@@ -45,7 +45,7 @@ Der Arbeitsvertrag ist **formfrei** gültig, der Arbeitgeber muss die wesentlich
 | **Minijob** | Verdienstgrenze an den Mindestlohn gekoppelt (2026: 603 € im Monat), pauschale Abgaben |
 | Probezeit | im Arbeitsverhältnis höchstens **6 Monate**, Kündigungsfrist darin 2 Wochen |
 
-**Wichtige Rechte:** **Mindestlohn** (2026: 13,90 €/h; 2027: 14,60 €/h) · **Entgeltfortzahlung** im Krankheitsfall **6 Wochen** (danach Krankengeld der Krankenkasse) · **Urlaub** mind. 24 Werktage (BUrlG) · Arbeitszeit nach **ArbZG** (8 h, bis 10 h mit Ausgleich; Pause 30 min ab 6 h, 45 min ab 9 h; 11 h Ruhezeit) · **Mutterschutz** (6 Wochen vor, 8 Wochen nach der Geburt; Kündigungsverbot) · **Elternzeit** bis 3 Jahre je Kind (Kündigungsschutz), **Elterngeld** vom Staat.
+**Wichtige Rechte:** **Mindestlohn** (2026: 13,90 €/h; 2027: 14,60 €/h) · **Entgeltfortzahlung** im Krankheitsfall **6 Wochen** (Anspruch nach 4 Wochen Beschäftigung; danach Krankengeld der Krankenkasse; Arbeitsunfähigkeit unverzüglich melden, ab dem 4. Kalendertag ärztlich feststellen lassen – der Arbeitgeber ruft die **eAU** seit 2023 bei der Krankenkasse ab) · **Urlaub** mind. 24 Werktage (BUrlG) · Arbeitszeit nach **ArbZG** (8 h, bis 10 h mit Ausgleich; Pause 30 min bei mehr als 6 h, 45 min bei mehr als 9 h; 11 h Ruhezeit) · **Mutterschutz** (6 Wochen vor, 8 Wochen nach der Geburt; Kündigungsverbot) · **Elternzeit** bis 3 Jahre je Kind (Kündigungsschutz), **Elterngeld** vom Staat.
 
 **Pflichten:** Arbeitnehmer – Arbeitspflicht, Weisungen befolgen, Verschwiegenheit, Wettbewerbsverbot während des Arbeitsverhältnisses. Arbeitgeber – Vergütung, Beschäftigung, Fürsorge (Arbeitsschutz, Datenschutz), Gleichbehandlung (AGG), Zeugnis.
 

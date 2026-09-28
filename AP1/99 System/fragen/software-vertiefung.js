@@ -50,9 +50,9 @@
     erklaerung: "f(3, 10) = 10 − 3 = 7, f(10, 3) = 10 − 3 = 7 → **14** (Betrag der Differenz)." },
 
   // ---------------------------------------------------------------- S3
-  { id: "S3-12", modul: "S3", typ: "zahl", niveau: 1, frage: "Wie viele Vergleichen Sie braucht die **lineare Suche** im schlechtesten Fall bei 50 Elementen?", richtig: 50, toleranz: 0, abschnitt: "Lineare Suche",
+  { id: "S3-12", modul: "S3", typ: "zahl", niveau: 1, frage: "Wie viele Vergleiche braucht die **lineare Suche** im schlechtesten Fall bei 50 Elementen?", richtig: 50, toleranz: 0, abschnitt: "Lineare Suche",
     erklaerung: "Im schlechtesten Fall wird **jedes** Element geprüft: **50**." },
-  { id: "S3-13", modul: "S3", typ: "zahl", niveau: 2, frage: "Wie viele Vergleichen Sie braucht die **binäre Suche** höchstens (ungefähr) bei **1 000 000** sortierten Elementen?", richtig: 20, toleranz: 0, abschnitt: "Binäre Suche",
+  { id: "S3-13", modul: "S3", typ: "zahl", niveau: 2, frage: "Wie viele Vergleiche braucht die **binäre Suche** höchstens (ungefähr) bei **1 000 000** sortierten Elementen?", richtig: 20, toleranz: 0, abschnitt: "Binäre Suche",
     erklaerung: "2²⁰ ≈ 1 048 576 → etwa **20** Halbierungen." },
   { id: "S3-14", nurAP2: true, modul: "S3", typ: "mc", niveau: 1, frage: "Welches Symbol steht im **PAP** für eine Ein- oder Ausgabe?",
     optionen: ["Rechteck", "Raute", "Parallelogramm", "Oval"], richtig: 2, abschnitt: "Programmablaufplan",

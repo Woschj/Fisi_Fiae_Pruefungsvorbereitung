@@ -82,7 +82,7 @@ Im Fachgespräch prüft der Ausschuss, wie gut du **dein Projekt und sein Umfeld
 **Mündliche Ergänzungsprüfung (MEP):** auf Antrag in **genau einem** schriftlichen AP2-Bereich, der schlechter als „ausreichend“ ist, wenn sie für das Bestehen den Ausschlag geben kann; ca. 15 Minuten; Ergebnis schriftlich zu mündlich im Verhältnis **2 : 1**.
 > Beispiel: schriftlich 48, MEP 67 → (48 + 48 + 67) ÷ 3 = **54,3 Punkte**.
 
-**Wiederholung:** Alle Leistungen unter 50 Punkten müssen wiederholt werden – auch AP1, wenn sie unter 50 lag.
+**Wiederholung:** Die Prüfung kann zweimal wiederholt werden. Wiederholt werden die Prüfungsbereiche mit weniger als 50 Punkten; bestandene Bereiche werden auf Antrag angerechnet. Lag Teil 1 (AP1) unter 50 Punkten, kann er nach der Prüfungsordnung der IHK auf Antrag mit wiederholt werden.
 
 **Notenschlüssel der IHK:** 100–92 sehr gut · unter 92–81 gut · unter 81–67 befriedigend · unter 67–50 ausreichend · unter 50–30 mangelhaft · unter 30 ungenügend.
 

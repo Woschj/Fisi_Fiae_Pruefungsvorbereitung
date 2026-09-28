@@ -101,10 +101,10 @@ Ergebnis: a __ · b __ · c __ · d __
 
 **13. (3 P)** Wer ist bei der Wahl der Jugend- und Auszubildendenvertretung (JAV) wahlberechtigt?
 - [ ] 1 alle Beschäftigten des Betriebs
-- [ ] 2 Beschäftigte unter 18 Jahren und Auszubildende unter 25 Jahren
+- [ ] 2 Beschäftigte unter 18 Jahren und alle Auszubildenden (ohne Altersgrenze)
 - [ ] 3 nur Auszubildende über 18 Jahren
 - [ ] 4 nur Mitglieder des Betriebsrats
-- [ ] 5 alle Beschäftigten unter 30 Jahren
+- [ ] 5 Beschäftigte unter 18 Jahren und Auszubildende nur bis 25 Jahre
 
 **14. (4 P)** Welche **zwei** Aussagen zum Tarifvertrag treffen zu?
 - [ ] 1 Während der Laufzeit eines Tarifvertrags gilt für die geregelten Inhalte die Friedenspflicht.
@@ -239,7 +239,7 @@ Ergebnis: ______ %
 > | 10 | 2 | Rüge-, Hinweis- und Warnfunktion; meist Voraussetzung für eine verhaltensbedingte Kündigung. |
 > | 11 | a 4 · b 3 · c 2 · d 1 | ASR A1.3 / DIN EN ISO 7010. |
 > | 12 | 3 | § 9 BetrVG: 51 bis 100 wahlberechtigte Arbeitnehmer → 5 Mitglieder. |
-> | 13 | 2 | § 61 Abs. 1 BetrVG. |
+> | 13 | 2 | § 61 Abs. 1 BetrVG; die frühere Altersgrenze von 25 Jahren für Auszubildende ist seit dem Betriebsrätemodernisierungsgesetz 2021 entfallen. |
 > | 14 | 1, 3 | Friedenspflicht und Günstigkeitsprinzip (§ 4 Abs. 3 TVG). Tarifparteien sind Gewerkschaften und Arbeitgeber(verbände). |
 > | 15 | 2 | § 5 TVG. |
 > | 16 | **739,50 €** | (14,6 + 2,9 + 3,6 + 18,6 + 2,6) % / 2 = 21,15 % + 0,6 % Kinderlosenzuschlag = 21,75 % → 3.400 € × 0,2175 = 739,50 €. |

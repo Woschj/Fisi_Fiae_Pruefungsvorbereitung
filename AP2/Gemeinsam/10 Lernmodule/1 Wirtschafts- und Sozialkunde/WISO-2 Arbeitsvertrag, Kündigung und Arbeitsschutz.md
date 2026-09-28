@@ -35,7 +35,7 @@ tags: [ap2/modul, ap2/wiso]
 
 ## 1. Arbeitsvertrag
 
-Der Arbeitsvertrag ist **formfrei** gültig, der Arbeitgeber muss die wesentlichen Bedingungen aber **schriftlich nachweisen** (Nachweisgesetz): Parteien, Beginn, ggf. Befristung, Arbeitsort, Tätigkeit, Entgelt, Arbeitszeit, Urlaub, Kündigungsfristen, Hinweis auf Tarifverträge/Betriebsvereinbarungen.
+Der Arbeitsvertrag ist **formfrei** gültig, der Arbeitgeber muss die wesentlichen Bedingungen aber **nachweisen** (Nachweisgesetz; seit 2025 genügt meist die Textform, z. B. E-Mail, sofern der Arbeitnehmer nicht die Schriftform verlangt): Parteien, Beginn, ggf. Befristung, Arbeitsort, Tätigkeit, Entgelt, Arbeitszeit, Urlaub, Kündigungsfristen, Hinweis auf Tarifverträge/Betriebsvereinbarungen.
 
 | Form | Merkmal |
 |---|---|
@@ -87,10 +87,10 @@ Gilt, wenn das Arbeitsverhältnis **länger als 6 Monate** besteht und der Betri
 
 | Rolle | Aufgabe |
 |---|---|
-| **Sicherheitsbeauftragter** (ab 20 Beschäftigten) | **unterstützt** den Arbeitgeber, achtet auf Mängel und macht Kolleginnen/Kollegen aufmerksam – **ehrenamtlich, ohne Weisungsbefugnis und ohne eigene Verantwortung** |
+| **Sicherheitsbeauftragter** (bei mehr als 20 Beschäftigten) | **unterstützt** den Arbeitgeber, achtet auf Mängel und macht Kolleginnen/Kollegen aufmerksam – **ehrenamtlich, ohne Weisungsbefugnis und ohne eigene Verantwortung** |
 | Fachkraft für Arbeitssicherheit | berät den Arbeitgeber fachlich (Sicherheitsingenieur) |
 | Betriebsarzt | arbeitsmedizinische Vorsorge und Beratung |
-| Arbeitsschutzausschuss | Arbeitgeber, Betriebsrat, Fachkraft, Betriebsarzt, Sicherheitsbeauftragte – ab 20 Beschäftigten |
+| Arbeitsschutzausschuss | Arbeitgeber, Betriebsrat, Fachkraft, Betriebsarzt, Sicherheitsbeauftragte – bei mehr als 20 Beschäftigten |
 | **Berufsgenossenschaft** (gesetzliche Unfallversicherung) | Unfallverhütungsvorschriften (DGUV), Kontrollen, zahlt bei **Arbeits- und Wegeunfällen** und Berufskrankheiten; Beiträge zahlt der **Arbeitgeber allein** |
 | Gewerbeaufsicht / Arbeitsschutzbehörde | staatliche Kontrolle |
 

@@ -75,7 +75,7 @@ Reale Märkte sind **unvollkommen** – Software unterscheidet sich in Funktione
 Indikatoren: **Frühindikatoren** (Auftragseingänge, Geschäftsklimaindex), Präsenzindikatoren (BIP, Produktion), **Spätindikatoren** (Arbeitslosenquote, Preise).
 
 **Magisches Viereck** (Stabilitätsgesetz): **stabiles Preisniveau** · **hoher Beschäftigungsstand** · **außenwirtschaftliches Gleichgewicht** · **stetiges und angemessenes Wachstum**. „Magisch“, weil nicht alle Ziele gleichzeitig erreichbar sind. Erweiterung zum **Sechseck**: Umweltschutz und gerechte Einkommensverteilung.
-**Inflation** = anhaltender Anstieg des Preisniveaus (Kaufkraft sinkt); die **EZB** strebt knapp 2 % an und steuert über den Leitzins. **BIP** = Wert aller im Inland produzierten Güter und Dienstleistungen eines Jahres.
+**Inflation** = anhaltender Anstieg des Preisniveaus (Kaufkraft sinkt); die **EZB** strebt mittelfristig eine Inflationsrate von **2 %** an (symmetrisches Ziel seit 2021) und steuert vor allem über den Leitzins. **BIP** = Wert aller im Inland produzierten Güter und Dienstleistungen eines Jahres.
 
 ---
 

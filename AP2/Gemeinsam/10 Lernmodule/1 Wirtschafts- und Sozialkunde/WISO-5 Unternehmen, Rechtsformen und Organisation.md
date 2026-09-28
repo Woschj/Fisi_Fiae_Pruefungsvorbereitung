@@ -70,7 +70,7 @@ Maßgeblich ist zuerst der **Gesellschaftsvertrag**. Ohne Regelung gilt seit der
 |---|---|---|
 | Erteilung | nur durch den **Kaufmann persönlich**, **ausdrücklich**, Eintragung ins **Handelsregister** | formlos, auch stillschweigend, keine Eintragung |
 | Umfang | **alle** gerichtlichen und außergerichtlichen Geschäfte, die **irgendein** Handelsgewerbe mit sich bringt | Geschäfte, die **dieses** Handelsgewerbe **gewöhnlich** mit sich bringt |
-| nicht erlaubt | Grundstücke **verkaufen oder belasten** (ohne Sonderbefugnis), Bilanz und Steuererklärung unterschreiben, Prokura erteilen, Insolvenz anmelden, Gesellschafter aufnehmen | zusätzlich: Grundstücke kaufen, Wechsel, Darlehen aufnehmen, Prozesse führen (ohne Sonderbefugnis) |
+| nicht erlaubt | Grundstücke **verkaufen oder belasten** (ohne Sonderbefugnis), Bilanz und Steuererklärung unterschreiben, Prokura erteilen, Insolvenz anmelden, Gesellschafter aufnehmen | ohne Sonderbefugnis (§ 54 Abs. 2 HGB) keine Grundstücke veräußern oder belasten, keine Wechsel, keine Darlehen aufnehmen, keine Prozesse führen; außerdem keine ungewöhnlichen Geschäfte (z. B. meist auch kein Grundstückskauf) |
 | Arten | Einzel-, Gesamt-, Filialprokura | **allgemeine** (i. V.), **Art-** und **Einzelvollmacht** (i. A.) |
 | Zeichen | **ppa.** | **i. V.** / **i. A.** |
 

@@ -152,8 +152,8 @@ mittelwert ← summe / n
 | Aufgabe | Windows (CMD/PowerShell) | Linux (Bash) |
 |---|---|---|
 | Dateien kopieren | `copy`, `xcopy`, `robocopy`, `Copy-Item` | `cp`, `rsync` |
-| Platzhalter | `*` beliebig viele Zeichen, `?` genau ein Zeichen: `copy *2022040?.log X:\debug` | `cp *2022040?.log /mnt/debug/` |
-| Aufgabe planen | `schtasks /create /tn Name /tr programm.exe /sc DAILY /st 16:10` | `crontab -e` → `10 16 * * * /pfad/programm` |
+| Platzhalter | `*` beliebig viele Zeichen, `?` genau ein Zeichen: `copy log_2025-11-0?.txt X:\archiv` | `cp log_2025-11-0?.txt /mnt/archiv/` |
+| Aufgabe planen | `schtasks /create /tn Name /tr programm.exe /sc DAILY /st 22:30` | `crontab -e` → `30 22 * * * /pfad/programm` |
 | Prozesse anzeigen/beenden | Task-Manager, `tasklist`, `taskkill /PID 1234 /F` | `ps aux`, `top`, `kill 1234`, `kill -9 1234` |
 | Dienste | `services.msc`, `sc query`, `Get-Service` | `systemctl status/start/stop/enable dienst` |
 | Rechte | NTFS-Rechte, `icacls` | `chmod`, `chown`, `ls -l` |
@@ -161,7 +161,7 @@ mittelwert ← summe / n
 | Datenträger | `diskpart`, Datenträgerverwaltung | `lsblk`, `fdisk -l`, `df -h`, `mount` |
 | Logs | Ereignisanzeige (`eventvwr`) | `journalctl`, `/var/log/` |
 
-**„Befehl nicht gefunden“**: Das Programm liegt nicht in einem Verzeichnis aus `PATH`. Lösung: vollständigen Pfad angeben (`C:\Backup\qbackup`) oder den Ordner zu `PATH` hinzufügen.
+**„Befehl nicht gefunden“**: Das Programm liegt nicht in einem Verzeichnis aus `PATH`. Lösung: vollständigen Pfad angeben (`C:\Tools\sicherung.exe`) oder den Ordner zu `PATH` hinzufügen.
 
 **Linux-Rechte:** `rwx` für Eigentümer, Gruppe, Andere; oktal r = 4, w = 2, x = 1.
 `chmod 664 datei` → Eigentümer rw (6), Gruppe rw (6), Andere r (4). Hat der Eigentümer selbst keine Rechte, hilft `chmod u+rw` oder ihn in die berechtigte Gruppe aufnehmen.

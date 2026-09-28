@@ -27,7 +27,7 @@ tags: [ap2/modul, ap2/fiae]
 ## So wird das geprüft
 > [!info] Typische AP2-Aufgabentypen
 > - **Klassendiagramm zeichnen** mit Oberklasse und Unterklassen, Containerklasse und Beziehungen.
-> - **Aggregation vs. Komposition erklären**, **Multiplizitäten 1..* und *** deuten.
+> - **Aggregation vs. Komposition erklären**, **Multiplizitäten** `1..*` und `*` deuten.
 > - **Entwurfsmuster:** Vorteile, Kategorien mit Beispiel, **Observer** anwenden, **Factory Method** erläutern, Einschränkung nennen und Klassenmodell ergänzen, weiteres Muster beschreiben.
 > - **Abstrakte Klasse vs. Interface**, **dynamische Bindung/Polymorphie**, **Klasse User mit Methoden**.
 
@@ -37,13 +37,13 @@ tags: [ap2/modul, ap2/fiae]
 
 ```
 ┌──────────────────────────────┐
-│          Versammlung         │   ← Klassenname
+│           Schulung           │   ← Klassenname
 ├──────────────────────────────┤
 │ - titel : String             │   ← Attribute: Sichtbarkeit Name : Typ
-│ - teilnehmer : List<Aktionaer>│
+│ - teilnehmer : List<Person>  │
 ├──────────────────────────────┤
-│ + einladen(a : List<Aktionaer>) : void │ ← Methoden
-│ - istAngemeldet(a : Aktionaer) : Boolean│
+│ + einladen(p : List<Person>) : void │ ← Methoden
+│ - istAngemeldet(p : Person) : Boolean│
 └──────────────────────────────┘
 ```
 **Sichtbarkeiten:** `+` public · `-` private · `#` protected · `~` package. *Kursiv* = abstrakt, unterstrichen = statisch.
@@ -51,40 +51,40 @@ tags: [ap2/modul, ap2/fiae]
 | Beziehung | Symbol | Bedeutung | Beispiel |
 |---|---|---|---|
 | **Assoziation** | Linie (evtl. Pfeil für Navigierbarkeit) | Objekte kennen sich | Kunde – Bestellung |
-| **Aggregation** | Linie mit **leerer Raute** ◇ am Ganzen | „hat“ – Teil kann **ohne** das Ganze existieren | Personalverwaltung ◇– Fahrer |
+| **Aggregation** | Linie mit **leerer Raute** ◇ am Ganzen | „hat“ – Teil kann **ohne** das Ganze existieren | Abteilung ◇– Mitarbeiter |
 | **Komposition** | Linie mit **gefüllter Raute** ◆ am Ganzen | Teil ist **existenzabhängig** vom Ganzen | Rechnung ◆– Rechnungsposition |
-| **Vererbung** (Generalisierung) | Pfeil mit **leerem Dreieck** zur Oberklasse | „ist ein“ | AufgabeFixTermin ▷ Aufgabe |
+| **Vererbung** (Generalisierung) | Pfeil mit **leerem Dreieck** zur Oberklasse | „ist ein“ | WartungTermin ▷ Wartung |
 | **Realisierung** | **gestrichelter** Pfeil mit leerem Dreieck | Klasse implementiert Interface | AvgDisplay ⇢ Observer |
 | **Abhängigkeit** | gestrichelter Pfeil | nutzt kurzzeitig | |
 
 **Multiplizitäten:** `1` genau eins · `0..1` keins oder eins · `*` bzw. `0..*` beliebig viele (auch keine) · `1..*` **mindestens eins**.
-> `1..*` bei Personal → Fahrer: es gibt wenigstens einen Fahrer. `*` bei Fahrer → Fahrzeug: ein neuer Fahrer darf noch **kein** Fahrzeug fahren.
+> `1..*` bei Abteilung → Mitarbeiter: jede Abteilung hat wenigstens einen Mitarbeiter. `*` bei Mitarbeiter → Projekt: ein neuer Mitarbeiter ist noch in **keinem** Projekt.
 
 ```mermaid
 classDiagram
-  class Aufgabe {
+  class Wartung {
     <<abstract>>
     -beschreibung : String
-    -mitarbeiter : int
-    +aufgabeBeschreiben() String
-    +heuteAusfuehrbar()* bool
+    -techniker : int
+    +beschreiben() String
+    +heuteFaellig()* bool
   }
-  class AufgabeFixTermin {
+  class WartungTermin {
     -termin : Date
-    +heuteAusfuehrbar() bool
+    +heuteFaellig() bool
   }
-  class AufgabeWetterabhaengig {
-    -wetter : String
-    +heuteAusfuehrbar() bool
+  class WartungNachLaufzeit {
+    -betriebsstunden : int
+    +heuteFaellig() bool
   }
-  class AufgabenContainer {
-    -aufgaben : List~Aufgabe~
-    +aufgabeHinzufuegen(a : Aufgabe) void
-    +aufgabenHeute() List~Aufgabe~
+  class WartungsPlan {
+    -wartungen : List~Wartung~
+    +hinzufuegen(w : Wartung) void
+    +heuteFaellige() List~Wartung~
   }
-  Aufgabe <|-- AufgabeFixTermin
-  Aufgabe <|-- AufgabeWetterabhaengig
-  AufgabenContainer o-- Aufgabe
+  Wartung <|-- WartungTermin
+  Wartung <|-- WartungNachLaufzeit
+  WartungsPlan o-- Wartung
 ```
 
 ---
@@ -92,7 +92,7 @@ classDiagram
 ## 2. OOP-Prinzipien
 
 - **Kapselung (Geheimnisprinzip):** Attribute sind `private`; Zugriff nur über Methoden (Getter/Setter), die Werte prüfen können.
-- **Vererbung:** Unterklasse übernimmt Attribute und Methoden der Oberklasse und erweitert oder **überschreibt** sie. Neue Aufgabenarten → neue Unterklasse, der Container bleibt unverändert (**offen für Erweiterung, geschlossen für Änderung**).
+- **Vererbung:** Unterklasse übernimmt Attribute und Methoden der Oberklasse und erweitert oder **überschreibt** sie. Neue Wartungsarten → neue Unterklasse, der Wartungsplan bleibt unverändert (**offen für Erweiterung, geschlossen für Änderung**).
 - **Polymorphie:** Eine Variable vom Typ der Oberklasse kann Objekte verschiedener Unterklassen enthalten; beim Aufruf einer überschriebenen Methode entscheidet **erst zur Laufzeit** der tatsächliche Objekttyp, welche Implementierung läuft (**dynamische/späte Bindung**).
 - **Abstraktion:** unwichtige Details weglassen, gemeinsame Oberklassen/Interfaces bilden.
 
@@ -119,7 +119,7 @@ classDiagram
 | Muster | Idee | Einsatz |
 |---|---|---|
 | **Singleton** | Klasse hat **genau eine** Instanz mit globalem Zugriffspunkt (privater Konstruktor, statische `getInstance()`) | Konfiguration, Logger, Datenbankverbindung |
-| **Factory Method** | Basisklasse definiert eine **Methode zur Objekterzeugung**; **Unterklassen überschreiben** sie und entscheiden, welches konkrete Objekt entsteht | Etiketten/Dokumente verschiedener Typen erzeugen |
+| **Factory Method** | Basisklasse definiert eine **Methode zur Objekterzeugung**; **Unterklassen überschreiben** sie und entscheiden, welches konkrete Objekt entsteht | Dokumente verschiedener Typen (Rechnung, Lieferschein) erzeugen |
 | **Observer** | Subjekt hält eine Liste von Beobachtern; ändert sich sein Zustand, ruft es `notify()` → alle Beobachter werden per `update()` informiert | mehrere Anzeigen für denselben Messwert, Ereignisse, MVC |
 | **Facade** | einfache Schnittstelle vor einem komplexen Subsystem | Bibliotheken kapseln |
 | **Adapter** | passt eine inkompatible Schnittstelle an die erwartete an | Altsystem anbinden |
@@ -130,24 +130,24 @@ classDiagram
 
 ```mermaid
 classDiagram
-  class EtikettFabrik {
+  class DokumentFabrik {
     <<abstract>>
     +drucke() void
-    #erzeugeEtikett()* Etikett
+    #erzeugeDokument()* Dokument
   }
-  class HilfsmittelEtikettFabrik {
-    #erzeugeEtikett() Etikett
+  class RechnungsFabrik {
+    #erzeugeDokument() Dokument
   }
-  class Etikett {
+  class Dokument {
     <<interface>>
     +inhalt() String
   }
-  class HilfsmittelEtikett {
+  class Rechnung {
     +inhalt() String
   }
-  EtikettFabrik <|-- HilfsmittelEtikettFabrik
-  Etikett <|.. HilfsmittelEtikett
-  HilfsmittelEtikettFabrik ..> HilfsmittelEtikett : erzeugt
+  DokumentFabrik <|-- RechnungsFabrik
+  Dokument <|.. Rechnung
+  RechnungsFabrik ..> Rechnung : erzeugt
 ```
 
 **Observer im Code (Pseudocode):**

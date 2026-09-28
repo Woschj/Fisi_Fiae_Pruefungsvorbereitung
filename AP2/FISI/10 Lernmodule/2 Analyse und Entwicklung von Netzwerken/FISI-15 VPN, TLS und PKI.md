@@ -82,7 +82,7 @@ Ein **Zertifikat** (X.509) bindet einen **öffentlichen Schlüssel an eine Ident
 - **Privater Schlüssel der CA kompromittiert** (z. B. per Mail verschickt): Die **gesamte CA ist unbrauchbar** – neue CA mit neuen Schlüsseln aufbauen und **alle** von ihr signierten Zertifikate ersetzen.
 - **MD5 bei Zertifikaten:** Weil die CA nur den **Hash** signiert, kann ein Angreifer bei einer kollisionsanfälligen Hashfunktion ein **gefälschtes Zertifikat mit gleichem Hash** erzeugen – die Signatur passt dann auch zur Fälschung.
 
-**Serverzertifikat einrichten:** Schlüsselpaar und **CSR** (Certificate Signing Request) erzeugen → Zertifikat bei der CA beantragen → Zertifikat mit Passwort schützen → auf dem Server installieren **inklusive Intermediate-Zertifikaten**.
+**Serverzertifikat einrichten:** Schlüsselpaar und **CSR** (Certificate Signing Request) erzeugen → Zertifikat bei der CA beantragen → privaten Schlüssel mit Passwort schützen bzw. sicher ablegen → Zertifikat auf dem Server installieren **inklusive Intermediate-Zertifikaten**.
 **„Zertifikat geprüft“** bedeutet nur: Die CA hat die Angaben nach ihren Regeln validiert und signiert – über die Vertrauenswürdigkeit des Inhabers sagt das nichts aus.
 
 ---
@@ -128,7 +128,7 @@ Ein **VPN** (Virtual Private Network) baut einen **verschlüsselten Tunnel** üb
 | Tunnel kommt gar nicht zustande | falsche Zugangsdaten, Client falsch konfiguriert, ISP/Hotspot blockiert VPN-Ports, Benutzer am Gateway nicht freigeschaltet, lokale Firewall | Internetverbindung, Konfiguration, Firewall, Protokoll, Rechte prüfen |
 | Standort mit **CGN** nicht erreichbar | keine öffentliche IPv4 | VPN von diesem Standort aus aufbauen, öffentliche IP buchen oder IPv6 nutzen |
 
-**Kriterien für ein VPN-Gateway:** **Hardwarebeschleunigung** der Kryptoalgorithmen (sonst starker Leistungsverlust), VPN-Durchsatz, Anzahl Tunnel, **Anzahl Netzwerkports** (ggf. Link Aggregation), **garantierte Firmware-Updates** über die Nutzungsdauer. Die Leistungsaufnahme spielt für die Tunnel keine Rolle.
+**Kriterien für ein VPN-Gateway:** **Hardwarebeschleunigung** der Kryptoalgorithmen (sonst starker Leistungsverlust), VPN-Durchsatz, Anzahl Tunnel, **Anzahl Netzwerkports** (ggf. Link Aggregation), **garantierte Firmware-Updates** über die Nutzungsdauer. Die Leistungsaufnahme beeinflusst nur die Betriebskosten, nicht die VPN-Leistung.
 
 ---
 

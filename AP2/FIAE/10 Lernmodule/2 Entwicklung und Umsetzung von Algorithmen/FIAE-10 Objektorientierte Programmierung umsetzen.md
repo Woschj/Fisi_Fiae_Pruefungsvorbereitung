@@ -27,10 +27,10 @@ tags: [ap2/modul, ap2/fiae]
 
 ## So wird das geprüft
 > [!info] Typische AP2-Aufgabentypen
-> - **Methoden einer Klasse ausprogrammieren:** Einladung an alle Aktionäre verschicken und merken, prüfen ob jemand angemeldet ist, anmelden mit Code-Erzeugung.
+> - **Methoden einer Klasse ausprogrammieren:** Einladungen an eine Liste von Personen verschicken und merken, prüfen, ob jemand angemeldet ist, anmelden mit Code-Erzeugung.
 > - **Methode, die für jedes Element ein neues Objekt erzeugt** und eine Liste zurückgibt, darauf aufbauend eine Auswertung.
-> - **Service-Methode:** Abfahrten von einem Service holen, filtern, in Array mit Höchstzahl sammeln.
-> - **Polymorphie/dynamische Bindung** erklären: der Container ruft `heuteAusfuehrbar()` auf, welche Implementierung läuft, entscheidet sich zur Laufzeit.
+> - **Service-Methode:** Daten von einem Service holen, filtern, in einem Array mit Höchstzahl sammeln.
+> - **Polymorphie/dynamische Bindung** erklären: die Sammelklasse ruft `heuteFaellig()` auf, welche Implementierung läuft, entscheidet sich zur Laufzeit.
 > - **Observer implementieren**, Klasse mit Attributen und Methoden.
 
 ---
@@ -38,39 +38,39 @@ tags: [ap2/modul, ap2/fiae]
 ## 1. Von der Klasse zum Code
 
 ```
-klasse Versammlung
-    - eingeladene : List<Aktionaer>
-    - angemeldete : List<Teilnehmer>
+klasse Schulung
+    - eingeladene : List<Person>
+    - angemeldete : List<Teilnahme>
 
-    + einladen(aktionaere : List<Aktionaer>) : void
-        für jeden a in aktionaere
-            sendeEinladungsmail(a.getEmailAdresse())
-            eingeladene.add(a)
+    + einladen(personen : List<Person>) : void
+        für jede p in personen
+            sendeEinladungsmail(p.getEmail())
+            eingeladene.add(p)
         ende für
     ende methode
 
-    - istAngemeldet(a : Aktionaer) : Boolean
-        für jeden t in angemeldete
-            wenn t.getAktionaer().equals(a) dann
+    - istAngemeldet(p : Person) : Boolean
+        für jede t in angemeldete
+            wenn t.getPerson().equals(p) dann
                 rückgabe true
             ende wenn
         ende für
         rückgabe false
     ende methode
 
-    + anmelden(a : Aktionaer) : void
-        wenn nicht istAngemeldet(a) dann
+    + anmelden(p : Person) : void
+        wenn nicht istAngemeldet(p) dann
             code = erstelleCode()
-            angemeldete.add(new Teilnehmer(a, code))
+            angemeldete.add(new Teilnahme(p, code))
         ende wenn
     ende methode
 ende klasse
 ```
 
 **Bausteine:**
-- **Konstruktor** initialisiert die Attribute (`new Teilnehmer(a, code)`), Listen werden im Konstruktor oder bei der Deklaration mit `new List<…>()` angelegt.
+- **Konstruktor** initialisiert die Attribute (`new Teilnahme(p, code)`), Listen werden im Konstruktor oder bei der Deklaration mit `new List<…>()` angelegt.
 - **Getter/Setter** kapseln den Zugriff; Setter können Werte prüfen (`wenn prozent < 0 dann Exception`).
-- **`this`** verweist auf das aktuelle Objekt (`this.fahrplanService.getAbfahrten(id)`).
+- **`this`** verweist auf das aktuelle Objekt (`this.lagerService.getBestand(id)`).
 - **Statische** Elemente gehören zur Klasse, nicht zum Objekt (Zähler für IDs, Hilfsmethoden, Singleton).
 - **Objekte vergleichen** mit `equals` (Inhalt) statt `==` (Referenz).
 
@@ -88,32 +88,32 @@ ende klasse
 ## 2. Vererbung und Polymorphie im Code
 
 ```
-abstrakte klasse Aufgabe
+abstrakte klasse Wartung
     # beschreibung : String
-    # mitarbeiter : Integer
-    + aufgabeBeschreiben() : String
-        rückgabe beschreibung + " (" + mitarbeiter + " Personen)"
-    + abstrakt heuteAusfuehrbar() : Boolean
+    # techniker : Integer
+    + beschreiben() : String
+        rückgabe beschreibung + " (" + techniker + " Personen)"
+    + abstrakt heuteFaellig() : Boolean
 ende klasse
 
-klasse AufgabeFixTermin erbt von Aufgabe
+klasse WartungTermin erbt von Wartung
     - termin : Date
-    + heuteAusfuehrbar() : Boolean
+    + heuteFaellig() : Boolean
         rückgabe termin == Date.heute()
 ende klasse
 
-klasse AufgabenContainer
-    - aufgaben : List<Aufgabe>
-    + aufgabenHeute() : List<Aufgabe>
-        ergebnis = new List<Aufgabe>()
-        für jede a in aufgaben
-            wenn a.heuteAusfuehrbar() dann ergebnis.add(a)    // dynamische Bindung
+klasse WartungsPlan
+    - wartungen : List<Wartung>
+    + heuteFaellige() : List<Wartung>
+        ergebnis = new List<Wartung>()
+        für jede w in wartungen
+            wenn w.heuteFaellig() dann ergebnis.add(w)    // dynamische Bindung
         ende für
         rückgabe ergebnis
 ende klasse
 ```
 
-**Polymorphie (dynamische Bindung):** Die Liste ist vom Typ `Aufgabe`, enthält aber Objekte der Unterklassen. Beim Aufruf von `heuteAusfuehrbar()` wird **zur Laufzeit** anhand des tatsächlichen Objekttyps die passende überschriebene Methode ausgeführt. Neue Aufgabenarten brauchen nur eine neue Unterklasse – der Container bleibt unverändert.
+**Polymorphie (dynamische Bindung):** Die Liste ist vom Typ `Wartung`, enthält aber Objekte der Unterklassen. Beim Aufruf von `heuteFaellig()` wird **zur Laufzeit** anhand des tatsächlichen Objekttyps die passende überschriebene Methode ausgeführt. Neue Wartungsarten brauchen nur eine neue Unterklasse – der Wartungsplan bleibt unverändert.
 **Überschreiben** (Override: gleiche Signatur in der Unterklasse) ≠ **Überladen** (Overload: gleicher Name, andere Parameter in derselben Klasse).
 
 **Interface implementieren** (Observer): Die Klasse sichert zu, alle Methoden des Interfaces bereitzustellen (`update(wert)`), und kann dadurch überall eingesetzt werden, wo ein `Observer` erwartet wird.

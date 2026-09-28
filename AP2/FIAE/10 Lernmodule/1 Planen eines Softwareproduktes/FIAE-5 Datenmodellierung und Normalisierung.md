@@ -32,7 +32,7 @@ tags: [ap2/modul, ap2/fiae]
 > - **Tabellenmodell mit Primärschlüssel und Beziehungen**.
 > - **Redundanz erklären, Anomalien mit Beispiel** aus einer gegebenen Tabelle.
 > - **Datenqualität beim Import** alter Daten: uneinheitliche Formate, Namen statt IDs, fehlende Werte.
-> - **NoSQL-Vorteile**, **Speicherbedarf** von Drohnenbildern in TiB.
+> - **NoSQL-Vorteile**, **Speicherbedarf** großer Bilddatenmengen in TiB.
 
 ---
 
@@ -128,8 +128,8 @@ Lösungen: Daten **bereinigen** (manuell oder per Skript), Importprogramm mit **
 **NoSQL-Vorteile:** **flexibles Schema** (neue Felder ohne Migration), schnellere Umsetzung neuer Funktionen, gute **horizontale Skalierung**, schnelle Abfragen bei komplexen oder verschachtelten Strukturen, Datenstruktur passt zum Programm (Dokumente = Objekte). Arten: Dokument (MongoDB), Key-Value (Redis), Spalten (Cassandra), Graph (Neo4j).
 
 ### Speicherbedarf abschätzen
-Bildgröße = Breite × Höhe × Farbtiefe ÷ 8 (unkomprimiert) · × Anzahl Bilder pro Flug × Flüge pro Woche × 52 Wochen → in TiB umrechnen (÷ 1 024⁴).
-> Beispiel: 4 000 × 3 000 Pixel × 24 Bit = 36 000 000 Byte ≈ 34,33 MiB je Bild; 500 Bilder × 3 Flüge × 52 Wochen = 78 000 Bilder → 2 808 000 000 000 Byte ≈ **2,55 TiB** pro Jahr.
+Bildgröße = Breite × Höhe × Farbtiefe ÷ 8 (unkomprimiert) · × Anzahl Bilder je Aufnahmeserie × Serien pro Woche × 52 Wochen → in TiB umrechnen (÷ 1 024⁴).
+> Beispiel: 4 000 × 3 000 Pixel × 24 Bit = 36 000 000 Byte ≈ 34,33 MiB je Bild; 500 Bilder × 3 Serien × 52 Wochen = 78 000 Bilder → 2 808 000 000 000 Byte ≈ **2,55 TiB** pro Jahr.
 
 ---
 

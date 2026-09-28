@@ -27,7 +27,7 @@ tags: [ap2/modul, ap2/fiae]
 
 ## So wird das geprüft
 > [!info] Typische AP2-Aufgabentypen
-> - **Use-Case-Diagramm erstellen:** Punkte gibt es je Akteur, je Anwendungsfall, je include/extend-Beziehung, je Assoziation – bei  auch für die **Vererbung zwischen Akteuren**.
+> - **Use-Case-Diagramm erstellen:** Punkte gibt es je Akteur, je Anwendungsfall, je include/extend-Beziehung, je Assoziation – teilweise auch für die **Vererbung zwischen Akteuren**.
 > - **Funktionale und nichtfunktionale Anforderungen** an eine App.
 > - **Qualitätsmerkmale** (Effizienz, Änderbarkeit; Zuverlässigkeit + ein weiteres nach ISO 25010).
 > - **Sicherheitsanforderungen** an eine Anwendung, **Vorteile der Lösung** für den Kunden.
@@ -60,6 +60,9 @@ tags: [ap2/modul, ap2/fiae]
 ---
 
 ## 2. Softwarequalität nach ISO/IEC 25010
+
+Die Prüfungen verwenden das bekannte Modell mit acht Merkmalen (Fassung 2011). Die Neufassung ISO/IEC 25010:2023 benennt einige Merkmale um (z. B. Interaktionsfähigkeit statt Benutzbarkeit, Flexibilität statt Übertragbarkeit) und ergänzt die Betriebssicherheit (Safety).
+
 
 | Merkmal | Bedeutung |
 |---|---|
@@ -115,7 +118,7 @@ Name · Akteur · Vorbedingung · **Standardablauf** (nummerierte Schritte) · a
 
 ## 4. Beispiel eRechnung
 
-Seit 2025 müssen Unternehmen in Deutschland **E-Rechnungen** empfangen können (B2B, schrittweise Ausstellungspflicht). Eine E-Rechnung ist ein **strukturierter digitaler Datensatz** (XRechnung, ZUGFeRD ab Profil EN 16931), der **maschinell verarbeitet** werden kann – eine PDF-Datei allein ist keine E-Rechnung. Das Hauptziel ist die **automatische Verarbeitung**; die menschenlesbare Darstellung ist zweitrangig.
+Seit 2025 müssen Unternehmen in Deutschland **E-Rechnungen** empfangen können (B2B, schrittweise Ausstellungspflicht). Eine E-Rechnung ist ein **strukturierter digitaler Datensatz** (XRechnung, ZUGFeRD ab Version 2.0.1 außer den Profilen MINIMUM und BASIC-WL), der **maschinell verarbeitet** werden kann – eine PDF-Datei allein ist keine E-Rechnung. Das Hauptziel ist die **automatische Verarbeitung**; die menschenlesbare Darstellung ist zweitrangig.
 Anforderungen an eine Software: Formate erzeugen und validieren (XSD-Schema, Schematron), Pflichtangaben, Archivierung (GoBD), Schnittstellen zu Buchhaltung/ERP. Testen mit **zertifizierten Validatoren**, Unit-Tests und **nicht realen Testdaten**; eine Schemavalidierung prüft nur die **Struktur**, keine Rechenlogik (z. B. Brutto statt Netto summiert) – dafür braucht es zusätzliche Tests (→ [[FIAE-11 Testen und Qualitätssicherung]]).
 
 ---

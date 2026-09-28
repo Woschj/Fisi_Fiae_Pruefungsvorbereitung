@@ -31,7 +31,7 @@ tags: [ap2/modul, ap2/fiae]
 > - **Passwort speichern:** Hashfunktion, Nachteil gleicher Hashes, **Salt**.
 > - **Verschlüsselung:** symmetrisch erklären, Alternativen asymmetrisch und hybrid mit Vor-/Nachteilen; **Transportverschlüsselung bei E-Mail = hybrid**, kein Pre-Shared Secret nötig.
 > - **Schutzziel Integrität** und Verfahren gegen unbemerkte Manipulation, **RSA** erklären und bewerten.
-> - **Sicherheitsanforderungen** an eine Aktionärs-App, **Passwort-Reset-Link absichern** mit zweitem Kanal, Word-Einladungen als Risiko.
+> - **Sicherheitsanforderungen** an eine Mitglieder-App, **Passwort-Reset-Link absichern** mit zweitem Kanal, Word-Einladungen als Risiko.
 > - **Datenschutzerklärung und Einwilligung** begründen, **Zertifikate** für Ticketsysteme, **nicht signiertes Programm**.
 
 ---

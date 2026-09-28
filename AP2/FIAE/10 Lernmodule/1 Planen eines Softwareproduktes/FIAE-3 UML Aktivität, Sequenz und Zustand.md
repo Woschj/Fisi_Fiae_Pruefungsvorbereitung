@@ -26,8 +26,8 @@ tags: [ap2/modul, ap2/fiae]
 
 ## So wird das geprüft
 > [!info] Typische AP2-Aufgabentypen
-> - **Aktivitätsdiagramm** aus einem beschriebenen Ablauf: Punkte je Aktivität, für das Ende, **2 Punkte für die Synchronisation** und je Verzweigung;  Aktivitäten an die richtige Stelle setzen;  Bewässerungssteuerung.
-> - **Sequenzdiagramm ergänzen:** Pfeile mit Beschriftung, Alternativfragment mit Bedingungen, Medikationsplan mit **opt** oder **alt**.
+> - **Aktivitätsdiagramm** aus einem beschriebenen Ablauf: Punkte je Aktivität, für das Ende, **2 Punkte für die Synchronisation** und je Verzweigung; vorgegebene Aktivitäten an die richtige Stelle setzen (z. B. Bewässerungssteuerung).
+> - **Sequenzdiagramm ergänzen:** Pfeile mit Beschriftung, Alternativfragment mit Bedingungen, Abläufe mit **opt** oder **alt**.
 > - **Zustandsdiagramm:** Start- und Endpunkt, Zustände, Übergänge mit Bedingung.
 > - **Prozess analysieren:** Probleme im Ist-Ablauf benennen und Digitalisierung begründen.
 
@@ -35,29 +35,29 @@ tags: [ap2/modul, ap2/fiae]
 
 ## 1. Aktivitätsdiagramm
 
-Zeigt einen **Ablauf** (Algorithmus, Geschäftsprozess) – Nachfolger des Programmablaufplans.
+Zeigt einen **Ablauf** (Algorithmus, Geschäftsprozess) – die Standarddarstellung für Abläufe, seit PAP und Struktogramm aus dem Prüfungskatalog gestrichen sind.
 
 | Element | Symbol | Bedeutung |
 |---|---|---|
 | **Startknoten** | ● gefüllter Kreis | Beginn |
 | **Endknoten** | ◉ Kreis mit Punkt | Ende der **gesamten** Aktivität |
 | Ablaufende | ⊗ | Ende **eines** Zweiges |
-| **Aktion** | Rechteck mit runden Ecken | ein Schritt („Vitalwerte messen“) |
-| **Verzweigung / Zusammenführung** | ◇ Raute | Entscheidung mit **Bedingungen in eckigen Klammern** `[Wert > 38]` / Zweige wieder zusammenführen |
+| **Aktion** | Rechteck mit runden Ecken | ein Schritt („Lagerbestand prüfen“) |
+| **Verzweigung / Zusammenführung** | ◇ Raute | Entscheidung mit **Bedingungen in eckigen Klammern** `[Betrag > 500]` / Zweige wieder zusammenführen |
 | **Gabelung (Fork) / Vereinigung (Join)** | dicker Balken | Zweige laufen **parallel** / Warten, bis **alle** parallelen Zweige fertig sind (**Synchronisation**) |
 | Objektfluss | Rechteck zwischen Aktionen | Daten/Dokument wird weitergegeben |
-| Schwimmbahnen (Partitionen) | Spalten | wer führt die Aktion aus (Arzt, Pflege, System) |
+| Schwimmbahnen (Partitionen) | Spalten | wer führt die Aktion aus (Vertrieb, Lager, System) |
 
 ```mermaid
 flowchart TD
-  S((Start)) --> A[Patientenakte öffnen]
+  S((Start)) --> A[Bestellung öffnen]
   A --> F{{Fork}}
-  F --> B[Vitalwerte messen]
-  F --> C[Laborwerte prüfen]
+  F --> B[Lagerbestand prüfen]
+  F --> C[Zahlung prüfen]
   B --> J{{Join}}
   C --> J
-  J --> D{Behandlungsplan anpassen?}
-  D -->|"[ja]"| E[Plan ändern und Stationen informieren]
+  J --> D{Alle Artikel lieferbar?}
+  D -->|"[ja]"| E[Versand beauftragen und Kunden informieren]
   D -->|"[nein]"| M(( ))
   E --> M
   M --> Z((Ende))
@@ -66,7 +66,7 @@ flowchart TD
 **Regeln:** Jede Verzweigung braucht **vollständige, sich ausschließende Bedingungen**; parallele Zweige werden **mit einem Join synchronisiert**, bevor es weitergeht; genau ein Startknoten.
 
 ### Ist-Prozess analysieren
-Schwachstellen erkennen: **manuelle Übertragungen** (fehleranfällig, Zeitverlust), Medienbrüche (Papier → System), fehlende Priorisierung, Informationen erreichen Beteiligte zu spät, Entscheidungen nur aus Erfahrung. Digitalisierung begründen mit Zeitersparnis, weniger Fehlern, Automatisierung (Messgeräte liefern direkt), Vorschlägen aus Daten.
+Schwachstellen erkennen: **manuelle Übertragungen** (fehleranfällig, Zeitverlust), Medienbrüche (Papier → System), fehlende Priorisierung, Informationen erreichen Beteiligte zu spät, Entscheidungen nur aus Erfahrung. Digitalisierung begründen mit Zeitersparnis, weniger Fehlern, Automatisierung (Geräte und Systeme liefern Daten direkt), Vorschlägen aus Daten.
 
 ---
 
@@ -84,27 +84,27 @@ Zeigt den **zeitlichen Nachrichtenaustausch** zwischen Objekten (von oben nach u
 | Objekterzeugung | Pfeil auf den Objektkopf, «create» |
 | **alt** | Alternativen mit Bedingungen `[gefunden]` / `[else]` (wie if-else) |
 | **opt** | optionaler Teil, nur wenn Bedingung gilt (wie if ohne else) |
-| **loop** | Wiederholung `loop [für jeden Patienten]` |
+| **loop** | Wiederholung `loop [für jede Position]` |
 | par | parallele Abschnitte |
 
 ```mermaid
 sequenceDiagram
-  actor Arzt
+  actor Lagerist
   participant UI as Oberfläche
-  participant S as Medikationsservice
+  participant S as Versandservice
   participant DB as Datenbank
-  Arzt->>UI: Medikationsplan anfordern(patientId)
-  UI->>S: erstellePlan(patientId)
-  S->>DB: holeVerordnungen(patientId)
-  DB-->>S: verordnungen
-  alt keine Verordnungen
-    S->>DB: holeStandardmedikation()
-    DB-->>S: standard
-  else Verordnungen vorhanden
-    S->>S: sortiereNachUhrzeit()
+  Lagerist->>UI: Packliste anfordern(bestellId)
+  UI->>S: erstellePackliste(bestellId)
+  S->>DB: holePositionen(bestellId)
+  DB-->>S: positionen
+  alt keine Positionen
+    S->>DB: holeHinweistext()
+    DB-->>S: hinweis
+  else Positionen vorhanden
+    S->>S: sortiereNachLagerplatz()
   end
-  S-->>UI: plan
-  UI-->>Arzt: Plan anzeigen
+  S-->>UI: packliste
+  UI-->>Lagerist: Packliste anzeigen
 ```
 
 **Vom Code zum Diagramm:** jede Methodenaufruf-Zeile ist ein Pfeil vom aufrufenden zum aufgerufenen Objekt; `if` ohne `else` → **opt**, `if/else` → **alt**, Schleife → **loop**; Rückgabewerte als gestrichelte Antwort.
@@ -138,7 +138,7 @@ Ein Zustand wird nur über eine **Transition** verlassen; zu jedem Zustand gehö
 
 > [!warning] Typische Fehler in Prüfungen
 > - Parallele Zweige ohne **Join** zusammenlaufen lassen (oder mit einer Raute statt eines Balkens).
-> - Bedingungen ohne eckige Klammern oder nicht vollständig (`[> 38]` ohne `[<= 38]`).
+> - Bedingungen ohne eckige Klammern oder nicht vollständig (`[> 500]` ohne `[<= 500]`).
 > - Im Sequenzdiagramm Antworten als durchgezogene Pfeile zeichnen.
 > - `opt` und `alt` verwechseln: **opt = nur ein Zweig**, **alt = mehrere Alternativen**.
 > - Im Zustandsdiagramm Aktionen statt Zustände modellieren („Messen“ statt „Hohe Auslastung“).

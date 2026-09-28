@@ -62,7 +62,7 @@ tags: [ap2/modul, ap2/fisi]
 **Weitere Folgen:** Beim Weiterleiten sinkt die **TTL** um 1, die **Header-Checksumme** wird neu berechnet.
 
 ### Portforwarding (Destination NAT)
-Eingehende Pakete an **öffentliche IP + bestimmten Port** werden an eine **interne IP** weitergeleitet – so wird ein Webserver in der DMZ von außen erreichbar (z. B. 203.0.113.13:22 → 10.10.10.2:22).
+Eingehende Pakete an **öffentliche IP + bestimmten Port** werden an eine **interne IP** weitergeleitet – so wird ein Server in der DMZ von außen erreichbar (z. B. HTTPS: 203.0.113.13:443 → 10.10.10.2:443; SSH: 203.0.113.13:2222 → 10.10.10.2:22).
 
 ### Carrier-Grade-NAT (CGN)
 Mobilfunk- und manche Glasfaser-/Kabelprovider geben Kunden nur **private IPv4-Adressen** (100.64.0.0/10) und übersetzen erst beim Provider. **Folge:** Geräte beim Kunden sind **von außen nicht erreichbar**, Portforwarding und eingehende VPNs funktionieren nicht, ggf. doppeltes NAT. Lösungen: öffentliche IPv4 kostenpflichtig bestellen, **IPv6** verwenden, VPN von innen nach außen aufbauen.

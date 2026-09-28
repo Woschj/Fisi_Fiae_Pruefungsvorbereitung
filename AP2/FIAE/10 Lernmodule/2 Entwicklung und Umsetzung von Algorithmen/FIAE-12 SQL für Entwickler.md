@@ -28,27 +28,30 @@ tags: [ap2/modul, ap2/fiae]
 
 ## So wird das geprüft
 > [!info] Typische AP2-Aufgabentypen
-> - **Auswertung je Gruppe:** Min/Max/Durchschnitt/Anzahl je Börse mit JOIN und GROUP BY, Anzahl Bestellungen je Kunde mit **HAVING ≥ 3**, Verkaufszahl je Kategorie absteigend, Anzahl je Hersteller mit HAVING > 50.
+> - **Auswertung je Gruppe:** Min/Max/Durchschnitt/Anzahl je Gruppe mit JOIN und GROUP BY, Anzahl Bestellungen je Kunde mit **HAVING ≥ 3**, Verkaufszahl je Kategorie absteigend.
 > - **Archivieren:** Datensätze per `INSERT INTO … SELECT` in eine Archivtabelle kopieren und danach `DELETE`, Auswertung über Aktiv- und Archivtabelle mit **UNION ALL**.
 > - **DML:** INSERT eines neuen Datensatzes, UPDATE mit Unterabfrage (+5 %), fehlende Werte ergänzen und Spalte zum Pflichtfeld machen.
 > - **DDL:** CREATE TABLE mit PRIMARY KEY, Spalten hinzufügen, Werte aufteilen, Spalte löschen.
 > - **DCL:** `GRANT INSERT, UPDATE` und `REVOKE`.
-> - **JOIN über mehrere Tabellen** mit Sortierung und **DATEDIFF** für Verspätungen, **CRUD ↔ SQL**, Stored Procedure, Trigger, Index.
+> - **JOIN über mehrere Tabellen** mit Sortierung und **DATEDIFF** für Zeitdifferenzen, **CRUD ↔ SQL**, Stored Procedure, Trigger, Index.
 
 ---
 
 ## 1. SELECT Schritt für Schritt
 
 ```sql
-SELECT   b.B_ID, b.B_Name,
-         MIN(k.Kurs) AS KursMin, MAX(k.Kurs) AS KursMax,
-         AVG(k.Kurs) AS KursDurchschnitt, COUNT(k.K_ID) AS Anzahl
-FROM     Boerse AS b
-         INNER JOIN Kurs AS k ON k.BoerseID = b.B_ID
-WHERE    k.AktieID = 6
-GROUP BY b.B_ID, b.B_Name
-HAVING   COUNT(k.K_ID) > 10
-ORDER BY KursDurchschnitt DESC;
+-- Beispielschema Onlineshop: Kunde(KundenID, Name, Ort) · Bestellung(BestellID, KundenID, Datum)
+-- Position(BestellID, ArtikelID, Menge) · Artikel(ArtikelID, Bezeichnung, Preis, KategorieID, HerstellerID)
+-- Kategorie(KategorieID, Name) · Hersteller(HerstellerID, Bezeichnung, Email)
+SELECT   k.KategorieID, k.Name,
+         MIN(a.Preis) AS PreisMin, MAX(a.Preis) AS PreisMax,
+         AVG(a.Preis) AS PreisDurchschnitt, COUNT(a.ArtikelID) AS Anzahl
+FROM     Kategorie AS k
+         INNER JOIN Artikel AS a ON a.KategorieID = k.KategorieID
+WHERE    a.HerstellerID = 6
+GROUP BY k.KategorieID, k.Name
+HAVING   COUNT(a.ArtikelID) > 10
+ORDER BY PreisDurchschnitt DESC;
 ```
 
 **Auswertungsreihenfolge:** `FROM`/`JOIN` → `WHERE` (Zeilen filtern) → `GROUP BY` (Gruppen bilden) → `HAVING` (Gruppen filtern) → `SELECT` (Spalten, Aggregate, Aliase) → `ORDER BY` (sortieren).
@@ -58,33 +61,33 @@ ORDER BY KursDurchschnitt DESC;
 | **Aggregatfunktionen** | `COUNT(*)`, `COUNT(spalte)` (ohne NULL), `SUM`, `AVG`, `MIN`, `MAX` |
 | **GROUP BY** | alle Spalten im SELECT, die **nicht** aggregiert sind, müssen im GROUP BY stehen |
 | **WHERE vs. HAVING** | WHERE filtert **Zeilen** (keine Aggregate erlaubt), HAVING filtert **Gruppen** (mit Aggregaten) |
-| **Aliase** | `AS KursMin` für Spalten, `Boerse AS b` für Tabellen |
+| **Aliase** | `AS PreisMin` für Spalten, `Kategorie AS k` für Tabellen |
 | **Vergleiche** | `=`, `<>`, `<`, `BETWEEN a AND b`, `IN (…)`, `LIKE 'A%'`, `IS NULL` / `IS NOT NULL` (nie `= NULL`) |
 | **DISTINCT** | doppelte Ergebniszeilen entfernen |
-| **Rechnen** | `SUM(g.Preis * bd.Menge) AS Gesamtpreis` |
+| **Rechnen** | `SUM(a.Preis * p.Menge) AS Gesamtpreis` |
 
 ### JOINs
 | JOIN | Ergebnis |
 |---|---|
 | **INNER JOIN** | nur Zeilen mit passendem Partner in **beiden** Tabellen |
-| **LEFT (OUTER) JOIN** | **alle** Zeilen der linken Tabelle, rechts NULL, wenn kein Partner (z. B. Kunden **ohne** Bestellung finden: `WHERE b.BID IS NULL`) |
+| **LEFT (OUTER) JOIN** | **alle** Zeilen der linken Tabelle, rechts NULL, wenn kein Partner (z. B. Kunden **ohne** Bestellung finden: `WHERE b.BestellID IS NULL`) |
 | RIGHT JOIN | alle Zeilen der rechten Tabelle |
 | über mehrere Tabellen | Kette: `FROM A JOIN B ON … JOIN C ON …` – jede Verknüpfung über **Fremdschlüssel = Primärschlüssel** |
 
 > [!example] Drei Tabellen
 > ```sql
-> SELECT   gk.Name AS Kategorie, SUM(bd.Menge) AS Verkaufsanzahl
-> FROM     Bestelldetails AS bd
->          JOIN Gerichte AS g ON bd.GID = g.GID
->          JOIN Gerichtkategorie AS gk ON g.GKID = gk.GKID
-> GROUP BY gk.Name
+> SELECT   k.Name AS Kategorie, SUM(p.Menge) AS Verkaufsanzahl
+> FROM     Position AS p
+>          JOIN Artikel AS a ON p.ArtikelID = a.ArtikelID
+>          JOIN Kategorie AS k ON a.KategorieID = k.KategorieID
+> GROUP BY k.Name
 > ORDER BY Verkaufsanzahl DESC;
 > ```
 
 ### Unterabfragen, UNION, Datum
-- **Unterabfrage im WHERE:** `WHERE HerstellerID = (SELECT HerstellerID FROM Hersteller WHERE Bezeichnung = 'CCC')` bzw. mit `IN` bei mehreren Werten.
-- **Unterabfrage im FROM** (abgeleitete Tabelle): Durchschnitt der Anzahl je Patient:
-  `SELECT AVG(Anzahl) FROM (SELECT COUNT(*) AS Anzahl FROM Verschreibungen GROUP BY PID) AS t;`
+- **Unterabfrage im WHERE:** `WHERE HerstellerID = (SELECT HerstellerID FROM Hersteller WHERE Bezeichnung = 'Rheintec')` bzw. mit `IN` bei mehreren Werten.
+- **Unterabfrage im FROM** (abgeleitete Tabelle): durchschnittliche Anzahl Bestellungen je Kunde:
+  `SELECT AVG(Anzahl) FROM (SELECT COUNT(*) AS Anzahl FROM Bestellung GROUP BY KundenID) AS t;`
 - **UNION** fügt Ergebnisse zweier SELECTs mit gleicher Spaltenzahl und -typen **untereinander** zusammen; `UNION` entfernt Duplikate, **`UNION ALL`** behält alle. `ORDER BY` steht einmal am Ende.
 - **Datumsfunktionen** (dialektabhängig): `YEAR(datum)`, `CURRENT_DATE`/`GETDATE()`, `DATEDIFF(minute, start, ende)` (SQL Server) – in der Prüfung wird jede sinnvolle Schreibweise akzeptiert.
 
@@ -93,23 +96,23 @@ ORDER BY KursDurchschnitt DESC;
 ## 2. Daten ändern (DML)
 
 ```sql
-INSERT INTO Aerzte (Vorname, Nachname, Fachgebiet)
-VALUES ('Hugo', 'Horner', 'Allgemeinmedizin');
+INSERT INTO Kunde (Name, Ort)
+VALUES ('Lena Brandt', 'Bonn');
 
-UPDATE Arzneimittel SET Preis = Preis * 1.05
-WHERE  HerstellerID = (SELECT HerstellerID FROM Hersteller WHERE Bezeichnung = 'CCC');
+UPDATE Artikel SET Preis = Preis * 1.05
+WHERE  HerstellerID = (SELECT HerstellerID FROM Hersteller WHERE Bezeichnung = 'Rheintec');
 
-DELETE FROM Kurs WHERE AktieID = 4;
+DELETE FROM Position WHERE BestellID = 4711;
 ```
 - **UPDATE und DELETE immer mit WHERE** – ohne WHERE betrifft es **alle** Zeilen.
 - **Archivieren** in zwei Schritten (am besten in einer Transaktion):
 ```sql
-INSERT INTO KursArchiv (K_ID, Zeitpunkt, Kurs, BoerseID, AktieID)
-SELECT K_ID, Zeitpunkt, Kurs, BoerseID, AktieID
-FROM   Kurs
-WHERE  YEAR(Zeitpunkt) < YEAR(CURRENT_DATE);
+INSERT INTO BestellungArchiv (BestellID, KundenID, Datum)
+SELECT BestellID, KundenID, Datum
+FROM   Bestellung
+WHERE  YEAR(Datum) < YEAR(CURRENT_DATE);
 
-DELETE FROM Kurs WHERE YEAR(Zeitpunkt) < YEAR(CURRENT_DATE);
+DELETE FROM Bestellung WHERE YEAR(Datum) < YEAR(CURRENT_DATE);
 ```
 - Beim Löschen **abhängige Datensätze** zuerst (oder `ON DELETE CASCADE`), sonst verletzt man die referenzielle Integrität.
 
@@ -124,12 +127,12 @@ CREATE TABLE Hersteller (
   Email        VARCHAR(100) UNIQUE
 );
 
-ALTER TABLE Kunden ADD COLUMN Vorname VARCHAR(50);
-ALTER TABLE Kunden DROP COLUMN Name;
-ALTER TABLE Aerzte MODIFY Email VARCHAR(100) NOT NULL;   -- SQL Server: ALTER COLUMN
+ALTER TABLE Kunde ADD COLUMN Vorname VARCHAR(50);
+ALTER TABLE Kunde DROP COLUMN Ort;
+ALTER TABLE Hersteller MODIFY Email VARCHAR(100) NOT NULL;   -- SQL Server: ALTER COLUMN
 
-GRANT  INSERT, UPDATE ON NotaufnahmeManagement.Verschreibungen TO 'hhorner';
-REVOKE INSERT, UPDATE ON NotaufnahmeManagement.Verschreibungen FROM 'sklinkel';
+GRANT  INSERT, UPDATE ON Shop.Bestellung TO 'vertrieb';
+REVOKE INSERT, UPDATE ON Shop.Bestellung FROM 'praktikant';
 ```
 - **Spalte zum Pflichtfeld machen:** zuerst vorhandene `NULL`-Werte per `UPDATE … WHERE Email IS NULL` füllen, **dann** `NOT NULL` setzen – sonst schlägt die Änderung fehl.
 - **Spalte aufteilen:** neue Spalten anlegen → per `UPDATE` mit Stringfunktionen befüllen (`SUBSTRING`, `SUBSTRING_INDEX`, `LEFT/RIGHT`) → alte Spalte löschen.

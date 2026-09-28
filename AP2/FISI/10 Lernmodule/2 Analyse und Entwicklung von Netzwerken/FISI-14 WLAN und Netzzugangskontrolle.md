@@ -49,7 +49,7 @@ tags: [ap2/modul, ap2/fisi]
 ### Frequenzen und Kanäle
 | Band | Eigenschaften |
 |---|---|
-| **2,4 GHz** | hohe Reichweite, gute Wanddurchdringung; nur **3 überlappungsfreie Kanäle (1, 6, 11)**, stark belegt (Bluetooth, Mikrowelle) |
+| **2,4 GHz** | hohe Reichweite, gute Wanddurchdringung; nur **3 überlappungsfreie Kanäle (1, 6, 11)** – in Europa mit 13 Kanälen bei 20 MHz Breite auch 1, 5, 9, 13 –, stark belegt (Bluetooth, Mikrowelle) |
 | **5 GHz** | viele Kanäle, weniger Störungen, höhere Datenrate; geringere Reichweite |
 | **6 GHz** (Wi-Fi 6E/7) | sehr viele breite Kanäle, kaum Störungen; noch geringere Reichweite |
 

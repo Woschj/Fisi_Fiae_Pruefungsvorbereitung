@@ -41,7 +41,7 @@ tags: [ap2/modul, ap2/fiae]
 ## 1. REST-API
 
 **REST** (Representational State Transfer) ist ein Architekturstil für Web-Schnittstellen:
-- Jede **Ressource** ist über eine eindeutige **URL** erreichbar (`https://api.firma.de/kunden/25`).
+- Jede **Ressource** ist über eine eindeutige **URL** erreichbar (`https://api.example.org/kunden/25`).
 - Operationen über die **HTTP-Methoden**.
 - **Zustandslos:** Jeder Request enthält alle nötigen Informationen; der Server speichert keinen Sitzungszustand zwischen Aufrufen.
 - **Client und Server lose gekoppelt**, Daten meist als **JSON** (auch XML).
@@ -58,16 +58,16 @@ tags: [ap2/modul, ap2/fiae]
 
 ### Aufbau eines Requests
 ```
-PUT https://amag.com/shareholders/25          ← Methode + Endpoint-URL
+PUT https://api.example.org/members/25          ← Methode + Endpoint-URL
 content-type: application/json               ← Header: Metadaten,
 accept: application/json                        Authentifizierung (Token, API-Key),
 authorization: Bearer eyJhbGciOi...             Cookies
                                              ← Leerzeile
 { "name": "Hannah Müller",                   ← Body: Daten (JSON)
-  "address": [{ "street": "Hauptstr. 12", "pc": "76543", "city": "Baden-Baden" }],
+  "address": [{ "street": "Hauptstr. 12", "pc": "50667", "city": "Köln" }],
   "id": 25 }
 ```
-**URL-Parameter:** `https://api.wetter.de/v1/forecast?lat=51.45&lon=7.01&days=3&units=metric` – nach dem `?` stehen **Query-Parameter** als `name=wert`, getrennt mit `&` (Position, Anzahl Tage, Einheiten); Pfadparameter stehen im Pfad (`/kunden/25`).
+**URL-Parameter:** `https://api.example.org/v1/forecast?lat=51.45&lon=7.01&days=3&units=metric` – nach dem `?` stehen **Query-Parameter** als `name=wert`, getrennt mit `&` (Position, Anzahl Tage, Einheiten); Pfadparameter stehen im Pfad (`/kunden/25`).
 
 ### HTTP-Statuscodes
 | Klasse | Bedeutung | Beispiele |

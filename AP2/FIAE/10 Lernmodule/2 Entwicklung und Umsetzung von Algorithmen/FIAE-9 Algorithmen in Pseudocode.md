@@ -27,9 +27,9 @@ tags: [ap2/modul, ap2/fiae]
 
 ## So wird das geprüft
 > [!info] Typische AP2-Aufgabentypen
-> - **Methode entwickeln**, die eine Liste von Objekten durchläuft und etwas **zählt oder filtert**: Kurse mit Plus gegenüber Index zählen, **Verspätungen je Haltestelle** in einem Array zählen, **freie Tische** nach Personenzahl und Reservierungen filtern und den **bestpassenden** Tisch finden, **Tage im Zeitraum** zählen, Objekte erzeugen und **Durchschnitt im Zeitraum** berechnen.
+> - **Methode entwickeln**, die eine Liste von Objekten durchläuft und etwas **zählt oder filtert**: Werte über einer Grenze zählen, **Häufigkeiten je Kategorie** in einem Array zählen, **freie Ressourcen** nach Kapazität und bestehenden Buchungen filtern und die **bestpassende** finden, **Tage im Zeitraum** zählen, Objekte erzeugen und **Durchschnitt im Zeitraum** berechnen.
 > - **Sortieren mit Vergleichsfunktion**.
-> - **Nächste Abfahrten** mit Datumsvergleich und Höchstanzahl sammeln.
+> - **Nächste Termine** mit Datumsvergleich und Höchstanzahl sammeln.
 > - **Fehler in einem Algorithmus** finden.
 
 ---
@@ -67,41 +67,43 @@ ende methode
 | **Maximum / Minimum** | Startwert = **erstes Element** (oder kleinstmöglicher Wert), dann vergleichen; bei Bedarf **Index** mitspeichern |
 | **Filtern** | neue Ergebnisliste, passende Elemente `add` |
 | **Häufigkeit je Kategorie** | Zählarray mit einem Feld je Kategorie: `zaehler[nr − 1]++` |
-| **Paarweise Vergleiche** | Schleife ab `i = 1`, Vergleich mit Element `i − 1` (Differenzen, Verspätung gegenüber Vorgänger) |
+| **Paarweise Vergleiche** | Schleife ab `i = 1`, Vergleich mit Element `i − 1` (Differenzen, Anstieg gegenüber dem Vorgänger) |
 | **Verschachtelte Suche** | äußere Schleife über Kandidaten, innere prüft Konflikte (Flag `frei = true`, bei Treffer `false`, Schleife mit `und frei` vorzeitig beenden) |
 | **Bestes Element** | wie Maximum, aber mit selbst definierter Güte (kleinste Differenz zur gewünschten Größe) |
 | **Begrenzte Ergebnismenge** | Schleifenbedingung `i < n und zaehler < max` |
 
 > [!example] Häufigkeit je Kategorie
 > ```
-> methode zaehleVerspaetungen(fahrten : Fahrt[]) : Integer[]
->     verspaetungen : Integer[] = new Integer[15]      // Haltestellen 1..15 → Index 0..14
->     für i = 1 bis fahrten.length − 1
->         wenn fahrten[i].getDatum() == fahrten[i − 1].getDatum() dann
->             soll = fahrten[i].getPlan() − fahrten[i − 1].getPlan()
->             ist  = fahrten[i].getIst()  − fahrten[i − 1].getIst()
->             wenn ist − soll > 2 dann
->                 verspaetungen[fahrten[i].getHaltestelleNr() − 1]++
+> // Messungen sind nach Zeit sortiert; gezählt wird je Messstation (1..15),
+> // wie oft der Wert gegenüber der vorherigen Messung desselben Tages um mehr als 2 Grad steigt.
+> methode zaehleSpruenge(messungen : Messung[]) : Integer[]
+>     spruenge : Integer[] = new Integer[15]           // Stationen 1..15 → Index 0..14
+>     für i = 1 bis messungen.length − 1
+>         wenn messungen[i].getDatum() == messungen[i − 1].getDatum() dann
+>             anstieg = messungen[i].getWert() − messungen[i − 1].getWert()
+>             wenn anstieg > 2 dann
+>                 spruenge[messungen[i].getStationNr() − 1]++
 >             ende wenn
 >         ende wenn
 >     ende für
->     rückgabe verspaetungen
+>     rückgabe spruenge
 > ende methode
 > ```
 
 > [!example] Filtern mit innerer Prüfung
 > ```
-> methode freieTische(tische : List<Tisch>, res : List<Reservierung>, datum : Date, personen : Integer) : List<Tisch>
->     ergebnis = new List<Tisch>()
->     für jeden t in tische
->         wenn personen <= t.getMaxPersonen() und personen >= t.getMaxPersonen() / 2.0 dann   // keine Ganzzahldivision!
+> // Besprechungsräume: passend, wenn genug Plätze da sind, der Raum aber mindestens zur Hälfte genutzt wird
+> methode freieRaeume(raeume : List<Raum>, buchungen : List<Buchung>, datum : Date, personen : Integer) : List<Raum>
+>     ergebnis = new List<Raum>()
+>     für jeden r in raeume
+>         wenn personen <= r.getPlaetze() und personen >= r.getPlaetze() / 2.0 dann   // keine Ganzzahldivision!
 >             frei = true
->             für j = 0 bis res.size() − 1, solange frei
->                 wenn res.get(j).getTischNr() == t.getTischNr() und res.get(j).getDatum() == datum dann
+>             für j = 0 bis buchungen.size() − 1, solange frei
+>                 wenn buchungen.get(j).getRaumNr() == r.getRaumNr() und buchungen.get(j).getDatum() == datum dann
 >                     frei = false
 >                 ende wenn
 >             ende für
->             wenn frei dann ergebnis.add(t)
+>             wenn frei dann ergebnis.add(r)
 >         ende wenn
 >     ende für
 >     rückgabe ergebnis
@@ -116,7 +118,7 @@ ende methode
 
 **Bubblesort** mit Vergleichsfunktion (die Funktion liefert > 0, wenn a hinter b gehört):
 ```
-methode sortiere(liste : Tageskurs[], vergleiche : Function)
+methode sortiere(liste : Messung[], vergleiche : Function)
     für i = 0 bis liste.length − 2
         für j = 0 bis liste.length − 2 − i
             wenn vergleiche(liste[j], liste[j + 1]) > 0 dann
@@ -161,10 +163,10 @@ Trace-Tabelle: **Spalte je Variable**, **Zeile je Schleifendurchlauf**, Werte **
 > [!warning] Typische Fehler in Prüfungen
 > - Signatur verändern (andere Parameter, anderer Rückgabetyp) oder die **Rückgabe vergessen**.
 > - Zähler/Summe **innerhalb** der Schleife initialisieren.
-> - Index-Verschiebung vergessen (Haltestelle 1 steht in Feld 0).
+> - Index-Verschiebung vergessen (Station 1 steht in Feld 0).
 > - Ganzzahldivision bei Durchschnitt oder „Hälfte“.
 > - Objekte mit `==` vergleichen statt über Getter bzw. `equals`/`compare`.
-> - Bei „bester Tisch“ den Betrag der Differenz oder den Fall „leere Liste“ vergessen.
+> - Beim „besten Raum“ den Betrag der Differenz oder den Fall „leere Liste“ vergessen.
 
 ## Verwandte Themen
 - [[FIAE-10 Objektorientierte Programmierung umsetzen]] – Klassen, Listen, Getter

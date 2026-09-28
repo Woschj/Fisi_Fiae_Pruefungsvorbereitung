@@ -118,7 +118,9 @@ tags: [ap2/modul, ap2/fisi]
 | **IoT/MQTT** | Geräte × Byte je Nachricht × 8 ÷ Intervall in s |
 
 > [!example] VoIP
-> 15 externe Gespräche × 64 kbit/s = 960 kbit/s, dazu interne Gespräche über dieselbe Leitung; + 10 % Overhead. Die Software priorisiert bei Engpass **Audio vor Video**.
+> 15 externe Gespräche × 64 kbit/s = 960 kbit/s, dazu interne Gespräche über dieselbe Leitung; + Overhead laut Aufgabe (z. B. 10 %). Die Software priorisiert bei Engpass **Audio vor Video**.
+>
+> **Overhead exakt berechnen** (wenn die Header angegeben sind): 20 ms Paketierung → 50 Pakete/s, Nutzlast 64 000 ÷ 50 ÷ 8 = 160 Byte; + RTP 12 + UDP 8 + IPv4 20 + Ethernet 18 = **218 Byte** → 218 × 8 × 50 = **87,2 kbit/s** je Gespräch und Richtung (rund 36 % Overhead).
 
 > [!example] MQTT
 > 500 Geräte × 66 Byte pro Minute = 33 000 Byte/min ÷ 60 = 550 Byte/s × 8 = **4 400 bit/s = 4,4 kbit/s** → eine 10-kbit/s-Funkstrecke reicht.

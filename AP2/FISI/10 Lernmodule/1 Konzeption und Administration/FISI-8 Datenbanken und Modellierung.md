@@ -31,7 +31,7 @@ tags: [ap2/modul, ap2/fisi]
 > [!info] Typische AP2-Aufgabentypen
 > - **Datentypen zuordnen** (`INT`, `VARCHAR`, `CHAR`, `DECIMAL`, `DATE`, `BOOLEAN`).
 > - **`CREATE TABLE` mit PRIMARY KEY und FOREIGN KEY** ergänzen.
-> - **Abfragen:** `COUNT(*)` mit `WHERE`, **`INNER JOIN` mit `LIKE '8%'`** und Datumsvergleich, Top-3-Werte.
+> - **Abfragen:** `COUNT(*)` mit `WHERE`, **`INNER JOIN` mit `LIKE`** und Datumsvergleich, Top-3-Werte.
 > - **Kardinalitäten** (1:n) und **referenzielle Integrität** gegen Anomalien, **ER-Modell** mit Kardinalitäten und Primärschlüsseln.
 > - **NoSQL-Arten** nennen, **Indexierung und Locking** für Performance, DB-Anforderungen: Datenschutzbeauftragter, Berechtigungen, Logging, Replikation/Cluster, Monitoring.
 > - **UML:** Diagramme der statischen und dynamischen Sicht, Zugriff auf ein Attribut mit dem Punktoperator, **Aggregation und Komposition mit Beispiel**.
@@ -65,22 +65,22 @@ Eine **Tabelle (Relation)** besteht aus **Zeilen (Datensätzen/Tupeln)** und **S
 **Reihenfolge der Auswertung:** `FROM` → `WHERE` → `GROUP BY` → `HAVING` → `SELECT` → `ORDER BY`.
 
 ```sql
-CREATE TABLE Werbeaktion (
-  WerbungsID        INT NOT NULL,
-  Werbepartner      VARCHAR(50),
-  Werbung_verschickt DATE,
-  KundenNr          INT,
-  PRIMARY KEY (WerbungsID),
+CREATE TABLE Newsletter (
+  NewsletterID  INT NOT NULL,
+  Thema         VARCHAR(50),
+  Versanddatum  DATE,
+  KundenNr      INT,
+  PRIMARY KEY (NewsletterID),
   FOREIGN KEY (KundenNr) REFERENCES Kunde(KundenNr)
 );
 ```
 
 | Aufgabe | SQL |
 |---|---|
-| Anzahl aktiver Kunden in Augsburg | `SELECT COUNT(*) FROM Kunde WHERE Ort = 'Augsburg' AND Kunde_Aktiv = TRUE;` |
-| Windräder eines Parks zählen | `SELECT COUNT(*) FROM Windrad WHERE IDWindpark = 102;` |
-| Kunden mit PLZ 8…, vor 2022 beworben | `SELECT COUNT(*) FROM Kunde INNER JOIN Werbeaktion ON Kunde.KundenNr = Werbeaktion.KundenNr WHERE Kunde.PLZ LIKE '8%' AND Werbung_verschickt < '2022-01-01';` |
-| drei höchste Leistungswerte | `SELECT Leistung FROM Betriebsdaten ORDER BY Leistung DESC LIMIT 3;` (SQL Server: `SELECT TOP 3 …`) |
+| Anzahl aktiver Kunden in Bonn | `SELECT COUNT(*) FROM Kunde WHERE Ort = 'Bonn' AND Kunde_Aktiv = TRUE;` |
+| Server eines Standorts zählen | `SELECT COUNT(*) FROM Server WHERE StandortID = 102;` |
+| Kunden mit PLZ 5…, vor 2025 angeschrieben | `SELECT COUNT(*) FROM Kunde INNER JOIN Newsletter ON Kunde.KundenNr = Newsletter.KundenNr WHERE Kunde.PLZ LIKE '5%' AND Versanddatum < '2025-01-01';` |
+| drei höchste Messwerte | `SELECT Wert FROM Messwert ORDER BY Wert DESC LIMIT 3;` (SQL Server: `SELECT TOP 3 …`) |
 | Anzahl je Ort | `SELECT Ort, COUNT(*) FROM Kunde GROUP BY Ort;` |
 | nur Orte mit mehr als 10 Kunden | `… GROUP BY Ort HAVING COUNT(*) > 10;` |
 
@@ -97,26 +97,26 @@ Mehr SQL (INSERT, UPDATE, DELETE, GRANT, Unterabfragen): [[FIAE-12 SQL für Entw
 
 **Entitätstypen** (Rechteck), **Attribute** (Oval, Schlüssel unterstrichen), **Beziehungen** (Raute) mit **Kardinalitäten**:
 - **1:1** – ein Mitarbeiter hat einen Dienstwagen
-- **1:n** – ein Windpark hat viele Windräder; ein Windrad liefert viele Betriebsdaten
+- **1:n** – ein Standort hat viele Server; ein Server liefert viele Messwerte
 - **n:m** – Kunden bestellen viele Artikel, Artikel werden von vielen Kunden bestellt → wird in der Datenbank über eine **Zwischentabelle** mit zwei Fremdschlüsseln aufgelöst
 
 ```mermaid
 erDiagram
-  WINDPARK ||--o{ WINDRAD : "hat"
-  WINDRAD ||--o{ BETRIEBSDATEN : "liefert"
-  WINDPARK {
-    int IDWindpark PK
+  STANDORT ||--o{ SERVER : "hat"
+  SERVER ||--o{ MESSWERT : "liefert"
+  STANDORT {
+    int StandortID PK
     string Name
   }
-  WINDRAD {
-    int IDWindrad PK
-    int IDWindpark FK
+  SERVER {
+    int ServerID PK
+    int StandortID FK
   }
-  BETRIEBSDATEN {
+  MESSWERT {
     int ID PK
-    int IDWindrad FK
+    int ServerID FK
     date Datum
-    float LeistungAktuell
+    float Auslastung
   }
 ```
 
@@ -159,7 +159,7 @@ Vorteile: flexibles Datenmodell, horizontale Skalierung, schnelle Abfragen bei k
 
 **Beziehungen im Klassendiagramm:**
 - **Assoziation:** Klassen kennen sich (Linie).
-- **Aggregation** (leere Raute ◇): „**hat**“ – Teil-Ganzes, das Teil kann **ohne** das Ganze existieren (Gebäude – Mieter; Personalverwaltung – Fahrer).
+- **Aggregation** (leere Raute ◇): „**hat**“ – Teil-Ganzes, das Teil kann **ohne** das Ganze existieren (Gebäude – Mieter; Abteilung – Mitarbeiter).
 - **Komposition** (gefüllte Raute ◆): Teil-Ganzes, das Teil ist **existenzabhängig** (Gebäude – Raum: ohne Gebäude kein Raum).
 - **Vererbung** (Dreieckspfeil): „ist ein“.
 

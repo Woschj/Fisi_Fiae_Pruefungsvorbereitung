@@ -10,15 +10,15 @@ Ein Obsidian-Vault zur Vorbereitung auf AP1 und AP2 für Fachinformatiker:innen 
 
 ## Vault von GitHub klonen
 
-1. Auf GitHub die Vault-Seite öffnen und **Code → HTTPS** auswählen. Die Repository-Adresse sieht etwa so aus: `https://github.com/Woschj/Ap1.git`.
+1. Auf GitHub die Vault-Seite öffnen und **Code → HTTPS** auswählen. Die Repository-Adresse sieht etwa so aus: `https://github.com/Woschj/Fisi_Fiae_Pruefungsvorbereitung.git`.
 2. Ein Terminal öffnen und in den Ordner wechseln, in dem der Vault gespeichert werden soll.
 3. Klonen:
 
    ```powershell
-   git clone https://github.com/Woschj/Ap1.git
+   git clone https://github.com/Woschj/Fisi_Fiae_Pruefungsvorbereitung.git
    ```
 
-   Der Vault liegt im Repository [Woschj/Ap1](https://github.com/Woschj/Ap1).
+   Der Vault liegt im Repository [Woschj/Fisi_Fiae_Pruefungsvorbereitung](https://github.com/Woschj/Fisi_Fiae_Pruefungsvorbereitung).
 4. In Obsidian **Vault öffnen → Als Vault in einem Ordner öffnen** wählen und den eben geklonten Repository-Ordner auswählen.
 5. Falls Obsidian den eingeschränkten Modus aktiviert hat, unter **Einstellungen → Community-Plugins** den Modus deaktivieren und Dataview aktivieren. DataviewJS muss in den Dataview-Einstellungen zugelassen sein, damit die interaktiven Module und Probeprüfungen laufen.
 

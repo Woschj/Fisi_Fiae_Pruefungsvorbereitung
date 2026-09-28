@@ -25,13 +25,13 @@ Wie berechnest du den Gesamtpuffer?::SAZ − FAZ (bzw. SEZ − FEZ)
 Wie berechnest du den freien Puffer?::Kleinstes FAZ der Nachfolger − eigenes FEZ
 Was gehört in einen Projektabschluss?::Abnahme, Soll-Ist-Vergleich, Abschlussbericht, Lessons Learned, Übergabe/Dokumentation
 Was sind Lessons Learned?::Gesammelte Erfahrungen aus dem Projekt, um künftige Projekte zu verbessern
-Nenne eine Methode zur Risikobewertung.::Risikomatrix: Eintrittswahrscheinlichkeit × Schadenshöhe
+Nennen Sie eine Methode zur Risikobewertung.::Risikomatrix: Eintrittswahrscheinlichkeit × Schadenshöhe
 
 ## FIAE-2 Anforderungen und Use Cases
 
 Unterschied Lastenheft und Pflichtenheft?::Lastenheft: Anforderungen des Auftraggebers (Was?) · Pflichtenheft: Umsetzung durch den Auftragnehmer (Wie?)
 Unterschied funktionale und nichtfunktionale Anforderung?::Funktional: was das System tun soll · nichtfunktional: wie gut (Leistung, Sicherheit, Benutzbarkeit)
-Nenne vier Qualitätsmerkmale nach ISO/IEC 25010.::Funktionale Eignung, Leistungseffizienz, Kompatibilität, Benutzbarkeit, Zuverlässigkeit, Sicherheit, Wartbarkeit, Übertragbarkeit
+Nennen Sie vier Qualitätsmerkmale nach ISO/IEC 25010.::Funktionale Eignung, Leistungseffizienz, Kompatibilität, Benutzbarkeit, Zuverlässigkeit, Sicherheit, Wartbarkeit, Übertragbarkeit
 Was zeigt ein Use-Case-Diagramm?::Akteure, Anwendungsfälle und ihre Beziehungen innerhalb der Systemgrenze – das Was, nicht das Wie
 Was bedeutet «include»?::Der Basisfall enthält den eingebundenen Fall immer; Pfeil zeigt zum eingebundenen Fall
 Was bedeutet «extend»?::Der erweiternde Fall kommt optional unter einer Bedingung hinzu; Pfeil zeigt zum Basisfall
@@ -73,7 +73,7 @@ Wozu dient die Factory Method?::Objekterzeugung wird in eine Methode ausgelagert
 Wozu dient das Adapter-Muster?::Passt eine vorhandene Schnittstelle an eine erwartete an
 Wozu dient das Strategy-Muster?::Austauschbare Algorithmen hinter einer gemeinsamen Schnittstelle
 Was ist MVC?::Model (Daten/Logik), View (Darstellung), Controller (Eingaben) – Trennung der Verantwortlichkeiten
-Nenne zwei Vorteile von Entwurfsmustern.::Bewährte Lösungen, gemeinsame Sprache im Team, wartbarer und erweiterbarer Code
+Nennen Sie zwei Vorteile von Entwurfsmustern.::Bewährte Lösungen, gemeinsame Sprache im Team, wartbarer und erweiterbarer Code
 
 ## FIAE-5 Datenmodellierung und Normalisierung
 
@@ -86,22 +86,22 @@ Was fordert die 3. Normalform?::2. NF und keine transitiven Abhängigkeiten zwis
 Wie wird eine 1:n-Beziehung in Tabellen umgesetzt?::Fremdschlüssel auf der n-Seite
 Wie wird eine m:n-Beziehung umgesetzt?::Zwischentabelle mit beiden Fremdschlüsseln (meist zusammengesetzter Primärschlüssel)
 Was bedeutet die Kardinalität 1:1?::Jedem Datensatz ist höchstens ein Datensatz der anderen Tabelle zugeordnet
-Nenne drei Merkmale von Datenqualität.::Vollständigkeit, Korrektheit, Konsistenz, Aktualität, Eindeutigkeit (keine Dubletten)
+Nennen Sie drei Merkmale von Datenqualität.::Vollständigkeit, Korrektheit, Konsistenz, Aktualität, Eindeutigkeit (keine Dubletten)
 Wann ist eine NoSQL-Datenbank sinnvoll?::Große, schnell wachsende oder unstrukturierte Datenmengen, hoher Schreibdurchsatz, horizontale Skalierung
 Was bedeutet ACID?::Atomarität, Konsistenz, Isolation, Dauerhaftigkeit von Transaktionen
 
 ## FIAE-6 Benutzeroberflächen, Barrierefreiheit und Usability
 
 Unterschied Wireframe, Mockup und Prototyp?::Wireframe: grobe Struktur · Mockup: detaillierte, statische Gestaltung · Prototyp: klickbar/funktional
-Nenne drei Grundsätze der Dialoggestaltung nach DIN EN ISO 9241-110.::Aufgabenangemessenheit, Selbstbeschreibungsfähigkeit, Erwartungskonformität, Erlernbarkeit, Steuerbarkeit, Robustheit gegen Benutzungsfehler, Benutzerbindung
+Nennen Sie drei Grundsätze der Dialoggestaltung nach DIN EN ISO 9241-110.::Aufgabenangemessenheit, Selbstbeschreibungsfähigkeit, Erwartungskonformität, Erlernbarkeit, Steuerbarkeit, Robustheit gegen Benutzungsfehler, Benutzerbindung
 Wann Radiobuttons, wann Checkboxen?::Radiobuttons: genau eine Auswahl · Checkboxen: beliebig viele
 Wann eine Dropdown-Liste?::Viele Auswahlmöglichkeiten bei wenig Platz, genau eine Auswahl
 Wie wird Usability getestet?::Usability-Test mit echten Nutzern (Thinking Aloud), A/B-Test, Heuristische Evaluation, Eyetracking
 Welches Gesetz fordert seit Juni 2025 barrierefreie digitale Angebote?::Das Barrierefreiheitsstärkungsgesetz (BFSG)
 Welche Richtlinie beschreibt barrierefreie Webinhalte?::WCAG (Web Content Accessibility Guidelines), umgesetzt in der EN 301 549 / BITV 2.0
-Nenne die vier WCAG-Prinzipien.::Wahrnehmbar, bedienbar, verständlich, robust
+Nennen Sie die vier WCAG-Prinzipien.::Wahrnehmbar, bedienbar, verständlich, robust
 Welcher Mindestkontrast gilt für normalen Text?::4,5 : 1 (WCAG AA)
-Nenne drei Maßnahmen für Barrierefreiheit.::Alternativtexte, Tastaturbedienbarkeit, ausreichender Kontrast, skalierbare Schrift, Information nicht nur über Farbe, Untertitel
+Nennen Sie drei Maßnahmen für Barrierefreiheit.::Alternativtexte, Tastaturbedienbarkeit, ausreichender Kontrast, skalierbare Schrift, Information nicht nur über Farbe, Untertitel
 Was bedeutet responsives Design?::Layout passt sich an Bildschirmgröße und Gerät an
 
 ## FIAE-7 Schnittstellen, Web und Architektur

@@ -50,7 +50,7 @@ Ab wie vielen Beschäftigten kann ein Betriebsrat gewählt werden?::Ab 5 ständi
 Amtszeit des Betriebsrats?::4 Jahre
 Wer wählt die JAV?::Beschäftigte unter 18 und alle Auszubildenden (Altersgrenze 25 für Azubis seit 2021 entfallen)
 Amtszeit der JAV?::2 Jahre
-Nenne drei Bereiche echter Mitbestimmung.::Arbeitszeitbeginn/-ende, Urlaubsgrundsätze, technische Überwachung, Betriebsordnung, Entlohnungsgrundsätze
+Nennen Sie drei Bereiche echter Mitbestimmung.::Arbeitszeitbeginn/-ende, Urlaubsgrundsätze, technische Überwachung, Betriebsordnung, Entlohnungsgrundsätze
 Was passiert bei einer Kündigung ohne Anhörung des Betriebsrats?::Sie ist unwirksam
 Was ist eine Betriebsvereinbarung?::Schriftlicher Vertrag zwischen Arbeitgeber und Betriebsrat, der für alle Beschäftigten des Betriebs gilt
 Was bedeutet Tarifautonomie?::Tarifparteien handeln Arbeitsbedingungen ohne staatliche Einmischung aus (Art. 9 GG)
@@ -63,7 +63,7 @@ Was ist eine Aussperrung?::Arbeitskampfmittel der Arbeitgeber – Beschäftigte 
 
 ## WISO-4 Sozialversicherung und Entgelt
 
-Nenne die fünf Zweige der Sozialversicherung.::Kranken-, Pflege-, Renten-, Arbeitslosen- und Unfallversicherung
+Nennen Sie die fünf Zweige der Sozialversicherung.::Kranken-, Pflege-, Renten-, Arbeitslosen- und Unfallversicherung
 Wer ist Träger der Unfallversicherung?::Die Berufsgenossenschaften
 Wer zahlt die Unfallversicherung?::Der Arbeitgeber allein
 Wer ist Träger der Arbeitslosenversicherung?::Die Bundesagentur für Arbeit
@@ -102,7 +102,7 @@ Was ist ein Polypol?::Viele Anbieter und viele Nachfrager
 Was ist ein Oligopol?::Wenige Anbieter, viele Nachfrager
 Was ist ein Monopol?::Ein Anbieter, viele Nachfrager
 Merkmale eines vollkommenen Marktes?::Homogene Güter, keine Präferenzen, vollständige Markttransparenz, unendlich schnelle Reaktion
-Nenne die vier Konjunkturphasen.::Aufschwung, Hochkonjunktur (Boom), Abschwung (Rezession), Tiefstand (Depression)
+Nennen Sie die vier Konjunkturphasen.::Aufschwung, Hochkonjunktur (Boom), Abschwung (Rezession), Tiefstand (Depression)
 Merkmale der Hochkonjunktur?::Vollbeschäftigung, hohe Auslastung, steigende Preise und Löhne
 Was misst das Bruttoinlandsprodukt?::Wert aller im Inland in einem Jahr produzierten Waren und Dienstleistungen
 Ziele des magischen Vierecks?::Stabiles Preisniveau, hoher Beschäftigungsstand, außenwirtschaftliches Gleichgewicht, angemessenes Wirtschaftswachstum

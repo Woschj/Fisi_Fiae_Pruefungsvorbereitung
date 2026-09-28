@@ -5,10 +5,10 @@ tags: [ap2/aufgaben, ap2/wiso]
 # Aufgaben WiSo
 
 Die WiSo-Prüfung besteht aus **30 gebundenen Aufgaben in 60 Minuten** (Auswahl, Zuordnung, Reihenfolge, kurze Rechnungen). Die Aufgaben hier sind bewusst **offen** gestellt: Wer sie frei beantworten kann, erkennt die richtige Auswahlantwort sicher. Schwierigkeit: ★ Einstieg · ★★ Prüfungsniveau.
-**So arbeitest du:** schriftlich antworten, Lösung aufklappen, selbst bewerten. Prüfungssimulation mit Auswahlaufgaben: [[WiSo-Quiz]] · vollständige Probeprüfungen im Prüfungsformat: [[WiSo Probeprüfung 1]] · [[WiSo Probeprüfung 2]] · [[WiSo Probeprüfung 3]]. Hilfsmittel in der Prüfung: nicht programmierbarer Taschenrechner.
+**Arbeitsweise:** schriftlich antworten, Lösung aufklappen, selbst bewerten. Prüfungssimulation mit Auswahlaufgaben: [[WiSo-Quiz]] · vollständige Probeprüfungen im Prüfungsformat: [[WiSo Probeprüfung 1]] · [[WiSo Probeprüfung 2]] · [[WiSo Probeprüfung 3]]. Hilfsmittel in der Prüfung: nicht programmierbarer Taschenrechner.
 
 > [!info] Ausgangssituation
-> **Jana Wolf** (geboren am 14.05.2008) beginnt am 01.08.2025 eine Ausbildung zur Fachinformatikerin bei der **NetPlan Systemhaus GmbH** (fiktiv, 45 Beschäftigte, Sitz in Bochum). Der Betrieb ist tarifgebunden und hat einen Betriebsrat.
+> **Jana Wolf** (geboren am 14.05.2008) beginnt am 01.08.2025 eine Ausbildung zur Fachinformatikerin bei der **NetPlan Systemhaus GmbH** (fiktiv, 45 Beschäftigte, Sitz in Köln). Der Betrieb ist tarifgebunden und hat einen Betriebsrat.
 
 > [!warning] Rechtsstand
 > Zahlen und Beitragssätze entsprechen dem Stand der Module (2025/2026). Die Prüfung gibt Beitragssätze und Grenzwerte in der Regel vor – im Zweifel gilt immer die Angabe in der Aufgabe.
@@ -20,7 +20,7 @@ Die WiSo-Prüfung besteht aus **30 gebundenen Aufgaben in 60 Minuten** (Auswahl,
 ### W1.1 ★★ – Urlaub nach JArbSchG (4 Punkte)
 📘 **Nachlernen:** [[WISO-1 Ausbildung und Jugendarbeitsschutz#Urlaub|WISO-1 › Urlaub]]
 
-Wie viele Werktage Urlaub stehen Jana im Kalenderjahr 2026 mindestens zu? Rechne das Ergebnis auf Arbeitstage bei einer 5-Tage-Woche um.
+Wie viele Werktage Urlaub stehen Jana im Kalenderjahr 2026 mindestens zu? Rechnen Sie das Ergebnis auf Arbeitstage bei einer 5-Tage-Woche um.
 
 > [!success]- Lösung
 > Am **01.01.2026** ist Jana 17 Jahre alt – also „noch nicht 18“ → **25 Werktage** (2 P).
@@ -29,7 +29,7 @@ Wie viele Werktage Urlaub stehen Jana im Kalenderjahr 2026 mindestens zu? Rechne
 ### W1.2 ★★ – Arbeitszeit Jugendlicher (6 Punkte)
 📘 **Nachlernen:** [[WISO-1 Ausbildung und Jugendarbeitsschutz#4. Arbeitszeit und Jugendschutz|WISO-1 › Arbeitszeit und Jugendschutz]]
 
-Jana ist im ersten Ausbildungsjahr noch 17. Nenne die Regeln des JArbSchG zu a) täglicher und wöchentlicher Arbeitszeit, b) Pausen bei 7 Stunden Arbeit, c) Nachtruhe, d) Freizeit zwischen zwei Arbeitstagen, e) Anrechnung eines Berufsschultags mit mehr als 5 Unterrichtsstunden (einmal pro Woche).
+Jana ist im ersten Ausbildungsjahr noch 17. Nennen Sie die Regeln des JArbSchG zu a) täglicher und wöchentlicher Arbeitszeit, b) Pausen bei 7 Stunden Arbeit, c) Nachtruhe, d) Freizeit zwischen zwei Arbeitstagen, e) Anrechnung eines Berufsschultags mit mehr als 5 Unterrichtsstunden (einmal pro Woche).
 
 > [!success]- Lösung
 > a) höchstens **8 h täglich** und **40 h wöchentlich**, 5-Tage-Woche (1,5 P)
@@ -52,7 +52,7 @@ a) Wie lang darf die Probezeit sein? b) Wie kann während der Probezeit gekündi
 ### W1.4 ★ – Pflichten im Ausbildungsverhältnis (4 Punkte)
 📘 **Nachlernen:** [[WISO-1 Ausbildung und Jugendarbeitsschutz#2. Ausbildungsvertrag|WISO-1 › Ausbildungsvertrag]]
 
-Nenne je zwei Pflichten des Ausbildenden und der Auszubildenden.
+Nennen Sie je zwei Pflichten des Ausbildenden und der Auszubildenden.
 
 > [!success]- Lösung (je 1 P)
 > - **Betrieb:** Ausbildungspflicht (Fertigkeiten vermitteln), kostenlose Ausbildungsmittel, Freistellung für Berufsschule und Prüfungen, Vergütung zahlen, Zeugnis ausstellen, nur ausbildungsbezogene Tätigkeiten übertragen
@@ -84,7 +84,7 @@ Ein Kollege ist seit 9 Jahren im Betrieb. a) Wann endet das Arbeitsverhältnis, 
 ### W2.2 ★★ – Kündigungsschutzgesetz (5 Punkte)
 📘 **Nachlernen:** [[WISO-2 Arbeitsvertrag, Kündigung und Arbeitsschutz#Kündigungsschutzgesetz (KSchG)|WISO-2 › Kündigungsschutzgesetz]]
 
-a) Unter welchen Voraussetzungen gilt das KSchG? b) Nenne die drei Gründe, die eine Kündigung sozial rechtfertigen können. c) Welche Frist gilt für die Kündigungsschutzklage?
+a) Unter welchen Voraussetzungen gilt das KSchG? b) Nennen Sie die drei Gründe, die eine Kündigung sozial rechtfertigen können. c) Welche Frist gilt für die Kündigungsschutzklage?
 
 > [!success]- Lösung
 > a) Betrieb mit **mehr als 10** Arbeitnehmern (Vollzeit gerechnet) und Arbeitsverhältnis **länger als 6 Monate** (2 P)
@@ -94,7 +94,7 @@ a) Unter welchen Voraussetzungen gilt das KSchG? b) Nenne die drei Gründe, die 
 ### W2.3 ★ – Arbeitsvertrag (4 Punkte)
 📘 **Nachlernen:** [[WISO-2 Arbeitsvertrag, Kündigung und Arbeitsschutz#1. Arbeitsvertrag|WISO-2 › Arbeitsvertrag]]
 
-Nach der Ausbildung erhält Jana einen Arbeitsvertrag. Nenne vier Angaben, die der Arbeitgeber nach dem Nachweisgesetz schriftlich festhalten muss.
+Nach der Ausbildung erhält Jana einen Arbeitsvertrag. Nennen Sie vier Angaben, die der Arbeitgeber nach dem Nachweisgesetz schriftlich festhalten muss.
 
 > [!success]- Lösung (je 1 P)
 > Namen und Anschriften der Parteien · Beginn (bei Befristung: Ende) · Arbeitsort · Tätigkeitsbeschreibung · Zusammensetzung und Höhe des Entgelts · Arbeitszeit, Pausen, Überstundenregelung · Urlaub · Kündigungsfristen · Probezeit · Hinweis auf Tarifverträge/Betriebsvereinbarungen
@@ -102,7 +102,7 @@ Nach der Ausbildung erhält Jana einen Arbeitsvertrag. Nenne vier Angaben, die d
 ### W2.4 ★ – Sicherheitszeichen (4 Punkte)
 📘 **Nachlernen:** [[WISO-2 Arbeitsvertrag, Kündigung und Arbeitsschutz#Sicherheitszeichen|WISO-2 › Sicherheitszeichen]]
 
-Ordne Farbe und Form den Zeichenarten zu: Verbot, Gebot, Warnung, Rettung.
+Ordnen Sie Farbe und Form den Zeichenarten zu: Verbot, Gebot, Warnung, Rettung.
 
 > [!success]- Lösung (je 1 P)
 > Verbot – **rot**, runder Rand mit Balken · Gebot – **blau**, rund · Warnung – **gelb**, Dreieck · Rettung/Erste Hilfe – **grün**, Rechteck (Brandschutz: rot, Rechteck)
@@ -114,7 +114,7 @@ Ordne Farbe und Form den Zeichenarten zu: Verbot, Gebot, Warnung, Rettung.
 ### W3.1 ★★ – Rechte des Betriebsrats (6 Punkte)
 📘 **Nachlernen:** [[WISO-3 Mitbestimmung und Tarifrecht#1. Betriebsrat|WISO-3 › Betriebsrat]]
 
-Ordne zu, ob der Betriebsrat **mitbestimmt**, **mitwirkt** (Anhörung/Beratung) oder nur **informiert** wird: a) Einführung eines Zeiterfassungssystems mit Auswertung je Person, b) Kündigung eines Mitarbeiters, c) Beginn und Ende der täglichen Arbeitszeit, d) wirtschaftliche Lage des Unternehmens, e) Urlaubsplan, f) Planung eines Neubaus.
+Ordnen Sie zu, ob der Betriebsrat **mitbestimmt**, **mitwirkt** (Anhörung/Beratung) oder nur **informiert** wird: a) Einführung eines Zeiterfassungssystems mit Auswertung je Person, b) Kündigung eines Mitarbeiters, c) Beginn und Ende der täglichen Arbeitszeit, d) wirtschaftliche Lage des Unternehmens, e) Urlaubsplan, f) Planung eines Neubaus.
 
 > [!success]- Lösung (je 1 P)
 > a) Mitbestimmung (technische Einrichtungen zur Überwachung) · b) Mitwirkung (Anhörung – ohne Anhörung ist die Kündigung unwirksam) · c) Mitbestimmung · d) Information (über den Wirtschaftsausschuss) · e) Mitbestimmung · f) Information/Beratung
@@ -131,7 +131,7 @@ a) Ab wie vielen Beschäftigten kann ein Betriebsrat gewählt werden, und wie la
 ### W3.3 ★★ – Tarifverträge (6 Punkte)
 📘 **Nachlernen:** [[WISO-3 Mitbestimmung und Tarifrecht#3. Tarifrecht|WISO-3 › Tarifrecht]]
 
-a) Erkläre Tarifautonomie. b) Unterscheide Manteltarifvertrag und Entgelttarifvertrag. c) Was bedeutet Friedenspflicht? d) Was ist eine Allgemeinverbindlicherklärung?
+a) Erklären Sie Tarifautonomie. b) Unterscheiden Sie Manteltarifvertrag und Entgelttarifvertrag. c) Was bedeutet Friedenspflicht? d) Was ist eine Allgemeinverbindlicherklärung?
 
 > [!success]- Lösung
 > a) Gewerkschaften und Arbeitgeber(verbände) handeln Arbeitsbedingungen **ohne staatliche Einmischung** aus (Art. 9 GG). (1,5 P)
@@ -142,7 +142,7 @@ a) Erkläre Tarifautonomie. b) Unterscheide Manteltarifvertrag und Entgelttarifv
 ### W3.4 ★ – Ablauf einer Tarifrunde (4 Punkte)
 📘 **Nachlernen:** [[WISO-3 Mitbestimmung und Tarifrecht#Ablauf einer Tarifrunde|WISO-3 › Ablauf einer Tarifrunde]]
 
-Bringe in die richtige Reihenfolge: Streik · Kündigung des alten Tarifvertrags · Urabstimmung (mind. 75 %) · Verhandlungen scheitern · Schlichtung · zweite Urabstimmung (mind. 25 % für Annahme) · neue Verhandlungen und Einigung.
+Bringen Sie in die richtige Reihenfolge: Streik · Kündigung des alten Tarifvertrags · Urabstimmung (mind. 75 %) · Verhandlungen scheitern · Schlichtung · zweite Urabstimmung (mind. 25 % für Annahme) · neue Verhandlungen und Einigung.
 
 > [!success]- Lösung
 > Kündigung des alten TV → Verhandlungen scheitern → Schlichtung → Urabstimmung (≥ 75 %) → Streik → neue Verhandlungen und Einigung → zweite Urabstimmung (≥ 25 %) (4 P, je Fehler −1)
@@ -154,7 +154,7 @@ Bringe in die richtige Reihenfolge: Streik · Kündigung des alten Tarifvertrags
 ### W4.1 ★★ – Zweige der Sozialversicherung (5 Punkte)
 📘 **Nachlernen:** [[WISO-4 Sozialversicherung und Entgelt#1. Die fünf Zweige|WISO-4 › Die fünf Zweige]]
 
-Nenne die fünf Zweige mit Träger und gib an, welcher Zweig allein vom Arbeitgeber finanziert wird.
+Nennen Sie die fünf Zweige mit Träger und geben Sie an, welcher Zweig allein vom Arbeitgeber finanziert wird.
 
 > [!success]- Lösung
 > Krankenversicherung – Krankenkassen · Pflegeversicherung – Pflegekassen (bei den Krankenkassen) · Rentenversicherung – Deutsche Rentenversicherung · Arbeitslosenversicherung – Bundesagentur für Arbeit · Unfallversicherung – **Berufsgenossenschaften** (je 0,8 P)
@@ -163,7 +163,7 @@ Nenne die fünf Zweige mit Träger und gib an, welcher Zweig allein vom Arbeitge
 ### W4.2 ★★ – Beiträge berechnen (6 Punkte)
 📘 **Nachlernen:** [[WISO-4 Sozialversicherung und Entgelt#2. Beiträge berechnen|WISO-4 › Beiträge berechnen]]
 
-Janas Ausbildungsvergütung beträgt 1 100 € brutto, sie ist 17 und kinderlos. Beitragssätze: KV 14,6 % + 2,9 % Zusatzbeitrag, PV 3,6 %, RV 18,6 %, AV 2,6 % (alle je zur Hälfte). Berechne den Arbeitnehmeranteil je Zweig und gesamt.
+Janas Ausbildungsvergütung beträgt 1 100 € brutto, sie ist 17 und kinderlos. Beitragssätze: KV 14,6 % + 2,9 % Zusatzbeitrag, PV 3,6 %, RV 18,6 %, AV 2,6 % (alle je zur Hälfte). Berechnen Sie den Arbeitnehmeranteil je Zweig und gesamt.
 
 > [!success]- Lösung
 > - KV: 17,5 % ÷ 2 = 8,75 % → **96,25 €** (1,5 P)
@@ -187,7 +187,7 @@ Jana stürzt auf dem direkten Weg zur Berufsschule mit dem Fahrrad. Welche Versi
 ### W5.1 ★★ – Rechtsformen vergleichen (6 Punkte)
 📘 **Nachlernen:** [[WISO-5 Unternehmen, Rechtsformen und Organisation#2. Rechtsformen|WISO-5 › Rechtsformen]]
 
-Vergleiche GmbH, UG (haftungsbeschränkt) und OHG nach Mindestkapital, Haftung und Geschäftsführung.
+Vergleichen Sie GmbH, UG (haftungsbeschränkt) und OHG nach Mindestkapital, Haftung und Geschäftsführung.
 
 > [!success]- Lösung
 > | | GmbH | UG (haftungsbeschränkt) | OHG |
@@ -200,7 +200,7 @@ Vergleiche GmbH, UG (haftungsbeschränkt) und OHG nach Mindestkapital, Haftung u
 ### W5.2 ★★ – Gewinnverteilung (6 Punkte)
 📘 **Nachlernen:** [[WISO-5 Unternehmen, Rechtsformen und Organisation#Gewinnverteilung|WISO-5 › Gewinnverteilung]]
 
-Eine KG erzielt 90 000 € Gewinn. Einlagen: Komplementärin K 100 000 €, Kommanditist M 50 000 €. Laut Gesellschaftsvertrag erhält K vorab 30 000 € für die Geschäftsführung, dann werden die Einlagen mit 6 % verzinst, der Rest wird im Verhältnis 2 : 1 verteilt. Berechne die Gewinnanteile.
+Eine KG erzielt 90 000 € Gewinn. Einlagen: Komplementärin K 100 000 €, Kommanditist M 50 000 €. Laut Gesellschaftsvertrag erhält K vorab 30 000 € für die Geschäftsführung, dann werden die Einlagen mit 6 % verzinst, der Rest wird im Verhältnis 2 : 1 verteilt. Berechnen Sie die Gewinnanteile.
 
 > [!success]- Lösung
 > - Vorab K: 30 000 € → Rest 60 000 € (1 P)
@@ -219,7 +219,7 @@ Darf a) die Prokuristin ein Grundstück verkaufen, b) die Prokuristin einen Kred
 ### W5.4 ★★ – Organisationsformen (4 Punkte)
 📘 **Nachlernen:** [[WISO-5 Unternehmen, Rechtsformen und Organisation#4. Organisation|WISO-5 › Organisation]]
 
-Erkläre Einlinien- und Stabliniensystem mit je einem Vor- und Nachteil.
+Erklären Sie Einlinien- und Stabliniensystem mit je einem Vor- und Nachteil.
 
 > [!success]- Lösung
 > - **Einliniensystem:** jede Stelle hat genau **einen** Vorgesetzten – klare Zuständigkeiten, aber lange Dienstwege. (2 P)
@@ -232,7 +232,7 @@ Erkläre Einlinien- und Stabliniensystem mit je einem Vor- und Nachteil.
 ### W6.1 ★★ – Marktformen (4 Punkte)
 📘 **Nachlernen:** [[WISO-6 Markt, Wirtschaft und Nachhaltigkeit#Marktformen|WISO-6 › Marktformen]]
 
-Ordne zu: a) wenige große Anbieter von Betriebssystemen, viele Nachfrager, b) ein Anbieter von Trinkwasser in einer Stadt, c) viele Anbieter und viele Nachfrager auf einem Wochenmarkt, d) ein Staat als einziger Nachfrager von Kampfflugzeugen.
+Ordnen Sie zu: a) wenige große Anbieter von Betriebssystemen, viele Nachfrager, b) ein Anbieter von Trinkwasser in einer Stadt, c) viele Anbieter und viele Nachfrager auf einem Wochenmarkt, d) ein Staat als einziger Nachfrager von Kampfflugzeugen.
 
 > [!success]- Lösung (je 1 P)
 > a) Angebotsoligopol · b) Angebotsmonopol · c) Polypol · d) Nachfragemonopol
@@ -240,7 +240,7 @@ Ordne zu: a) wenige große Anbieter von Betriebssystemen, viele Nachfrager, b) e
 ### W6.2 ★★ – Konjunkturphasen (6 Punkte)
 📘 **Nachlernen:** [[WISO-6 Markt, Wirtschaft und Nachhaltigkeit#Konjunkturphasen|WISO-6 › Konjunkturphasen]]
 
-Nenne die vier Konjunkturphasen und ordne zu: a) hohe Arbeitslosigkeit, niedrige Zinsen, geringe Investitionen, b) Auftragseingang steigt, Unternehmen stellen wieder ein, c) Vollbeschäftigung, steigende Preise und Löhne, d) Aufträge gehen zurück, Lagerbestände steigen.
+Nennen Sie die vier Konjunkturphasen und ordnen Sie zu: a) hohe Arbeitslosigkeit, niedrige Zinsen, geringe Investitionen, b) Auftragseingang steigt, Unternehmen stellen wieder ein, c) Vollbeschäftigung, steigende Preise und Löhne, d) Aufträge gehen zurück, Lagerbestände steigen.
 
 > [!success]- Lösung
 > Aufschwung (Expansion), Hochkonjunktur (Boom), Abschwung (Rezession), Tiefstand (Depression) (2 P)
@@ -249,7 +249,7 @@ Nenne die vier Konjunkturphasen und ordne zu: a) hohe Arbeitslosigkeit, niedrige
 ### W6.3 ★ – Nachhaltigkeit (4 Punkte)
 📘 **Nachlernen:** [[WISO-6 Markt, Wirtschaft und Nachhaltigkeit#3. Nachhaltigkeit und Umwelt|WISO-6 › Nachhaltigkeit und Umwelt]]
 
-Nenne die drei Säulen der Nachhaltigkeit und je eine Maßnahme eines IT-Systemhauses.
+Nennen Sie die drei Säulen der Nachhaltigkeit und je eine Maßnahme eines IT-Systemhauses.
 
 > [!success]- Lösung
 > - **Ökologisch:** energieeffiziente Hardware, Refurbished-Geräte, Ökostrom, fachgerechte Entsorgung nach ElektroG (1,5 P)

@@ -45,7 +45,7 @@ Was bedeutet Generizität (List`<T>`)?::Klassen/Methoden mit Typparameter – ty
 
 ## FIAE-11 Testen und Qualitätssicherung
 
-Nenne die vier Teststufen.::Komponenten-/Unit-Test, Integrationstest, Systemtest, Abnahmetest
+Nennen Sie die vier Teststufen.::Komponenten-/Unit-Test, Integrationstest, Systemtest, Abnahmetest
 Unterschied White-Box- und Black-Box-Test?::White-Box: mit Kenntnis des Codes (Überdeckung) · Black-Box: nur gegen die Spezifikation (Ein-/Ausgaben)
 Was fordert die Anweisungsüberdeckung (C0)?::Jede Anweisung wird mindestens einmal ausgeführt
 Was fordert die Zweigüberdeckung (C1)?::Jeder Zweig jeder Entscheidung wird mindestens einmal durchlaufen (wahr und falsch)

@@ -7,7 +7,7 @@ tags: [ap1/aufgaben, ap1/projekt]
 ★ Einstieg · ★★ Prüfungsniveau · ★★★ anspruchsvoll. Unbegrenzte Netzplan- und SLA-Aufgaben: [[Trainer#Projekt & Service]].
 
 > [!info] Ausgangssituation
-> Das **Stadtarchiv Weißenburg** (fiktiv, Behörde mit 45 Arbeitsplätzen) zieht in ein saniertes Gebäude. Dein Ausbildungsbetrieb übernimmt als IT-Dienstleister Planung, Umzug und anschließenden Support.
+> Das **Stadtarchiv Weißenburg** (fiktiv, Behörde mit 45 Arbeitsplätzen) zieht in ein saniertes Gebäude. Ihr Ausbildungsbetrieb übernimmt als IT-Dienstleister Planung, Umzug und anschließenden Support.
 
 ---
 
@@ -16,7 +16,7 @@ tags: [ap1/aufgaben, ap1/projekt]
 ### P1.1 ★ – Projektmerkmale und Ziel (6 Punkte)
 📘 **Nachlernen:** [[P1 Projektmanagement und Vorgehensmodelle#1. Was ist ein Projekt|P1 › Was ist ein Projekt]] · [[P1 Projektmanagement und Vorgehensmodelle#SMART-Ziele|P1 › SMART-Ziele]]
 
-a) Begründe mit drei Merkmalen, warum der IT-Umzug ein Projekt ist. b) Formuliere ein SMART-Ziel für den Umzug.
+a) Begründen Sie mit drei Merkmalen, warum der IT-Umzug ein Projekt ist. b) Formulieren Sie ein SMART-Ziel für den Umzug.
 
 > [!success]- Lösung
 > a) **einmalig** (kein Routineumzug), **zeitlich begrenzt** (Start- und Umzugstermin), **klares Ziel** (alle Arbeitsplätze im neuen Gebäude funktionsfähig), **begrenzte Ressourcen** (Budget, Techniker), fachübergreifend (Archiv, Hausverwaltung, IT) – je 1 P, max. 3
@@ -25,7 +25,7 @@ a) Begründe mit drei Merkmalen, warum der IT-Umzug ein Projekt ist. b) Formulie
 ### P1.2 ★★ – Lastenheft und Pflichtenheft (6 Punkte)
 📘 **Nachlernen:** [[P1 Projektmanagement und Vorgehensmodelle#2. Lastenheft und Pflichtenheft|P1 › Lastenheft und Pflichtenheft]]
 
-Erkläre den Unterschied und nenne je zwei Inhalte für den Umzug.
+Erklären Sie den Unterschied und nennen Sie je zwei Inhalte für den Umzug.
 
 > [!success]- Lösung
 > **Lastenheft** vom **Auftraggeber** (Archiv): *was* gebraucht wird – z. B. „45 Arbeitsplätze mit Netzwerk und Telefonie“, „Digitalisierungsscanner im EG“, „Umzug am Wochenende“. (3 P)
@@ -34,7 +34,7 @@ Erkläre den Unterschied und nenne je zwei Inhalte für den Umzug.
 ### P1.3 ★★ – Risikoanalyse (6 Punkte)
 📘 **Nachlernen:** [[P1 Projektmanagement und Vorgehensmodelle#Stakeholder und Risiken|P1 › Stakeholder und Risiken]]
 
-Nenne drei Risiken des Umzugs, bewerte sie grob und nenne je eine Gegenmaßnahme.
+Nennen Sie drei Risiken des Umzugs, bewerten Sie sie grob und nennen Sie je eine Gegenmaßnahme.
 
 > [!success]- Lösung (je 2 P)
 > | Risiko | Bewertung | Maßnahme |
@@ -46,7 +46,7 @@ Nenne drei Risiken des Umzugs, bewerte sie grob und nenne je eine Gegenmaßnahme
 ### P1.4 ★★ – Vorgehensmodell (6 Punkte)
 📘 **Nachlernen:** [[P1 Projektmanagement und Vorgehensmodelle#Agile Vorgehensweisen – Scrum|P1 › Agile Vorgehensweisen – Scrum]]
 
-Parallel soll eine Web-App für Bürgeranfragen entwickelt werden, deren Funktionen noch nicht genau feststehen. Empfiehl ein Vorgehensmodell und begründe; nenne die drei Scrum-Rollen.
+Parallel soll eine Web-App für Bürgeranfragen entwickelt werden, deren Funktionen noch nicht genau feststehen. Empfehlen Sie ein Vorgehensmodell und begründen Sie; nenne die drei Scrum-Rollen.
 
 > [!success]- Lösung
 > **Scrum/agil**: Anforderungen unklar und veränderlich → kurze Sprints, nach jedem Sprint nutzbares Inkrement, frühes Feedback der Archivmitarbeitenden, Nachsteuern möglich. (3 P)
@@ -68,7 +68,7 @@ Parallel soll eine Web-App für Bürgeranfragen entwickelt werden, deren Funktio
 | E | Switches konfigurieren | 2 | B, C |
 | F | Umzug und Installation | 3 | D, E |
 | G | Test und Abnahme | 1 | F |
-a) Berechne FAZ, FEZ, SAZ, SEZ, GP und FP. b) Gib Projektdauer und kritischen Pfad an. c) Die Lieferung (C) verzögert sich um 2 Tage. Auswirkung?
+a) Berechnen Sie FAZ, FEZ, SAZ, SEZ, GP und FP. b) Geben Sie Projektdauer und kritischen Pfad an. c) Die Lieferung (C) verzögert sich um 2 Tage. Auswirkung?
 
 > [!success]- Lösung
 > **Vorwärts:** A 0–2 · B 2–5 · C 2–9 · D 5–10 · E: FAZ = max(FEZ B 5, FEZ C 9) = **9**, FEZ 11 · F: FAZ = max(FEZ D 10, FEZ E 11) = **11**, FEZ 14 · G 14–15 → **Projektdauer 15**
@@ -90,7 +90,7 @@ a) Berechne FAZ, FEZ, SAZ, SEZ, GP und FP. b) Gib Projektdauer und kritischen Pf
 ### P2.2 ★ – Puffer erklären (4 Punkte)
 📘 **Nachlernen:** [[P2 Netzplan und Zeitplanung#2. Rechenregeln|P2 › Rechenregeln]]
 
-Erkläre am Beispiel von Vorgang D aus P2.1 den Unterschied zwischen Gesamtpuffer und freiem Puffer.
+Erklären Sie am Beispiel von Vorgang D aus P2.1 den Unterschied zwischen Gesamtpuffer und freiem Puffer.
 
 > [!success]- Lösung
 > D hat **GP = 1**: Die Verkabelung darf einen Tag später fertig werden, ohne dass sich das **Projektende** verschiebt. **FP = 1**: Auch der früheste Beginn des Nachfolgers F (Tag 11) wird dann nicht verschoben. Bei B dagegen ist GP = 1, aber FP = 0 – eine Verzögerung von B verschiebt D (dessen Puffer dann aufgebraucht ist), aber noch nicht das Projektende. (4 P)
@@ -103,7 +103,7 @@ Erkläre am Beispiel von Vorgang D aus P2.1 den Unterschied zwischen Gesamtpuffe
 📘 **Nachlernen:** [[P3 IT-Service, Support und Qualität#1. IT-Service-Management (ITSM)|P3 › IT-Service-Management]] · [[P3 IT-Service, Support und Qualität#3. Priorisierung|P3 › Priorisierung]]
 
 Nach dem Umzug gehen ein: (1) Das Archivsystem ist für alle nicht erreichbar. (2) Ein Scanner im Lesesaal druckt Barcodes unscharf, ein Ersatzscanner ist vorhanden. (3) Die Amtsleiterin kann keine Termine im Kalender anlegen, eine Sitzung steht in 30 Minuten an. (4) Ein Mitarbeiter wünscht einen zweiten Monitor.
-a) Ordne jeweils Incident oder Service Request zu. b) Lege eine Bearbeitungsreihenfolge fest und begründe mit Auswirkung und Dringlichkeit.
+a) Ordnen Sie jeweils Incident oder Service Request zu. b) Legen Sie eine Bearbeitungsreihenfolge fest und begründen Sie mit Auswirkung und Dringlichkeit.
 
 > [!success]- Lösung
 > a) (1) Incident · (2) Incident · (3) Incident · (4) **Service Request** (2 P)
@@ -113,7 +113,7 @@ a) Ordne jeweils Incident oder Service Request zu. b) Lege eine Bearbeitungsreih
 📘 **Nachlernen:** [[P3 IT-Service, Support und Qualität#Verfügbarkeit berechnen|P3 › Verfügbarkeit berechnen]] · [[P3 IT-Service, Support und Qualität#4. Service Level Agreement (SLA)|P3 › Service Level Agreement]]
 
 Das SLA garantiert für das Archivsystem **99,5 % Verfügbarkeit** in der Servicezeit Mo–Fr 7–19 Uhr (Monat mit 21 Arbeitstagen). Im Oktober fiel das System zweimal aus: 2 h und 45 min.
-a) Wie viele Stunden Ausfall erlaubt das SLA im Monat? b) Wurde das SLA eingehalten? c) Nenne zwei weitere typische SLA-Inhalte.
+a) Wie viele Stunden Ausfall erlaubt das SLA im Monat? b) Wurde das SLA eingehalten? c) Nennen Sie zwei weitere typische SLA-Inhalte.
 
 > [!success]- Lösung
 > a) Servicezeit: 21 × 12 h = 252 h → 252 × 0,005 = **1,26 h** (≈ 76 min) (3 P)
@@ -124,7 +124,7 @@ a) Wie viele Stunden Ausfall erlaubt das SLA im Monat? b) Wurde das SLA eingehal
 📘 **Nachlernen:** [[P3 IT-Service, Support und Qualität#1. IT-Service-Management (ITSM)|P3 › IT-Service-Management]]
 
 Seit dem Umzug verlieren die PCs im 2. OG mehrmals täglich kurz die Netzwerkverbindung. Der Support startet die Switchports jedes Mal neu.
-a) Bewerte dieses Vorgehen mit den Begriffen Incident, Workaround und Problem. b) Wie sollte weiter vorgegangen werden?
+a) Bewerten Sie dieses Vorgehen mit den Begriffen Incident, Workaround und Problem. b) Wie sollte weiter vorgegangen werden?
 
 > [!success]- Lösung
 > a) Jede Unterbrechung ist ein **Incident**; der Port-Neustart ist ein **Workaround**, der den Betrieb schnell wiederherstellt, aber die Ursache nicht beseitigt. Die wiederkehrenden Störungen deuten auf ein **Problem** hin. (3 P)
@@ -133,7 +133,7 @@ a) Bewerte dieses Vorgehen mit den Begriffen Incident, Workaround und Problem. b
 ### P3.4 ★ – PDCA (4 Punkte)
 📘 **Nachlernen:** [[P3 IT-Service, Support und Qualität#PDCA-Zyklus (Deming-Kreis)|P3 › PDCA-Zyklus]]
 
-Die Nutzer beschweren sich, dass Tickets zu lange unbearbeitet bleiben. Beschreibe eine Verbesserung anhand des PDCA-Zyklus.
+Die Nutzer beschweren sich, dass Tickets zu lange unbearbeitet bleiben. Beschreiben Sie eine Verbesserung anhand des PDCA-Zyklus.
 
 > [!success]- Lösung (je 1 P)
 > **Plan:** Ticketdaten auswerten (Ursache: viele Passwort-Tickets binden den 1st Level), Ziel „Reaktion < 2 h“, Maßnahme Self-Service-Passwortportal · **Do:** Pilot in einer Abteilung · **Check:** Reaktionszeiten und Ticketanzahl messen und mit Ziel vergleichen · **Act:** bei Erfolg für alle einführen, Anleitung veröffentlichen; sonst anpassen und neu planen.
@@ -146,7 +146,7 @@ Die Nutzer beschweren sich, dass Tickets zu lange unbearbeitet bleiben. Beschrei
 📘 **Nachlernen:** [[P4 Kommunikation und Kundenberatung#Vier-Seiten-Modell (Schulz von Thun)|P4 › Vier-Seiten-Modell]]
 
 Die Archivleiterin sagt beim Umzug zum Techniker: „Wir haben hier seit drei Stunden kein Netzwerk.“
-a) Analysiere die Aussage mit dem Vier-Seiten-Modell. b) Formuliere eine professionelle Antwort des Technikers.
+a) Analysieren Sie die Aussage mit dem Vier-Seiten-Modell. b) Formulieren Sie eine professionelle Antwort des Technikers.
 
 > [!success]- Lösung
 > a) **Sachinhalt:** Das Netzwerk funktioniert seit drei Stunden nicht. **Selbstoffenbarung:** Ich bin besorgt/verärgert, wir können nicht arbeiten. **Beziehung:** Ihr kümmert euch nicht ausreichend. **Appell:** Löst das Problem jetzt sofort! (je 1,5 P)
@@ -155,7 +155,7 @@ a) Analysiere die Aussage mit dem Vier-Seiten-Modell. b) Formuliere eine profess
 ### P4.2 ★★ – Bedarfsermittlung (6 Punkte)
 📘 **Nachlernen:** [[P4 Kommunikation und Kundenberatung#Fragetechniken („Wer fragt, der führt“)|P4 › Fragetechniken]]
 
-Der Lesesaal soll neue Recherche-PCs für Besucher bekommen. Formuliere vier Fragen für das Gespräch mit der Archivleitung nach dem Fragetrichter und benenne die Fragetypen.
+Der Lesesaal soll neue Recherche-PCs für Besucher bekommen. Formulieren Sie vier Fragen für das Gespräch mit der Archivleitung nach dem Fragetrichter und benennen Sie die Fragetypen.
 
 > [!success]- Lösung (Beispiel)
 > 1. „Wofür sollen die Besucher die PCs nutzen?“ – **offen**
@@ -167,7 +167,7 @@ Der Lesesaal soll neue Recherche-PCs für Besucher bekommen. Formuliere vier Fra
 ### P4.3 ★ – E-Mail (4 Punkte)
 📘 **Nachlernen:** [[P4 Kommunikation und Kundenberatung#5. Schriftliche Kommunikation – E-Mail-Etikette|P4 › Schriftliche Kommunikation – E-Mail-Etikette]]
 
-Nenne vier Regeln für eine professionelle Mail an alle 45 Mitarbeitenden, die über die Umzugstermine informiert.
+Nennen Sie vier Regeln für eine professionelle Mail an alle 45 Mitarbeitenden, die über die Umzugstermine informiert.
 
 > [!success]- Lösung (je 1 P)
 > aussagekräftiger Betreff („IT-Umzug: Ihre Termine und Vorbereitung“) · klare Struktur mit Terminen und Handlungsanweisungen · sachlich-freundlicher Ton, Anrede/Gruß · interner Verteiler bzw. BCC bei externen Empfängern · Ansprechpartner und Signatur · Rechtschreibung prüfen
@@ -180,7 +180,7 @@ Nenne vier Regeln für eine professionelle Mail an alle 45 Mitarbeitenden, die �
 📘 **Nachlernen:** [[P5 Arbeitsplatz, Ergonomie und Umwelt#2. Der ergonomische Bildschirmarbeitsplatz|P5 › Der ergonomische Bildschirmarbeitsplatz]]
 
 Im neuen Gebäude stehen die Schreibtische frontal vor großen Fenstern, die Monitore auf Notebookständern ohne externe Tastatur.
-a) Nenne zwei Probleme. b) Beschreibe sechs Anforderungen an einen ergonomischen Bildschirmarbeitsplatz.
+a) Nennen Sie zwei Probleme. b) Beschreiben Sie sechs Anforderungen an einen ergonomischen Bildschirmarbeitsplatz.
 
 > [!success]- Lösung
 > a) Blendung durch das Fenster/Gegenlicht; Notebook ohne externe Tastatur → ungünstige Haltung von Nacken und Händen (je 1 P)
@@ -189,7 +189,7 @@ a) Nenne zwei Probleme. b) Beschreibe sechs Anforderungen an einen ergonomischen
 ### P5.2 ★★ – Barrierefreiheit (6 Punkte)
 📘 **Nachlernen:** [[P5 Arbeitsplatz, Ergonomie und Umwelt#4. Barrierefreiheit|P5 › Barrierefreiheit]]
 
-Das neue Bürgerportal des Archivs muss barrierefrei sein. Nenne die gesetzliche Grundlage und drei konkrete Maßnahmen nach den WCAG-Prinzipien.
+Das neue Bürgerportal des Archivs muss barrierefrei sein. Nennen Sie die gesetzliche Grundlage und drei konkrete Maßnahmen nach den WCAG-Prinzipien.
 
 > [!success]- Lösung
 > Grundlage: **BITV 2.0** (öffentliche Stelle) bzw. BFSG für Angebote an Verbraucher; Standard **WCAG** (2 P)
@@ -198,7 +198,7 @@ Das neue Bürgerportal des Archivs muss barrierefrei sein. Nenne die gesetzliche
 ### P5.3 ★ – Entsorgung (4 Punkte)
 📘 **Nachlernen:** [[P5 Arbeitsplatz, Ergonomie und Umwelt#6. Umwelt – Green IT und Entsorgung|P5 › Umwelt – Green IT und Entsorgung]] · [[H2 Massenspeicher und Schnittstellen#1. Massenspeicher|H2 › Massenspeicher]]
 
-Beim Umzug werden 30 alte PCs ausgemustert. Beschreibe das Vorgehen unter Umwelt- und Datenschutzaspekten.
+Beim Umzug werden 30 alte PCs ausgemustert. Beschreiben Sie das Vorgehen unter Umwelt- und Datenschutzaspekten.
 
 > [!success]- Lösung
 > Datenträger **sicher löschen** (zertifizierte Löschsoftware, Secure Erase) oder **physisch vernichten** nach **DIN 66399** mit Nachweis (2 P). Geräte nicht in den Hausmüll: Rückgabe über zertifizierten Entsorger/Sammelstelle nach **ElektroG** bzw. Wiederverwendung (Spende, Refurbishing) (2 P).
@@ -211,7 +211,7 @@ Beim Umzug werden 30 alte PCs ausgemustert. Beschreibe das Vorgehen unter Umwelt
 📘 **Nachlernen:** [[P6 Teamarbeit, Verhandlung und Veränderung#2. Kick-off-Meeting|P6 › Kick-off-Meeting]] · [[P6 Teamarbeit, Verhandlung und Veränderung#1. Teamentwicklung nach Tuckman|P6 › Teamentwicklung nach Tuckman]] · [[P6 Teamarbeit, Verhandlung und Veränderung#Widerstände verstehen|P6 › Widerstände verstehen]]
 
 Im Stadtarchiv soll die papierbasierte Aktenverwaltung durch ein Dokumentenmanagementsystem ersetzt werden. Das Projektteam besteht aus Mitarbeitenden dreier Abteilungen, die sich kaum kennen.
-a) Nenne vier Inhalte des Kick-off-Meetings. b) Nach zwei Wochen gibt es Streit über Zuständigkeiten. Ordne die Situation einer Teamphase nach Tuckman zu und nenne eine Maßnahme. c) Einige langjährige Mitarbeitende lehnen die Umstellung ab. Nenne zwei mögliche Ursachen und je eine passende Maßnahme.
+a) Nennen Sie vier Inhalte des Kick-off-Meetings. b) Nach zwei Wochen gibt es Streit über Zuständigkeiten. Ordnen Sie die Situation einer Teamphase nach Tuckman zu und nennen Sie eine Maßnahme. c) Einige langjährige Mitarbeitende lehnen die Umstellung ab. Nennen Sie zwei mögliche Ursachen und je eine passende Maßnahme.
 
 > [!success]- Lösung
 > a) je 1 P: Projektziele und Nutzen · Umfang/Abgrenzung · Rollen und Verantwortlichkeiten · Zeitplan und Meilensteine · Kommunikationswege · Risiken · nächste Schritte
@@ -222,7 +222,7 @@ a) Nenne vier Inhalte des Kick-off-Meetings. b) Nach zwei Wochen gibt es Streit 
 📘 **Nachlernen:** [[P6 Teamarbeit, Verhandlung und Veränderung#3. Sachbezogen verhandeln – das Harvard-Konzept|P6 › Sachbezogen verhandeln – das Harvard-Konzept]]
 
 Der DMS-Anbieter besteht auf einem Preis von 14 000 €, das Stadtarchiv hat 11 000 € eingeplant.
-a) Erkläre zwei Prinzipien des Harvard-Konzepts an diesem Beispiel. b) Was ist die BATNA des Stadtarchivs?
+a) Erklären Sie zwei Prinzipien des Harvard-Konzepts an diesem Beispiel. b) Was ist die BATNA des Stadtarchivs?
 
 > [!success]- Lösung
 > a) je 2 P: **Interessen statt Positionen** – z. B. klären, dass das Stadtarchiv Planungssicherheit braucht und der Anbieter eine Referenz sucht → Ratenzahlung oder Referenzrabatt · **Optionen zum beiderseitigen Vorteil** – kleinerer Startumfang, Erweiterung später · **Objektive Kriterien** – Marktpreise vergleichbarer Systeme, Anzahl Lizenzen

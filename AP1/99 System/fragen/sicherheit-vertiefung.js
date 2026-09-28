@@ -64,7 +64,7 @@
   // ---------------------------------------------------------------- I3
   { id: "I3-11", modul: "I3", typ: "zahl", niveau: 2, frage: "Vollsicherung 400 GB am Sonntag, danach täglich **inkrementell**, jeden Tag ändern sich 15 GB. Wie viel GB belegen die Sicherungen bis einschließlich Freitag (So + 5 Inkremente)?", richtig: 475, toleranz: 0, einheit: "GB", abschnitt: "Sicherungsarten",
     erklaerung: "400 + 5 × 15 = **475 GB**." },
-  { id: "I3-12", modul: "I3", typ: "zahl", niveau: 2, frage: "Mo Vollsicherung, Di–Fr **inkrementell**. Der Server fällt am Freitag nach der Sicherung aus. Wie viele Sicherungen brauchst du für den Restore?", richtig: 5, toleranz: 0, abschnitt: "Sicherungsarten",
+  { id: "I3-12", modul: "I3", typ: "zahl", niveau: 2, frage: "Mo Vollsicherung, Di–Fr **inkrementell**. Der Server fällt am Freitag nach der Sicherung aus. Wie viele Sicherungen brauchen Sie für den Restore?", richtig: 5, toleranz: 0, abschnitt: "Sicherungsarten",
     erklaerung: "Voll (Mo) + Inkremente Di, Mi, Do, Fr = **5** – in der richtigen Reihenfolge." },
   { id: "I3-13", modul: "I3", typ: "mc", niveau: 2, frage: "Was gibt der **RTO** an?",
     optionen: ["wie viel Datenverlust höchstens tolerierbar ist", "wie lange ein System höchstens ausfallen darf, bis es wiederhergestellt ist", "wie oft gesichert wird", "wie lange Backups aufbewahrt werden"], richtig: 1, abschnitt: "Kennzahlen",

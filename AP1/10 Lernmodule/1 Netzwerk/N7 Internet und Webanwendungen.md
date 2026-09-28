@@ -131,6 +131,9 @@ Das `alt`-Attribut beschreibt das Bild für Screenreader (Barrierefreiheit), die
 | **Cookie-Einwilligung** | für nicht notwendige Cookies (Statistik, Werbung) vorher Einwilligung einholen |
 | **Sicherheit** | HTTPS mit gültigem Zertifikat, Updates, sichere Formulare (Schutz vor SQL-Injection und XSS, [[I5 Bedrohungen und Schutzmaßnahmen]]) |
 
+> [!info] Barrierefreiheitsstärkungsgesetz (BFSG)
+> Seit dem **28.06.2025** müssen u. a. Online-Shops, Online-Terminbuchungen, Banking-Apps und andere digitale Dienstleistungen für Verbraucher barrierefrei sein. Maßstab ist in der Praxis **WCAG 2.1 Stufe AA** (EN 301 549). Ausgenommen sind bei Dienstleistungen **Kleinstunternehmen** mit weniger als 10 Beschäftigten und höchstens 2 Mio. € Jahresumsatz. Prüfen: Tastaturbedienung, Screenreader, Kontrastmessung, automatisierte Tools (z. B. Lighthouse, WAVE).
+
 > [!question]- Kurz nachgedacht: Die Kanzlei will ihre Öffnungszeiten künftig selbst ändern und Termine online vergeben. Statisch oder dynamisch?
 > **Dynamisch mit CMS:** Die Mitarbeitenden pflegen Inhalte über die Weboberfläche; die Terminbuchung braucht serverseitige Verarbeitung und eine Datenbank. Dafür müssen Updates eingeplant und die Formulardaten datenschutzkonform verarbeitet werden (Datenschutzerklärung, TLS, Auftragsverarbeitung mit dem Hoster).
 

@@ -5,11 +5,11 @@ tags: [ap2/aufgaben, ap2/fiae]
 # Aufgaben Planen eines Softwareproduktes
 
 Aufgaben im Stil der AP2 „Planen eines Softwareproduktes“ mit Punkten und Musterlösung – eigene Aufgaben, die sich an den Aufgabentypen der AP2-Aufgaben orientieren. Schwierigkeit: ★ Einstieg · ★★ Prüfungsniveau · ★★★ anspruchsvoll.
-**So arbeitest du:** Zeit stoppen (≈ 0,9 Minuten pro Punkt), Diagramme auf Papier zeichnen, dann Lösung aufklappen und selbst bewerten. Fehler → [[AP2 FIAE Fehlerlog]].
+**Arbeitsweise:** Zeit stoppen (≈ 0,9 Minuten pro Punkt), Diagramme auf Papier zeichnen, dann Lösung aufklappen und selbst bewerten. Fehler → [[AP2 FIAE Fehlerlog]].
 Rechen- und Übungsaufgaben: [[AP2 FIAE Trainer]] · Probeprüfungen: [[AP2/FIAE/20 Aufgaben/Pruefungen/Uebersicht FIAE AP2|Probeprüfungen]].
 
 > [!info] Ausgangssituation für alle Aufgaben
-> Die **FlexiRad GmbH** (fiktiv) betreibt in Münster 2 000 Leihfahrräder an 80 Stationen. Ein Softwarehaus – dein Ausbildungsbetrieb – entwickelt eine neue App mit Backend, über die Kundinnen und Kunden Räder finden, reservieren, ausleihen und bezahlen.
+> Die **FlexiRad GmbH** (fiktiv) betreibt in Köln 2 000 Leihfahrräder an 80 Stationen. Ein Softwarehaus – Ihr Ausbildungsbetrieb – entwickelt eine neue App mit Backend, über die Kundinnen und Kunden Räder finden, reservieren, ausleihen und bezahlen.
 
 ---
 
@@ -18,7 +18,7 @@ Rechen- und Übungsaufgaben: [[AP2 FIAE Trainer]] · Probeprüfungen: [[AP2/FIAE
 ### P1.1 ★★ – Stakeholder (6 Punkte)
 📘 **Nachlernen:** [[FIAE-1 Projektmanagement in der Softwareentwicklung#Stakeholderanalyse|FIAE-1 › Stakeholderanalyse]]
 
-Nenne drei Stakeholder des Projekts mit je einer Erwartung und einer Befürchtung.
+Nennen Sie drei Stakeholder des Projekts mit je einer Erwartung und einer Befürchtung.
 
 > [!success]- Lösung (je Stakeholder 2 P, Beispiele)
 > | Stakeholder | Erwartung | Befürchtung |
@@ -42,7 +42,7 @@ Nenne drei Stakeholder des Projekts mit je einer Erwartung und einer Befürchtun
 | F | Schulungsunterlagen | 2 | D |
 | G | Einführung | 1 | E, F |
 
-Berechne FAZ, FEZ, SAZ, SEZ, Gesamtpuffer und freien Puffer. Gib den kritischen Pfad und die Projektdauer an.
+Berechnen Sie FAZ, FEZ, SAZ, SEZ, Gesamtpuffer und freien Puffer. Geben Sie den kritischen Pfad und die Projektdauer an.
 
 > [!success]- Lösung
 > | Vorgang | FAZ | FEZ | SAZ | SEZ | GP | FP |
@@ -60,7 +60,7 @@ Berechne FAZ, FEZ, SAZ, SEZ, Gesamtpuffer und freien Puffer. Gib den kritischen 
 ### P1.3 ★★ – Klassisch oder agil (5 Punkte)
 📘 **Nachlernen:** [[FIAE-1 Projektmanagement in der Softwareentwicklung#1. Vorgehensmodelle|FIAE-1 › Vorgehensmodelle]] · [[FIAE-1 Projektmanagement in der Softwareentwicklung#Scrum|FIAE-1 › Scrum]]
 
-Die Anforderungen an die App sind zu Beginn nur grob bekannt, FlexiRad möchte früh testen. Empfiehl ein Vorgehensmodell mit zwei Begründungen und erkläre drei Scrum-Artefakte oder -Ereignisse.
+Die Anforderungen an die App sind zu Beginn nur grob bekannt, FlexiRad möchte früh testen. Empfehlen Sie ein Vorgehensmodell mit zwei Begründungen und erklären Sie drei Scrum-Artefakte oder -Ereignisse.
 
 > [!success]- Lösung
 > - **Agil (Scrum)**, weil sich Anforderungen ändern dürfen und nach jedem Sprint ein nutzbares Inkrement entsteht, das FlexiRad früh ausprobieren kann (2 P)
@@ -69,7 +69,7 @@ Die Anforderungen an die App sind zu Beginn nur grob bekannt, FlexiRad möchte f
 ### P1.4 ★ – Risiken und Maßnahmen (4 Punkte)
 📘 **Nachlernen:** [[FIAE-1 Projektmanagement in der Softwareentwicklung#Risiken|FIAE-1 › Risiken]]
 
-Nenne zwei Projektrisiken mit je einer Gegenmaßnahme.
+Nennen Sie zwei Projektrisiken mit je einer Gegenmaßnahme.
 
 > [!success]- Lösung (je 2 P)
 > - Ausfall einer Schlüsselperson → Wissen dokumentieren, Pair Programming, Vertretung
@@ -83,7 +83,7 @@ Nenne zwei Projektrisiken mit je einer Gegenmaßnahme.
 ### P2.1 ★★ – Anforderungen einordnen (5 Punkte)
 📘 **Nachlernen:** [[FIAE-2 Anforderungen und Use Cases#Funktional und nichtfunktional|FIAE-2 › Funktional und nichtfunktional]]
 
-Ordne funktional (F) oder nichtfunktional (NF) zu: a) Die App zeigt freie Räder auf einer Karte an. b) Die Karte lädt in unter 2 Sekunden. c) Kunden können eine Reservierung stornieren. d) Die App ist mit Screenreader bedienbar. e) Das System ist zu 99,5 % verfügbar.
+Ordnen Sie funktional (F) oder nichtfunktional (NF) zu: a) Die App zeigt freie Räder auf einer Karte an. b) Die Karte lädt in unter 2 Sekunden. c) Kunden können eine Reservierung stornieren. d) Die App ist mit Screenreader bedienbar. e) Das System ist zu 99,5 % verfügbar.
 
 > [!success]- Lösung (je 1 P)
 > a) F · b) NF (Effizienz) · c) F · d) NF (Benutzbarkeit/Barrierefreiheit) · e) NF (Zuverlässigkeit)
@@ -91,7 +91,7 @@ Ordne funktional (F) oder nichtfunktional (NF) zu: a) Die App zeigt freie Räder
 ### P2.2 ★★★ – Use-Case-Diagramm (8 Punkte)
 📘 **Nachlernen:** [[FIAE-2 Anforderungen und Use Cases#3. Use-Case-Diagramm|FIAE-2 › Use-Case-Diagramm]]
 
-Beschreibung: Kundinnen können Räder suchen, reservieren und ausleihen. Beim Ausleihen wird immer das Rad entsperrt. Wer ein Rad ausleiht, kann optional einen Schaden melden. Servicekräfte bearbeiten Schadensmeldungen. Der Zahlungsdienstleister ist beim Bezahlen beteiligt, das bei jeder Rückgabe erfolgt. Zeichne das Diagramm (Systemgrenze, Akteure, Anwendungsfälle, Beziehungen).
+Beschreibung: Kundinnen können Räder suchen, reservieren und ausleihen. Beim Ausleihen wird immer das Rad entsperrt. Wer ein Rad ausleiht, kann optional einen Schaden melden. Servicekräfte bearbeiten Schadensmeldungen. Der Zahlungsdienstleister ist beim Bezahlen beteiligt, das bei jeder Rückgabe erfolgt. Zeichnen Sie das Diagramm (Systemgrenze, Akteure, Anwendungsfälle, Beziehungen).
 
 > [!success]- Lösung
 > - **Systemgrenze** „FlexiRad-App“ (1 P)
@@ -102,7 +102,7 @@ Beschreibung: Kundinnen können Räder suchen, reservieren und ausleihen. Beim A
 ### P2.3 ★★ – Qualitätsmerkmale (5 Punkte)
 📘 **Nachlernen:** [[FIAE-2 Anforderungen und Use Cases#2. Softwarequalität nach ISO/IEC 25010|FIAE-2 › Softwarequalität nach ISO/IEC 25010]]
 
-Nenne fünf Qualitätsmerkmale nach ISO/IEC 25010 mit je einer konkreten Anforderung an die App.
+Nennen Sie fünf Qualitätsmerkmale nach ISO/IEC 25010 mit je einer konkreten Anforderung an die App.
 
 > [!success]- Lösung (je 1 P)
 > Funktionale Eignung – Preise korrekt berechnet · Leistungseffizienz – Kartenaufbau < 2 s · Kompatibilität – läuft auf Android und iOS · Benutzbarkeit – Ausleihe in 3 Schritten · Zuverlässigkeit – 99,5 % Verfügbarkeit · Sicherheit – verschlüsselte Übertragung · Wartbarkeit – modulare Architektur, Tests · Übertragbarkeit – Betrieb in anderen Städten
@@ -110,7 +110,7 @@ Nenne fünf Qualitätsmerkmale nach ISO/IEC 25010 mit je einer konkreten Anforde
 ### P2.4 ★ – User Story (3 Punkte)
 📘 **Nachlernen:** [[FIAE-2 Anforderungen und Use Cases#User Stories|FIAE-2 › User Stories]]
 
-Formuliere eine User Story mit zwei Akzeptanzkriterien für die Reservierung.
+Formulieren Sie eine User Story mit zwei Akzeptanzkriterien für die Reservierung.
 
 > [!success]- Lösung
 > „Als **Pendlerin** möchte ich **ein Rad für 15 Minuten reservieren**, damit **es bei meiner Ankunft an der Station noch frei ist**.“ (1 P)
@@ -142,7 +142,7 @@ Ein Rad ist nach der Inbetriebnahme **verfügbar**. Es kann reserviert werden; w
 ### P3.2 ★★ – Sequenzdiagramm mit alt (6 Punkte)
 📘 **Nachlernen:** [[FIAE-3 UML Aktivität, Sequenz und Zustand#2. Sequenzdiagramm|FIAE-3 › Sequenzdiagramm]]
 
-Beschreibe ein Sequenzdiagramm für „Rad ausleihen“ mit den Lebenslinien App, Backend und Schloss: Die App sendet `ausleihen(radId)`, das Backend prüft die Verfügbarkeit. Ist das Rad frei, sendet es `entsperren()` an das Schloss und bestätigt der App; sonst meldet es einen Fehler.
+Beschreiben Sie ein Sequenzdiagramm für „Rad ausleihen“ mit den Lebenslinien App, Backend und Schloss: Die App sendet `ausleihen(radId)`, das Backend prüft die Verfügbarkeit. Ist das Rad frei, sendet es `entsperren()` an das Schloss und bestätigt der App; sonst meldet es einen Fehler.
 
 > [!success]- Lösung
 > - Lebenslinien `:App`, `:Backend`, `:Schloss` mit Aktivierungsbalken (1 P)
@@ -153,7 +153,7 @@ Beschreibe ein Sequenzdiagramm für „Rad ausleihen“ mit den Lebenslinien App
 ### P3.3 ★★ – Aktivitätsdiagramm lesen (5 Punkte)
 📘 **Nachlernen:** [[FIAE-3 UML Aktivität, Sequenz und Zustand#1. Aktivitätsdiagramm|FIAE-3 › Aktivitätsdiagramm]]
 
-Benenne die Elemente und ihre Bedeutung: a) gefüllter Kreis, b) Raute mit einem Ein- und mehreren Ausgängen, c) dicker Balken mit einem Eingang und mehreren Ausgängen, d) dicker Balken mit mehreren Eingängen, e) Swimlanes.
+Benennen Sie die Elemente und ihre Bedeutung: a) gefüllter Kreis, b) Raute mit einem Ein- und mehreren Ausgängen, c) dicker Balken mit einem Eingang und mehreren Ausgängen, d) dicker Balken mit mehreren Eingängen, e) Swimlanes.
 
 > [!success]- Lösung (je 1 P)
 > a) Startknoten · b) Entscheidung (Verzweigung mit Bedingungen in [ ]) · c) Gabelung (Fork) – ab hier **parallel** · d) Vereinigung (Join) – wartet auf alle parallelen Abläufe · e) Partitionen – zeigen, **wer** die Aktion ausführt
@@ -165,7 +165,7 @@ Benenne die Elemente und ihre Bedeutung: a) gefüllter Kreis, b) Raute mit einem
 ### P4.1 ★★ – Beziehungen im Klassendiagramm (6 Punkte)
 📘 **Nachlernen:** [[FIAE-4 Objektorientierter Entwurf und Entwurfsmuster#1. Klassendiagramm|FIAE-4 › Klassendiagramm]]
 
-a) Eine Station hat 0 bis 20 Stellplätze, die ohne Station nicht existieren. b) Eine Station verwaltet beliebig viele Räder, die auch ohne Station existieren. c) E-Bike und Lastenrad sind spezielle Räder. Gib jeweils die Beziehungsart, das UML-Symbol und die Multiplizitäten an.
+a) Eine Station hat 0 bis 20 Stellplätze, die ohne Station nicht existieren. b) Eine Station verwaltet beliebig viele Räder, die auch ohne Station existieren. c) E-Bike und Lastenrad sind spezielle Räder. Geben Sie jeweils die Beziehungsart, das UML-Symbol und die Multiplizitäten an.
 
 > [!success]- Lösung
 > a) **Komposition** – gefüllte Raute an Station; Station `1` — Stellplatz `0..20` (2 P)
@@ -175,7 +175,7 @@ a) Eine Station hat 0 bis 20 Stellplätze, die ohne Station nicht existieren. b)
 ### P4.2 ★★ – Entwurfsmuster zuordnen (6 Punkte)
 📘 **Nachlernen:** [[FIAE-4 Objektorientierter Entwurf und Entwurfsmuster#3. Entwurfsmuster|FIAE-4 › Entwurfsmuster]]
 
-Welches Muster passt? a) Die App soll informiert werden, sobald sich der Akkustand eines E-Bikes ändert. b) Es darf nur ein Konfigurationsobjekt geben. c) Je nach Radtyp wird ein passendes Objekt erzeugt, ohne dass der Aufrufer die Klasse kennt. d) Eine alte Zahlungsbibliothek mit anderer Schnittstelle soll eingebunden werden. e) Der Tarif (Minuten-, Tages-, Abotarif) soll zur Laufzeit austauschbar sein. f) Nenne die Kategorie von a).
+Welches Muster passt? a) Die App soll informiert werden, sobald sich der Akkustand eines E-Bikes ändert. b) Es darf nur ein Konfigurationsobjekt geben. c) Je nach Radtyp wird ein passendes Objekt erzeugt, ohne dass der Aufrufer die Klasse kennt. d) Eine alte Zahlungsbibliothek mit anderer Schnittstelle soll eingebunden werden. e) Der Tarif (Minuten-, Tages-, Abotarif) soll zur Laufzeit austauschbar sein. f) Nennen Sie die Kategorie von a).
 
 > [!success]- Lösung (je 1 P)
 > a) Observer · b) Singleton · c) Factory Method · d) Adapter · e) Strategy · f) Verhaltensmuster (Erzeugungs-, Struktur-, Verhaltensmuster)
@@ -183,7 +183,7 @@ Welches Muster passt? a) Die App soll informiert werden, sobald sich der Akkusta
 ### P4.3 ★★ – Abstrakte Klasse oder Interface (4 Punkte)
 📘 **Nachlernen:** [[FIAE-4 Objektorientierter Entwurf und Entwurfsmuster#2. OOP-Prinzipien|FIAE-4 › OOP-Prinzipien]]
 
-Erkläre zwei Unterschiede zwischen abstrakter Klasse und Interface und entscheide für „Rad“ (gemeinsame Attribute id, position) und „Bezahlbar“ (Methode `berechnePreis()` für Räder, Abos, Gutscheine).
+Erklären Sie zwei Unterschiede zwischen abstrakter Klasse und Interface und entscheiden Sie für „Rad“ (gemeinsame Attribute id, position) und „Bezahlbar“ (Methode `berechnePreis()` für Räder, Abos, Gutscheine).
 
 > [!success]- Lösung
 > - Abstrakte Klasse kann **Attribute und implementierte Methoden** enthalten; ein Interface beschreibt nur einen **Vertrag** (Methodensignaturen). Eine Klasse erbt nur von **einer** Klasse, kann aber **mehrere** Interfaces implementieren. (2 P)
@@ -202,7 +202,7 @@ Erkläre zwei Unterschiede zwischen abstrakter Klasse und Interface und entschei
 | 2 | 17 | Yilmaz | 412 | Dom | Domplatz 5 |
 | 3 | 21 | Becker | 305 | Hbf | Bahnhofstr. 1 |
 
-Erkläre am Beispiel Einfüge-, Änderungs- und Löschanomalie und überführe die Tabelle in die 3. Normalform.
+Erklären Sie am Beispiel Einfüge-, Änderungs- und Löschanomalie und überführen Sie die Tabelle in die 3. Normalform.
 
 > [!success]- Lösung
 > - **Einfüge:** Eine neue Station kann erst gespeichert werden, wenn es eine Ausleihe gibt. (1 P)
@@ -213,7 +213,7 @@ Erkläre am Beispiel Einfüge-, Änderungs- und Löschanomalie und überführe d
 ### P5.2 ★★★ – Tabellenmodell (8 Punkte)
 📘 **Nachlernen:** [[FIAE-5 Datenmodellierung und Normalisierung#ER-Modell in Tabellen überführen|FIAE-5 › ER-Modell in Tabellen überführen]]
 
-Kunden haben genau einen Tarif, ein Tarif gilt für viele Kunden. Kunden leihen Räder aus; zu jeder Ausleihe werden Start, Ende, Start- und Zielstation gespeichert. Räder können viele Schäden haben, ein Schaden gehört zu genau einem Rad und wird von genau einer Servicekraft behoben. Erstelle das Tabellenmodell mit PK, FK und Kardinalitäten.
+Kunden haben genau einen Tarif, ein Tarif gilt für viele Kunden. Kunden leihen Räder aus; zu jeder Ausleihe werden Start, Ende, Start- und Zielstation gespeichert. Räder können viele Schäden haben, ein Schaden gehört zu genau einem Rad und wird von genau einer Servicekraft behoben. Erstellen Sie das Tabellenmodell mit PK, FK und Kardinalitäten.
 
 > [!success]- Lösung
 > - **Tarif** (<u>TarifID</u>, Bezeichnung, PreisProMinute)
@@ -228,7 +228,7 @@ Kunden haben genau einen Tarif, ein Tarif gilt für viele Kunden. Kunden leihen 
 ### P5.3 ★★ – Speicherbedarf abschätzen (4 Punkte)
 📘 **Nachlernen:** [[FIAE-5 Datenmodellierung und Normalisierung#Speicherbedarf abschätzen|FIAE-5 › Speicherbedarf abschätzen]]
 
-Jedes der 2 000 Räder sendet alle 30 Sekunden einen Datensatz mit 64 Byte. Berechne den Speicherbedarf für ein Jahr (365 Tage) in GiB.
+Jedes der 2 000 Räder sendet alle 30 Sekunden einen Datensatz mit 64 Byte. Berechnen Sie den Speicherbedarf für ein Jahr (365 Tage) in GiB.
 
 > [!success]- Lösung
 > - Datensätze je Rad und Tag: 86 400 s ÷ 30 s = 2 880 (1 P)
@@ -238,7 +238,7 @@ Jedes der 2 000 Räder sendet alle 30 Sekunden einen Datensatz mit 64 Byte. Bere
 ### P5.4 ★ – NoSQL (4 Punkte)
 📘 **Nachlernen:** [[FIAE-5 Datenmodellierung und Normalisierung#4. NoSQL und große Datenmengen|FIAE-5 › NoSQL und große Datenmengen]]
 
-Für die Positionsdaten wird eine NoSQL-Datenbank erwogen. Nenne zwei Vorteile und zwei Nachteile gegenüber einer relationalen Datenbank.
+Für die Positionsdaten wird eine NoSQL-Datenbank erwogen. Nennen Sie zwei Vorteile und zwei Nachteile gegenüber einer relationalen Datenbank.
 
 > [!success]- Lösung
 > - **Vorteile:** horizontale Skalierung, hoher Schreibdurchsatz, flexibles Schema (z. B. Zeitreihen-/Dokumentdatenbank) (2 P)
@@ -251,7 +251,7 @@ Für die Positionsdaten wird eine NoSQL-Datenbank erwogen. Nenne zwei Vorteile u
 ### P6.1 ★★ – Mockup bewerten (6 Punkte)
 📘 **Nachlernen:** [[FIAE-6 Benutzeroberflächen, Barrierefreiheit und Usability#2. Usability|FIAE-6 › Usability]]
 
-Der Entwurf der Registrierungsseite hat: graue Schrift auf hellgrauem Grund, ein Freitextfeld für das Geburtsdatum, keine Pflichtfeldmarkierung, den Button „Abbrechen“ grün und groß, „Registrieren“ klein und grau, Fehlermeldung „Error 17“. Nenne drei Mängel mit Verbesserung.
+Der Entwurf der Registrierungsseite hat: graue Schrift auf hellgrauem Grund, ein Freitextfeld für das Geburtsdatum, keine Pflichtfeldmarkierung, den Button „Abbrechen“ grün und groß, „Registrieren“ klein und grau, Fehlermeldung „Error 17“. Nennen Sie drei Mängel mit Verbesserung.
 
 > [!success]- Lösung (je 2 P)
 > - Zu geringer **Kontrast** → mindestens 4,5 : 1 (WCAG)
@@ -263,7 +263,7 @@ Der Entwurf der Registrierungsseite hat: graue Schrift auf hellgrauem Grund, ein
 ### P6.2 ★★ – Barrierefreiheit (6 Punkte)
 📘 **Nachlernen:** [[FIAE-6 Benutzeroberflächen, Barrierefreiheit und Usability#3. Barrierefreiheit|FIAE-6 › Barrierefreiheit]]
 
-a) Warum ist Barrierefreiheit für die App auch rechtlich relevant? b) Nenne vier Maßnahmen für Menschen mit Seh- oder Motorikeinschränkungen.
+a) Warum ist Barrierefreiheit für die App auch rechtlich relevant? b) Nennen Sie vier Maßnahmen für Menschen mit Seh- oder Motorikeinschränkungen.
 
 > [!success]- Lösung
 > a) Das **Barrierefreiheitsstärkungsgesetz** (BFSG, seit 28.06.2025) verpflichtet u. a. Anbieter von Dienstleistungen im elektronischen Geschäftsverkehr zu barrierefreien Angeboten; Maßstab sind die WCAG-Kriterien. (2 P)
@@ -272,7 +272,7 @@ a) Warum ist Barrierefreiheit für die App auch rechtlich relevant? b) Nenne vie
 ### P6.3 ★ – Steuerelemente wählen (4 Punkte)
 📘 **Nachlernen:** [[FIAE-6 Benutzeroberflächen, Barrierefreiheit und Usability#Steuerelemente passend wählen|FIAE-6 › Steuerelemente passend wählen]]
 
-Wähle ein Steuerelement: a) genau eine von drei Tarifarten, b) beliebig viele Benachrichtigungen, c) Station aus 80 Einträgen, d) Zustimmung zu den AGB.
+Wählen Sie ein Steuerelement: a) genau eine von drei Tarifarten, b) beliebig viele Benachrichtigungen, c) Station aus 80 Einträgen, d) Zustimmung zu den AGB.
 
 > [!success]- Lösung (je 1 P)
 > a) Radiobuttons · b) Checkboxen bzw. Schalter · c) Dropdown mit Suche/Autovervollständigung · d) einzelne Checkbox (nicht vorausgewählt)
@@ -284,7 +284,7 @@ Wähle ein Steuerelement: a) genau eine von drei Tarifarten, b) beliebig viele B
 ### P7.1 ★★ – REST-Schnittstelle (6 Punkte)
 📘 **Nachlernen:** [[FIAE-7 Schnittstellen, Web und Architektur#1. REST-API|FIAE-7 › REST-API]] · [[FIAE-7 Schnittstellen, Web und Architektur#Aufbau eines Requests|FIAE-7 › Aufbau eines Requests]]
 
-Die App nutzt die Ressource `/stationen/{id}/raeder`. a) Gib Methode und URL an für: alle Räder der Station 12 lesen, eine Reservierung anlegen, Reservierung 99 stornieren, Akkustand von Rad 305 ändern. b) Erkläre zwei Merkmale von REST.
+Die App nutzt die Ressource `/stationen/{id}/raeder`. a) Geben Sie Methode und URL an für: alle Räder der Station 12 lesen, eine Reservierung anlegen, Reservierung 99 stornieren, Akkustand von Rad 305 ändern. b) Erklären Sie zwei Merkmale von REST.
 
 > [!success]- Lösung
 > a) `GET /stationen/12/raeder` · `POST /reservierungen` (Daten im Body) · `DELETE /reservierungen/99` · `PATCH /raeder/305` bzw. PUT (je 1 P)
@@ -301,7 +301,7 @@ Welcher Statuscode passt? a) Reservierung angelegt, b) Rad-ID existiert nicht, c
 ### P7.3 ★★ – Datenformate (4 Punkte)
 📘 **Nachlernen:** [[FIAE-7 Schnittstellen, Web und Architektur#2. Datenformate|FIAE-7 › Datenformate]]
 
-Gib eine Station (id 12, name „Hbf“, freie Räder 7) als JSON und als XML an und erkläre die Aufgabe einer XSD.
+Geben Sie eine Station (id 12, name „Hbf“, freie Räder 7) als JSON und als XML an und erklären Sie die Aufgabe einer XSD.
 
 > [!success]- Lösung
 > - JSON: `{"id": 12, "name": "Hbf", "freieRaeder": 7}` (1 P)
@@ -311,7 +311,7 @@ Gib eine Station (id 12, name „Hbf“, freie Räder 7) als JSON und als XML an
 ### P7.4 ★ – Netzwerkgrundlagen (4 Punkte)
 📘 **Nachlernen:** [[FIAE-7 Schnittstellen, Web und Architektur#4. Netzwerkgrundlagen für Entwickler|FIAE-7 › Netzwerkgrundlagen für Entwickler]]
 
-Nenne Protokoll und Standardport: a) API-Zugriff verschlüsselt, b) Namensauflösung der API-Domain, c) Verbindung zur PostgreSQL-Datenbank, d) Wartungszugang zum Server.
+Nennen Sie Protokoll und Standardport: a) API-Zugriff verschlüsselt, b) Namensauflösung der API-Domain, c) Verbindung zur PostgreSQL-Datenbank, d) Wartungszugang zum Server.
 
 > [!success]- Lösung (je 1 P)
 > a) HTTPS, TCP 443 · b) DNS, UDP/TCP 53 · c) PostgreSQL, TCP 5432 · d) SSH, TCP 22
@@ -323,7 +323,7 @@ Nenne Protokoll und Standardport: a) API-Zugriff verschlüsselt, b) Namensauflö
 ### P8.1 ★★ – Passwörter speichern (6 Punkte)
 📘 **Nachlernen:** [[FIAE-8 Sicherheit in der Softwareentwicklung#3. Passwörter sicher speichern|FIAE-8 › Passwörter sicher speichern]]
 
-Ein Kollege möchte Passwörter mit SHA-256 ohne Salt speichern. Erkläre das Problem, die Aufgabe eines Salts und ein besser geeignetes Verfahren.
+Ein Kollege möchte Passwörter mit SHA-256 ohne Salt speichern. Erklären Sie das Problem, die Aufgabe eines Salts und ein besser geeignetes Verfahren.
 
 > [!success]- Lösung
 > - Gleiche Passwörter ergeben gleiche Hashes; mit **Rainbow Tables** und schnellen GPU-Angriffen lassen sich SHA-256-Hashes gängiger Passwörter schnell finden. (2 P)
@@ -336,7 +336,7 @@ Ein Kollege möchte Passwörter mit SHA-256 ohne Salt speichern. Erkläre das Pr
 ```
 sql = "SELECT * FROM kunde WHERE email = '" + eingabe + "'"
 ```
-a) Zeige mit einer Eingabe, wie ein Angreifer alle Kunden ausliest. b) Beschreibe die richtige Gegenmaßnahme. c) Nenne eine weitere Schutzmaßnahme.
+a) Zeigen Sie mit einer Eingabe, wie ein Angreifer alle Kunden ausliest. b) Beschreiben Sie die richtige Gegenmaßnahme. c) Nennen Sie eine weitere Schutzmaßnahme.
 
 > [!success]- Lösung
 > a) `' OR '1'='1` → `WHERE email = '' OR '1'='1'` ist immer wahr (2 P)
@@ -346,7 +346,7 @@ a) Zeige mit einer Eingabe, wie ein Angreifer alle Kunden ausliest. b) Beschreib
 ### P8.3 ★★ – Schutzziele (4 Punkte)
 📘 **Nachlernen:** [[FIAE-8 Sicherheit in der Softwareentwicklung#1. Schutzziele|FIAE-8 › Schutzziele]]
 
-Ordne dem passenden Schutzziel zu: a) Die Befehle an die Schlösser dürfen nicht verändert werden. b) Standortdaten dürfen nur Berechtigte sehen. c) Die Ausleihe muss rund um die Uhr funktionieren. d) Der Befehl muss nachweislich vom Backend stammen.
+Ordnen Sie dem passenden Schutzziel zu: a) Die Befehle an die Schlösser dürfen nicht verändert werden. b) Standortdaten dürfen nur Berechtigte sehen. c) Die Ausleihe muss rund um die Uhr funktionieren. d) Der Befehl muss nachweislich vom Backend stammen.
 
 > [!success]- Lösung (je 1 P)
 > a) Integrität · b) Vertraulichkeit · c) Verfügbarkeit · d) Authentizität (Verbindlichkeit)
@@ -354,7 +354,7 @@ Ordne dem passenden Schutzziel zu: a) Die Befehle an die Schlösser dürfen nich
 ### P8.4 ★ – Datenschutz in der App (4 Punkte)
 📘 **Nachlernen:** [[FIAE-8 Sicherheit in der Softwareentwicklung#5. Datenschutz in Anwendungen|FIAE-8 › Datenschutz in Anwendungen]]
 
-Erkläre „Privacy by Design“ und „Privacy by Default“ mit je einem Beispiel für die Standortdaten.
+Erklären Sie „Privacy by Design“ und „Privacy by Default“ mit je einem Beispiel für die Standortdaten.
 
 > [!success]- Lösung
 > - **Privacy by Design:** Datenschutz schon in der Architektur berücksichtigen – z. B. Positionsdaten nur während der Ausleihe erheben und nach Abrechnung pseudonymisieren/löschen. (2 P)

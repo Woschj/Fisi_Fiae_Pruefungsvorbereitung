@@ -5,11 +5,11 @@ tags: [ap2/aufgaben, ap2/fisi]
 # Aufgaben Netzwerke
 
 Aufgaben im Stil der AP2 „Analyse und Entwicklung von Netzwerken“ mit Punkten und Musterlösung – eigene Aufgaben, die sich an den Aufgabentypen der AP2-Aufgaben orientieren. Schwierigkeit: ★ Einstieg · ★★ Prüfungsniveau · ★★★ anspruchsvoll.
-**So arbeitest du:** Zeit stoppen (≈ 0,9 Minuten pro Punkt), schriftlich lösen, dann Lösung aufklappen und selbst bewerten. Fehler → [[AP2 FISI Fehlerlog]].
+**Arbeitsweise:** Zeit stoppen (≈ 0,9 Minuten pro Punkt), schriftlich lösen, dann Lösung aufklappen und selbst bewerten. Fehler → [[AP2 FISI Fehlerlog]].
 Unbegrenzte Rechenaufgaben (Subnetting, IPv6, Bandbreite, Übertragungszeit): [[AP2 FISI Trainer]] · Probeprüfungen: [[AP2/FISI/20 Aufgaben/Pruefungen/Uebersicht FISI AP2|Probeprüfungen]].
 
 > [!info] Ausgangssituation für alle Aufgaben
-> Die **Brenner Logistik GmbH** (fiktiv) vernetzt ihre Zentrale in Dortmund und das Lager in Hamm neu: VLANs, eine DMZ für Webshop und Mailserver, WLAN im Lager und ein Site-to-Site-VPN. Du planst und dokumentierst das Netz.
+> Die **Brenner Logistik GmbH** (fiktiv) vernetzt ihre Zentrale in Köln und das Lager in Frechen neu: VLANs, eine DMZ für Webshop und Mailserver, WLAN im Lager und ein Site-to-Site-VPN. Sie planen und dokumentieren das Netz.
 
 ---
 
@@ -18,7 +18,7 @@ Unbegrenzte Rechenaufgaben (Subnetting, IPv6, Bandbreite, Übertragungszeit): [[
 ### N9.1 ★★ – Adresse analysieren (6 Punkte)
 📘 **Nachlernen:** [[FISI-9 IPv4-Subnetting und Routing#1. Adresse analysieren|FISI-9 › Adresse analysieren]]
 
-Ein Scanner im Lager hat die Adresse **172.20.37.130/26**. Bestimme Netzadresse, Broadcastadresse, ersten und letzten nutzbaren Host sowie die Anzahl nutzbarer Hosts.
+Ein Scanner im Lager hat die Adresse **172.20.37.130/26**. Bestimmen Sie Netzadresse, Broadcastadresse, ersten und letzten nutzbaren Host sowie die Anzahl nutzbarer Hosts.
 
 > [!success]- Lösung
 > /26 → Blockgröße 64 im 4. Oktett; 130 liegt im Block 128–191.
@@ -27,7 +27,7 @@ Ein Scanner im Lager hat die Adresse **172.20.37.130/26**. Bestimme Netzadresse,
 ### N9.2 ★★★ – VLSM planen (10 Punkte)
 📘 **Nachlernen:** [[FISI-9 IPv4-Subnetting und Routing#VLSM|FISI-9 › VLSM]]
 
-Für die Zentrale steht **10.40.8.0/22** zur Verfügung. Benötigt werden: Lager 400 Hosts, Verwaltung 200 Hosts, Server 50 Hosts, Management 20 Hosts und zwei Transfernetze mit je 2 Hosts. Vergib die Netze lückenlos, beginnend mit dem größten, und gib jeweils Netzadresse/Präfix und Broadcast an.
+Für die Zentrale steht **10.40.8.0/22** zur Verfügung. Benötigt werden: Lager 400 Hosts, Verwaltung 200 Hosts, Server 50 Hosts, Management 20 Hosts und zwei Transfernetze mit je 2 Hosts. Vergib die Netze lückenlos, beginnend mit dem größten, und geben Sie jeweils Netzadresse/Präfix und Broadcast an.
 
 > [!success]- Lösung
 > | Netz | Bedarf | Präfix | Netzadresse | Broadcast |
@@ -43,7 +43,7 @@ Für die Zentrale steht **10.40.8.0/22** zur Verfügung. Benötigt werden: Lager
 ### N9.3 ★★ – Routingtabelle erstellen (6 Punkte)
 📘 **Nachlernen:** [[FISI-9 IPv4-Subnetting und Routing#3. Routing|FISI-9 › Routing]]
 
-Router R1 (Zentrale) hat: eth0 192.168.10.1/24 (LAN Zentrale), eth1 10.255.0.1/30 (Transfernetz zu R2 in Hamm, R2 = 10.255.0.2), eth2 203.0.113.2/30 (Provider, Gateway 203.0.113.1). Hinter R2 liegt das LAN Hamm 192.168.20.0/24. Erstelle die Routingtabelle von R1.
+Router R1 (Zentrale) hat: eth0 192.168.10.1/24 (LAN Zentrale), eth1 10.255.0.1/30 (Transfernetz zu R2 in Frechen, R2 = 10.255.0.2), eth2 203.0.113.2/30 (Provider, Gateway 203.0.113.1). Hinter R2 liegt das LAN Frechen 192.168.20.0/24. Erstellen Sie die Routingtabelle von R1.
 
 > [!success]- Lösung
 > | Ziel | Maske/Präfix | Gateway | Interface |
@@ -58,7 +58,7 @@ Router R1 (Zentrale) hat: eth0 192.168.10.1/24 (LAN Zentrale), eth1 10.255.0.1/3
 ### N9.4 ★ – Statisch oder dynamisch routen (4 Punkte)
 📘 **Nachlernen:** [[FISI-9 IPv4-Subnetting und Routing#Statisch oder dynamisch|FISI-9 › Statisch oder dynamisch]]
 
-Nenne je zwei Vor- oder Nachteile von statischem und dynamischem Routing und entscheide für das Netz mit zwei Standorten.
+Nennen Sie je zwei Vor- oder Nachteile von statischem und dynamischem Routing und entscheiden Sie für das Netz mit zwei Standorten.
 
 > [!success]- Lösung
 > - **Statisch:** + einfach, kein Protokoll-Overhead, gut kontrollierbar · − passt sich bei Ausfällen nicht an, Pflegeaufwand in großen Netzen (1,5 P)
@@ -68,7 +68,7 @@ Nenne je zwei Vor- oder Nachteile von statischem und dynamischem Routing und ent
 ### N9.5 ★★ – Redundantes Gateway (4 Punkte)
 📘 **Nachlernen:** [[FISI-9 IPv4-Subnetting und Routing#Redundantes Gateway (FHRP)|FISI-9 › Redundantes Gateway]]
 
-In der Zentrale sollen zwei Router das Standardgateway bereitstellen. Erkläre, wie VRRP funktioniert und was die Clients davon bemerken.
+In der Zentrale sollen zwei Router das Standardgateway bereitstellen. Erklären Sie, wie VRRP funktioniert und was die Clients davon bemerken.
 
 > [!success]- Lösung
 > - Beide Router teilen sich eine **virtuelle IP- und MAC-Adresse**; einer ist Master und beantwortet sie, der andere ist Backup und überwacht den Master über Hello-Nachrichten. (2 P)
@@ -82,7 +82,7 @@ In der Zentrale sollen zwei Router das Standardgateway bereitstellen. Erkläre, 
 ### N10.1 ★ – Adressen kürzen (4 Punkte)
 📘 **Nachlernen:** [[FISI-10 IPv6 im Unternehmen#1. Schreibweise|FISI-10 › Schreibweise]]
 
-Kürze: a) `2001:0db8:0a00:0000:0000:0000:0000:0010` b) `fe80:0000:0000:0000:0212:34ff:fe56:789a`
+Kürzen Sie: a) `2001:0db8:0a00:0000:0000:0000:0000:0010` b) `fe80:0000:0000:0000:0212:34ff:fe56:789a`
 
 > [!success]- Lösung
 > a) `2001:db8:a00::10` (2 P) · b) `fe80::212:34ff:fe56:789a` (2 P)
@@ -91,7 +91,7 @@ Kürze: a) `2001:0db8:0a00:0000:0000:0000:0000:0010` b) `fe80:0000:0000:0000:021
 ### N10.2 ★★ – /64-Netze aus einem /56 (6 Punkte)
 📘 **Nachlernen:** [[FISI-10 IPv6 im Unternehmen#2. /64-Netze bilden|FISI-10 › /64-Netze bilden]]
 
-Der Provider weist das Präfix **2001:db8:4c:ab00::/56** zu. a) Wie viele /64-Netze sind möglich? b) Gib die ersten drei und das letzte /64-Netz an. c) Warum sollte man bei IPv6 keine kleineren Netze als /64 für Endgeräte bilden?
+Der Provider weist das Präfix **2001:db8:4c:ab00::/56** zu. a) Wie viele /64-Netze sind möglich? b) Geben Sie die ersten drei und das letzte /64-Netz an. c) Warum sollte man bei IPv6 keine kleineren Netze als /64 für Endgeräte bilden?
 
 > [!success]- Lösung
 > a) 2⁶⁴⁻⁵⁶ = 2⁸ = **256** (1 P)
@@ -101,7 +101,7 @@ Der Provider weist das Präfix **2001:db8:4c:ab00::/56** zu. a) Wie viele /64-Ne
 ### N10.3 ★★ – Adresstypen erkennen (5 Punkte)
 📘 **Nachlernen:** [[FISI-10 IPv6 im Unternehmen#Adresstypen|FISI-10 › Adresstypen]]
 
-Ordne zu: a) `::1` b) `fe80::1a2b` c) `fd12:3456:789a::10` d) `ff02::1` e) `2a02:8100:1:2::5`
+Ordnen Sie zu: a) `::1` b) `fe80::1a2b` c) `fd12:3456:789a::10` d) `ff02::1` e) `2a02:8100:1:2::5`
 
 > [!success]- Lösung (je 1 P)
 > a) Loopback · b) Link-Local (nur im eigenen Segment) · c) Unique Local Address (privat, ähnlich 10.0.0.0/8) · d) Multicast an alle Knoten im Link · e) Global Unicast (öffentlich routbar)
@@ -109,7 +109,7 @@ Ordne zu: a) `::1` b) `fe80::1a2b` c) `fd12:3456:789a::10` d) `ff02::1` e) `2a02
 ### N10.4 ★★ – SLAAC oder DHCPv6 (4 Punkte)
 📘 **Nachlernen:** [[FISI-10 IPv6 im Unternehmen#3. Adressvergabe|FISI-10 › Adressvergabe]]
 
-Erkläre SLAAC und nenne zwei Gründe, warum ein Unternehmen stattdessen DHCPv6 (stateful) einsetzen könnte.
+Erklären Sie SLAAC und nennen Sie zwei Gründe, warum ein Unternehmen stattdessen DHCPv6 (stateful) einsetzen könnte.
 
 > [!success]- Lösung
 > - **SLAAC:** Der Router sendet Router Advertisements mit dem Präfix; der Client bildet seine Adresse selbst (Präfix + Interface-ID). (2 P)
@@ -122,7 +122,7 @@ Erkläre SLAAC und nenne zwei Gründe, warum ein Unternehmen stattdessen DHCPv6 
 ### N11.1 ★★ – VLAN und Tagging (6 Punkte)
 📘 **Nachlernen:** [[FISI-11 Switching, VLAN und Verkabelung#1. VLAN|FISI-11 › VLAN]] · [[FISI-11 Switching, VLAN und Verkabelung#Tagging nach IEEE 802.1Q|FISI-11 › Tagging]]
 
-a) Nenne drei Vorteile von VLANs. b) Erkläre, was beim Tagging nach IEEE 802.1Q mit dem Ethernet-Frame passiert. c) Auf welcher OSI-Schicht arbeitet das Tag?
+a) Nennen Sie drei Vorteile von VLANs. b) Erklären Sie, was beim Tagging nach IEEE 802.1Q mit dem Ethernet-Frame passiert. c) Auf welcher OSI-Schicht arbeitet das Tag?
 
 > [!success]- Lösung
 > a) kleinere Broadcast-Domänen, Sicherheit durch Trennung (Verkehr zwischen VLANs nur über Router/Firewall), flexible Zuordnung unabhängig vom Standort, Priorisierung (je 1 P)
@@ -132,7 +132,7 @@ a) Nenne drei Vorteile von VLANs. b) Erkläre, was beim Tagging nach IEEE 802.1Q
 ### N11.2 ★★ – Switchports konfigurieren (6 Punkte)
 📘 **Nachlernen:** [[FISI-11 Switching, VLAN und Verkabelung#Tagging nach IEEE 802.1Q|FISI-11 › Tagging]]
 
-VLANs: 10 Verwaltung, 20 Lager, 30 Voice, 99 Management. Gib für jeden Port an, welche VLANs **untagged** und welche **tagged** konfiguriert werden: a) PC der Buchhaltung, b) IP-Telefon mit angeschlossenem PC der Verwaltung, c) Uplink zum Router (Router-on-a-Stick), d) Access Point mit SSIDs für Lager und Verwaltung, der selbst im Management-VLAN verwaltet wird.
+VLANs: 10 Verwaltung, 20 Lager, 30 Voice, 99 Management. Geben Sie für jeden Port an, welche VLANs **untagged** und welche **tagged** konfiguriert werden: a) PC der Buchhaltung, b) IP-Telefon mit angeschlossenem PC der Verwaltung, c) Uplink zum Router (Router-on-a-Stick), d) Access Point mit SSIDs für Lager und Verwaltung, der selbst im Management-VLAN verwaltet wird.
 
 > [!success]- Lösung
 > | Port | untagged | tagged |
@@ -146,7 +146,7 @@ VLANs: 10 Verwaltung, 20 Lager, 30 Voice, 99 Management. Gib für jeden Port an,
 ### N11.3 ★★ – DHCP über VLAN-Grenzen (5 Punkte)
 📘 **Nachlernen:** [[FISI-11 Switching, VLAN und Verkabelung#DHCP über VLAN-Grenzen|FISI-11 › DHCP über VLAN-Grenzen]]
 
-Der DHCP-Server steht im Server-VLAN. Clients im Lager-VLAN erhalten keine Adresse und haben 169.254.x.x. Erkläre die Ursache und die Lösung.
+Der DHCP-Server steht im Server-VLAN. Clients im Lager-VLAN erhalten keine Adresse und haben 169.254.x.x. Erklären Sie die Ursache und die Lösung.
 
 > [!success]- Lösung
 > - DHCP-Discover ist ein **Broadcast**; Broadcasts werden vom Router nicht in andere VLANs weitergeleitet. Die Clients erreichen den Server nicht und vergeben sich eine **APIPA-Adresse**. (2,5 P)
@@ -155,7 +155,7 @@ Der DHCP-Server steht im Server-VLAN. Clients im Lager-VLAN erhalten keine Adres
 ### N11.4 ★ – Glasfaser oder Kupfer (4 Punkte)
 📘 **Nachlernen:** [[FISI-11 Switching, VLAN und Verkabelung#Glasfaser oder Kupfer|FISI-11 › Glasfaser oder Kupfer]]
 
-Die Lagerhalle liegt 180 m vom Verteiler entfernt. Begründe, welches Medium du wählst, und nenne das nötige Bauteil am Switch.
+Die Lagerhalle liegt 180 m vom Verteiler entfernt. Begründen Sie, welches Übertragungsmedium Sie wählen, und nennen Sie das nötige Bauteil am Switch.
 
 > [!success]- Lösung
 > - **Glasfaser** (Multimode OM4 oder Singlemode), weil Twisted-Pair nur **100 m** erlaubt; zusätzlich unempfindlich gegen elektromagnetische Störungen (Hallengeräte) und Potenzialunterschiede zwischen Gebäuden. (3 P)
@@ -164,7 +164,7 @@ Die Lagerhalle liegt 180 m vom Verteiler entfernt. Begründe, welches Medium du 
 ### N11.5 ★★ – STP und Link Aggregation (4 Punkte)
 📘 **Nachlernen:** [[FISI-11 Switching, VLAN und Verkabelung#3. Redundanz zwischen Switches|FISI-11 › Redundanz zwischen Switches]]
 
-Zwei Switches werden mit zwei Kabeln verbunden. Erkläre, was STP und was Link Aggregation (LACP) in dieser Situation bewirken.
+Zwei Switches werden mit zwei Kabeln verbunden. Erklären Sie, was STP und was Link Aggregation (LACP) in dieser Situation bewirken.
 
 > [!success]- Lösung
 > - **STP:** verhindert Schleifen (Broadcast-Stürme), indem es eine Verbindung **blockiert**; sie wird erst bei Ausfall der anderen aktiv – Redundanz, aber keine höhere Bandbreite. (2 P)
@@ -177,7 +177,7 @@ Zwei Switches werden mit zwei Kabeln verbunden. Erkläre, was STP und was Link A
 ### N12.1 ★★ – PAT nachvollziehen (6 Punkte)
 📘 **Nachlernen:** [[FISI-12 NAT, Firewall, DMZ und Proxy#1. NAT und PAT|FISI-12 › NAT und PAT]]
 
-Der PC 192.168.10.23 ruft mit Quellport 51000 eine Website per HTTPS auf dem Webserver 93.184.216.34 (Port 443) auf. Der Router hat die öffentliche Adresse 198.51.100.7 und wählt den Port 40001. Gib Quell- und Ziel-Socket an a) vor dem Router, b) nach dem Router, c) für die Antwort im Internet, d) für die Antwort im LAN.
+Der PC 192.168.10.23 ruft mit Quellport 51000 eine Website per HTTPS auf dem Webserver 93.184.216.34 (Port 443) auf. Der Router hat die öffentliche Adresse 198.51.100.7 und wählt den Port 40001. Geben Sie Quell- und Ziel-Socket an a) vor dem Router, b) nach dem Router, c) für die Antwort im Internet, d) für die Antwort im LAN.
 
 > [!success]- Lösung
 > | | Quelle | Ziel |
@@ -191,7 +191,7 @@ Der PC 192.168.10.23 ruft mit Quellport 51000 eine Website per HTTPS auf dem Web
 ### N12.2 ★★★ – Firewallregeln (8 Punkte)
 📘 **Nachlernen:** [[FISI-12 NAT, Firewall, DMZ und Proxy#3. Firewallregeln|FISI-12 › Firewallregeln]] · [[FISI-12 NAT, Firewall, DMZ und Proxy#DMZ|FISI-12 › DMZ]]
 
-LAN 192.168.10.0/24, DMZ mit Webserver 172.16.1.10 und Mailserver 172.16.1.20. Erstelle die Regeln einer Stateful Firewall (Antwortpakete werden automatisch erlaubt), damit: a) das Internet den Webshop per HTTPS erreicht, b) der Mailserver Mails aus dem Internet empfängt und versenden darf, c) die Clients im LAN surfen dürfen, d) die Clients ihre Mails per IMAPS und SMTP-Submission beim Mailserver abrufen/einliefern, e) alles andere verboten ist.
+LAN 192.168.10.0/24, DMZ mit Webserver 172.16.1.10 und Mailserver 172.16.1.20. Erstellen Sie die Regeln einer Stateful Firewall (Antwortpakete werden automatisch erlaubt), damit: a) das Internet den Webshop per HTTPS erreicht, b) der Mailserver Mails aus dem Internet empfängt und versenden darf, c) die Clients im LAN surfen dürfen, d) die Clients ihre Mails per IMAPS und SMTP-Submission beim Mailserver abrufen/einliefern, e) alles andere verboten ist.
 
 > [!success]- Lösung
 > | Nr. | Quelle | Ziel | Protokoll/Port | Aktion |
@@ -207,7 +207,7 @@ LAN 192.168.10.0/24, DMZ mit Webserver 172.16.1.10 und Mailserver 172.16.1.20. E
 ### N12.3 ★★ – Stateful Packet Inspection (4 Punkte)
 📘 **Nachlernen:** [[FISI-12 NAT, Firewall, DMZ und Proxy#2. Firewall-Arten|FISI-12 › Firewall-Arten]]
 
-Erkläre den Unterschied zwischen einem statischen Paketfilter und einer SPI-Firewall und den Vorteil für das Regelwerk.
+Erklären Sie den Unterschied zwischen einem statischen Paketfilter und einer SPI-Firewall und den Vorteil für das Regelwerk.
 
 > [!success]- Lösung
 > - **Paketfilter:** prüft jedes Paket einzeln nach IP, Port und Protokoll – für Antworten müssen eigene Regeln (z. B. hohe Ports) freigegeben werden. (2 P)
@@ -216,7 +216,7 @@ Erkläre den Unterschied zwischen einem statischen Paketfilter und einer SPI-Fir
 ### N12.4 ★★ – TLS-Inspection am Proxy (5 Punkte)
 📘 **Nachlernen:** [[FISI-12 NAT, Firewall, DMZ und Proxy#Forward Proxy und TLS-Inspection|FISI-12 › Forward Proxy und TLS-Inspection]]
 
-Die neue Next-Generation-Firewall soll HTTPS-Verkehr auf Schadsoftware prüfen. a) Erkläre das Prinzip. b) Warum erscheinen auf Clients Zertifikatswarnungen und wie werden sie behoben? c) Nenne einen Nachteil bzw. ein rechtliches Problem.
+Die neue Next-Generation-Firewall soll HTTPS-Verkehr auf Schadsoftware prüfen. a) Erklären Sie das Prinzip. b) Warum erscheinen auf Clients Zertifikatswarnungen und wie werden sie behoben? c) Nennen Sie einen Nachteil bzw. ein rechtliches Problem.
 
 > [!success]- Lösung
 > a) Die Firewall baut die TLS-Verbindung zum Server selbst auf, entschlüsselt, prüft den Inhalt und verschlüsselt zum Client mit einem **eigenen, dynamisch erzeugten Zertifikat** neu (gewollter Man-in-the-Middle). (2 P)
@@ -230,7 +230,7 @@ Die neue Next-Generation-Firewall soll HTTPS-Verkehr auf Schadsoftware prüfen. 
 ### N13.1 ★★ – DNS-Auflösung (6 Punkte)
 📘 **Nachlernen:** [[FISI-13 DNS, DHCP und Netzdienste#1. DNS – Namensauflösung|FISI-13 › DNS – Namensauflösung]]
 
-Ein Client fragt nach `shop.brenner-logistik.de`. Der interne DNS-Server kennt die Antwort nicht und hat keinen Forwarder. Beschreibe den Ablauf bis zur Antwort und unterscheide rekursive und iterative Anfragen.
+Ein Client fragt nach `shop.brenner-logistik.de`. Der interne DNS-Server kennt die Antwort nicht und hat keinen Forwarder. Beschreiben Sie den Ablauf bis zur Antwort und unterscheiden Sie rekursive und iterative Anfragen.
 
 > [!success]- Lösung
 > 1. Client stellt eine **rekursive** Anfrage an den internen DNS-Server (er erwartet die endgültige Antwort). (1 P)
@@ -249,7 +249,7 @@ Welcher Eintrag wird benötigt? a) IPv4-Adresse des Webshops, b) IPv6-Adresse de
 ### N13.3 ★★ – DHCP-Ablauf (6 Punkte)
 📘 **Nachlernen:** [[FISI-13 DNS, DHCP und Netzdienste#3. DHCP|FISI-13 › DHCP]]
 
-Beschreibe die vier Nachrichten der DHCP-Adressvergabe mit Absender, Ziel (Broadcast/Unicast) und Inhalt und nenne zwei Optionen, die der Server außer der IP-Adresse mitliefert.
+Beschreiben Sie die vier Nachrichten der DHCP-Adressvergabe mit Absender, Ziel (Broadcast/Unicast) und Inhalt und nennen Sie zwei Optionen, die der Server außer der IP-Adresse mitliefert.
 
 > [!success]- Lösung
 > - **Discover:** Client → Broadcast, sucht Server (1 P)
@@ -261,7 +261,7 @@ Beschreibe die vier Nachrichten der DHCP-Adressvergabe mit Absender, Ziel (Broad
 ### N13.4 ★★ – E-Mail-Authentifizierung (4 Punkte)
 📘 **Nachlernen:** [[FISI-13 DNS, DHCP und Netzdienste#2. DNS-Sicherheit und E-Mail-Authentifizierung|FISI-13 › DNS-Sicherheit und E-Mail-Authentifizierung]]
 
-Mails der Firma landen bei Kunden im Spam. Erkläre SPF, DKIM und DMARC in je einem Satz.
+Mails der Firma landen bei Kunden im Spam. Erklären Sie SPF, DKIM und DMARC in je einem Satz.
 
 > [!success]- Lösung
 > - **SPF:** TXT-Eintrag, der festlegt, welche Server Mails für die Domain versenden dürfen. (1,5 P)
@@ -275,7 +275,7 @@ Mails der Firma landen bei Kunden im Spam. Erkläre SPF, DKIM und DMARC in je ei
 ### N14.1 ★★ – PSK oder Enterprise (6 Punkte)
 📘 **Nachlernen:** [[FISI-14 WLAN und Netzzugangskontrolle#2. Absicherung|FISI-14 › Absicherung]]
 
-Im Lager arbeiten 60 Personen mit Handscannern im WLAN, bisher mit WPA2-PSK. Nenne zwei Schwächen von PSK und zwei Vorteile von WPA3-Enterprise mit RADIUS.
+Im Lager arbeiten 60 Personen mit Handscannern im WLAN, bisher mit WPA2-PSK. Nennen Sie zwei Schwächen von PSK und zwei Vorteile von WPA3-Enterprise mit RADIUS.
 
 > [!success]- Lösung
 > - **Schwächen PSK:** ein gemeinsamer Schlüssel für alle – verlässt eine Person die Firma, muss er überall geändert werden; keine Zuordnung zu Personen/Protokollierung; offline angreifbar bei schwachem Schlüssel. (3 P)
@@ -284,7 +284,7 @@ Im Lager arbeiten 60 Personen mit Handscannern im WLAN, bisher mit WPA2-PSK. Nen
 ### N14.2 ★★ – IEEE 802.1X (5 Punkte)
 📘 **Nachlernen:** [[FISI-14 WLAN und Netzzugangskontrolle#AAA mit RADIUS|FISI-14 › AAA mit RADIUS]] · [[FISI-14 WLAN und Netzzugangskontrolle#3. Netzzugangskontrolle am Switch|FISI-14 › Netzzugangskontrolle am Switch]]
 
-Nenne die drei Rollen bei 802.1X mit je einem Beispielgerät und erkläre AAA.
+Nennen Sie die drei Rollen bei 802.1X mit je einem Beispielgerät und erklären Sie AAA.
 
 > [!success]- Lösung
 > - **Supplicant** – Client/Notebook · **Authenticator** – Switch oder Access Point · **Authentication Server** – RADIUS-Server (3 P)
@@ -293,7 +293,7 @@ Nenne die drei Rollen bei 802.1X mit je einem Beispielgerät und erkläre AAA.
 ### N14.3 ★ – Gäste-WLAN (4 Punkte)
 📘 **Nachlernen:** [[FISI-14 WLAN und Netzzugangskontrolle#Gäste-WLAN|FISI-14 › Gäste-WLAN]]
 
-Lkw-Fahrer sollen im Wartebereich WLAN nutzen. Nenne vier Maßnahmen, die das Firmennetz schützen.
+Lkw-Fahrer sollen im Wartebereich WLAN nutzen. Nennen Sie vier Maßnahmen, die das Firmennetz schützen.
 
 > [!success]- Lösung (je 1 P)
 > eigene SSID in eigenem VLAN · Firewallregel: nur Internet, kein Zugriff auf interne Netze · Client-Isolation · Captive Portal mit Voucher und Nutzungsbedingungen · Bandbreitenbegrenzung · zeitlich begrenzte Zugänge
@@ -301,7 +301,7 @@ Lkw-Fahrer sollen im Wartebereich WLAN nutzen. Nenne vier Maßnahmen, die das Fi
 ### N14.4 ★★ – Frequenzen und Kanäle (4 Punkte)
 📘 **Nachlernen:** [[FISI-14 WLAN und Netzzugangskontrolle#Frequenzen und Kanäle|FISI-14 › Frequenzen und Kanäle]]
 
-Drei Access Points im 2,4-GHz-Band stören sich. Nenne die überlappungsfreien Kanäle und zwei Vorteile des 5-GHz-Bandes sowie einen Nachteil.
+Drei Access Points im 2,4-GHz-Band stören sich. Nennen Sie die überlappungsfreien Kanäle und zwei Vorteile des 5-GHz-Bandes sowie einen Nachteil.
 
 > [!success]- Lösung
 > - Kanäle **1, 6, 11** (1 P)
@@ -315,7 +315,7 @@ Drei Access Points im 2,4-GHz-Band stören sich. Nenne die überlappungsfreien K
 ### N15.1 ★★ – Hybride Verschlüsselung (6 Punkte)
 📘 **Nachlernen:** [[FISI-15 VPN, TLS und PKI#1. Verschlüsselungsverfahren|FISI-15 › Verschlüsselungsverfahren]] · [[FISI-15 VPN, TLS und PKI#3. TLS|FISI-15 › TLS]]
 
-Erkläre, warum TLS symmetrische und asymmetrische Verfahren kombiniert, und beschreibe den Ablauf vereinfacht.
+Erklären Sie, warum TLS symmetrische und asymmetrische Verfahren kombiniert, und beschreiben Sie den Ablauf vereinfacht.
 
 > [!success]- Lösung
 > - Asymmetrische Verfahren lösen das **Schlüsselaustauschproblem**, sind aber langsam; symmetrische sind schnell, brauchen aber einen gemeinsamen geheimen Schlüssel. (2 P)
@@ -324,7 +324,7 @@ Erkläre, warum TLS symmetrische und asymmetrische Verfahren kombiniert, und bes
 ### N15.2 ★★ – Zertifikat prüfen (5 Punkte)
 📘 **Nachlernen:** [[FISI-15 VPN, TLS und PKI#2. PKI und Zertifikate|FISI-15 › PKI und Zertifikate]]
 
-Nenne fünf Prüfungen, die ein Browser bei einem Serverzertifikat durchführt.
+Nennen Sie fünf Prüfungen, die ein Browser bei einem Serverzertifikat durchführt.
 
 > [!success]- Lösung (je 1 P)
 > Signatur der ausstellenden CA gültig (Kette bis zu einer vertrauenswürdigen Root-CA) · Gültigkeitszeitraum · Hostname passt zu CN/SAN · nicht widerrufen (CRL/OCSP) · Verwendungszweck (Key Usage: Serverauthentifizierung) · Zwischenzertifikate vorhanden
@@ -332,7 +332,7 @@ Nenne fünf Prüfungen, die ein Browser bei einem Serverzertifikat durchführt.
 ### N15.3 ★★ – VPN-Arten (5 Punkte)
 📘 **Nachlernen:** [[FISI-15 VPN, TLS und PKI#4. VPN|FISI-15 › VPN]]
 
-a) Welche VPN-Art verbindet die Zentrale mit dem Lager, welche die Außendienstler? b) Erkläre Split- und Full-Tunnel mit je einem Vor- oder Nachteil.
+a) Welche VPN-Art verbindet die Zentrale mit dem Lager, welche die Außendienstler? b) Erklären Sie Split- und Full-Tunnel mit je einem Vor- oder Nachteil.
 
 > [!success]- Lösung
 > a) Zentrale–Lager: **Site-to-Site** (Gateway zu Gateway, z. B. IPsec) · Außendienst: **End-to-Site** (Client zu Gateway) (2 P)
@@ -341,7 +341,7 @@ a) Welche VPN-Art verbindet die Zentrale mit dem Lager, welche die Außendienstl
 ### N15.4 ★ – Zwei-Faktor-Authentifizierung (4 Punkte)
 📘 **Nachlernen:** [[FISI-15 VPN, TLS und PKI#5. Zwei-Faktor-Authentifizierung|FISI-15 › Zwei-Faktor-Authentifizierung]]
 
-Nenne die drei Faktorkategorien mit Beispiel und erkläre, warum Passwort + Sicherheitsfrage keine 2FA ist.
+Nennen Sie die drei Faktorkategorien mit Beispiel und erklären Sie, warum Passwort + Sicherheitsfrage keine 2FA ist.
 
 > [!success]- Lösung
 > - **Wissen** (Passwort, PIN) · **Besitz** (Smartphone mit TOTP-App, Hardware-Token, Smartcard) · **Inhärenz** (Fingerabdruck, Gesicht) (3 P)
@@ -354,7 +354,7 @@ Nenne die drei Faktorkategorien mit Beispiel und erkläre, warum Passwort + Sich
 ### N16.1 ★★ – Übertragungszeit (6 Punkte)
 📘 **Nachlernen:** [[FISI-16 Netzwerkanalyse, Fehlersuche und WAN#4. Übertragungszeit|FISI-16 › Übertragungszeit]]
 
-Ein Backup von **15 GiB** wird über das VPN mit **100 Mbit/s** nach Hamm übertragen. Berechne die Dauer in Minuten und Sekunden (ohne Overhead).
+Ein Backup von **15 GiB** wird über das VPN mit **100 Mbit/s** nach Frechen übertragen. Berechnen Sie die Dauer in Minuten und Sekunden (ohne Overhead).
 
 > [!success]- Lösung
 > 15 · 2³⁰ Byte · 8 = 128 849 018 880 bit (3 P)
@@ -363,7 +363,7 @@ Ein Backup von **15 GiB** wird über das VPN mit **100 Mbit/s** nach Hamm übert
 ### N16.2 ★★★ – VoIP-Bandbreite (6 Punkte)
 📘 **Nachlernen:** [[FISI-16 Netzwerkanalyse, Fehlersuche und WAN#5. Bandbreite berechnen|FISI-16 › Bandbreite berechnen]]
 
-Codec G.711 (64 kbit/s Nutzdaten), Paketierung 20 ms. Overhead je Paket: RTP 12 Byte, UDP 8 Byte, IPv4 20 Byte, Ethernet 18 Byte. Berechne die Bandbreite je Gespräch und Richtung und für 20 gleichzeitige Gespräche.
+Codec G.711 (64 kbit/s Nutzdaten), Paketierung 20 ms. Overhead je Paket: RTP 12 Byte, UDP 8 Byte, IPv4 20 Byte, Ethernet 18 Byte. Berechnen Sie die Bandbreite je Gespräch und Richtung und für 20 gleichzeitige Gespräche.
 
 > [!success]- Lösung
 > - 1 s ÷ 20 ms = **50 Pakete/s**; Nutzdaten je Paket: 64 000 bit/s ÷ 50 = 1 280 bit = **160 Byte** (2 P)
@@ -374,7 +374,7 @@ Codec G.711 (64 kbit/s Nutzdaten), Paketierung 20 ms. Overhead je Paket: RTP 12 
 ### N16.3 ★★ – Fehlersuche mit ipconfig (5 Punkte)
 📘 **Nachlernen:** [[FISI-16 Netzwerkanalyse, Fehlersuche und WAN#2. Mitschnitte und Befehlsausgaben lesen|FISI-16 › Mitschnitte und Befehlsausgaben lesen]]
 
-`ipconfig /all` zeigt: IPv4 `169.254.12.7`, Maske `255.255.0.0`, kein Gateway, DHCP aktiviert: Ja. a) Was bedeutet das? b) Nenne drei mögliche Ursachen. c) Mit welchem Befehl versuchst du eine neue Adresse?
+`ipconfig /all` zeigt: IPv4 `169.254.12.7`, Maske `255.255.0.0`, kein Gateway, DHCP aktiviert: Ja. a) Was bedeutet das? b) Nennen Sie drei mögliche Ursachen. c) Nennen Sie den Befehl, mit dem eine neue Adresse angefordert wird.
 
 > [!success]- Lösung
 > a) **APIPA** – der Client hat keine Antwort von einem DHCP-Server erhalten und sich selbst eine Link-Local-Adresse gegeben. (1 P)
@@ -384,7 +384,7 @@ Codec G.711 (64 kbit/s Nutzdaten), Paketierung 20 ms. Overhead je Paket: RTP 12 
 ### N16.4 ★★ – Verfügbarkeit von Leitungen (5 Punkte)
 📘 **Nachlernen:** [[FISI-16 Netzwerkanalyse, Fehlersuche und WAN#Verfügbarkeit von Verbindungen|FISI-16 › Verfügbarkeit von Verbindungen]]
 
-Die Internetanbindung hat eine Verfügbarkeit von 99 %. a) Wie viele Stunden Ausfall im Jahr sind möglich? b) Eine zweite, unabhängige Leitung mit ebenfalls 99 % wird parallel betrieben. Berechne die Gesamtverfügbarkeit und die mögliche Ausfallzeit in Minuten.
+Die Internetanbindung hat eine Verfügbarkeit von 99 %. a) Wie viele Stunden Ausfall im Jahr sind möglich? b) Eine zweite, unabhängige Leitung mit ebenfalls 99 % wird parallel betrieben. Berechnen Sie die Gesamtverfügbarkeit und die mögliche Ausfallzeit in Minuten.
 
 > [!success]- Lösung
 > a) 1 % von 8 760 h = **87,6 h** (1 P)

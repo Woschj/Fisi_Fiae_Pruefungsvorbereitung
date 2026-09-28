@@ -15,7 +15,7 @@ Wie dimensionierst du ein Server-Netzteil?::Leistung aller Komponenten addieren,
 Was bedeutet „1+1-redundantes Netzteil“?::Zwei Netzteile, von denen jedes allein die volle Last tragen kann – fällt eines aus, läuft der Server weiter
 Wie berechnest du jährliche Stromkosten eines Servers?::Leistung in kW · 8 760 h · Preis je kWh
 Was unterscheidet Hypervisor Typ 1 und Typ 2?::Typ 1 (Bare Metal) läuft direkt auf der Hardware (Server), Typ 2 (Hosted) als Programm auf einem Wirtsbetriebssystem (Test, Arbeitsplatz)
-Nenne drei Vorteile der Servervirtualisierung.::Bessere Hardwareauslastung, weniger Strom/Platz, schnelle Bereitstellung, Snapshots, Live-Migration, Hochverfügbarkeit
+Nennen Sie drei Vorteile der Servervirtualisierung.::Bessere Hardwareauslastung, weniger Strom/Platz, schnelle Bereitstellung, Snapshots, Live-Migration, Hochverfügbarkeit
 Was ist ein Snapshot – und warum ist er kein Backup?::Momentaufnahme einer VM zum schnellen Zurücksetzen; liegt auf demselben Speicher und hängt von der Basisplatte ab – fällt der Speicher aus, ist er weg
 Was ist Live-Migration?::Verschieben einer laufenden VM auf einen anderen Host ohne Unterbrechung (z. B. für Wartung)
 Was ist Overcommitment?::Den VMs zusammen mehr virtuelle Ressourcen (RAM/CPU) zuweisen, als physisch vorhanden sind – spart Hardware, riskiert Engpässe
@@ -34,8 +34,8 @@ Was bedeutet PaaS?::Platform as a Service – der Anbieter stellt Laufzeitumgebu
 Was bedeutet SaaS?::Software as a Service – fertige Anwendung über das Internet (z. B. Office im Browser), der Kunde nutzt sie nur
 Was ist eine Hybrid Cloud?::Kombination aus Private Cloud/On-Premises und Public Cloud, die zusammenarbeiten
 Was ist eine Community Cloud?::Cloud, die sich mehrere Organisationen mit ähnlichen Anforderungen teilen (z. B. Behörden)
-Nenne zwei Vorteile der Public Cloud.::Keine Investitionen (Pay-per-Use), schnelle Skalierung, Betrieb beim Anbieter, hohe Verfügbarkeit
-Nenne zwei Risiken der Public Cloud.::Abhängigkeit von der Internetanbindung (Latenz), Datenschutz/Datenhoheit, Vendor-Lock-in, laufende Kosten
+Nennen Sie zwei Vorteile der Public Cloud.::Keine Investitionen (Pay-per-Use), schnelle Skalierung, Betrieb beim Anbieter, hohe Verfügbarkeit
+Nennen Sie zwei Risiken der Public Cloud.::Abhängigkeit von der Internetanbindung (Latenz), Datenschutz/Datenhoheit, Vendor-Lock-in, laufende Kosten
 Was ist Latenz?::Verzögerung zwischen Senden und Empfangen eines Datenpakets – wichtig bei Echtzeitanwendungen
 Was regelt ein SLA?::Vereinbarte Dienstgüte zwischen Anbieter und Kunde: Verfügbarkeit, Reaktionszeiten, Supportzeiten, Vertragsstrafen
 Welcher Vertrag ist nötig, wenn ein Cloud-Anbieter personenbezogene Daten verarbeitet?::Auftragsverarbeitungsvertrag (AVV) nach Art. 28 DSGVO
@@ -69,7 +69,7 @@ Welche Sicherungen brauchst du bei inkrementellem Verfahren?::Letzte Vollsicheru
 Was ist die 3-2-1-Regel?::3 Kopien der Daten, auf 2 verschiedenen Medien, davon 1 außer Haus (heute oft zusätzlich 1 offline/unveränderlich)
 Was ist das Generationenprinzip (GVS)?::Großvater-Vater-Sohn: tägliche, wöchentliche und monatliche Sicherungen werden rotierend aufbewahrt
 Was bedeutet D2D2T?::Disk-to-Disk-to-Tape: erst schnelle Sicherung auf Festplatten, dann Auslagerung auf Band
-Nenne zwei Vorteile von LTO-Bändern.::Günstig pro TB, lange haltbar, offline (Schutz vor Ransomware), leicht auslagerbar, WORM-Varianten
+Nennen Sie zwei Vorteile von LTO-Bändern.::Günstig pro TB, lange haltbar, offline (Schutz vor Ransomware), leicht auslagerbar, WORM-Varianten
 Was ist der RPO?::Recovery Point Objective – maximal tolerierter Datenverlust (Zeit seit der letzten Sicherung)
 Was ist der RTO?::Recovery Time Objective – maximal tolerierte Ausfallzeit bis zur Wiederherstellung
 Unterschied Backup und Archiv?::Backup: Kopie zur Wiederherstellung, kurzfristig · Archiv: langfristige, unveränderbare Aufbewahrung, oft aus dem Produktivsystem entfernt
@@ -89,7 +89,7 @@ Was macht Ransomware?::Verschlüsselt Daten und fordert Lösegeld; oft werden Da
 Unterschied Virus und Wurm?::Virus braucht ein Wirtsprogramm und Benutzeraktion; Wurm verbreitet sich selbstständig über das Netz
 Was ist ein Trojaner?::Schadprogramm, das sich als nützliche Software tarnt
 Was ist ein Rootkit?::Schadsoftware, die sich tief im System versteckt und andere Schadsoftware verschleiert
-Nenne drei Merkmale einer Phishing-Mail.::Gefälschter Absender, Link-Ziel passt nicht, Zeitdruck/Drohung, Aufforderung zur Eingabe von Zugangsdaten, unpersönliche Anrede
+Nennen Sie drei Merkmale einer Phishing-Mail.::Gefälschter Absender, Link-Ziel passt nicht, Zeitdruck/Drohung, Aufforderung zur Eingabe von Zugangsdaten, unpersönliche Anrede
 Was ist Spear-Phishing?::Gezielter Phishing-Angriff auf bestimmte Personen mit persönlich zugeschnittenen Inhalten
 Was ist ein Penetrationstest?::Beauftragter, simulierter Angriff, um Schwachstellen zu finden – nur mit schriftlicher Genehmigung
 Unterschied White Hat und Black Hat?::White Hat: legaler Sicherheitsforscher mit Auftrag · Black Hat: krimineller Angreifer
@@ -98,7 +98,7 @@ Was ist ein DDoS-Angriff?::Viele verteilte Systeme (Botnetz) überlasten einen D
 
 ## FISI-6 Datenschutz, Geräteverwaltung und Lizenzen
 
-Nenne die drei Schutzziele der Informationssicherheit.::Vertraulichkeit, Integrität, Verfügbarkeit
+Nennen Sie die drei Schutzziele der Informationssicherheit.::Vertraulichkeit, Integrität, Verfügbarkeit
 Was sind TOM?::Technische und organisatorische Maßnahmen zum Schutz personenbezogener Daten (Art. 32 DSGVO)
 Beispiel für Zutrittskontrolle?::Chipkarte am Serverraum, Schließanlage, Besucherbuch
 Beispiel für Zugangskontrolle?::Passwortrichtlinie, MFA, Bildschirmsperre
@@ -143,6 +143,6 @@ Unterschied WHERE und HAVING?::WHERE filtert Zeilen vor der Gruppierung, HAVING 
 Was zählt COUNT(*)?::Alle Zeilen (der Gruppe), inklusive NULL-Werte
 Was bewirkt ein Index?::Beschleunigt Suchen und Sortieren, verlangsamt Schreibvorgänge und braucht Speicher
 Was ist Locking?::Sperren von Datensätzen/Tabellen bei gleichzeitigem Zugriff, um Inkonsistenzen zu vermeiden
-Nenne vier Arten von NoSQL-Datenbanken.::Key-Value, dokumentenorientiert, spaltenorientiert, Graphdatenbank
+Nennen Sie vier Arten von NoSQL-Datenbanken.::Key-Value, dokumentenorientiert, spaltenorientiert, Graphdatenbank
 Unterschied Aggregation und Komposition in UML?::Aggregation (leere Raute): Teile existieren auch allein · Komposition (gefüllte Raute): Teile existieren nur mit dem Ganzen
 Was bedeutet Datenkapselung?::Attribute sind privat und nur über Methoden (Getter/Setter) zugänglich

@@ -5,11 +5,11 @@ tags: [ap2/aufgaben, ap2/fiae]
 # Aufgaben Algorithmen
 
 Aufgaben im Stil der AP2 „Entwicklung und Umsetzung von Algorithmen“ mit Punkten und Musterlösung – eigene Aufgaben, die sich an den Aufgabentypen der AP2-Aufgaben orientieren. Schwierigkeit: ★ Einstieg · ★★ Prüfungsniveau · ★★★ anspruchsvoll.
-**So arbeitest du:** Zeit stoppen (≈ 0,9 Minuten pro Punkt), Pseudocode und SQL **handschriftlich** schreiben, dann Lösung aufklappen und selbst bewerten. Andere, gleichwertige Lösungen sind ebenfalls richtig. Fehler → [[AP2 FIAE Fehlerlog]].
+**Arbeitsweise:** Zeit stoppen (≈ 0,9 Minuten pro Punkt), Pseudocode und SQL **handschriftlich** schreiben, dann Lösung aufklappen und selbst bewerten. Andere, gleichwertige Lösungen sind ebenfalls richtig. Fehler → [[AP2 FIAE Fehlerlog]].
 Rechen- und Übungsaufgaben (SQL-Ergebnisse, Modulo, Datentypen): [[AP2 FIAE Trainer]] · Probeprüfungen: [[AP2/FIAE/20 Aufgaben/Pruefungen/Uebersicht FIAE AP2|Probeprüfungen]].
 
 > [!info] Ausgangssituation für alle Aufgaben
-> Die **FlexiRad GmbH** (fiktiv) betreibt in Münster 2 000 Leihfahrräder an 80 Stationen. Du entwickelst Teile des Backends.
+> Die **FlexiRad GmbH** (fiktiv) betreibt in Köln 2 000 Leihfahrräder an 80 Stationen. Sie entwickeln Teile des Backends.
 > Gegebene Klasse für alle Pseudocode-Aufgaben:
 > ```
 > Ausleihe
@@ -33,7 +33,7 @@ Rechen- und Übungsaufgaben (SQL-Ergebnisse, Modulo, Datentypen): [[AP2 FIAE Tra
 ### A9.1 ★★★ – Durchschnitt im Zeitraum (10 Punkte)
 📘 **Nachlernen:** [[FIAE-9 Algorithmen in Pseudocode#2. Standardmuster|FIAE-9 › Standardmuster]] · [[FIAE-9 Algorithmen in Pseudocode#1. Pseudocode-Konventionen|FIAE-9 › Pseudocode-Konventionen]]
 
-Schreibe die Methode `durchschnittDauer(ausleihen : List<Ausleihe>, von : Date, bis : Date) : Double`. Sie liefert die durchschnittliche Ausleihdauer aller Ausleihen, deren Start im Zeitraum von `von` bis `bis` (jeweils einschließlich) liegt. Gibt es keine, wird 0 zurückgegeben.
+Schreiben Sie die Methode `durchschnittDauer(ausleihen : List<Ausleihe>, von : Date, bis : Date) : Double`. Sie liefert die durchschnittliche Ausleihdauer aller Ausleihen, deren Start im Zeitraum von `von` bis `bis` (jeweils einschließlich) liegt. Gibt es keine, wird 0 zurückgegeben.
 
 > [!success]- Lösung
 > ```
@@ -58,7 +58,7 @@ Schreibe die Methode `durchschnittDauer(ausleihen : List<Ausleihe>, von : Date, 
 ### A9.2 ★★★ – Rückgaben je Station zählen (8 Punkte)
 📘 **Nachlernen:** [[FIAE-9 Algorithmen in Pseudocode#2. Standardmuster|FIAE-9 › Standardmuster]]
 
-Schreibe `rueckgabenJeStation(ausleihen : Ausleihe[]) : Integer[]`. Das Ergebnis enthält für jede der 80 Stationen die Anzahl der Rückgaben (Index 0 = Station 1). Ausleihen mit weniger als 2 Minuten sollen nicht gezählt werden (Fehlausleihen).
+Schreiben Sie `rueckgabenJeStation(ausleihen : Ausleihe[]) : Integer[]`. Das Ergebnis enthält für jede der 80 Stationen die Anzahl der Rückgaben (Index 0 = Station 1). Ausleihen mit weniger als 2 Minuten sollen nicht gezählt werden (Fehlausleihen).
 
 > [!success]- Lösung
 > ```
@@ -78,7 +78,7 @@ Schreibe `rueckgabenJeStation(ausleihen : Ausleihe[]) : Integer[]`. Das Ergebnis
 ### A9.3 ★★ – Bubblesort im Schreibtischtest (6 Punkte)
 📘 **Nachlernen:** [[FIAE-9 Algorithmen in Pseudocode#3. Sortieren und Suchen|FIAE-9 › Sortieren und Suchen]] · [[FIAE-9 Algorithmen in Pseudocode#4. Schreibtischtest|FIAE-9 › Schreibtischtest]]
 
-Sortiere `[5, 2, 8, 1]` aufsteigend mit Bubblesort. Gib das Array nach jedem Durchlauf an und zähle die Vertauschungen.
+Sortieren Sie `[5, 2, 8, 1]` aufsteigend mit Bubblesort. Geben Sie das Array nach jedem Durchlauf an und zählen Sie die Vertauschungen.
 
 > [!success]- Lösung
 > - Durchlauf 1: (5,2) tauschen → [2,5,8,1]; (5,8) –; (8,1) tauschen → **[2, 5, 1, 8]** (2 P)
@@ -89,7 +89,7 @@ Sortiere `[5, 2, 8, 1]` aufsteigend mit Bubblesort. Gib das Array nach jedem Dur
 ### A9.4 ★★ – Binäre Suche (4 Punkte)
 📘 **Nachlernen:** [[FIAE-9 Algorithmen in Pseudocode#3. Sortieren und Suchen|FIAE-9 › Sortieren und Suchen]]
 
-Im sortierten Array `[3, 8, 12, 17, 21, 30, 44]` wird die 30 gesucht. a) Gib die geprüften Indizes bei binärer Suche an (Mitte = (links + rechts) div 2). b) Wie viele Vergleiche bräuchte die lineare Suche? c) Welche Voraussetzung gilt?
+Im sortierten Array `[3, 8, 12, 17, 21, 30, 44]` wird die 30 gesucht. a) Geben Sie die geprüften Indizes bei binärer Suche an (Mitte = (links + rechts) div 2). b) Wie viele Vergleichen Sie bräuchte die lineare Suche? c) Welche Voraussetzung gilt?
 
 > [!success]- Lösung
 > a) links 0, rechts 6 → Mitte **3** (17 < 30) → links 4 → Mitte (4+6) div 2 = **5** → 30 gefunden (2 P)
@@ -99,7 +99,7 @@ Im sortierten Array `[3, 8, 12, 17, 21, 30, 44]` wird die 30 gesucht. a) Gib die
 ### A9.5 ★ – Ganzzahldivision und Modulo (4 Punkte)
 📘 **Nachlernen:** [[FIAE-9 Algorithmen in Pseudocode#Ganzzahldivision und Modulo|FIAE-9 › Ganzzahldivision und Modulo]]
 
-Eine Ausleihe dauert 437 Minuten. Berechne mit `div` und `mod` Stunden und Restminuten und gib an, wie viele angefangene 30-Minuten-Blöcke berechnet werden.
+Eine Ausleihe dauert 437 Minuten. Berechnen Sie mit `div` und `mod` Stunden und Restminuten und geben Sie an, wie viele angefangene 30-Minuten-Blöcke berechnet werden.
 
 > [!success]- Lösung
 > - 437 div 60 = **7** Stunden, 437 mod 60 = **17** Minuten (2 P)
@@ -112,7 +112,7 @@ Eine Ausleihe dauert 437 Minuten. Berechne mit `div` und `mod` Stunden und Restm
 ### A10.1 ★★ – Klasse umsetzen (8 Punkte)
 📘 **Nachlernen:** [[FIAE-10 Objektorientierte Programmierung umsetzen#1. Von der Klasse zum Code|FIAE-10 › Von der Klasse zum Code]]
 
-Setze die Klasse in Pseudocode oder einer Programmiersprache um:
+Setzen Sie die Klasse in Pseudocode oder einer Programmiersprache um:
 ```
 Rad
   - id : Integer
@@ -152,7 +152,7 @@ Der Konstruktor setzt den Akkustand auf 100. `laden` erhöht den Akkustand, höc
 📘 **Nachlernen:** [[FIAE-10 Objektorientierte Programmierung umsetzen#2. Vererbung und Polymorphie im Code|FIAE-10 › Vererbung und Polymorphie im Code]]
 
 Die abstrakte Klasse `Leihrad` hat die abstrakte Methode `preis(minuten : Integer) : Double`. `Standardrad` kostet 0,10 €/min, `EBike` 1,00 € Grundgebühr plus 0,25 €/min.
-a) Setze beide `preis`-Methoden um. b) Eine Liste enthält ein Standardrad (30 min) und ein E-Bike (20 min). Berechne die Summe. c) Erkläre, warum die Schleife `summe = summe + rad.preis(min)` ohne Typprüfung auskommt.
+a) Setzen Sie beide `preis`-Methoden um. b) Eine Liste enthält ein Standardrad (30 min) und ein E-Bike (20 min). Berechnen Sie die Summe. c) Erklären Sie, warum die Schleife `summe = summe + rad.preis(min)` ohne Typprüfung auskommt.
 
 > [!success]- Lösung
 > a) `Standardrad.preis(m)`: `rückgabe m * 0.10` · `EBike.preis(m)`: `rückgabe 1.00 + m * 0.25` (2 P)
@@ -162,7 +162,7 @@ a) Setze beide `preis`-Methoden um. b) Eine Liste enthält ein Standardrad (30 m
 ### A10.3 ★★ – Ausnahmebehandlung (5 Punkte)
 📘 **Nachlernen:** [[FIAE-10 Objektorientierte Programmierung umsetzen#3. Ausnahmebehandlung|FIAE-10 › Ausnahmebehandlung]]
 
-Beim Entsperren kann `SchlossNichtErreichbarException` auftreten. Beschreibe mit Pseudocode, wie die Methode `ausleihen` die Ausnahme behandelt: bis zu drei Versuche, danach Meldung an die App und Protokolleintrag. Wozu dient `finally`?
+Beim Entsperren kann `SchlossNichtErreichbarException` auftreten. Beschreiben Sie mit Pseudocode, wie die Methode `ausleihen` die Ausnahme behandelt: bis zu drei Versuche, danach Meldung an die App und Protokolleintrag. Wozu dient `finally`?
 
 > [!success]- Lösung
 > ```
@@ -187,7 +187,7 @@ Beim Entsperren kann `SchlossNichtErreichbarException` auftreten. Beschreibe mit
 ### A10.4 ★ – Datentypen (4 Punkte)
 📘 **Nachlernen:** [[FIAE-10 Objektorientierte Programmierung umsetzen#4. Datentypen|FIAE-10 › Datentypen]]
 
-Wähle je einen Datentyp und begründe: a) Akkustand 0–100, b) Preis in Euro, c) gesperrt ja/nein, d) Anzahl aller Ausleihen seit Start des Systems (mehrere Milliarden möglich).
+Wählen Sie je einen Datentyp und begründen Sie: a) Akkustand 0–100, b) Preis in Euro, c) gesperrt ja/nein, d) Anzahl aller Ausleihen seit Start des Systems (mehrere Milliarden möglich).
 
 > [!success]- Lösung (je 1 P)
 > a) `byte`/`int` – kleine Ganzzahl · b) `BigDecimal`/Dezimaltyp (bzw. Cent als `int`) – keine Rundungsfehler bei Geld · c) `boolean` · d) `long` – `int` reicht nur bis ca. 2,1 Milliarden
@@ -211,7 +211,7 @@ methode zuschlag(minuten : Integer, istAbo : Boolean) : Double
     rückgabe z
 ende methode
 ```
-Gib jeweils eine minimale Menge von Testfällen (minuten, istAbo) mit erwartetem Ergebnis an für a) Anweisungsüberdeckung, b) Zweigüberdeckung, c) Pfadüberdeckung.
+Geben Sie jeweils eine minimale Menge von Testfällen (minuten, istAbo) mit erwartetem Ergebnis an für a) Anweisungsüberdeckung, b) Zweigüberdeckung, c) Pfadüberdeckung.
 
 > [!success]- Lösung
 > a) **1 Testfall:** (40, true) → 0,50 € – alle Anweisungen werden ausgeführt (2 P)
@@ -221,7 +221,7 @@ Gib jeweils eine minimale Menge von Testfällen (minuten, istAbo) mit erwartetem
 ### A11.2 ★★ – Äquivalenzklassen und Grenzwerte (6 Punkte)
 📘 **Nachlernen:** [[FIAE-11 Testen und Qualitätssicherung#3. Testfälle entwerfen|FIAE-11 › Testfälle entwerfen]]
 
-Eine Ausleihe darf 1 bis 720 Minuten dauern (ganze Zahlen). Bilde die Äquivalenzklassen und gib die Grenzwerte an, die du testest.
+Eine Ausleihe darf 1 bis 720 Minuten dauern (ganze Zahlen). Bilden Sie die Äquivalenzklassen und geben Sie die Grenzwerte an, die Sie testen.
 
 > [!success]- Lösung
 > - Ungültig: **< 1** (z. B. −5) · gültig: **1 bis 720** (z. B. 60) · ungültig: **> 720** (z. B. 1 000) · zusätzlich ungültig: keine Zahl/leer (3 P)
@@ -230,7 +230,7 @@ Eine Ausleihe darf 1 bis 720 Minuten dauern (ganze Zahlen). Bilde die Äquivalen
 ### A11.3 ★★ – Unit-Test schreiben (5 Punkte)
 📘 **Nachlernen:** [[FIAE-11 Testen und Qualitätssicherung#4. Unit-Tests|FIAE-11 › Unit-Tests]]
 
-Schreibe zwei Unit-Tests für `zuschlag` aus A11.1 und erkläre das AAA-Muster.
+Schreiben Sie zwei Unit-Tests für `zuschlag` aus A11.1 und erklären Sie das AAA-Muster.
 
 > [!success]- Lösung
 > ```java
@@ -251,7 +251,7 @@ Schreibe zwei Unit-Tests für `zuschlag` aus A11.1 und erkläre das AAA-Muster.
 ### A11.4 ★ – Teststufen (4 Punkte)
 📘 **Nachlernen:** [[FIAE-11 Testen und Qualitätssicherung#1. Teststufen und Testarten|FIAE-11 › Teststufen und Testarten]]
 
-Ordne zu: a) Einzelne Methode wird isoliert geprüft. b) App und Backend werden zusammen über die REST-Schnittstelle getestet. c) Das Gesamtsystem wird auf einer produktionsnahen Umgebung geprüft. d) FlexiRad prüft, ob die App ihre Anforderungen erfüllt.
+Ordnen Sie zu: a) Einzelne Methode wird isoliert geprüft. b) App und Backend werden zusammen über die REST-Schnittstelle getestet. c) Das Gesamtsystem wird auf einer produktionsnahen Umgebung geprüft. d) FlexiRad prüft, ob die App ihre Anforderungen erfüllt.
 
 > [!success]- Lösung (je 1 P)
 > a) Komponenten-/Unit-Test · b) Integrationstest · c) Systemtest · d) Abnahmetest
@@ -266,14 +266,14 @@ Ordne zu: a) Einzelne Methode wird isoliert geprüft. b) App und Backend werden 
 ### A12.1 ★★ – Abfrage mit JOIN (4 Punkte)
 📘 **Nachlernen:** [[FIAE-12 SQL für Entwickler#JOINs|FIAE-12 › JOINs]]
 
-Gib Name, Ort und Tarifbezeichnung aller Kunden aus Münster aus, alphabetisch nach Name.
+Geben Sie Name, Ort und Tarifbezeichnung aller Kunden aus Köln aus, alphabetisch nach Name.
 
 > [!success]- Lösung
 > ```sql
 > SELECT k.Name, k.Ort, t.Bezeichnung
 > FROM Kunde k
 > INNER JOIN Tarif t ON k.TarifID = t.TarifID
-> WHERE k.Ort = 'Münster'
+> WHERE k.Ort = 'Köln'
 > ORDER BY k.Name;
 > ```
 > Spalten 1 P · JOIN mit Bedingung 1,5 P · WHERE 1 P · ORDER BY 0,5 P
@@ -281,7 +281,7 @@ Gib Name, Ort und Tarifbezeichnung aller Kunden aus Münster aus, alphabetisch n
 ### A12.2 ★★ – Gruppieren (5 Punkte)
 📘 **Nachlernen:** [[FIAE-12 SQL für Entwickler#1. SELECT Schritt für Schritt|FIAE-12 › SELECT Schritt für Schritt]]
 
-Gib für jeden Kunden mit mindestens 10 Ausleihen den Namen, die Anzahl der Ausleihen und den Gesamtumsatz aus, absteigend nach Umsatz.
+Geben Sie für jeden Kunden mit mindestens 10 Ausleihen den Namen, die Anzahl der Ausleihen und den Gesamtumsatz aus, absteigend nach Umsatz.
 
 > [!success]- Lösung
 > ```sql
@@ -297,7 +297,7 @@ Gib für jeden Kunden mit mindestens 10 Ausleihen den Namen, die Anzahl der Ausl
 ### A12.3 ★★ – Unterabfrage (5 Punkte)
 📘 **Nachlernen:** [[FIAE-12 SQL für Entwickler#Unterabfragen, UNION, Datum|FIAE-12 › Unterabfragen, UNION, Datum]]
 
-a) Gib alle Ausleihen aus, deren Dauer über dem Durchschnitt aller Ausleihen liegt. b) Gib alle Kunden aus, die noch nie ausgeliehen haben.
+a) Geben Sie alle Ausleihen aus, deren Dauer über dem Durchschnitt aller Ausleihen liegt. b) Geben Sie alle Kunden aus, die noch nie ausgeliehen haben.
 
 > [!success]- Lösung
 > ```sql
@@ -316,7 +316,7 @@ a) Gib alle Ausleihen aus, deren Dauer über dem Durchschnitt aller Ausleihen li
 ### A12.4 ★★ – Daten ändern (6 Punkte)
 📘 **Nachlernen:** [[FIAE-12 SQL für Entwickler#2. Daten ändern (DML)|FIAE-12 › Daten ändern]]
 
-a) Lege den Tarif 4 „Student“ mit 0,07 € pro Minute an. b) Erhöhe alle Minutenpreise um 10 %. c) Lösche alle Kunden ohne Tarif.
+a) Legen Sie den Tarif 4 „Student“ mit 0,07 € pro Minute an. b) Erhöhen Sie alle Minutenpreise um 10 %. c) Löschen Sie alle Kunden ohne Tarif.
 
 > [!success]- Lösung
 > ```sql
@@ -331,7 +331,7 @@ a) Lege den Tarif 4 „Student“ mit 0,07 € pro Minute an. b) Erhöhe alle Mi
 ### A12.5 ★★★ – Archivieren (6 Punkte)
 📘 **Nachlernen:** [[FIAE-12 SQL für Entwickler#2. Daten ändern (DML)|FIAE-12 › Daten ändern]]
 
-Alle Ausleihen, die vor dem 01.01.2025 begonnen haben, sollen nach `Ausleihe_Archiv` verschoben werden. Schreibe die Anweisungen und begründe, warum sie in einer Transaktion laufen sollten.
+Alle Ausleihen, die vor dem 01.01.2025 begonnen haben, sollen nach `Ausleihe_Archiv` verschoben werden. Schreiben Sie die Anweisungen und begründen Sie, warum sie in einer Transaktion laufen sollten.
 
 > [!success]- Lösung
 > ```sql
@@ -347,7 +347,7 @@ Alle Ausleihen, die vor dem 01.01.2025 begonnen haben, sollen nach `Ausleihe_Arc
 ### A12.6 ★ – Struktur und Rechte (4 Punkte)
 📘 **Nachlernen:** [[FIAE-12 SQL für Entwickler#3. Struktur und Rechte (DDL, DCL)|FIAE-12 › Struktur und Rechte]]
 
-a) Füge der Tabelle Kunde die Spalte `Email` (max. 100 Zeichen) hinzu. b) Der Benutzer `auswertung` soll Ausleihen nur lesen dürfen.
+a) Fügen Sie der Tabelle Kunde die Spalte `Email` (max. 100 Zeichen) hinzu. b) Der Benutzer `auswertung` soll Ausleihen nur lesen dürfen.
 
 > [!success]- Lösung
 > ```sql

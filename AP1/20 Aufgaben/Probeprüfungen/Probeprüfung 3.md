@@ -8,14 +8,14 @@ await dv.view("AP1/99 System/views/pruefung", { name: "Probeprüfung 3" })
 ```
 
 > [!info] Ausgangssituation
-> Die **Pixelwerk GmbH** (fiktiv) entwickelt Apps für Kunden. Zwölf neue Entwicklerinnen und Entwickler starten, außerdem betreibt Pixelwerk einen internen Git-Server und einen Support für Kunden-Apps. Du arbeitest im IT-Team von Pixelwerk.
+> Die **Pixelwerk GmbH** (fiktiv) entwickelt Apps für Kunden. Zwölf neue Entwicklerinnen und Entwickler starten, außerdem betreibt Pixelwerk einen internen Git-Server und einen Support für Kunden-Apps. Sie arbeiten im IT-Team von Pixelwerk.
 > **Bearbeitungszeit 90 Minuten · 4 Aufgaben à 25 Punkte · Hilfsmittel: Taschenrechner**
 
 ---
 
 ## Aufgabe 1 – Arbeitsplätze und Lizenzen (25 Punkte)
 
-**a) (6 P)** Die Entwickler:innen arbeiten mit mehreren Containern und virtuellen Maschinen gleichzeitig. Nenne drei Anforderungen an ihre Notebooks und begründe sie.
+**a) (6 P)** Die Entwickler:innen arbeiten mit mehreren Containern und virtuellen Maschinen gleichzeitig. Nennen Sie drei Anforderungen an ihre Notebooks und begründen Sie sie.
 
 > [!success]- Lösung a (je 2 P)
 > - **32 GB RAM oder mehr** – jede VM/jeder Container belegt eigenen Arbeitsspeicher, sonst wird ausgelagert
@@ -25,7 +25,7 @@ await dv.view("AP1/99 System/views/pruefung", { name: "Probeprüfung 3" })
 >
 > 📘 **Nachlernen:** [[H1 PC-Komponenten und Arbeitsplatzgeräte#3. Arbeitsspeicher (RAM)|H1 › Arbeitsspeicher]] · [[H1 PC-Komponenten und Arbeitsplatzgeräte#2. Prozessor (CPU)|H1 › Prozessor]] · [[S5 Virtualisierung und Cloud#1. Virtualisierung|S5 › Virtualisierung]]
 
-**b) (5 P)** Zur Wahl stehen zwei 27-Zoll-Monitore: WQHD (2560 × 1440) und 4K (3840 × 2160). Berechne beide Pixeldichten und nenne einen Vorteil des 4K-Monitors für Entwickler:innen.
+**b) (5 P)** Zur Wahl stehen zwei 27-Zoll-Monitore: WQHD (2560 × 1440) und 4K (3840 × 2160). Berechnen Sie beide Pixeldichten und nennen Sie einen Vorteil des 4K-Monitors für Entwickler:innen.
 
 > [!success]- Lösung b
 > WQHD: √(2560² + 1440²) ≈ 2 937,2 / 27 ≈ **108,8 ppi** · 4K: √(3840² + 2160²) = √19 411 200 ≈ 4 405,8 / 27 ≈ **163,2 ppi** (4 P)
@@ -34,7 +34,7 @@ await dv.view("AP1/99 System/views/pruefung", { name: "Probeprüfung 3" })
 > 📘 **Nachlernen:** [[H1 PC-Komponenten und Arbeitsplatzgeräte#7. Monitor|H1 › Monitor]]
 
 **c) (8 P)** Die Entwicklungsumgebung kostet als Named-User-Lizenz 690 €/Jahr, als Concurrent-Lizenz 1 450 €/Jahr. Alle 12 Entwickler:innen arbeiten täglich, meist gleichzeitig mindestens 10.
-1. Berechne beide Varianten und empfiehl eine. 2. Ein Entwickler möchte eine GPL-lizenzierte Bibliothek in eine App einbauen, die an Kunden verkauft wird. Erläutere das Risiko und eine Alternative.
+1. Berechnen Sie beide Varianten und empfehlen Sie eine. 2. Ein Entwickler möchte eine GPL-lizenzierte Bibliothek in eine App einbauen, die an Kunden verkauft wird. Erläutern Sie das Risiko und eine Alternative.
 
 > [!success]- Lösung c
 > 1. Named: 12 × 690 = **8 280 €** · Concurrent: 10 × 1 450 = **14 500 €** → **Named User**, weil fast alle gleichzeitig arbeiten. (4 P)
@@ -42,26 +42,29 @@ await dv.view("AP1/99 System/views/pruefung", { name: "Probeprüfung 3" })
 >
 > 📘 **Nachlernen:** [[S6 Software beschaffen und lizenzieren#Lizenzarten nach Zählweise|S6 › Lizenzarten nach Zählweise]] · [[S6 Software beschaffen und lizenzieren#Open-Source-Lizenzen|S6 › Open-Source-Lizenzen]]
 
-**d) (6 P)** Notebooks: Kauf 1 850 € je Gerät plus 150 € Garantieverlängerung auf 3 Jahre, oder Leasing 58 €/Monat je Gerät über 36 Monate inkl. Service. Vergleiche die Kosten für alle 12 Geräte und nenne zwei qualitative Argumente.
+**d) (6 P)** Die Geschäftsleitung möchte allen 12 Entwickler:innen einen KI-Programmierassistenten für **19 € netto je Person und Monat** bereitstellen.
+1. Berechnen Sie die jährlichen Kosten (netto).
+2. Nennen Sie zwei Chancen und zwei Risiken des Einsatzes in der Softwareentwicklung bei Pixelwerk.
 
 > [!success]- Lösung d
-> Kauf: 12 × (1 850 + 150) = **24 000 €** · Leasing: 12 × 58 × 36 = **25 056 €** → Kauf **1 056 €** günstiger. (4 P)
-> Qualitativ (je 1 P): Leasing schont die Liquidität und ermöglicht nach 3 Jahren aktuelle Geräte; Kauf bedeutet Eigentum und Weiterverwendung nach Laufzeitende.
+> 1. 12 × 19 € × 12 Monate = **2 736 €** netto pro Jahr (2 P)
+> 2. Chancen (je 1 P, max. 2 P): Routinecode, Tests und Dokumentation schneller erstellen · fremden Code erklären lassen, schnellere Einarbeitung der neuen Entwickler:innen · Fehlerhinweise und Refactoring-Vorschläge.
+> Risiken (je 1 P, max. 2 P): **fehlerhafter oder unsicherer Code** (Halluzinationen) → Code-Review bleibt Pflicht · **Kundenquellcode** und Zugangsdaten gelangen zum Anbieter → Vertrag/AVV, keine Nutzung zum Training, Serverstandort prüfen · ungeklärte **Urheber- und Lizenzfragen** bei generiertem Code · Abhängigkeit vom Anbieter und Kompetenzverlust.
 >
-> 📘 **Nachlernen:** [[W3 Investition und Finanzierung#2. Kauf, Leasing, Miete|W3 › Kauf, Leasing, Miete]]
+> 📘 **Nachlernen:** [[S9 KI und Unternehmenssoftware#4. Risiken und rechtlicher Rahmen|S9 › Risiken und rechtlicher Rahmen]] · [[S9 KI und Unternehmenssoftware#5. Kosten eines KI-Dienstes berechnen|S9 › Kosten eines KI-Dienstes berechnen]]
 
 ---
 
 ## Aufgabe 2 – Netzwerk (25 Punkte)
 
-**a) (8 P)** Ein Testserver hat die Adresse `172.16.93.77/20`. Bestimme Subnetzmaske, Netzadresse, Broadcast, Hostbereich und Anzahl der Hosts.
+**a) (8 P)** Ein Testserver hat die Adresse `172.16.93.77/20`. Bestimmen Sie Subnetzmaske, Netzadresse, Broadcast, Hostbereich und Anzahl der Hosts.
 
 > [!success]- Lösung a
 > Maske **255.255.240.0**; Blockgröße im 3. Oktett 16 → 93 liegt im Block ab **80** → Netz **172.16.80.0**, Broadcast **172.16.95.255**, Hosts **172.16.80.1 – 172.16.95.254**, 2¹² − 2 = **4 094**. (je Wert 1,5 P, gerundet)
 >
 > 📘 **Nachlernen:** [[N2 IPv4 und Subnetting#3. Die Blockgrößen-Methode (ohne Binärrechnung)|N2 › Die Blockgrößen-Methode]]
 
-**b) (5 P)** Test-VMs auf einem Virtualisierungshost sollen in einem eigenen VLAN (ID 30) laufen, die Verwaltungsschnittstelle des Hosts im VLAN 10. Beschreibe, wie der Switchport des Hosts konfiguriert werden muss und warum.
+**b) (5 P)** Test-VMs auf einem Virtualisierungshost sollen in einem eigenen VLAN (ID 30) laufen, die Verwaltungsschnittstelle des Hosts im VLAN 10. Beschreiben Sie, wie der Switchport des Hosts konfiguriert werden muss und warum.
 
 > [!success]- Lösung b
 > Der Port wird als **Trunk-Port** (IEEE 802.1Q) konfiguriert, der **VLAN 10 und 30 getaggt** transportiert; der virtuelle Switch des Hypervisors ordnet die VMs anhand der VLAN-ID zu. Ein Access-Port könnte nur ein VLAN übertragen. (5 P)
@@ -69,7 +72,7 @@ await dv.view("AP1/99 System/views/pruefung", { name: "Probeprüfung 3" })
 > 📘 **Nachlernen:** [[N5 Verkabelung und Netzwerkkomponenten#VLAN (IEEE 802.1Q)|N5 › VLAN]] · [[S5 Virtualisierung und Cloud#1. Virtualisierung|S5 › Virtualisierung]]
 
 **c) (6 P)** Pixelwerk hat das IPv6-Präfix `2001:db8:77::/48`.
-1. Gib das /64-Präfix für VLAN 30 an, wenn die VLAN-ID hexadezimal im 4. Block steht. 2. Kürze regelkonform: `2001:0db8:0077:001e:0000:0000:0000:0a0b`.
+1. Geben Sie das /64-Präfix für VLAN 30 an, wenn die VLAN-ID hexadezimal im 4. Block steht. 2. Kürzen Sie regelkonform: `2001:0db8:0077:001e:0000:0000:0000:0a0b`.
 
 > [!success]- Lösung c
 > 1. 30 = 0x1e → **`2001:db8:77:1e::/64`** (3 P)
@@ -77,7 +80,7 @@ await dv.view("AP1/99 System/views/pruefung", { name: "Probeprüfung 3" })
 >
 > 📘 **Nachlernen:** [[N3 IPv6#5. Subnetting mit IPv6|N3 › Subnetting mit IPv6]] · [[N3 IPv6#2. Kürzen und Ausschreiben|N3 › Kürzen und Ausschreiben]]
 
-**d) (6 P)** Die Entwickler:innen greifen per Git über SSH auf den internen Server zu. Nenne den Port und erkläre, wie die Anmeldung mit einem SSH-Schlüsselpaar funktioniert und warum sie sicherer ist als ein Passwort.
+**d) (6 P)** Die Entwickler:innen greifen per Git über SSH auf den internen Server zu. Nennen Sie den Port und erklären Sie, wie die Anmeldung mit einem SSH-Schlüsselpaar funktioniert und warum sie sicherer ist als ein Passwort.
 
 > [!success]- Lösung d
 > **Port 22** (1 P). Der Nutzer erzeugt ein **Schlüsselpaar**; der **öffentliche Schlüssel** wird auf dem Server hinterlegt, der **private** bleibt auf dem Notebook (mit Passphrase). Bei der Anmeldung beweist der Client mit seinem privaten Schlüssel (Signatur einer Herausforderung), dass er ihn besitzt – der private Schlüssel verlässt das Gerät nie. (3 P) Sicherer, weil kein Passwort übertragen/erraten werden kann (Brute Force, Phishing) und Schlüssel einzeln widerrufbar sind. (2 P)
@@ -96,7 +99,7 @@ await dv.view("AP1/99 System/views/pruefung", { name: "Probeprüfung 3" })
 >
 > 📘 **Nachlernen:** [[P3 IT-Service, Support und Qualität#Verfügbarkeit berechnen|P3 › Verfügbarkeit berechnen]]
 
-**b) (6 P)** Folgende Tickets gehen gleichzeitig ein: (1) Build-Server für alle Teams ausgefallen, Release morgen · (2) neue Maus für einen Entwickler · (3) Kunde meldet Absturz der App bei einer Funktion, Workaround bekannt · (4) VPN für eine Person im Homeoffice fällt aus, sie kann ins Büro kommen. Lege Prioritäten fest und begründe mit Auswirkung und Dringlichkeit.
+**b) (6 P)** Folgende Tickets gehen gleichzeitig ein: (1) Build-Server für alle Teams ausgefallen, Release morgen · (2) neue Maus für einen Entwickler · (3) Kunde meldet Absturz der App bei einer Funktion, Workaround bekannt · (4) VPN für eine Person im Homeoffice fällt aus, sie kann ins Büro kommen. Legen Sie Prioritäten fest und begründen Sie mit Auswirkung und Dringlichkeit.
 
 > [!success]- Lösung b
 > (1) **Prio 1** – alle Teams betroffen, dringend (Release) · (3) **Prio 2/3** – Kundenauswirkung, aber Workaround · (4) **Prio 3** – eine Person, Ausweichmöglichkeit · (2) **Prio 4** – Service Request, planbar. (je 1,5 P)
@@ -104,7 +107,7 @@ await dv.view("AP1/99 System/views/pruefung", { name: "Probeprüfung 3" })
 > 📘 **Nachlernen:** [[P3 IT-Service, Support und Qualität#3. Priorisierung|P3 › Priorisierung]]
 
 **c) (7 P)** Ein Kunde ruft an: „Ihre App stürzt ständig ab, das kann doch nicht sein!“
-1. Analysiere die Aussage mit dem Vier-Seiten-Modell. 2. Formuliere zwei Fragen zur weiteren Klärung und benenne ihren Typ.
+1. Analysieren Sie die Aussage mit dem Vier-Seiten-Modell. 2. Formulieren Sie zwei Fragen zur weiteren Klärung und benennen Sie ihren Typ.
 
 > [!success]- Lösung c
 > 1. **Sachinhalt:** Die App stürzt häufig ab. **Selbstoffenbarung:** Ich bin verärgert/frustriert. **Beziehung:** Ihr liefert schlechte Qualität. **Appell:** Behebt den Fehler schnell! (4 P)
@@ -112,7 +115,7 @@ await dv.view("AP1/99 System/views/pruefung", { name: "Probeprüfung 3" })
 >
 > 📘 **Nachlernen:** [[P4 Kommunikation und Kundenberatung#Vier-Seiten-Modell (Schulz von Thun)|P4 › Vier-Seiten-Modell]] · [[P4 Kommunikation und Kundenberatung#Fragetechniken („Wer fragt, der führt“)|P4 › Fragetechniken]]
 
-**d) (6 P)** Nach der Fehlerbehebung soll verhindert werden, dass alte Fehler zurückkehren. Erkläre die Begriffe **Unit-Test** und **Regressionstest** und ordne die Teststufen der Testpyramide.
+**d) (6 P)** Nach der Fehlerbehebung soll verhindert werden, dass alte Fehler zurückkehren. Erklären Sie die Begriffe **Unit-Test** und **Regressionstest** und ordnen Sie die Teststufen der Testpyramide.
 
 > [!success]- Lösung d
 > **Unit-Test:** prüft einzelne Funktionen isoliert, automatisiert und schnell. **Regressionstest:** nach jeder Änderung werden die vorhandenen Tests erneut ausgeführt, um ungewollte Auswirkungen zu erkennen. (4 P)
@@ -125,7 +128,7 @@ await dv.view("AP1/99 System/views/pruefung", { name: "Probeprüfung 3" })
 ## Aufgabe 4 – Programmlogik und Rechnen (25 Punkte)
 
 **a) (6 P)** Im Hex-Dump einer Datei steht das Byte `B7`.
-1. Welchen Wert hat es dezimal (vorzeichenlos) und binär? 2. Welchen Wert hat es als 8-Bit-Zweierkomplement? 3. Stelle −73 als 8-Bit-Zweierkomplement dar.
+1. Welchen Wert hat es dezimal (vorzeichenlos) und binär? 2. Welchen Wert hat es als 8-Bit-Zweierkomplement? 3. Stellen Sie −73 als 8-Bit-Zweierkomplement dar.
 
 > [!success]- Lösung a
 > 1. 0xB7 = 11·16 + 7 = **183**, binär **1011 0111** (2 P)
@@ -134,7 +137,7 @@ await dv.view("AP1/99 System/views/pruefung", { name: "Probeprüfung 3" })
 >
 > 📘 **Nachlernen:** [[S1 Zahlensysteme und Codierung#Binär ↔ Hex – in 4er-Gruppen (Nibbles)|S1 › Binär ↔ Hex – in 4er-Gruppen]] · [[S1 Zahlensysteme und Codierung#3. Negative Zahlen – Zweierkomplement|S1 › Negative Zahlen – Zweierkomplement]]
 
-**b) (8 P)** Schreibe eine Funktion `istSicher(pw)`, die **wahr** liefert, wenn das Passwort mindestens **12 Zeichen**, mindestens **eine Ziffer** und mindestens **einen Großbuchstaben** enthält. Die Hilfsfunktionen `istZiffer(z)` und `istGross(z)` stehen zur Verfügung.
+**b) (8 P)** Schreiben Sie eine Funktion `istSicher(pw)`, die **wahr** liefert, wenn das Passwort mindestens **12 Zeichen**, mindestens **eine Ziffer** und mindestens **einen Großbuchstaben** enthält. Die Hilfsfunktionen `istZiffer(z)` und `istGross(z)` stehen zur Verfügung.
 
 > [!success]- Lösung b
 > ```text
@@ -159,7 +162,7 @@ await dv.view("AP1/99 System/views/pruefung", { name: "Probeprüfung 3" })
 >
 > 📘 **Nachlernen:** [[S2 Programmierung – Grundlagen#6. Funktionen|S2 › Funktionen]] · [[I5 Bedrohungen und Schutzmaßnahmen#Passwortrichtlinie (nach BSI-Empfehlungen)|I5 › Passwortrichtlinie]]
 
-**c) (6 P)** Führe einen Schreibtischtest durch und beschreibe, was der Algorithmus berechnet.
+**c) (6 P)** Führen Sie einen Schreibtischtest durch und beschreiben Sie, was der Algorithmus berechnet.
 ```text
 n ← 37
 bits ← ""
@@ -183,12 +186,30 @@ ausgabe(bits)
 >
 > 📘 **Nachlernen:** [[S3 Algorithmen, Darstellung und Testen#2. Schreibtischtest (Trace-Tabelle)|S3 › Schreibtischtest]] · [[S1 Zahlensysteme und Codierung#Dezimal → Binär|S1 › Dezimal → Binär]]
 
-**d) (5 P)** Ein Container-Image von **3,5 GiB** wird über eine 250-Mbit/s-Leitung übertragen, effektiv stehen **80 %** zur Verfügung. Wie lange dauert die Übertragung?
+**d) (5 P)** Der Support für Kunden-Apps läuft so ab: Eine Kundin meldet einen Fehler über das Webformular. Der First-Level-Support prüft, ob es sich um einen bekannten Fehler handelt. Ist das der Fall, sendet er der Kundin die dokumentierte Lösung. Andernfalls übergibt er das Ticket an die Entwicklung, die den Fehler behebt und ein Update bereitstellt; danach informiert der Support die Kundin. Stellen Sie den Prozess als **BPMN-Diagramm** mit den Lanes *Support* und *Entwicklung* dar.
 
 > [!success]- Lösung d
-> 3,5 × 2³⁰ B × 8 = 30 064 771 072 Bit · effektive Rate 250 × 10⁶ × 0,8 = 200 · 10⁶ Bit/s → **150,3 s ≈ 2 min 30 s** (5 P)
+> ```mermaid
+> flowchart LR
+>     subgraph Support
+>         S((Fehlermeldung eingegangen)) --> P(Fehler prüfen)
+>         P --> G{X bekannt?}
+>         G -- ja --> L(Lösung senden)
+>         I(Kundin informieren)
+>         L --> E(((Ticket geschlossen)))
+>         I --> E
+>     end
+>     subgraph Entwicklung
+>         B(Fehler beheben) --> U(Update bereitstellen)
+>     end
+>     G -- nein --> B
+>     U --> I
+> ```
+> BPMN-Elemente: **Pool/Lanes** für Support und Entwicklung · **Startereignis** (dünner Kreis) · **Aktivitäten** (abgerundete Rechtecke) · **exklusives Gateway** (Raute mit X) mit beschrifteten Ausgängen · **Sequenzflüsse** zwischen den Lanes · **Endereignis** (dicker Kreis). Ein Zusammenführungs-Gateway vor dem Endereignis ist ebenfalls richtig.
 >
-> 📘 **Nachlernen:** [[H3 Datenmengen und Übertragung#3. Übertragungsdauer|H3 › Übertragungsdauer]]
+> **Bewertung:** (Lanes 1 P, Start- und Endereignis 1 P, Aktivitäten 1 P, Gateway mit Bedingungen 2 P)
+>
+> 📘 **Nachlernen:** [[S8 UML und Softwareentwurf#8. Geschäftsprozesse mit BPMN|S8 › Geschäftsprozesse mit BPMN]]
 
 ---
 Ergebnis oben im Widget eintragen · Fehler ins [[Fehlerlog]] · zurück zum [[Start]]

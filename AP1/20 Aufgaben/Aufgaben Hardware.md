@@ -17,7 +17,7 @@ tags: [ap1/aufgaben, ap1/hardware]
 📘 **Nachlernen:** [[H1 PC-Komponenten und Arbeitsplatzgeräte#10. So begründest du eine Auswahl|H1 › So begründest du eine Auswahl]] · [[H1 PC-Komponenten und Arbeitsplatzgeräte#8. Geräteklassen|H1 › Geräteklassen]] · [[H1 PC-Komponenten und Arbeitsplatzgeräte#3. Arbeitsspeicher (RAM)|H1 › Arbeitsspeicher]]
 
 Drei Profile: (A) Sachbearbeitung mit Office, DATEV im Browser, zwei Monitore · (B) Auszubildende, wechselnde Plätze, auch Homeoffice · (C) Systemadministrator mit mehreren Test-VMs.
-Empfiehl je Profil Geräteklasse, RAM und eine weitere entscheidende Komponente – mit Begründung.
+Empfehlen Sie je Profil Geräteklasse, RAM und eine weitere entscheidende Komponente – mit Begründung.
 
 > [!success]- Lösung (Beispiel)
 > - **A:** Desktop- oder Mini-PC, **16 GB RAM**, CPU mit **iGPU**, die **zwei Monitore** unterstützt (2 × DisplayPort) – Office braucht keine dedizierte Grafik, spart Kosten und Strom. (3 P)
@@ -28,7 +28,7 @@ Empfiehl je Profil Geräteklasse, RAM und eine weitere entscheidende Komponente 
 📘 **Nachlernen:** [[H1 PC-Komponenten und Arbeitsplatzgeräte#7. Monitor|H1 › Monitor]] · [[P5 Arbeitsplatz, Ergonomie und Umwelt#2. Der ergonomische Bildschirmarbeitsplatz|P5 › Der ergonomische Bildschirmarbeitsplatz]]
 
 Zur Wahl stehen: Monitor 1: 24", 1920×1080, TN, 144 Hz, nicht höhenverstellbar · Monitor 2: 27", 2560×1440, IPS, 60 Hz, höhenverstellbar, entspiegelt, USB-C mit 65 W PD.
-a) Berechne die Pixeldichte beider Monitore. b) Welchen empfiehlst du für die Sachbearbeitung? Begründe mit zwei Argumenten.
+a) Berechnen Sie die Pixeldichte beider Monitore. b) Empfehlen Sie einen Monitor für die Sachbearbeitung und begründen Sie Ihre Empfehlung mit zwei Argumenten.
 
 > [!success]- Lösung
 > a) M1: √(1920² + 1080²) = 2 202,9 / 24 = **91,8 ppi** · M2: √(2560² + 1440²) = 2 937,2 / 27 = **108,8 ppi** (je 2 P)
@@ -37,7 +37,7 @@ a) Berechne die Pixeldichte beider Monitore. b) Welchen empfiehlst du für die S
 ### H1.3 ★ – Datenblatt lesen (4 Punkte)
 📘 **Nachlernen:** [[H1 PC-Komponenten und Arbeitsplatzgeräte#2. Prozessor (CPU)|H1 › Prozessor]]
 
-Erkläre die Angaben: „8 Kerne / 16 Threads, 3,8–5,1 GHz, 32 MB L3, 65 W TDP“.
+Erklären Sie die Angaben: „8 Kerne / 16 Threads, 3,8–5,1 GHz, 32 MB L3, 65 W TDP“.
 
 > [!success]- Lösung
 > 8 physische Rechenkerne, per SMT je 2 Threads (16 parallele Befehlsströme) · Basistakt 3,8 GHz, Boost bis 5,1 GHz · 32 MB schneller Zwischenspeicher (L3-Cache) auf dem Chip · typische Wärmeabgabe 65 W → Kühlung und Stromverbrauch. (je 1 P)
@@ -49,7 +49,7 @@ Erkläre die Angaben: „8 Kerne / 16 Threads, 3,8–5,1 GHz, 32 MB L3, 65 W TDP
 ### H2.1 ★★ – Speicher auswählen (6 Punkte)
 📘 **Nachlernen:** [[H2 Massenspeicher und Schnittstellen#1. Massenspeicher|H2 › Massenspeicher]]
 
-Für die neuen PCs wird zwischen einer 1-TB-HDD (7 200 rpm) und einer 1-TB-NVMe-SSD (PCIe 4.0) gewählt. Vergleiche anhand von drei Kriterien und gib eine Empfehlung.
+Für die neuen PCs wird zwischen einer 1-TB-HDD (7 200 rpm) und einer 1-TB-NVMe-SSD (PCIe 4.0) gewählt. Vergleichen Sie anhand von drei Kriterien und geben Sie eine Empfehlung.
 
 > [!success]- Lösung
 > - **Geschwindigkeit/Zugriffszeit:** SSD ca. 7 000 MB/s und µs-Zugriff vs. HDD ~200 MB/s und ms → Systemstart, Programme deutlich schneller. (2 P)
@@ -61,7 +61,7 @@ Für die neuen PCs wird zwischen einer 1-TB-HDD (7 200 rpm) und einer 1-TB-NVMe-
 📘 **Nachlernen:** [[H2 Massenspeicher und Schnittstellen#4. Engpass-Denken|H2 › Engpass-Denken]] · [[H3 Datenmengen und Übertragung#3. Übertragungsdauer|H3 › Übertragungsdauer]]
 
 Ein Mitarbeiter kopiert 60 GB Scans von einer externen SSD (USB 3.2 Gen 2) über einen USB-Hub (USB 2.0) auf seinen PC.
-a) Wo liegt der Engpass? b) Wie lange dauert die Kopie mindestens? c) Was empfiehlst du?
+a) Ermitteln Sie den Engpass. b) Berechnen Sie, wie lange die Kopie mindestens dauert. c) Schlagen Sie eine Verbesserung vor.
 
 > [!success]- Lösung
 > a) Der **USB-2.0-Hub** (480 Mbit/s) begrenzt die Kette. (1 P)
@@ -71,7 +71,7 @@ a) Wo liegt der Engpass? b) Wie lange dauert die Kopie mindestens? c) Was empfie
 ### H2.3 ★ – USB-C (4 Punkte)
 📘 **Nachlernen:** [[H2 Massenspeicher und Schnittstellen#USB|H2 › USB]]
 
-Die neuen Notebooks haben drei USB-C-Buchsen. Erkläre, warum man vor dem Anschluss eines Monitors und des Netzteils ins Datenblatt schauen sollte.
+Die neuen Notebooks haben drei USB-C-Buchsen. Erklären Sie, warum man vor dem Anschluss eines Monitors und des Netzteils ins Datenblatt schauen sollte.
 
 > [!success]- Lösung
 > USB-C ist nur die **Steckerform**. Nicht jede Buchse unterstützt **DisplayPort Alt Mode/Thunderbolt** (Bildausgabe) oder **Power Delivery** (Laden) – oft kann das nur eine bestimmte Buchse (Symbole: Blitz, DP-Logo, Batterie). Datenrate kann zwischen 480 Mbit/s und 40 Gbit/s liegen. (4 P)
@@ -83,7 +83,7 @@ Die neuen Notebooks haben drei USB-C-Buchsen. Erkläre, warum man vor dem Anschl
 ### H3.1 ★★ – Scan-Archiv (8 Punkte)
 📘 **Nachlernen:** [[H3 Datenmengen und Übertragung#5. Speicherbedarf planen|H3 › Speicherbedarf planen]] · [[H3 Datenmengen und Übertragung#2. Dezimale und binäre Präfixe|H3 › Dezimale und binäre Präfixe]]
 
-Das Steuerbüro scannt Belege: 300 Seiten pro Tag, 220 Arbeitstage, je Seite als PDF ca. 350 KiB. Buchungsbelege sind nach § 147 AO **8 Jahre** aufzubewahren (seit 01.01.2025).
+Das Steuerbüro scannt Belegen Sie: 300 Seiten pro Tag, 220 Arbeitstage, je Seite als PDF ca. 350 KiB. Buchungsbelege sind nach § 147 AO **8 Jahre** aufzubewahren (seit 01.01.2025).
 a) Berechnen Sie den Speicherbedarf pro Jahr in GiB. b) Berechnen Sie den Bedarf für die gesamte Aufbewahrungsfrist in TiB bei zusätzlich 20 % Reserve.
 
 > [!success]- Lösung
@@ -105,7 +105,7 @@ Reicht das Fenster für eine Vollsicherung?
 📘 **Nachlernen:** [[H3 Datenmengen und Übertragung#4. Speicherbedarf von Medien|H3 › Speicherbedarf von Medien]] · [[H2 Massenspeicher und Schnittstellen|H2 › Massenspeicher]] · [[I2 Datenschutz#2. Grundsätze der Verarbeitung (Art. 5)|I2 › Grundsätze der Verarbeitung]]
 
 Vier Kameras zeichnen mit je 4 Mbit/s rund um die Uhr auf, die Aufnahmen sollen 14 Tage gespeichert werden (Datenschutz: nicht länger!).
-a) Berechne den Speicherbedarf in TB. b) Welche nutzbare Speicherkapazität empfiehlst du für das NAS, und welche zusätzliche Maßnahme schützt vor Geräteausfall oder Datenverlust?
+a) Berechnen Sie den Speicherbedarf in TB. b) Empfehlen Sie eine nutzbare Speicherkapazität für das NAS und nennen Sie eine zusätzliche Maßnahme, die vor Geräteausfall oder Datenverlust schützt.
 
 > [!success]- Lösung
 > a) 4 × 4 · 10⁶ Bit/s × 86 400 s × 14 = 1,93536 · 10¹³ Bit / 8 = **2,42 TB** (4 P)
@@ -122,7 +122,7 @@ a) Berechne den Speicherbedarf in TB. b) Welche nutzbare Speicherkapazität empf
 📘 **Nachlernen:** [[H4 Server, NAS und RAID#Die RAID-Level|H4 › Die RAID-Level]] · [[H4 Server, NAS und RAID#Welches RAID wofür|H4 › Welches RAID wofür]]
 
 Für den Fileserver stehen 6 Platten à 8 TB zur Verfügung. Die Geschäftsführung will „möglichst viel Platz und trotzdem sicher“.
-a) Berechne die Nutzkapazität für RAID 5, RAID 6 und RAID 10. b) Empfiehl ein Level und begründe.
+a) Berechnen Sie die Nutzkapazität für RAID 5, RAID 6 und RAID 10. b) Empfehlen Sie ein Level und begründen Sie.
 
 > [!success]- Lösung
 > a) RAID 5: 5 × 8 = **40 TB** · RAID 6: 4 × 8 = **32 TB** · RAID 10: 3 × 8 = **24 TB** (je 2 P)
@@ -142,7 +142,7 @@ Der Chef meint: „Wir haben RAID 6, ein Backup brauchen wir nicht.“ Widerlege
 ### H4.3 ★★ – Serveranforderungen (6 Punkte)
 📘 **Nachlernen:** [[H4 Server, NAS und RAID#Besondere Anforderungen an Serverhardware|H4 › Besondere Anforderungen an Serverhardware]]
 
-Nenne drei Ausstattungsmerkmale, die einen Server von einem Arbeitsplatz-PC unterscheiden, und erläutere ihren Nutzen.
+Nennen Sie drei Ausstattungsmerkmale, die einen Server von einem Arbeitsplatz-PC unterscheiden, und erläutern Sie ihren Nutzen.
 
 > [!success]- Lösung (je 2 P, drei davon)
 > - **Redundante Hot-Plug-Netzteile** – Ausfall eines Netzteils ohne Unterbrechung, Tausch im Betrieb.
@@ -154,7 +154,7 @@ Nenne drei Ausstattungsmerkmale, die einen Server von einem Arbeitsplatz-PC unte
 ### H4.4 ★★ – NAS oder SAN? (4 Punkte)
 📘 **Nachlernen:** [[H4 Server, NAS und RAID#2. DAS, NAS, SAN|H4 › DAS, NAS, SAN]]
 
-Das Steuerbüro will eine zentrale Dateiablage und ein Backup-Ziel. Begründe, warum ein NAS statt eines SAN genügt.
+Das Steuerbüro will eine zentrale Dateiablage und ein Backup-Ziel. Begründen Sie, warum ein NAS statt eines SAN genügt.
 
 > [!success]- Lösung
 > Ein **NAS** stellt Dateifreigaben (SMB) direkt im vorhandenen LAN bereit, ist günstig und einfach zu verwalten. Ein **SAN** liefert Blockspeicher über ein eigenes Speichernetz – sinnvoll für große Virtualisierungscluster, für 18 Arbeitsplätze zu teuer und zu komplex. (4 P)
@@ -168,7 +168,7 @@ Das Steuerbüro will eine zentrale Dateiablage und ein Backup-Ziel. Begründe, w
 
 An die USV kommen: Server 380 W, NAS 65 W, Switch 45 W, Firewall 30 W. Leistungsfaktor 0,8, Reserve 25 %.
 Modelle: A 750 VA/450 W · B 1 000 VA/800 W · C 1 500 VA/1 000 W
-a) Berechne Wirk- und Scheinleistung inkl. Reserve. b) Wähle ein Modell. c) Welche Bauart empfiehlst du für den Server? Begründe.
+a) Berechnen Sie Wirk- und Scheinleistung inkl. Reserve. b) Wählen Sie ein Modell. c) Empfehlen Sie eine USV-Bauart für den Server und begründen Sie Ihre Wahl.
 
 > [!success]- Lösung
 > a) 380 + 65 + 45 + 30 = 520 W × 1,25 = **650 W**; S = 650 / 0,8 = **812,5 VA** (3 P)
@@ -198,7 +198,7 @@ a) Jährliche Stromkosten alt und neu. b) Einsparung pro Jahr. c) Amortisationsz
 ### H5.4 ★ – Netzteil (4 Punkte)
 📘 **Nachlernen:** [[H5 Elektrotechnik, USV und Energie#2. Wirkungsgrad|H5 › Wirkungsgrad]]
 
-Ein PC benötigt 350 W. Das alte Netzteil hat 75 % Wirkungsgrad, ein neues 80-PLUS-Gold-Netzteil 90 %. Berechne die Leistungsaufnahme beider und die Verlustleistung.
+Ein PC benötigt 350 W. Das alte Netzteil hat 75 % Wirkungsgrad, ein neues 80-PLUS-Gold-Netzteil 90 %. Berechnen Sie die Leistungsaufnahme beider und die Verlustleistung.
 
 > [!success]- Lösung
 > alt: 350 / 0,75 = **466,7 W** (Verlust 116,7 W) · neu: 350 / 0,9 = **388,9 W** (Verlust 38,9 W) (4 P)
@@ -214,7 +214,7 @@ Die Buchhaltung (6 Personen) druckt ca. **1 500 Seiten pro Monat** in Schwarz-We
 - **Gerät A** (Tintenstrahl): 159,00 €, Patrone 34,50 € für 500 Seiten
 - **Gerät B** (Laser): 429,00 €, Toner 96,00 € für 4 000 Seiten, zusätzlich Trommel 60,00 € für 20 000 Seiten
 
-a) Berechne die Seitenkosten beider Geräte in Cent. b) Berechne die Gesamtkosten für 36 Monate. c) Nach wie vielen Monaten ist Gerät B günstiger? d) Nenne zwei weitere Kriterien für die Entscheidung.
+a) Berechnen Sie die Seitenkosten beider Geräte in Cent. b) Berechnen Sie die Gesamtkosten für 36 Monate. c) Nach wie vielen Monaten ist Gerät B günstiger? d) Nennen Sie zwei weitere Kriterien für die Entscheidung.
 
 > [!success]- Lösung
 > a) A: 34,50 ÷ 500 = **6,90 ct** · B: 96 ÷ 4 000 + 60 ÷ 20 000 = 2,40 + 0,30 = **2,70 ct** (3 P)
@@ -226,7 +226,7 @@ a) Berechne die Seitenkosten beider Geräte in Cent. b) Berechne die Gesamtkoste
 📘 **Nachlernen:** [[H6 Drucker, Peripherie und Mobilgeräte#5. Mobile Endgeräte|H6 › Mobile Endgeräte]] · [[H6 Drucker, Peripherie und Mobilgeräte#Mobile Device Management (MDM)|H6 › Mobile Device Management]]
 
 Acht Servicetechniker sollen mobile Geräte bekommen. Sie erfassen Arbeitsberichte beim Kunden (auch in Werkhallen), lassen sie unterschreiben und scannen Barcodes an Ersatzteilen. Im Büro arbeiten sie gelegentlich am Schreibtisch.
-a) Empfiehl eine Geräteklasse und begründe sie mit drei Anforderungen. b) Nenne vier Richtlinien, die per MDM auf den Geräten durchgesetzt werden sollten.
+a) Empfehlen Sie eine Geräteklasse und begründen Sie sie mit drei Anforderungen. b) Nennen Sie vier Richtlinien, die per MDM auf den Geräten durchgesetzt werden sollten.
 
 > [!success]- Lösung
 > a) **Robustes Tablet bzw. 2-in-1 (Rugged, IP65/IP67) mit Stift, LTE und Barcode-Scanner** (1 P) – Begründung je 1 P: Einsatz in Werkhallen → Stoß- und Staubschutz · Unterschrift → Stifteingabe · Barcodes → integrierter Scanner/Kamera · beim Kunden ohne WLAN → LTE · am Schreibtisch → Dockingstation mit Monitor und Tastatur
@@ -235,7 +235,7 @@ a) Empfiehl eine Geräteklasse und begründe sie mit drei Anforderungen. b) Nenn
 ### H6.3 ★ – Multifunktionsgerät zurückgeben (4 Punkte)
 📘 **Nachlernen:** [[H6 Drucker, Peripherie und Mobilgeräte#6. Entsorgung und Datenträger|H6 › Entsorgung und Datenträger]]
 
-Ein geleastes Multifunktionsgerät wird nach Vertragsende abgeholt. Erkläre, welches Datenschutzrisiko besteht und wie du vorgehst.
+Ein geleastes Multifunktionsgerät wird nach Vertragsende abgeholt. Erklären Sie, welches Datenschutzrisiko besteht, und beschreiben Sie Ihr Vorgehen.
 
 > [!success]- Lösung
 > Das Gerät hat eine **interne Festplatte/SSD** mit zwischengespeicherten Scans, Faxen und Druckaufträgen – darunter personenbezogene Daten (2 P). Vorgehen: Datenträger mit der Löschfunktion des Herstellers **sicher überschreiben** oder ausbauen und nach **DIN 66399** vernichten lassen, Löschung **dokumentieren** bzw. Löschzertifikat vom Leasinggeber verlangen, Adressbücher/Scan-Ziele entfernen (2 P).

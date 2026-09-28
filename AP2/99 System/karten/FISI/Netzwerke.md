@@ -40,12 +40,12 @@ Wie lautet die IPv6-Loopback-Adresse ausgeschrieben?::0:0:0:0:0:0:0:1
 Was ist SLAAC?::Stateless Address Autoconfiguration – Client bildet seine Adresse aus dem Präfix im Router Advertisement
 Wozu DHCPv6 statt SLAAC?::Zentrale Kontrolle/Protokollierung der Adressen, feste Zuordnungen, weitere Optionen
 Welches Protokoll ersetzt ARP bei IPv6?::NDP (Neighbor Discovery Protocol) mit ICMPv6
-Nenne drei Vorteile von IPv6.::Riesiger Adressraum (kein NAT nötig), Autokonfiguration, vereinfachter Header, kein Broadcast, IPsec integriert
+Nennen Sie drei Vorteile von IPv6.::Riesiger Adressraum (kein NAT nötig), Autokonfiguration, vereinfachter Header, kein Broadcast, IPsec integriert
 Was bedeutet Dual Stack?::IPv4 und IPv6 laufen parallel auf denselben Geräten
 
 ## FISI-11 Switching, VLAN und Verkabelung
 
-Nenne drei Vorteile von VLANs.::Kleinere Broadcast-Domänen, Trennung aus Sicherheitsgründen, flexible Zuordnung unabhängig vom Standort
+Nennen Sie drei Vorteile von VLANs.::Kleinere Broadcast-Domänen, Trennung aus Sicherheitsgründen, flexible Zuordnung unabhängig vom Standort
 Wie groß ist das VLAN-Tag nach 802.1Q und was enthält es?::4 Byte – u. a. 12-Bit-VLAN-ID und 3 Bit Priorität
 Wie viele VLAN-IDs sind nutzbar?::4 094 (1 bis 4094)
 Was ist ein Access-Port?::Port in genau einem VLAN, Frames werden untagged übertragen
@@ -57,7 +57,7 @@ Wozu dient ein DHCP-Relay?::Leitet DHCP-Broadcasts als Unicast an einen DHCP-Ser
 Was verhindert STP?::Schleifen im geswitchten Netz – blockiert redundante Verbindungen
 Was bewirkt Link Aggregation (LACP)?::Bündelt mehrere Leitungen zu einer logischen Verbindung – mehr Bandbreite und Redundanz
 Maximale Länge einer Twisted-Pair-Strecke?::100 m (90 m Verlegekabel + Patchkabel)
-Nenne drei Vorteile von Glasfaser.::Große Reichweite, hohe Bandbreite, unempfindlich gegen elektromagnetische Störungen, galvanische Trennung
+Nennen Sie drei Vorteile von Glasfaser.::Große Reichweite, hohe Bandbreite, unempfindlich gegen elektromagnetische Störungen, galvanische Trennung
 Was ist ein SFP-Modul?::Steckbarer Transceiver für Switchports (Glasfaser oder Kupfer), SFP+ für 10 Gbit/s
 Was ist ein Voice-VLAN?::Eigenes VLAN für IP-Telefone, am Port tagged neben dem untagged Daten-VLAN des PCs – ermöglicht QoS
 
@@ -91,7 +91,7 @@ Was macht DKIM?::Signiert Mails; der öffentliche Schlüssel steht im DNS, Empf�
 Was regelt DMARC?::Was bei fehlgeschlagener SPF/DKIM-Prüfung passiert (none, quarantine, reject) und wohin Berichte gehen
 Was schützt DNSSEC?::Echtheit und Integrität von DNS-Antworten durch Signaturen – gegen DNS-Spoofing
 Was ist Split-Horizon-DNS?::Derselbe Name liefert intern und extern unterschiedliche Antworten (interne bzw. öffentliche IP)
-Nenne die vier DHCP-Nachrichten in Reihenfolge.::Discover, Offer, Request, Acknowledge (DORA)
+Nennen Sie die vier DHCP-Nachrichten in Reihenfolge.::Discover, Offer, Request, Acknowledge (DORA)
 Welche Optionen verteilt DHCP neben der IP-Adresse?::Subnetzmaske, Gateway, DNS-Server, Domänenname, Lease-Zeit, NTP
 Was zeigt nslookup mit „Nicht autorisierende Antwort“?::Die Antwort stammt aus dem Cache eines Servers, der für die Zone nicht zuständig ist
 
@@ -125,7 +125,7 @@ Warum ist MD5 unsicher?::Kollisionen lassen sich praktisch erzeugen – zwei Dok
 Unterschied Site-to-Site und End-to-Site-VPN?::Site-to-Site verbindet Netze über Gateways · End-to-Site verbindet einzelne Clients mit dem Firmennetz
 Unterschied Full- und Split-Tunnel?::Full: gesamter Verkehr durchs VPN · Split: nur Firmenverkehr durchs VPN
 Was ist NAT-Traversal bei IPsec?::Kapselt IPsec in UDP 4500, damit es NAT-Router passieren kann
-Nenne die drei Faktoren der Authentifizierung.::Wissen, Besitz, Inhärenz (Biometrie)
+Nennen Sie die drei Faktoren der Authentifizierung.::Wissen, Besitz, Inhärenz (Biometrie)
 Interne oder öffentliche CA – wann welche?::Interne CA für interne Dienste/Geräte (kostenlos, eigene Kontrolle) · öffentliche CA für Dienste, die externe Nutzer aufrufen
 
 ## FISI-16 Netzwerkanalyse, Fehlersuche und WAN
@@ -144,4 +144,4 @@ Schutz vor ARP-Spoofing?::Dynamic ARP Inspection mit DHCP-Snooping, Port Securit
 Was ist ein Mirror-/SPAN-Port?::Switchport, auf den der Verkehr anderer Ports kopiert wird – für Mitschnitte/IDS
 Unterschied SNMP-Polling und Trap?::Polling: Manager fragt regelmäßig ab · Trap: Gerät meldet Ereignis selbstständig
 Was bedeutet „Shared Medium“ bei GPON/Kabel?::Mehrere Kunden teilen sich die Bandbreite eines Segments – zu Stoßzeiten sinkt die Leistung
-Nenne drei WAN-Anschlussarten.::DSL/VDSL, Glasfaser (FTTH/GPON), Kabel (DOCSIS), Standleitung, Mobilfunk (LTE/5G), Satellit
+Nennen Sie drei WAN-Anschlussarten.::DSL/VDSL, Glasfaser (FTTH/GPON), Kabel (DOCSIS), Standleitung, Mobilfunk (LTE/5G), Satellit

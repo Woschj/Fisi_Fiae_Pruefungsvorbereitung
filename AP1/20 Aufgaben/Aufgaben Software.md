@@ -7,7 +7,7 @@ tags: [ap1/aufgaben, ap1/software]
 ★ Einstieg · ★★ Prüfungsniveau · ★★★ anspruchsvoll. Unbegrenzte Umrechnungs- und Trace-Aufgaben: [[Trainer#Software]].
 
 > [!info] Ausgangssituation
-> Die **Fahrradmanufaktur Weber OHG** (fiktiv, 35 Mitarbeitende, Werkstatt, Verkauf, Onlineshop) digitalisiert ihre Abläufe. Du unterstützt die IT-Abteilung.
+> Die **Fahrradmanufaktur Weber OHG** (fiktiv, 35 Mitarbeitende, Werkstatt, Verkauf, Onlineshop) digitalisiert ihre Abläufe. Sie unterstützen die IT-Abteilung.
 
 ---
 
@@ -16,7 +16,7 @@ tags: [ap1/aufgaben, ap1/software]
 ### S1.1 ★ – Umrechnen (6 Punkte)
 📘 **Nachlernen:** [[S1 Zahlensysteme und Codierung#2. Umrechnungen|S1 › Umrechnungen]]
 
-Vervollständige die Tabelle.
+Vervollständigen Sie die Tabelle.
 
 | Dezimal | Binär | Hexadezimal |
 |---|---|---|
@@ -35,7 +35,7 @@ Vervollständige die Tabelle.
 ### S1.2 ★★ – MAC und Farben (4 Punkte)
 📘 **Nachlernen:** [[S1 Zahlensysteme und Codierung#Binär ↔ Hex – in 4er-Gruppen (Nibbles)|S1 › Binär ↔ Hex – in 4er-Gruppen]] · [[N1 Netzwerkgrundlagen und OSI-Modell#4. Hex-Werte in Paketheadern lesen|N1 › Hex-Werte in Paketheadern lesen]]
 
-a) Wie viele Bit hat die MAC-Adresse `3C:52:82:1A:9F:04`, und welcher Teil kennzeichnet den Hersteller? b) Der Webshop nutzt die Farbe `#2E8B57`. Gib die RGB-Anteile dezimal an.
+a) Wie viele Bit hat die MAC-Adresse `3C:52:82:1A:9F:04`, und welcher Teil kennzeichnet den Hersteller? b) Der Webshop nutzt die Farbe `#2E8B57`. Geben Sie die RGB-Anteile dezimal an.
 
 > [!success]- Lösung
 > a) 6 Byte = **48 Bit**; die ersten 3 Byte (`3C:52:82`) sind die **OUI** des Herstellers. (2 P)
@@ -67,7 +67,7 @@ Nach einem Datenverlust liegen Dateien ohne Endung vor. Eine beginnt mit `50 4B 
 ### S2.1 ★★ – Rabattberechnung ergänzen (8 Punkte)
 📘 **Nachlernen:** [[S2 Programmierung – Grundlagen#3. Verzweigung|S2 › Verzweigung]] · [[S2 Programmierung – Grundlagen#6. Funktionen|S2 › Funktionen]]
 
-Im Onlineshop gilt: Bestellwert unter 200 € → kein Rabatt; ab 200 € → 5 %; ab 1 000 € → 10 %. Stammkunden erhalten zusätzlich 2 % auf den bereits rabattierten Preis. Schreibe eine Funktion `endpreis(wert, stammkunde)` in Pseudocode.
+Im Onlineshop gilt: Bestellwert unter 200 € → kein Rabatt; ab 200 € → 5 %; ab 1 000 € → 10 %. Stammkunden erhalten zusätzlich 2 % auf den bereits rabattierten Preis. Schreiben Sie eine Funktion `endpreis(wert, stammkunde)` in Pseudocode.
 
 > [!success]- Lösung
 > ```text
@@ -91,7 +91,7 @@ Im Onlineshop gilt: Bestellwert unter 200 € → kein Rabatt; ab 200 € → 5 
 ### S2.2 ★★ – Lagerliste auswerten (8 Punkte)
 📘 **Nachlernen:** [[S2 Programmierung – Grundlagen#5. Arrays/Listen – die Standardmuster|S2 › Arrays/Listen – die Standardmuster]]
 
-Gegeben: `bestand` (Liste von Ganzzahlen) und `mindest` (Ganzzahl). Schreibe einen Algorithmus, der
+Gegeben: `bestand` (Liste von Ganzzahlen) und `mindest` (Ganzzahl). Schreiben Sie einen Algorithmus, der
 a) die Anzahl der Artikel unter Mindestbestand, b) den kleinsten Bestand und c) den durchschnittlichen Bestand ausgibt.
 
 > [!success]- Lösung
@@ -115,7 +115,7 @@ a) die Anzahl der Artikel unter Mindestbestand, b) den kleinsten Bestand und c) 
 ### S2.3 ★ – Datentypen (5 Punkte)
 📘 **Nachlernen:** [[S2 Programmierung – Grundlagen#2. Variablen und Datentypen|S2 › Variablen und Datentypen]]
 
-Wähle für die Attribute eines Kunden passende Datentypen und begründe zwei davon: Kundennummer (fortlaufend), Name, PLZ, Umsatz des Jahres, Newsletter gewünscht.
+Wählen Sie für die Attribute eines Kunden passende Datentypen und begründen Sie zwei davon: Kundennummer (fortlaufend), Name, PLZ, Umsatz des Jahres, Newsletter gewünscht.
 
 > [!success]- Lösung
 > Kundennummer: **Integer** · Name: **String** · PLZ: **String** (führende Null, keine Rechnung) · Umsatz: **Dezimal/Festkomma** (Geld, keine Rundungsfehler durch float) · Newsletter: **Boolean** (ja/nein). (je 1 P)
@@ -123,7 +123,7 @@ Wähle für die Attribute eines Kunden passende Datentypen und begründe zwei da
 ### S2.4 ★★★ – Eingabeprüfung (5 Punkte)
 📘 **Nachlernen:** [[S2 Programmierung – Grundlagen#4. Schleifen (Wiederholung)|S2 › Schleifen]]
 
-Die Anzahl bestellter Fahrräder soll so lange abgefragt werden, bis ein Wert zwischen 1 und 10 eingegeben wird. Welche Schleifenart passt? Schreibe den Pseudocode.
+Die Anzahl bestellter Fahrräder soll so lange abgefragt werden, bis ein Wert zwischen 1 und 10 eingegeben wird. Welche Schleifenart passt? Schreiben Sie den Pseudocode.
 
 > [!success]- Lösung
 > **Fußgesteuerte Schleife**, weil mindestens eine Eingabe nötig ist. (2 P)
@@ -157,7 +157,7 @@ FÜR i ← 0 BIS 2
     ENDE WENN
 ENDE FÜR
 ```
-Führe einen Schreibtischtest durch. Welchen Inhalt hat `z` am Ende, und was bewirkt der Algorithmus?
+Führen Sie einen Schreibtischtest durch. Welchen Inhalt hat `z` am Ende, und was bewirkt der Algorithmus?
 
 > [!success]- Lösung
 > | i | Vergleich | z danach |
@@ -170,7 +170,7 @@ Führe einen Schreibtischtest durch. Welchen Inhalt hat `z` am Ende, und was bew
 ### S3.2 ★★ – Fehler finden (6 Punkte)
 📘 **Nachlernen:** [[S3 Algorithmen, Darstellung und Testen#4. Fehlerarten und Debugging|S3 › Fehlerarten und Debugging]] · [[S2 Programmierung – Grundlagen#5. Arrays/Listen – die Standardmuster|S2 › Arrays/Listen – die Standardmuster]]
 
-Der Algorithmus soll den Durchschnitt aller Noten berechnen. Finde drei Fehler und korrigiere sie.
+Der Algorithmus soll den Durchschnitt aller Noten berechnen. Finden Sie drei Fehler und korrigieren Sie sie.
 ```text
 FÜR i ← 1 BIS länge(noten)
     summe ← summe + noten[i]
@@ -186,7 +186,7 @@ schnitt ← summe / länge(noten)
 ### S3.3 ★★ – Testfälle (6 Punkte)
 📘 **Nachlernen:** [[S3 Algorithmen, Darstellung und Testen#Testfälle entwerfen|S3 › Testfälle entwerfen]]
 
-Die Versandkosten: bis 50 € Bestellwert 4,90 €, ab 50 € versandkostenfrei; negative Werte sind ungültig. Erstelle einen Testfallkatalog mit mindestens fünf Testfällen (inkl. Grenzwerte).
+Die Versandkosten: bis 50 € Bestellwert 4,90 €, ab 50 € versandkostenfrei; negative Werte sind ungültig. Erstellen Sie einen Testfallkatalog mit mindestens fünf Testfällen (inkl. Grenzwerte).
 
 > [!success]- Lösung
 > | Nr. | Eingabe | Art | Soll |
@@ -202,7 +202,7 @@ Die Versandkosten: bis 50 € Bestellwert 4,90 €, ab 50 € versandkostenfrei;
 ### S3.4 ★★ – Darstellung (6 Punkte)
 📘 **Nachlernen:** [[S3 Algorithmen, Darstellung und Testen#Struktogramm (Nassi-Shneiderman, DIN 66261)|S3 › Struktogramm]] · [[S3 Algorithmen, Darstellung und Testen#Programmablaufplan (PAP, DIN 66001)|S3 › Programmablaufplan]]
 
-Stelle den Algorithmus aus S2.4 (Eingabeprüfung) als Struktogramm **oder** PAP dar (Skizze beschreiben genügt) und nenne je einen Vorteil beider Darstellungen.
+Stellen Sie den Algorithmus aus S2.4 (Eingabeprüfung) als Struktogramm **oder** PAP dar (Skizze beschreiben genügt) und nennen Sie je einen Vorteil beider Darstellungen.
 
 > [!success]- Lösung
 > **Struktogramm:** fußgesteuerte Schleife – Rumpf (Eingabe, Verzweigung „ungültig?“ ja: Meldung / nein: ∅) eingerückt, Bedingung „bis 1 ≤ anzahl ≤ 10“ **unten**. (3 P)
@@ -217,7 +217,7 @@ Stelle den Algorithmus aus S2.4 (Eingabeprüfung) als Struktogramm **oder** PAP 
 📘 **Nachlernen:** [[S4 Betriebssysteme, Dateisysteme und Rechte#Windows – NTFS- und Freigaberechte|S4 › Windows – NTFS- und Freigaberechte]] · [[S4 Betriebssysteme, Dateisysteme und Rechte#4. Benutzer, Gruppen und Rechte|S4 › Benutzer, Gruppen und Rechte]]
 
 Auf dem Fileserver gibt es die Ordner `Buchhaltung`, `Vertrieb` und `Alle`. Die Buchhaltung soll ihren Ordner bearbeiten, die Geschäftsführung ihn lesen; der Vertrieb soll ihn nicht sehen. Alle dürfen in `Alle` schreiben.
-a) Entwirf die NTFS-Berechtigungen nach dem Gruppenprinzip. b) Erkläre, was gilt, wenn die Freigabe `Buchhaltung` nur „Lesen“ erlaubt.
+a) Entwerfen Sie die NTFS-Berechtigungen nach dem Gruppenprinzip. b) Erklären Sie, was gilt, wenn die Freigabe `Buchhaltung` nur „Lesen“ erlaubt.
 
 > [!success]- Lösung
 > a) Gruppen anlegen (GG_Buchhaltung, GG_Vertrieb, GG_Geschäftsführung, Domänen-Benutzer). (2 P)
@@ -234,7 +234,7 @@ a) Entwirf die NTFS-Berechtigungen nach dem Gruppenprinzip. b) Erkläre, was gil
 ### S4.2 ★ – Dateisystem (4 Punkte)
 📘 **Nachlernen:** [[S4 Betriebssysteme, Dateisysteme und Rechte#3. Dateisysteme|S4 › Dateisysteme]]
 
-Die Werkstatt will ein 12-GB-Video eines Montagevorgangs per USB-Stick an einen Mac weitergeben. Der Stick ist mit FAT32 formatiert. Erkläre das Problem und die Lösung.
+Die Werkstatt will ein 12-GB-Video eines Montagevorgangs per USB-Stick an einen Mac weitergeben. Der Stick ist mit FAT32 formatiert. Erklären Sie das Problem und die Lösung.
 
 > [!success]- Lösung
 > FAT32 erlaubt max. **4 GiB pro Datei** → Kopieren scheitert. (2 P) Stick mit **exFAT** formatieren (keine 4-GiB-Grenze, unter Windows und macOS les- und schreibbar). (2 P)
@@ -242,7 +242,7 @@ Die Werkstatt will ein 12-GB-Video eines Montagevorgangs per USB-Stick an einen 
 ### S4.3 ★★ – Rollout (6 Punkte)
 📘 **Nachlernen:** [[S4 Betriebssysteme, Dateisysteme und Rechte#5. Arbeitsplätze bereitstellen|S4 › Arbeitsplätze bereitstellen]]
 
-15 neue Notebooks sollen einheitlich eingerichtet werden. Beschreibe ein effizientes Verfahren und nenne vier Punkte einer Abnahmecheckliste.
+15 neue Notebooks sollen einheitlich eingerichtet werden. Beschreiben Sie ein effizientes Verfahren und nennen Sie vier Punkte einer Abnahmecheckliste.
 
 > [!success]- Lösung
 > Verfahren: **Softwareverteilung/Endpoint-Management** (z. B. Intune/Autopilot) oder **Image** eines Referenzgeräts per **PXE** verteilen → gleiche Konfiguration, zeitsparend, dokumentiert. (2 P)
@@ -251,7 +251,7 @@ Die Werkstatt will ein 12-GB-Video eines Montagevorgangs per USB-Stick an einen 
 ### S4.4 ★★ – Linux-Rechte (4 Punkte)
 📘 **Nachlernen:** [[S4 Betriebssysteme, Dateisysteme und Rechte#Linux – rwx und Oktalschreibweise|S4 › Linux – rwx und Oktalschreibweise]]
 
-Ein Skript soll vom Besitzer gelesen, geschrieben und ausgeführt, von der Gruppe gelesen und ausgeführt und von anderen gar nicht genutzt werden können. Gib den `chmod`-Befehl an und erkläre die Zahl.
+Ein Skript soll vom Besitzer gelesen, geschrieben und ausgeführt, von der Gruppe gelesen und ausgeführt und von anderen gar nicht genutzt werden können. Geben Sie den `chmod`-Befehl an und erklären Sie die Zahl.
 
 > [!success]- Lösung
 > `chmod 750 skript.sh` – Besitzer rwx = 4+2+1 = 7, Gruppe r-x = 4+1 = 5, Andere --- = 0. (4 P)
@@ -264,7 +264,7 @@ Ein Skript soll vom Besitzer gelesen, geschrieben und ausgeführt, von der Grupp
 📘 **Nachlernen:** [[S5 Virtualisierung und Cloud#1. Virtualisierung|S5 › Virtualisierung]] · [[S5 Virtualisierung und Cloud#Nachteile/Risiken|S5 › Nachteile/Risiken]]
 
 Fünf alte Server (Datei-, Druck-, Warenwirtschafts-, Web- und Backupserver) sollen auf einen neuen Host virtualisiert werden.
-a) Welchen Hypervisor-Typ empfiehlst du? Begründe. b) Nenne drei Vorteile. c) Nenne ein Risiko und eine Gegenmaßnahme.
+a) Empfehlen Sie einen Hypervisor-Typ und begründen Sie Ihre Wahl. b) Nennen Sie drei Vorteile. c) Nennen Sie ein Risiko und eine Gegenmaßnahme.
 
 > [!success]- Lösung
 > a) **Typ 1 (bare metal)**, z. B. Hyper-V oder Proxmox – läuft direkt auf der Hardware, höhere Leistung und Stabilität als Typ 2. (2 P)
@@ -274,7 +274,7 @@ a) Welchen Hypervisor-Typ empfiehlst du? Begründe. b) Nenne drei Vorteile. c) N
 ### S5.2 ★★ – Cloudmodell zuordnen (6 Punkte)
 📘 **Nachlernen:** [[S5 Virtualisierung und Cloud#Servicemodelle|S5 › Servicemodelle]]
 
-Ordne IaaS, PaaS oder SaaS zu und begründe kurz: a) Online-Buchhaltungssoftware im Browser, b) gemietete virtuelle Maschine für den Webshop, c) Datenbank als Dienst, auf der der Webshop läuft.
+Ordnen Sie IaaS, PaaS oder SaaS zu und begründen Sie kurz: a) Online-Buchhaltungssoftware im Browser, b) gemietete virtuelle Maschine für den Webshop, c) Datenbank als Dienst, auf der der Webshop läuft.
 
 > [!success]- Lösung
 > a) **SaaS** – komplette Anwendung vom Anbieter · b) **IaaS** – Kunde verwaltet Betriebssystem und Software · c) **PaaS** – Plattform/Datenbank wird bereitgestellt, Kunde liefert Anwendung/Daten. (je 2 P)
@@ -282,7 +282,7 @@ Ordne IaaS, PaaS oder SaaS zu und begründe kurz: a) Online-Buchhaltungssoftware
 ### S5.3 ★★★ – Cloud bewerten (8 Punkte)
 📘 **Nachlernen:** [[S5 Virtualisierung und Cloud#Vor- und Nachteile|S5 › Vor- und Nachteile]] · [[S5 Virtualisierung und Cloud#Cloud unter Datenschutzgesichtspunkten auswählen|S5 › Cloud unter Datenschutzgesichtspunkten auswählen]]
 
-Die Geschäftsführung überlegt, den Mailserver und die Dateiablage in eine Public Cloud eines US-Anbieters zu verlagern. Erläutere zwei Vorteile, zwei Risiken und drei Punkte, die vertraglich/technisch geklärt werden müssen.
+Die Geschäftsführung überlegt, den Mailserver und die Dateiablage in eine Public Cloud eines US-Anbieters zu verlagern. Erläutern Sie zwei Vorteile, zwei Risiken und drei Punkte, die vertraglich/technisch geklärt werden müssen.
 
 > [!success]- Lösung
 > Vorteile (je 1 P): keine eigene Serverhardware/Wartung · hohe Verfügbarkeit laut SLA · ortsunabhängiger Zugriff · skalierbare Kosten
@@ -296,7 +296,7 @@ Die Geschäftsführung überlegt, den Mailserver und die Dateiablage in eine Pub
 ### S6.1 ★★ – Standard oder individuell? (6 Punkte)
 📘 **Nachlernen:** [[S6 Software beschaffen und lizenzieren#1. Standard- vs. Individualsoftware|S6 › Standard- vs. Individualsoftware]] · [[W4 Verträge und Kaufvertragsstörungen#3. Vertragsarten für IT-Leistungen|W4 › Vertragsarten für IT-Leistungen]]
 
-Für die Werkstattplanung wird eine Terminsoftware gesucht. Vergleiche Standard- und Individualsoftware anhand von drei Kriterien und nenne die jeweilige Vertragsart.
+Für die Werkstattplanung wird eine Terminsoftware gesucht. Vergleichen Sie Standard- und Individualsoftware anhand von drei Kriterien und nennen Sie die jeweilige Vertragsart.
 
 > [!success]- Lösung
 > Kriterien (je 1,5 P): **Kosten** (Standard günstiger) · **Verfügbarkeit** (Standard sofort, Individual nach Entwicklung) · **Passgenauigkeit** (Individual exakt an Abläufe angepasst) · Support/Updates (Standard vom Hersteller)
@@ -306,7 +306,7 @@ Für die Werkstattplanung wird eine Terminsoftware gesucht. Vergleiche Standard-
 📘 **Nachlernen:** [[S6 Software beschaffen und lizenzieren#Lizenzarten nach Zählweise|S6 › Lizenzarten nach Zählweise]]
 
 Eine Konstruktionssoftware wird von 12 Mitarbeitenden gelegentlich genutzt, maximal 4 gleichzeitig. Named User: 900 €/Jahr, Concurrent: 2 100 €/Jahr.
-a) Berechne die Kosten beider Modelle. b) Empfiehl ein Modell und nenne eine Voraussetzung.
+a) Berechnen Sie die Kosten beider Modelle. b) Empfehlen Sie ein Modell und nennen Sie eine Voraussetzung.
 
 > [!success]- Lösung
 > a) Named: 12 × 900 = **10 800 €** · Concurrent: 4 × 2 100 = **8 400 €** (4 P)
@@ -315,7 +315,7 @@ a) Berechne die Kosten beider Modelle. b) Empfiehl ein Modell und nenne eine Vor
 ### S6.3 ★ – Open Source (4 Punkte)
 📘 **Nachlernen:** [[S6 Software beschaffen und lizenzieren#Open-Source-Lizenzen|S6 › Open-Source-Lizenzen]]
 
-Die IT möchte ein Open-Source-Ticketsystem (GPL) einsetzen und selbst erweitern. Erkläre, was die GPL dabei bedeutet und ob die Erweiterung intern genutzt werden darf.
+Die IT möchte ein Open-Source-Ticketsystem (GPL) einsetzen und selbst erweitern. Erklären Sie, was die GPL dabei bedeutet und ob die Erweiterung intern genutzt werden darf.
 
 > [!success]- Lösung
 > Die GPL erlaubt Nutzung, Veränderung und Weitergabe. **Copyleft:** Wer die veränderte Software **weitergibt**, muss sie unter der GPL mit Quellcode weitergeben. (2 P) Die **rein interne Nutzung** der Erweiterung ist ohne Veröffentlichung erlaubt, weil keine Weitergabe stattfindet. (2 P)
@@ -331,7 +331,7 @@ Die IT möchte ein Open-Source-Ticketsystem (GPL) einsetzen und selbst erweitern
 📘 **Nachlernen:** [[S7 Datenbanken#2. Das ER-Modell (Entity-Relationship)|S7 › Das ER-Modell]] · [[S7 Datenbanken#Kardinalitäten|S7 › Kardinalitäten]]
 
 Die Weber OHG verleiht Geräte (Inventarnummer, Bezeichnung, Kaufdatum) an Mitarbeitende (Personalnummer, Name, Abteilung). Eine Person kann mehrere Geräte ausleihen und ein Gerät im Lauf der Zeit von verschiedenen Personen. Zu jeder Ausleihe werden Ausgabe- und Rückgabedatum gespeichert.
-a) Erstelle ein ER-Modell in Chen-Notation mit Kardinalität. b) Begründe die Kardinalität mit zwei Sätzen. c) Wo gehören Ausgabe- und Rückgabedatum hin?
+a) Erstellen Sie ein ER-Modell in Chen-Notation mit Kardinalität. b) Begründen Sie die Kardinalität mit zwei Sätzen. c) Wo gehören Ausgabe- und Rückgabedatum hin?
 
 > [!success]- Lösung
 > a) Entitätstypen **Mitarbeiter** (<u>PersNr</u>, Name, Abteilung) und **Gerät** (<u>InvNr</u>, Bezeichnung, Kaufdatum), Beziehung **leiht aus** (Raute), Kardinalität **n:m** (5 P: Symbole, Attribute, Schlüssel, Beziehung, Kardinalität)
@@ -341,7 +341,7 @@ a) Erstelle ein ER-Modell in Chen-Notation mit Kardinalität. b) Begründe die K
 ### S7.2 ★★ – Tabellenmodell ableiten (8 Punkte)
 📘 **Nachlernen:** [[S7 Datenbanken#3. Vom ER-Modell zu Tabellen (relationales Modell)|S7 › Vom ER-Modell zu Tabellen]]
 
-Überführe das ER-Modell aus S7.1 in ein Tabellenmodell. Kennzeichne Primär- und Fremdschlüssel und erkläre, warum eine eigene Tabelle für die Ausleihe nötig ist.
+Überführen Sie das ER-Modell aus S7.1 in ein Tabellenmodell. Kennzeichnen Sie Primär- und Fremdschlüssel und erklären Sie, warum eine eigene Tabelle für die Ausleihe nötig ist.
 
 > [!success]- Lösung
 > - Mitarbeiter(<u>PersNr</u>, Name, Abteilung)
@@ -354,7 +354,7 @@ a) Erstelle ein ER-Modell in Chen-Notation mit Kardinalität. b) Begründe die K
 📘 **Nachlernen:** [[S7 Datenbanken#4. Redundanz, Anomalien und Normalisierung|S7 › Redundanz, Anomalien und Normalisierung]] · [[S7 Datenbanken#5. SQL-Grundlagen|S7 › SQL-Grundlagen]]
 
 Die bisherige Excel-Liste hat die Spalten *InvNr, Bezeichnung, PersNr, Name, Abteilung, Ausgabe*.
-a) Erkläre an diesem Beispiel zwei Anomalien. b) Schreibe eine SQL-Abfrage, die alle Geräte ausgibt, die noch nicht zurückgegeben wurden (Rückgabe leer), mit Name der Person, sortiert nach Ausgabedatum.
+a) Erklären Sie an diesem Beispiel zwei Anomalien. b) Schreiben Sie eine SQL-Abfrage, die alle Geräte ausgibt, die noch nicht zurückgegeben wurden (Rückgabe leer), mit Name der Person, sortiert nach Ausgabedatum.
 
 > [!success]- Lösung
 > a) je 2 P: **Änderungsanomalie** – wechselt eine Person die Abteilung, muss das in allen ihren Zeilen geändert werden, sonst widersprüchliche Daten · **Löschanomalie** – löscht man die einzige Ausleihe eines Geräts, sind auch Bezeichnung und Inventardaten weg · **Einfügeanomalie** – ein neues Gerät kann erst gespeichert werden, wenn es jemand ausleiht
@@ -376,7 +376,7 @@ a) Erkläre an diesem Beispiel zwei Anomalien. b) Schreibe eine SQL-Abfrage, die
 📘 **Nachlernen:** [[S8 UML und Softwareentwurf#2. Anwendungsfalldiagramm (Use-Case-Diagramm)|S8 › Anwendungsfalldiagramm]]
 
 Für die Geräteausleihe gilt: Mitarbeitende können Geräte **suchen** und **reservieren**. Beim Reservieren muss man sich immer **anmelden**. Die IT-Abteilung **gibt Geräte aus** und **nimmt sie zurück**; bei der Rücknahme kann optional ein **Schaden erfasst** werden. Auszubildende haben dieselben Möglichkeiten wie Mitarbeitende.
-Erstelle das Anwendungsfalldiagramm.
+Erstellen Sie das Anwendungsfalldiagramm.
 
 > [!success]- Lösung
 > - Systemgrenze „Geräteausleihe“, Akteure **Mitarbeiter:in** und **IT-Abteilung** außerhalb, **Auszubildende:r** mit Generalisierungspfeil (hohles Dreieck) zu Mitarbeiter:in (2 P)
@@ -389,7 +389,7 @@ Erstelle das Anwendungsfalldiagramm.
 📘 **Nachlernen:** [[S8 UML und Softwareentwurf#3. Aktivitätsdiagramm|S8 › Aktivitätsdiagramm]]
 
 Ablauf einer Geräterückgabe: Die IT prüft das Gerät. Ist es beschädigt, wird ein Schadensbericht erstellt und der Vorgesetzte informiert. Anschließend – oder direkt bei unbeschädigtem Gerät – werden **gleichzeitig** die Daten auf dem Gerät gelöscht und die Rückgabe im System gebucht. Danach ist der Vorgang abgeschlossen.
-Zeichne das Aktivitätsdiagramm mit den Swimlanes „IT“ und „Vorgesetzte:r“.
+Zeichnen Sie das Aktivitätsdiagramm mit den Swimlanes „IT“ und „Vorgesetzte:r“.
 
 > [!success]- Lösung
 > Start ● → „Gerät prüfen“ (IT) → Raute mit **[beschädigt]** / **[nicht beschädigt]** (2 P)
@@ -402,7 +402,7 @@ Zeichne das Aktivitätsdiagramm mit den Swimlanes „IT“ und „Vorgesetzte:r�
 📘 **Nachlernen:** [[S8 UML und Softwareentwurf#6. Vom Quelltext zum Programm – Werkzeuge|S8 › Vom Quelltext zum Programm – Werkzeuge]]
 
 Für die Ausleihe soll ein kleines Python-Skript entstehen, das eine Web-API des Inventarsystems abfragt.
-a) Erkläre, ob Python kompiliert oder interpretiert wird, und nenne einen Vor- und einen Nachteil. b) Erkläre die Begriffe API und Bibliothek am Beispiel.
+a) Erklären Sie, ob Python kompiliert oder interpretiert wird, und nennen Sie einen Vor- und einen Nachteil. b) Erklären Sie die Begriffe API und Bibliothek am Beispiel.
 
 > [!success]- Lösung
 > a) Python wird **interpretiert** (genauer: zur Laufzeit in Bytecode übersetzt und ausgeführt) (1 P). Vorteil: schnell geschrieben und ausprobiert, plattformunabhängig (1 P). Nachteil: langsamer als kompilierte Programme, manche Fehler zeigen sich erst zur Laufzeit (1 P).
@@ -416,7 +416,7 @@ a) Erkläre, ob Python kompiliert oder interpretiert wird, und nenne einen Vor- 
 📘 **Nachlernen:** [[S9 KI und Unternehmenssoftware#2. Einsatzszenarien im Betrieb|S9 › Einsatzszenarien im Betrieb]] · [[S9 KI und Unternehmenssoftware#3. Chatbots – Vor- und Nachteile|S9 › Chatbots – Vor- und Nachteile]] · [[S9 KI und Unternehmenssoftware#4. Risiken und rechtlicher Rahmen|S9 › Risiken und rechtlicher Rahmen]]
 
 Die Weber OHG möchte künstliche Intelligenz einsetzen.
-a) Nenne zwei konkrete Einsatzszenarien für die Weber OHG. b) Die Geschäftsleitung erwägt einen Chatbot im Onlineshop. Erläutere je zwei Vor- und Nachteile. c) Einige Mitarbeitende haben Bedenken. Nenne zwei mögliche Bedenken und zwei Maßnahmen. d) Nenne zwei datenschutzrechtliche Anforderungen an den KI-Dienst.
+a) Nennen Sie zwei konkrete Einsatzszenarien für die Weber OHG. b) Die Geschäftsleitung erwägt einen Chatbot im Onlineshop. Erläutern Sie je zwei Vor- und Nachteile. c) Einige Mitarbeitende haben Bedenken. Nennen Sie zwei mögliche Bedenken und zwei Maßnahmen. d) Nennen Sie zwei datenschutzrechtliche Anforderungen an den KI-Dienst.
 
 > [!success]- Lösung
 > a) je 1 P, max. 2 P: Chatbot nimmt außerhalb der Öffnungszeiten Anfragen und Werkstatttermine auf · Produktbeschreibungen für den Onlineshop entwerfen · eingehende E-Mails klassifizieren und an Werkstatt, Verkauf oder Buchhaltung weiterleiten · **Absatzprognose** für die Materialbeschaffung · Bilderkennung zur Qualitätskontrolle von Rahmen und Schweißnähten
@@ -428,7 +428,7 @@ a) Nenne zwei konkrete Einsatzszenarien für die Weber OHG. b) Die Geschäftslei
 📘 **Nachlernen:** [[S9 KI und Unternehmenssoftware#5. Kosten eines KI-Dienstes berechnen|S9 › Kosten eines KI-Dienstes berechnen]]
 
 Angebot für einen KI-Schreibassistenten: 18 Lizenzen zu je **24 € netto** im Monat, Einrichtung einmalig **900 € netto**. Jede Nutzerin spart geschätzt **3 Stunden** im Monat, der interne Stundensatz beträgt **38 €**.
-a) Berechne die Kosten im ersten Jahr (netto). b) Berechne den geschätzten Nutzen im ersten Jahr. c) Beurteile das Ergebnis kurz.
+a) Berechnen Sie die Kosten im ersten Jahr (netto). b) Berechnen Sie den geschätzten Nutzen im ersten Jahr. c) Beurteilen Sie das Ergebnis kurz.
 
 > [!success]- Lösung
 > a) 18 × 24 × 12 = 5 184 € + 900 € = **6 084 €** (3 P)
@@ -438,7 +438,7 @@ a) Berechne die Kosten im ersten Jahr (netto). b) Berechne den geschätzten Nutz
 ### S9.3 ★ – Unternehmenssoftware zuordnen (4 Punkte)
 📘 **Nachlernen:** [[S9 KI und Unternehmenssoftware#6. Unternehmenssoftware|S9 › Unternehmenssoftware]]
 
-Ordne zu: a) Kundenkontakte und Verkaufschancen verwalten · b) Einkauf, Lager, Rechnungswesen integriert steuern · c) Verträge revisionssicher ablegen · d) Lieferketten und Bestände planen
+Ordnen Sie zu: a) Kundenkontakte und Verkaufschancen verwalten · b) Einkauf, Lager, Rechnungswesen integriert steuern · c) Verträge revisionssicher ablegen · d) Lieferketten und Bestände planen
 
 > [!success]- Lösung
 > a) **CRM** · b) **ERP** · c) **DMS** · d) **SCM** (je 1 P)

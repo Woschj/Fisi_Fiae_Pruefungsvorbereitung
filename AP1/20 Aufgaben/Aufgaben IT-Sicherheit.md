@@ -16,7 +16,7 @@ tags: [ap1/aufgaben, ap1/sicherheit]
 ### I1.1 ★ – Schutzziele (6 Punkte)
 📘 **Nachlernen:** [[I1 Informationssicherheit und IT-Grundschutz#1. Schutzziele|I1 › Schutzziele]]
 
-Ordne jedem Vorfall das hauptsächlich verletzte Schutzziel zu: a) Der Terminkalender ist nach einem Serverabsturz einen Tag nicht erreichbar. b) Eine Mitarbeiterin liest aus Neugier Befunde von Bekannten. c) Ein Trojaner verändert Beträge in Abrechnungsdateien. d) Ein Stromausfall legt das Netzwerk lahm. e) Befunde werden per unverschlüsselter Mail verschickt und abgefangen. f) Eine gefälschte Mail gibt sich als Krankenkasse aus.
+Ordnen Sie jedem Vorfall das hauptsächlich verletzte Schutzziel zu: a) Der Terminkalender ist nach einem Serverabsturz einen Tag nicht erreichbar. b) Eine Mitarbeiterin liest aus Neugier Befunde von Bekannten. c) Ein Trojaner verändert Beträge in Abrechnungsdateien. d) Ein Stromausfall legt das Netzwerk lahm. e) Befunde werden per unverschlüsselter Mail verschickt und abgefangen. f) Eine gefälschte Mail gibt sich als Krankenkasse aus.
 
 > [!success]- Lösung
 > a) Verfügbarkeit · b) Vertraulichkeit · c) Integrität · d) Verfügbarkeit · e) Vertraulichkeit · f) Authentizität (je 1 P)
@@ -25,7 +25,7 @@ Ordne jedem Vorfall das hauptsächlich verletzte Schutzziel zu: a) Der Terminkal
 📘 **Nachlernen:** [[I1 Informationssicherheit und IT-Grundschutz#3. Schutzbedarfsfeststellung (BSI-Standard 200-2)|I1 › Schutzbedarfsfeststellung]] · [[I1 Informationssicherheit und IT-Grundschutz#Vererbung auf IT-Systeme|I1 › Vererbung auf IT-Systeme]]
 
 Auf einem Server laufen: Terminplanung (V normal, I hoch, A hoch), Patientenakte mit Befunden (V sehr hoch, I sehr hoch, A hoch), Intranet (alle normal).
-a) Bestimme den Schutzbedarf des Servers und nenne das Prinzip. b) Begründe den Schutzbedarf „sehr hoch“ der Patientenakte mit zwei Schadensszenarien. c) Wie könnte man den Verfügbarkeitsbedarf des einzelnen Servers senken?
+a) Bestimmen Sie den Schutzbedarf des Servers und nennen Sie das Prinzip. b) Begründen Sie den Schutzbedarf „sehr hoch“ der Patientenakte mit zwei Schadensszenarien. c) Wie könnte man den Verfügbarkeitsbedarf des einzelnen Servers senken?
 
 > [!success]- Lösung
 > a) **Maximumprinzip**: V sehr hoch, I sehr hoch, A hoch. (3 P)
@@ -35,7 +35,7 @@ a) Bestimme den Schutzbedarf des Servers und nenne das Prinzip. b) Begründe den
 ### I1.3 ★★ – Maßnahmenarten (8 Punkte)
 📘 **Nachlernen:** [[I1 Informationssicherheit und IT-Grundschutz#5. Maßnahmenarten|I1 › Maßnahmenarten]]
 
-Nenne für die Praxis je zwei Maßnahmen der Kategorien technisch, organisatorisch, personell und infrastrukturell.
+Nennen Sie für die Praxis je zwei Maßnahmen der Kategorien technisch, organisatorisch, personell und infrastrukturell.
 
 > [!success]- Lösung (je 1 P)
 > - **technisch:** MFA für den Fernzugriff, Festplattenverschlüsselung, Backup, Firewall, Patchmanagement
@@ -46,7 +46,7 @@ Nenne für die Praxis je zwei Maßnahmen der Kategorien technisch, organisatoris
 ### I1.4 ★★ – IT-Grundschutz (6 Punkte)
 📘 **Nachlernen:** [[I1 Informationssicherheit und IT-Grundschutz#4. IT-Grundschutz des BSI|I1 › IT-Grundschutz des BSI]]
 
-Die Praxisleitung will „nach BSI-Grundschutz“ vorgehen. Beschreibe die Grundidee und den Unterschied zwischen MUSS- und SOLLTE-Anforderungen.
+Die Praxisleitung will „nach BSI-Grundschutz“ vorgehen. Beschreiben Sie die Grundidee und den Unterschied zwischen MUSS- und SOLLTE-Anforderungen.
 
 > [!success]- Lösung
 > Grundidee: Mit **Standardmaßnahmen** aus dem **IT-Grundschutz-Kompendium** (Bausteine für typische Prozesse, Systeme, Räume) ein angemessenes Sicherheitsniveau erreichen, ohne jedes Risiko einzeln zu analysieren; Prüfung per **Soll-Ist-Vergleich** (Grundschutz-Check); zusätzliche Risikoanalyse nur bei hohem Schutzbedarf. (4 P)
@@ -59,7 +59,7 @@ Die Praxisleitung will „nach BSI-Grundschutz“ vorgehen. Beschreibe die Grund
 ### I2.1 ★★ – TOM zuordnen (8 Punkte)
 📘 **Nachlernen:** [[I2 Datenschutz#6. Technische und organisatorische Maßnahmen (TOM)|I2 › Technische und organisatorische Maßnahmen]]
 
-Ordne die Maßnahmen der passenden Kontrollart zu: a) Besucher melden sich am Empfang an und werden begleitet. b) Anmeldung am PC mit Chipkarte und PIN. c) Therapeut:innen sehen nur Akten ihrer eigenen Patient:innen. d) Befunde werden per verschlüsseltem Portal an Ärzte übermittelt. e) Änderungen an Akten werden protokolliert. f) Tägliche Datensicherung. g) Vertrag mit dem Abrechnungsdienstleister regelt Weisungen und Kontrollen. h) Test- und Echtdaten liegen in getrennten Datenbanken.
+Ordnen Sie die Maßnahmen der passenden Kontrollart zu: a) Besucher melden sich am Empfang an und werden begleitet. b) Anmeldung am PC mit Chipkarte und PIN. c) Therapeut:innen sehen nur Akten ihrer eigenen Patient:innen. d) Befunde werden per verschlüsseltem Portal an Ärzte übermittelt. e) Änderungen an Akten werden protokolliert. f) Tägliche Datensicherung. g) Vertrag mit dem Abrechnungsdienstleister regelt Weisungen und Kontrollen. h) Test- und Echtdaten liegen in getrennten Datenbanken.
 
 > [!success]- Lösung (je 1 P)
 > a) Zutritt · b) Zugang · c) Zugriff · d) Weitergabe · e) Eingabe · f) Verfügbarkeit · g) Auftrag · h) Trennungsgebot
@@ -67,7 +67,7 @@ Ordne die Maßnahmen der passenden Kontrollart zu: a) Besucher melden sich am Em
 ### I2.2 ★★ – Datenpanne (10 Punkte)
 📘 **Nachlernen:** [[I2 Datenschutz#7. Prüfschema bei einem Datenschutzvorfall|I2 › Prüfschema bei einem Datenschutzvorfall]] · [[I2 Datenschutz#5. Pflichten des Unternehmens|I2 › Pflichten des Unternehmens]]
 
-Eine Rezeptionistin verschickt eine Excel-Datei mit Namen, Telefonnummern und Diagnosen von 180 Patient:innen versehentlich an einen externen Newsletter-Verteiler. Prüfe den Fall strukturiert.
+Eine Rezeptionistin verschickt eine Excel-Datei mit Namen, Telefonnummern und Diagnosen von 180 Patient:innen versehentlich an einen externen Newsletter-Verteiler. Prüfen Sie den Fall strukturiert.
 
 > [!success]- Lösung
 > **1. Betroffene Daten (4 P):** Namen, Telefonnummern = personenbezogen; **Diagnosen = Gesundheitsdaten (Art. 9)**, besonders schützenswert; 180 Betroffene; Vertraulichkeit verletzt; unzulässige Offenlegung ohne Rechtsgrundlage; hohes Risiko (Diskriminierung, Bloßstellung).
@@ -77,7 +77,7 @@ Eine Rezeptionistin verschickt eine Excel-Datei mit Namen, Telefonnummern und Di
 ### I2.3 ★ – Begriffe (4 Punkte)
 📘 **Nachlernen:** [[I2 Datenschutz#1. Rechtlicher Rahmen und Begriffe|I2 › Rechtlicher Rahmen und Begriffe]]
 
-Erkläre den Unterschied zwischen Pseudonymisierung und Anonymisierung am Beispiel einer Auswertung der Behandlungsdauer.
+Erklären Sie den Unterschied zwischen Pseudonymisierung und Anonymisierung am Beispiel einer Auswertung der Behandlungsdauer.
 
 > [!success]- Lösung
 > **Pseudonymisierung:** Namen werden durch eine Patienten-ID ersetzt, die Zuordnungstabelle liegt getrennt – mit ihr ist der Personenbezug wiederherstellbar → **weiterhin personenbezogen**, DSGVO gilt. (2 P)
@@ -87,7 +87,7 @@ Erkläre den Unterschied zwischen Pseudonymisierung und Anonymisierung am Beispi
 📘 **Nachlernen:** [[I2 Datenschutz#4. Rechte der Betroffenen|I2 › Rechte der Betroffenen]] · [[I2 Datenschutz#3. Rechtsgrundlagen (Art. 6 Abs. 1) – mindestens eine muss vorliegen|I2 › Rechtsgrundlagen (Art. 6 Abs. 1) – mindestens eine muss vorliegen]]
 
 Ein ehemaliger Patient verlangt Auskunft über seine gespeicherten Daten und anschließend deren Löschung.
-a) Welche Rechte macht er geltend? b) Muss die Praxis alle Daten sofort löschen? Begründe.
+a) Welche Rechte macht er geltend? b) Muss die Praxis alle Daten sofort löschen? Begründen Sie.
 
 > [!success]- Lösung
 > a) **Auskunftsrecht** (Art. 15) und **Recht auf Löschung** (Art. 17); Antwort grundsätzlich innerhalb eines Monats. (2 P)
@@ -101,7 +101,7 @@ a) Welche Rechte macht er geltend? b) Muss die Praxis alle Daten sofort löschen
 📘 **Nachlernen:** [[I3 Datensicherung#1. Sicherungsarten|I3 › Sicherungsarten]]
 
 Der Praxisserver: Vollsicherung sonntags (600 GB), Mo–Sa tägliche Teilsicherung, täglich ändern sich ca. 15 GB (immer andere Daten).
-a) Berechne den Speicherbedarf einer Woche bei inkrementeller und bei differenzieller Sicherung. b) Am Donnerstagabend (nach der Sicherung) fällt der Server aus. Welche Sicherungen braucht man jeweils? c) Empfiehl ein Verfahren und begründe.
+a) Berechnen Sie den Speicherbedarf einer Woche bei inkrementeller und bei differenzieller Sicherung. b) Am Donnerstagabend (nach der Sicherung) fällt der Server aus. Welche Sicherungen braucht man jeweils? c) Empfehlen Sie ein Verfahren und begründen Sie.
 
 > [!success]- Lösung
 > a) inkrementell: 600 + 6 × 15 = **690 GB** · differenziell: 600 + 15 + 30 + 45 + 60 + 75 + 90 = **915 GB** (3 P)
@@ -111,7 +111,7 @@ a) Berechne den Speicherbedarf einer Woche bei inkrementeller und bei differenzi
 ### I3.2 ★★ – Backupkonzept (8 Punkte)
 📘 **Nachlernen:** [[I3 Datensicherung#3-2-1-Regel|I3 › 3-2-1-Regel]] · [[I3 Datensicherung#Backupkonzept – Inhalte|I3 › Backupkonzept – Inhalte]] · [[I3 Datensicherung#3. Backupmedien|I3 › Backupmedien]]
 
-Bisher sichert die Praxis einmal pro Woche auf eine USB-Festplatte, die dauerhaft am Server angeschlossen ist. Bewerte das Vorgehen und schlage ein besseres Konzept vor.
+Bisher sichert die Praxis einmal pro Woche auf eine USB-Festplatte, die dauerhaft am Server angeschlossen ist. Bewerten Sie das Vorgehen und schlagen Sie ein besseres Konzept vor.
 
 > [!success]- Lösung
 > Schwächen (3 P): nur wöchentlich → bis zu einer Woche Datenverlust (RPO); dauerhaft angeschlossen → Ransomware verschlüsselt das Backup mit; gleicher Standort → Brand/Diebstahl vernichtet alles; kein Restore-Test.
@@ -120,7 +120,7 @@ Bisher sichert die Praxis einmal pro Woche auf eine USB-Festplatte, die dauerhaf
 ### I3.3 ★ – RPO und RTO (4 Punkte)
 📘 **Nachlernen:** [[I3 Datensicherung#Kennzahlen|I3 › Kennzahlen]]
 
-Die Praxisleitung sagt: „Wir können höchstens einen halben Tag Daten verlieren und müssen spätestens nach 4 Stunden wieder arbeiten.“ Ordne RPO und RTO zu und leite je eine Konsequenz ab.
+Die Praxisleitung sagt: „Wir können höchstens einen halben Tag Daten verlieren und müssen spätestens nach 4 Stunden wieder arbeiten.“ Ordnen Sie RPO und RTO zu und leiten Sie je eine Konsequenz ab.
 
 > [!success]- Lösung
 > **RPO = 12 h** (max. Datenverlust) → mindestens zweimal täglich sichern (z. B. mittags und abends). (2 P)
@@ -134,7 +134,7 @@ Die Praxisleitung sagt: „Wir können höchstens einen halben Tag Daten verlier
 📘 **Nachlernen:** [[I4 Kryptografie#4. Hybride Verschlüsselung|I4 › Hybride Verschlüsselung]] · [[I4 Kryptografie#6. Digitale Signatur|I4 › Digitale Signatur]]
 
 Befunde sollen per E-Mail an Arztpraxen gehen.
-a) Erkläre, warum rein symmetrische Verschlüsselung hier unpraktisch ist. b) Beschreibe, wie ein hybrides Verfahren (z. B. S/MIME) die Vertraulichkeit sicherstellt. c) Wie kann der Empfänger zusätzlich prüfen, dass der Befund von der Praxis stammt und unverändert ist?
+a) Erklären Sie, warum rein symmetrische Verschlüsselung hier unpraktisch ist. b) Beschreiben Sie, wie ein hybrides Verfahren (z. B. S/MIME) die Vertraulichkeit sicherstellt. c) Wie kann der Empfänger zusätzlich prüfen, dass der Befund von der Praxis stammt und unverändert ist?
 
 > [!success]- Lösung
 > a) Mit jeder Arztpraxis müsste vorher ein **gemeinsamer geheimer Schlüssel sicher ausgetauscht** werden; bei vielen Partnern entstehen sehr viele Schlüssel (n(n−1)/2). (2 P)
@@ -144,7 +144,7 @@ a) Erkläre, warum rein symmetrische Verschlüsselung hier unpraktisch ist. b) B
 ### I4.2 ★ – Schlüsselanzahl (4 Punkte)
 📘 **Nachlernen:** [[I4 Kryptografie#2. Symmetrische Verschlüsselung|I4 › Symmetrische Verschlüsselung]] · [[I4 Kryptografie#3. Asymmetrische Verschlüsselung (Public-Key-Verfahren)|I4 › Asymmetrische Verschlüsselung]]
 
-Die 25 Mitarbeitenden sollen untereinander verschlüsselt kommunizieren. Berechne die Anzahl der Schlüssel bei symmetrischer und asymmetrischer Verschlüsselung.
+Die 25 Mitarbeitenden sollen untereinander verschlüsselt kommunizieren. Berechnen Sie die Anzahl der Schlüssel bei symmetrischer und asymmetrischer Verschlüsselung.
 
 > [!success]- Lösung
 > symmetrisch: 25 · 24 / 2 = **300** · asymmetrisch: 2 · 25 = **50** (25 Schlüsselpaare) (je 2 P)
@@ -152,7 +152,7 @@ Die 25 Mitarbeitenden sollen untereinander verschlüsselt kommunizieren. Berechn
 ### I4.3 ★★ – Passwörter speichern (6 Punkte)
 📘 **Nachlernen:** [[I4 Kryptografie#5. Hashfunktionen|I4 › Hashfunktionen]]
 
-Die neue Praxissoftware speichert Passwörter „mit MD5 verschlüsselt“. Bewerte das und beschreibe eine sichere Lösung.
+Die neue Praxissoftware speichert Passwörter „mit MD5 verschlüsselt“. Bewerten Sie das und beschreiben Sie eine sichere Lösung.
 
 > [!success]- Lösung
 > - Passwörter werden nicht verschlüsselt, sondern **gehasht** – Begriff falsch. (1 P)
@@ -162,7 +162,7 @@ Die neue Praxissoftware speichert Passwörter „mit MD5 verschlüsselt“. Bewe
 ### I4.4 ★★ – Zertifikat (4 Punkte)
 📘 **Nachlernen:** [[I4 Kryptografie#7. Zertifikate und PKI|I4 › Zertifikate und PKI]]
 
-Beim Aufruf des Online-Terminportals zeigt der Browser „Die Verbindung ist nicht sicher – Zertifikat ungültig“. Nenne zwei mögliche Ursachen und erkläre, warum man die Warnung nicht einfach wegklicken sollte.
+Beim Aufruf des Online-Terminportals zeigt der Browser „Die Verbindung ist nicht sicher – Zertifikat ungültig“. Nennen Sie zwei mögliche Ursachen und erklären Sie, warum man die Warnung nicht einfach wegklicken sollte.
 
 > [!success]- Lösung
 > Ursachen (je 1 P): Zertifikat **abgelaufen** · ausgestellt für einen **anderen Domainnamen** · von einer **nicht vertrauenswürdigen CA**/selbst signiert · Zertifikat gesperrt.
@@ -176,7 +176,7 @@ Beim Aufruf des Online-Terminportals zeigt der Browser „Die Verbindung ist nic
 📘 **Nachlernen:** [[I5 Bedrohungen und Schutzmaßnahmen#2. Angriffe|I5 › Angriffe]] · [[I5 Bedrohungen und Schutzmaßnahmen#3. Authentifizierung|I5 › Authentifizierung]]
 
 Eine Mail „Ihr Microsoft-365-Konto wird heute gesperrt – jetzt bestätigen!“ mit Link auf `login-microsoft365-verify.com` erreicht die Rezeption.
-a) Nenne drei Merkmale, an denen man Phishing erkennt. b) Nenne drei Maßnahmen, die das Risiko verringern.
+a) Nennen Sie drei Merkmale, an denen man Phishing erkennt. b) Nennen Sie drei Maßnahmen, die das Risiko verringern.
 
 > [!success]- Lösung
 > a) Zeitdruck/Drohung · fremde Domain im Link (nicht microsoft.com) · unpersönliche Anrede/Aufforderung zur Eingabe von Zugangsdaten (je 1 P)
@@ -185,7 +185,7 @@ a) Nenne drei Merkmale, an denen man Phishing erkennt. b) Nenne drei Maßnahmen,
 ### I5.2 ★★ – Ransomware-Vorfall (8 Punkte)
 📘 **Nachlernen:** [[I5 Bedrohungen und Schutzmaßnahmen#5. Verhalten bei einem Sicherheitsvorfall (z. B. Ransomware)|I5 › Verhalten bei einem Sicherheitsvorfall]]
 
-Am Standort 2 erscheinen auf einem PC Meldungen, dass alle Dateien verschlüsselt wurden und Bitcoin gezahlt werden soll. Beschreibe das Vorgehen in der richtigen Reihenfolge.
+Am Standort 2 erscheinen auf einem PC Meldungen, dass alle Dateien verschlüsselt wurden und Bitcoin gezahlt werden soll. Beschreiben Sie das Vorgehen in der richtigen Reihenfolge.
 
 > [!success]- Lösung
 > 1. Gerät sofort **vom Netzwerk trennen** (nicht ausschalten). (1 P)
@@ -197,7 +197,7 @@ Am Standort 2 erscheinen auf einem PC Meldungen, dass alle Dateien verschlüssel
 ### I5.3 ★★ – Schadsoftware unterscheiden (6 Punkte)
 📘 **Nachlernen:** [[I5 Bedrohungen und Schutzmaßnahmen#1. Schadsoftware (Malware)|I5 › Schadsoftware]]
 
-Erkläre den Unterschied zwischen Virus, Wurm und Trojaner.
+Erklären Sie den Unterschied zwischen Virus, Wurm und Trojaner.
 
 > [!success]- Lösung (je 2 P)
 > - **Virus:** hängt sich an Programme/Dateien und wird aktiv, wenn der Wirt **ausgeführt** wird; verbreitet sich mit den infizierten Dateien.
@@ -207,7 +207,7 @@ Erkläre den Unterschied zwischen Virus, Wurm und Trojaner.
 ### I5.4 ★★ – Fernzugriff absichern (6 Punkte)
 📘 **Nachlernen:** [[I5 Bedrohungen und Schutzmaßnahmen#Firewall|I5 › Firewall]] · [[I5 Bedrohungen und Schutzmaßnahmen#3. Authentifizierung|I5 › Authentifizierung]]
 
-Die Physiotherapeut:innen sollen von zu Hause Termine einsehen. Ein Dienstleister schlägt vor, am Router Port 3389 (RDP) auf den Server weiterzuleiten. Bewerte den Vorschlag und nenne eine sichere Alternative.
+Die Physiotherapeut:innen sollen von zu Hause Termine einsehen. Ein Dienstleister schlägt vor, am Router Port 3389 (RDP) auf den Server weiterzuleiten. Bewerten Sie den Vorschlag und nennen Sie eine sichere Alternative.
 
 > [!success]- Lösung
 > RDP direkt im Internet ist ein **sehr häufiges Einfallstor** (Brute-Force-Angriffe, Lücken, Ransomware) – der Server wäre für jeden erreichbar. (3 P)
